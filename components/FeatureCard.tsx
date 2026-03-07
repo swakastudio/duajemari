@@ -2,76 +2,70 @@
 
 import { useState } from "react"
 
+type Props = {
+  title: string
+  description: string
+  children?: React.ReactNode
+}
+
 export default function FeatureCard({
   title,
   description,
-  link,
-}: {
-  title: string
-  description: string
-  link: string
-}) {
+  children
+}: Props){
 
-  const [open, setOpen] = useState(false)
+const [open,setOpen] = useState(false)
 
-  return (
-    <div
-      className={`border border-neutral-200 rounded-2xl p-8 transition-all duration-300 cursor-pointer
-      hover:shadow-xl hover:-translate-y-1 hover:border-[#ff4d6d]`}
-      onClick={() => setOpen(!open)}
-    >
+return(
 
-      <div className="flex justify-between items-start">
+<div className="flex flex-col">
 
-        <div>
+{/* CARD */}
 
-          <h3 className="text-xl font-semibold mb-2">
-            {title}
-          </h3>
+<div
+onClick={()=>setOpen(!open)}
+className="p-8 border border-neutral-200 rounded-2xl hover:shadow-xl transition cursor-pointer min-h-[170px] flex justify-between items-start"
+>
 
-          <p className="text-neutral-500">
-            {description}
-          </p>
+<div>
 
-        </div>
+<h3 className="text-xl font-semibold mb-2">
+{title}
+</h3>
 
-        <span
-          className={`transition-transform duration-300 ${
-            open ? "rotate-180" : ""
-          }`}
-        >
-          ▼
-        </span>
+<p className="text-neutral-500 text-sm">
+{description}
+</p>
 
-      </div>
+</div>
+
+<div
+className={`transition-transform ${open ? "rotate-180" : ""}`}
+>
+▼
+</div>
+
+</div>
 
 
-      {/* DROPDOWN */}
+{/* PREVIEW */}
 
-      <div
-        className={`overflow-hidden transition-all duration-500 ${
-          open ? "max-h-96 mt-6 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
+<div
+className={`transition-all duration-500 overflow-hidden ${
+open ? "max-h-[320px] opacity-100 mt-4" : "max-h-0 opacity-0"
+}`}
+>
 
-        <div className="border-t pt-6 text-sm text-neutral-500">
+<div className="border border-neutral-200 rounded-2xl p-6 bg-white">
 
-          <p className="mb-3">
-            Lihat contoh fitur ini:
-          </p>
+{children}
 
-          <a
-            href={link}
-            target="_blank"
-            className="text-[#ff4d6d] underline"
-          >
-            Buka Preview
-          </a>
+</div>
 
-        </div>
+</div>
 
-      </div>
+</div>
 
-    </div>
-  )
+)
+
 }

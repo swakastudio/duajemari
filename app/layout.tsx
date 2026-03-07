@@ -1,24 +1,33 @@
 import "./globals.css"
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
+children,
+}:{
+children:React.ReactNode
+}){
 
-      <body className="min-h-screen bg-white">
+return(
 
-        <Navbar />
+<html lang="en">
 
-        <main className="min-h-screen">
-          {children}
-        </main>
+<body className="bg-white">
 
-      </body>
+<Navbar/>
 
-    </html>
-  )
+<main>
+
+{children}
+
+</main>
+
+<Footer/>
+
+</body>
+
+</html>
+
+)
+
 }
