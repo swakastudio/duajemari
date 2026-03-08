@@ -1,7 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
-
 type Testimonial = {
   name: string
   text: string
@@ -28,48 +26,65 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialSlider() {
 
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-
-    const interval = setInterval(() => {
-
-      setIndex((prev) => (prev + 1) % testimonials.length)
-
-    }, 4000)
-
-    return () => clearInterval(interval)
-
-  }, [])
-
-  const item = testimonials[index]
-
   return (
 
-    <div className="max-w-xl mx-auto">
+    <div className="max-w-7xl mx-auto">
 
-      <div className="border border-neutral-200 rounded-2xl p-8 text-center shadow-sm">
+      <div className="grid md:grid-cols-3 gap-8">
 
-        <img
-          src={item.photo}
-          className="w-16 h-16 rounded-full mx-auto mb-4"
-        />
 
-        <p className="text-neutral-600">
+        {testimonials.map((item, i) => (
 
-          "{item.text}"
+          <div
+            key={i}
+            className="
+            bg-white
+            border border-[#ff4d6d]/30
+            rounded-2xl
+            p-8
+            shadow-[0_10px_30px_rgba(255,77,109,0.15)]
+            hover:shadow-[0_15px_40px_rgba(255,77,109,0.25)]
+            transition
+            duration-300
+            text-center
+            "
+          >
 
-        </p>
+            <img
+              src={item.photo}
+              className="
+              w-20
+              h-20
+              rounded-full
+              object-cover
+              mx-auto
+              mb-5
+              border-2
+              border-[#ff4d6d]
+              "
+            />
 
-        <p className="font-semibold mt-4">
+            <p className="text-neutral-600 text-sm leading-relaxed mb-4">
 
-          {item.name}
+              "{item.text}"
 
-        </p>
+            </p>
+
+            <p className="font-semibold text-[#ff4d6d]">
+
+              {item.name}
+
+            </p>
+
+          </div>
+
+        ))}
+
 
       </div>
 
     </div>
 
   )
+
 }

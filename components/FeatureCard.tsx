@@ -18,18 +18,30 @@ const [open,setOpen] = useState(false)
 
 return(
 
-<div className="flex flex-col">
+<div className="flex flex-col group">
 
 {/* CARD */}
 
 <div
 onClick={()=>setOpen(!open)}
-className="p-8 border border-neutral-200 rounded-2xl hover:shadow-xl transition cursor-pointer min-h-[170px] flex justify-between items-start"
+className="
+p-8
+border border-neutral-200
+rounded-2xl
+cursor-pointer
+min-h-[170px]
+flex justify-between items-start
+transition-all duration-300
+
+hover:border-[#ff4d6d]
+hover:shadow-[0_10px_40px_rgba(255,77,109,0.25)]
+hover:-translate-y-1
+"
 >
 
 <div>
 
-<h3 className="text-xl font-semibold mb-2">
+<h3 className="text-xl font-semibold mb-2 transition-colors duration-300 group-hover:text-[#ff4d6d]">
 {title}
 </h3>
 
@@ -40,7 +52,7 @@ className="p-8 border border-neutral-200 rounded-2xl hover:shadow-xl transition 
 </div>
 
 <div
-className={`transition-transform ${open ? "rotate-180" : ""}`}
+className={`transition-transform duration-300 text-[#ff4d6d] ${open ? "rotate-180" : ""}`}
 >
 ▼
 </div>

@@ -1,30 +1,27 @@
+"use client"
+
 import Link from "next/link"
 
-export default function Footer(){
+export default function Footer() {
 
 return(
 
-<footer className="bg-[#ff4d6d] text-white py-16 px-6">
+<footer className="bg-gradient-to-b from-[#ff4d6d] to-[#ff3b60] text-white mt-32">
 
-<div className="max-w-7xl mx-auto px-6 py-16">
+<div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-12">
 
-<div className="grid md:grid-cols-3 gap-12">
 
 {/* BRAND */}
 
 <div>
 
-<h2 className="text-2xl font-semibold mb-4">
-
+<h3 className="text-2xl font-semibold mb-4">
 duajemari
+</h3>
 
-</h2>
-
-<p className="text-neutral-400">
-
-Undangan digital elegan untuk
-momen pernikahan yang berkesan.
-
+<p className="text-white/80 leading-relaxed max-w-xs">
+Undangan digital elegan untuk momen pernikahan
+yang berkesan dan mudah dibagikan ke semua tamu.
 </p>
 
 </div>
@@ -34,13 +31,11 @@ momen pernikahan yang berkesan.
 
 <div>
 
-<h3 className="font-semibold mb-4">
-
+<h4 className="font-semibold mb-4">
 Kontak
+</h4>
 
-</h3>
-
-<p className="text-neutral-400">
+<p className="text-white/80 mb-4 leading-relaxed">
 
 Perum Tas 7 Blok C2 No.31  
 Popoh, Wonoayu  
@@ -48,29 +43,14 @@ Sidoarjo
 
 </p>
 
-<div className="mt-4 space-y-2">
-
-<p>
-WhatsApp :
+<p className="text-white/90 font-medium">
+WhatsApp
 </p>
 
-<a
-href="https://wa.me/6285748502216"
-className="block text-neutral-400 hover:text-white transition"
->
+<div className="space-y-1 mt-2 text-white/80">
 
-085748502216
-
-</a>
-
-<a
-href="https://wa.me/6281358435642"
-className="block text-neutral-400 hover:text-white transition"
->
-
-081358435642
-
-</a>
+<p>085748502216</p>
+<p>081358435642</p>
 
 </div>
 
@@ -81,42 +61,39 @@ className="block text-neutral-400 hover:text-white transition"
 
 <div>
 
-<h3 className="font-semibold mb-4">
-
+<h4 className="font-semibold mb-4">
 Social Media
+</h4>
 
-</h3>
+<div className="space-y-2 text-white/80">
 
-<div className="space-y-3">
-
-<Link
+<a
 href="#"
-className="block text-neutral-400 hover:text-white transition"
+className="block hover:text-white transition"
 >
-
 Instagram
+</a>
 
-</Link>
-
-<Link
+<a
 href="#"
-className="block text-neutral-400 hover:text-white transition"
+className="block hover:text-white transition"
 >
-
 TikTok
-
-</Link>
-
-</div>
+</a>
 
 </div>
 
 </div>
 
 
-{/* COPYRIGHT */}
+</div>
 
-<div className="border-t border-neutral-800 mt-12 pt-6 text-center text-neutral-500 text-sm">
+
+{/* LINE */}
+
+<div className="max-w-7xl mx-auto px-6">
+
+<div className="border-t border-white/30 py-6 text-center text-sm text-white/80">
 
 © {new Date().getFullYear()} duajemari. All rights reserved.
 

@@ -10,22 +10,19 @@ import WeatherCard from "@/components/WeatherCard"
 import GiftEnvelope from "@/components/GiftEnvelope"
 import GuestCounter from "@/components/GuestCounter"
 
+export default function Home(){
 
-
-export default function Home() {
-
-return (
+return(
 
 <main className="bg-white text-black">
 
 
 
-{/* HERO SECTION */}
+{/* ================= HERO ================= */}
 
 <section className="min-h-screen flex items-center px-6">
 
 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
 
 {/* TEXT */}
 
@@ -35,10 +32,11 @@ return (
 
 Kisah Baru{" "}
 
-<Link href="/product" className="hero-link">
-
+<Link
+href="/product"
+className="hero-link text-[#ff4d6d]"
+>
 Dimulai
-
 </Link>
 
 <br/>
@@ -56,11 +54,15 @@ yang elegan dan siap dibagikan ke semua tamu.
 </p>
 
 
+
+{/* BUTTON */}
+
 <div className="flex gap-4">
 
 <Link
 href="/product"
-className="px-8 py-3 bg-black text-white rounded-full hover:opacity-90 transition"
+className="px-8 py-3 rounded-full bg-[#ff4d6d] text-white font-medium shadow-md
+hover:shadow-lg hover:scale-[1.02] transition duration-300"
 >
 
 Pesan Undangan
@@ -70,7 +72,8 @@ Pesan Undangan
 
 <Link
 href="/porto"
-className="px-8 py-3 border rounded-full hover:bg-neutral-100 transition"
+className="px-8 py-3 rounded-full border border-[#ff4d6d] text-[#ff4d6d] font-medium
+hover:bg-[#ff4d6d] hover:text-white transition duration-300"
 >
 
 Lihat Contoh
@@ -87,7 +90,7 @@ Lihat Contoh
 
 <div className="flex justify-center">
 
-<div className="w-full max-w-md h-[380px] border rounded-3xl flex items-center justify-center text-neutral-400">
+<div className="w-full max-w-md h-[380px] border border-neutral-200 rounded-3xl flex items-center justify-center text-neutral-400">
 
 Preview Undangan
 
@@ -95,23 +98,24 @@ Preview Undangan
 
 </div>
 
-
 </div>
 
 </section>
 
 
 
-{/* TRUST SECTION */}
+{/* ================= TRUST ================= */}
 
-<section className="py-24 border-t">
+<section className="py-20 border-t border-neutral-200">
 
-<div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-16 text-center">
+<div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
 
+
+{/* CARD */}
 
 <div>
 
-<p className="text-4xl font-semibold">
+<p className="text-4xl font-semibold text-[#ff4d6d]">
 
 <Counter value={500}/>+
 
@@ -129,7 +133,7 @@ Undangan telah dibuat
 
 <div>
 
-<p className="text-4xl font-semibold">
+<p className="text-4xl font-semibold text-[#ff4d6d]">
 
 <Counter value={12000}/>+
 
@@ -147,7 +151,7 @@ Tamu menghadiri acara
 
 <div>
 
-<p className="text-4xl font-semibold">
+<p className="text-4xl font-semibold text-[#ff4d6d]">
 
 <Counter value={98}/>%
 
@@ -168,13 +172,13 @@ Rating pasangan
 
 
 
-{/* SECTION FITUR */}
+{/* ================= FITUR ================= */}
 
-<section className="py-32 px-6 bg-neutral-50">
+<section className="py-24 px-6 bg-neutral-50">
 
 <div className="max-w-7xl mx-auto">
 
-<h2 className="text-4xl text-center mb-20">
+<h2 className="text-4xl text-center mb-16 font-semibold">
 
 Fitur Undangan
 
@@ -182,10 +186,10 @@ Fitur Undangan
 
 
 
-<div className="grid md:grid-cols-3 gap-10">
+<div className="grid md:grid-cols-3 gap-8">
 
 
-{/* NADA KISAH */}
+{/* MUSIK */}
 
 <Reveal delay={0}>
 
@@ -196,8 +200,7 @@ description="Musik latar romantis saat membuka undangan"
 
 <p className="text-sm text-neutral-500">
 
-Undangan dapat memutar lagu romantis yang menyertai
-kisah cinta pasangan.
+Undangan dapat memutar lagu romantis yang menyertai kisah cinta pasangan.
 
 </p>
 
@@ -207,7 +210,7 @@ kisah cinta pasangan.
 
 
 
-{/* JEJAK KENANGAN */}
+{/* GALERI */}
 
 <Reveal delay={100}>
 
@@ -218,8 +221,7 @@ description="Galeri perjalanan cinta pasangan"
 
 <p className="text-sm text-neutral-500">
 
-Galeri foto perjalanan cinta pasangan dari awal
-hingga hari bahagia.
+Galeri foto perjalanan cinta pasangan dari awal hingga hari bahagia.
 
 </p>
 
@@ -255,10 +257,24 @@ title="Petunjuk Arah"
 description="Peta lokasi acara"
 >
 
+<div className="space-y-4">
+
 <iframe
-src="https://maps.google.com/maps?q=Sheraton%20Surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed"
-className="w-full h-40 rounded-lg border"
+src="https://maps.google.com/maps?q=Sheraton%20Surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+className="w-full h-[230px] rounded-xl border-2 border-[#ff4d6d] shadow-[0_4px_20px_rgba(255,77,109,0.25)]"
 />
+
+<a
+href="https://maps.google.com/?q=Sheraton%20Surabaya"
+target="_blank"
+className="block text-center text-sm font-medium text-[#ff4d6d] hover:underline"
+>
+
+Buka di Google Maps
+
+</a>
+
+</div>
 
 </FeatureCard>
 
@@ -277,8 +293,7 @@ description="Konfirmasi kehadiran tamu"
 
 <p className="text-sm text-neutral-500">
 
-Tamu dapat mengisi RSVP untuk memastikan
-kehadiran di acara pernikahan.
+Tamu dapat mengisi RSVP untuk memastikan kehadiran.
 
 </p>
 
@@ -299,8 +314,7 @@ description="Pesan dari tamu undangan"
 
 <p className="text-sm text-neutral-500">
 
-Tamu dapat meninggalkan doa dan ucapan
-untuk pasangan mempelai.
+Tamu dapat meninggalkan doa dan ucapan untuk pasangan mempelai.
 
 </p>
 
@@ -310,9 +324,11 @@ untuk pasangan mempelai.
 
 
 
-{/* GIFT ENVELOPE */}
+{/* GIFT */}
 
 <Reveal delay={600}>
+
+<div className="md:col-span-3">
 
 <FeatureCard
 title="Gift Envelope"
@@ -322,6 +338,8 @@ description="Transfer atau kirim hadiah"
 <GiftEnvelope/>
 
 </FeatureCard>
+
+</div>
 
 </Reveal>
 
@@ -361,41 +379,18 @@ description="Update cuaca lokasi acara"
 
 
 
-{/* TIKTOK */}
+{/* SOCIAL */}
 
 <Reveal delay={900}>
 
 <FeatureCard
-title="TikTok Effect"
+title="Social Media Effect"
 description="Twibbon effect untuk story"
 >
 
 <p className="text-sm text-neutral-500">
 
-Gunakan effect TikTok untuk membagikan
-momen bahagia ke sosial media.
-
-</p>
-
-</FeatureCard>
-
-</Reveal>
-
-
-
-{/* STORY MODE */}
-
-<Reveal delay={1000}>
-
-<FeatureCard
-title="Story Mode"
-description="Mode story untuk membagikan undangan"
->
-
-<p className="text-sm text-neutral-500">
-
-Undangan dapat dibagikan dalam format story
-seperti Instagram.
+Gunakan effect untuk membagikan momen bahagia ke sosial media.
 
 </p>
 
@@ -412,11 +407,11 @@ seperti Instagram.
 
 
 
-{/* TESTIMONIAL */}
+{/* ================= TESTIMONIAL ================= */}
 
-<section className="py-32 px-6">
+<section className="py-24 px-6">
 
-<h2 className="text-4xl text-center mb-20">
+<h2 className="text-4xl text-center mb-16 font-semibold">
 
 Cerita dari Pasangan
 
