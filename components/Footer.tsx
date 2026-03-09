@@ -6,7 +6,7 @@ export default function Footer() {
 
 return(
 
-<footer className="bg-gradient-to-b from-[#ff4d6d] to-[#ff3b60] text-white mt-32">
+<footer className="bg-gradient-to-b from-[#ff4d6d] to-[#ff3b60] text-white mt-20">
 
 <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-12">
 

@@ -64,7 +64,7 @@ className={`transition-transform duration-300 text-[#ff4d6d] ${open ? "rotate-18
 
 <div
 className={`transition-all duration-500 overflow-hidden ${
-open ? "max-h-[320px] opacity-100 mt-4" : "max-h-0 opacity-0"
+open ? "max-h-[2000px] opacity-100 mt-4" : "max-h-0 opacity-0"
 }`}
 >
 

@@ -106,7 +106,7 @@ Preview Undangan
 
 {/* ================= TRUST ================= */}
 
-<section className="py-20 border-t border-neutral-200">
+<section className="py-18 border-t border-neutral-200">
 
 <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
 
@@ -174,7 +174,7 @@ Rating pasangan
 
 {/* ================= FITUR ================= */}
 
-<section className="py-24 px-6 bg-neutral-50">
+<section className="py-16 px-6 bg-neutral-50">
 
 <div className="max-w-7xl mx-auto">
 
@@ -406,21 +406,116 @@ Gunakan effect untuk membagikan momen bahagia ke sosial media.
 </section>
 
 
-
 {/* ================= TESTIMONIAL ================= */}
 
-<section className="py-24 px-6">
+{/* TESTIMONIAL */}
 
-<h2 className="text-4xl text-center mb-16 font-semibold">
+<section className="pt-8 pb-14 px-6 bg-[#fff7f9]">
 
+<div className="max-w-7xl mx-auto text-center">
+
+<h2 className="text-4xl md:text-5xl font-semibold mb-8">
 Cerita dari Pasangan
-
 </h2>
 
-<TestimonialSlider/>
+<p className="text-neutral-500 max-w-xl mx-auto mb-16">
+Pengalaman pasangan yang telah menggunakan undangan digital duajemari.
+</p>
+
+
+{/* GRID TESTIMONIAL */}
+
+<div className="grid md:grid-cols-3 gap-8">
+
+
+{/* CARD 1 */}
+
+<div className="bg-white border border-[#ff4d6d]/30 rounded-2xl p-8 shadow-[0_10px_30px_rgba(255,77,109,0.12)] hover:shadow-[0_10px_40px_rgba(255,77,109,0.2)] transition">
+
+<div className="flex justify-center mb-4">
+
+<img
+src="https://i.pravatar.cc/120?img=11"
+className="w-16 h-16 rounded-full object-cover"
+/>
+
+</div>
+
+<p className="text-neutral-600 text-sm leading-relaxed mb-4">
+
+"Undangannya elegan banget dan mudah dibagikan ke tamu.
+Semua tamu langsung bisa lihat lokasi dan RSVP."
+
+</p>
+
+<p className="font-semibold text-[#ff4d6d]">
+Andra & Fina
+</p>
+
+</div>
+
+
+
+{/* CARD 2 */}
+
+<div className="bg-white border border-[#ff4d6d]/30 rounded-2xl p-8 shadow-[0_10px_30px_rgba(255,77,109,0.12)] hover:shadow-[0_10px_40px_rgba(255,77,109,0.2)] transition">
+
+<div className="flex justify-center mb-4">
+
+<img
+src="https://i.pravatar.cc/120?img=12"
+className="w-16 h-16 rounded-full object-cover"
+/>
+
+</div>
+
+<p className="text-neutral-600 text-sm leading-relaxed mb-4">
+
+"Fitur gift envelope sangat membantu.
+Tamu bisa langsung transfer tanpa ribet."
+
+</p>
+
+<p className="font-semibold text-[#ff4d6d]">
+Rafi & Nabila
+</p>
+
+</div>
+
+
+
+{/* CARD 3 */}
+
+<div className="bg-white border border-[#ff4d6d]/30 rounded-2xl p-8 shadow-[0_10px_30px_rgba(255,77,109,0.12)] hover:shadow-[0_10px_40px_rgba(255,77,109,0.2)] transition">
+
+<div className="flex justify-center mb-4">
+
+<img
+src="https://i.pravatar.cc/120?img=15"
+className="w-16 h-16 rounded-full object-cover"
+/>
+
+</div>
+
+<p className="text-neutral-600 text-sm leading-relaxed mb-4">
+
+"Designnya simpel tapi terlihat mahal.
+Kami sangat puas menggunakan duajemari."
+
+</p>
+
+<p className="font-semibold text-[#ff4d6d]">
+Bagas & Intan
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
-
 
 
 </main>
