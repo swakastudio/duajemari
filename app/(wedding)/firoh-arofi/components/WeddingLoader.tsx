@@ -4,59 +4,45 @@ import { useEffect, useState } from "react"
 
 export default function WeddingLoader(){
 
-const [loading,setLoading] = useState(true)
-const [fade,setFade] = useState(false)
+  const [loading,setLoading] = useState(true)
+  const [fade,setFade] = useState(false)
 
-useEffect(()=>{
+  useEffect(()=>{
 
-const fadeTimer = setTimeout(()=>{
-setFade(true)
-},2500)
+    const fadeTimer = setTimeout(()=>{
+      setFade(true)
+    },2500)
 
-const endTimer = setTimeout(()=>{
-setLoading(false)
-},3200)
+    const endTimer = setTimeout(()=>{
+      setLoading(false)
+    },3200)
 
-return ()=>{
-clearTimeout(fadeTimer)
-clearTimeout(endTimer)
-}
+    return ()=>{
+      clearTimeout(fadeTimer)
+      clearTimeout(endTimer)
+    }
 
-},[])
+  },[])
 
-if(!loading) return null
+  if(!loading) return null
 
-return(
+  return(
 
-<div
-className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-14 bg-black transition-all duration-700 ${
-fade ? "opacity-0 blur-sm" : "opacity-100"
-}`}
->
+  <div
+  className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-14 bg-[radial-gradient(circle_at_center,#1a1a1a,#000000)] transition-all duration-700 ${
+  fade ? "opacity-0 blur-sm" : "opacity-100"
+  }`}
+  >
 
-{/* LOGO */}
+  {/* RUNNING ANIMATION */}
 
-<img
-src="/firoh-arofi/logo-wedding-loader.svg"
-alt="Wedding Logo"
-className="w-[200px] animate-pulse"
-/>
+  <img
+  src="/firoh-arofi/man-run-loader.webp"
+  alt="Wedding Loader"
+  className="w-[220px]"
+  />
+  </div>
 
-
-{/* DOT STREAM */}
-
-<div className="loader-stream">
-
-<div className="loader-dot"></div>
-<div className="loader-dot"></div>
-<div className="loader-dot"></div>
-<div className="loader-dot"></div>
-<div className="loader-dot"></div>
-
-</div>
-
-</div>
-
-)
+  )
 
 }

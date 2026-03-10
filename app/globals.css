@@ -483,3 +483,53 @@ transform: translateX(calc(var(--uib-size))) scale(0);
 }
 
 }
+
+.gold-logo{
+
+filter:
+drop-shadow(0 0 6px rgba(255,200,50,0.35))
+drop-shadow(0 0 14px rgba(255,200,50,0.2));
+
+}
+
+
+/* gold shimmer */
+
+@keyframes shimmer{
+
+0%{
+filter:brightness(1);
+}
+
+50%{
+filter:brightness(1.4);
+}
+
+100%{
+filter:brightness(1);
+}
+
+}
+
+.gold-shimmer{
+animation: shimmer 3s ease-in-out infinite;
+}
+
+.loader-bg{
+background:
+radial-gradient(circle at center, #111, #000 70%);
+}
+
+@keyframes loaderBar {
+  0%{
+    width:0%;
+  }
+
+  100%{
+    width:100%;
+  }
+}
+
+.animate-loader-bar{
+  animation: loaderBar 3s linear forwards;
+}
