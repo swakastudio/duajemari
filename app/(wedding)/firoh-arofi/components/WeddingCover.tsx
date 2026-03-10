@@ -8,11 +8,11 @@ export default function WeddingCover({ guest }: { guest: string }) {
 
 return(
 
-<section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[radial-gradient(circle_at_center,#1a1a1a,#000)] text-white">
+<section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#0b0b0b] text-white radial-open">
 
 {/* TITLE */}
 
-<p className="tracking-[0.35em] text-[11px] text-neutral-500 mb-8">
+<p className="tracking-[0.35em] text-[11px] text-neutral-500 mb-8 bounce-up delay-1">
 THE WEDDING OF
 </p>
 
@@ -21,7 +21,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4"
+className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce-up delay-2"
 >
 
 <span>Firoh</span>
@@ -37,10 +37,9 @@ className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4"
 
 {/* DATE */}
 
-<p className="tracking-[0.35em] text-[12px] text-neutral-500 mb-12">
+<p className="tracking-[0.35em] text-[12px] text-neutral-500 mb-12 bounce-up delay-3">
 04 • 04 • 2026
 </p>
-
 
 {/* GUEST TITLE */}
 
@@ -53,7 +52,7 @@ Kepada Yth
 
 <h2
 style={{ fontFamily: "ZTotez" }}
-className="text-[20px] md:text-[22px] tracking-[0.15em] text-white mb-6 animate-float"
+className="text-[20px] md:text-[22px] tracking-[0.03em] text-white mb-5 bounce-up delay-4"
 >
 
 {guest.charAt(0).toUpperCase() + guest.slice(1)}
