@@ -533,3 +533,40 @@ radial-gradient(circle at center, #111, #000 70%);
 .animate-loader-bar{
   animation: loaderBar 3s linear forwards;
 }
+
+@font-face {
+  font-family: "ClassiqueScript";
+  src: url("/firoh-arofi/classiquescript.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZTotez";
+  src: url("/firoh-arofi/ztotez-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes shimmer {
+0%{transform:translateX(-100%)}
+100%{transform:translateX(100%)}
+}
+
+.animate-shimmer{
+animation: shimmer 4s linear infinite;
+}
+
+@keyframes float {
+
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+
+}
+
+.animate-float{
+animation: float 2s ease-in-out infinite;
+}
