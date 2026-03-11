@@ -50,6 +50,8 @@ backgroundPosition: "0 0"
 
 {/* MOUNTAIN */}
 
+{/* MOUNTAIN */}
+
 <img
 src="/firoh-arofi/bg-mountain.png"
 className={`
@@ -62,13 +64,12 @@ md:w-full
 max-w-none
 pointer-events-none
 transition-all
-duration-[2200ms]
+duration-[2400ms]
 ease-[cubic-bezier(.22,.61,.36,1)]
-delay-[600ms]
-${mounted ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-[160px] scale-[1.04]"}
+delay-[500ms]
+${mounted ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-[200px] scale-[1.05]"}
 `}
 />
-
 
 {/* GRADIENT OVERLAY */}
 
