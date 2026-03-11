@@ -2,10 +2,6 @@
 
 import { useEffect, useState } from "react"
 
-/* =========================
-   COMPONENT
-========================= */
-
 export default function WeddingCover({ guest }: { guest: string }) {
 
 const [mounted,setMounted] = useState(false)
@@ -26,12 +22,12 @@ flex
 items-center
 justify-center
 text-center
-text-white
 "
 >
 
+
 {/* =========================
-   BACKGROUND
+BACKGROUND
 ========================= */}
 
 <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -39,16 +35,16 @@ text-white
 
 {/* CLOUDS */}
 
-<div className="absolute inset-0 flex w-[200%] animate-clouds">
+<div className="absolute inset-0 flex h-full w-[200%] animate-clouds">
 
 <img
 src="/firoh-arofi/bg-clouds.png"
-className="w-full h-full object-cover"
+className="min-w-full h-full object-cover"
 />
 
 <img
 src="/firoh-arofi/bg-clouds.png"
-className="w-full h-full object-cover"
+className="min-w-full h-full object-cover"
 />
 
 </div>
@@ -63,7 +59,7 @@ absolute
 bottom-0
 left-1/2
 -translate-x-1/2
-w-[150%]
+w-[140%]
 md:w-full
 max-w-none
 pointer-events-none
@@ -75,65 +71,42 @@ ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[120px]"}
 />
 
 
-{/* GRADIENT OVERLAY */}
+{/* DARK GRADIENT */}
 
-<div
-className="
-absolute
-inset-0
-bg-gradient-to-b
-from-transparent
-via-black/10
-to-black/40
-"
-/>
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
+
 
 </div>
 
 
+
 {/* =========================
-   CONTENT
+CONTENT
 ========================= */}
 
-<div
-className="
-relative
-z-10
-flex
-flex-col
-items-center
-px-6
-pt-12
-md:pt-0
-"
->
+<div className="relative z-10 flex flex-col items-center px-6 pt-14 md:pt-0">
 
 
 {/* TITLE */}
 
-<p
-className="
-tracking-[0.35em]
-text-[13px]
-text-black/70
-mb-5
-"
->
+<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
 </p>
 
 
-{/* COUPLE NAME */}
+
+{/* COUPLE */}
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
 className="
-text-[72px]
+text-[78px]
 md:text-[120px]
 leading-[0.9]
-mb-2
+mb-3
 -translate-x-2
 md:translate-x-0
+text-white
 "
 >
 
@@ -148,47 +121,28 @@ md:translate-x-0
 </h1>
 
 
+
 {/* DATE */}
 
-<p
-className="
-tracking-[0.35em]
-text-[14px]
-text-black/70
-mb-10
-animate-date-pulse
-"
->
+<p className="tracking-[0.35em] text-[14px] text-black/70 mb-10 animate-datePulse">
 04 • 04 • 2026
 </p>
 
 
+
 {/* GUEST TITLE */}
 
-<p
-className="
-text-[11px]
-tracking-[0.35em]
-text-black/70
-mb-1
-uppercase
-"
->
+<p className="text-[11px] tracking-[0.35em] text-black/70 mb-1 uppercase">
 Kepada Yth
 </p>
+
 
 
 {/* GUEST NAME */}
 
 <h2
 style={{ fontFamily: "ZTotez" }}
-className="
-text-[24px]
-md:text-[22px]
-tracking-[0.03em]
-text-white
-mb-5
-"
+className="text-[24px] tracking-[0.04em] text-white mb-5"
 >
 
 {guest.charAt(0).toUpperCase() + guest.slice(1)}
@@ -196,35 +150,17 @@ mb-5
 </h2>
 
 
+
 {/* DIVIDER */}
 
 <div className="relative w-24 h-[1px] mb-10 overflow-hidden">
 
-<div
-className="
-absolute
-inset-0
-bg-gradient-to-r
-from-transparent
-via-neutral-400
-to-transparent
-"
-/>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
 
-<div
-className="
-absolute
-inset-0
-bg-gradient-to-r
-from-transparent
-via-white
-to-transparent
-opacity-30
-animate-shimmer
-"
-/>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
 
 </div>
+
 
 
 {/* BUTTON */}
@@ -241,7 +177,6 @@ tracking-[0.22em]
 backdrop-blur-sm
 hover:bg-white
 hover:text-black
-hover:shadow-[0_0_15px_rgba(255,255,255,0.25)]
 transition
 duration-300
 "
@@ -251,10 +186,10 @@ BUKA UNDANGAN
 
 </button>
 
+
 </div>
 
 </section>
 
 )
-
 }
