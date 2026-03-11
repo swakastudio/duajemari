@@ -57,23 +57,25 @@ backgroundPosition: "0 0"
 
 {/* MOUNTAIN */}
 
+{/* MOUNTAIN */}
+
 <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
 
-<img
-src="/firoh-arofi/bg-mountain.png"
-className={`
-absolute
-bottom-0
-left-1/2
--translate-x-1/2
-w-[170%]
-md:w-full
-transition-all
-duration-[1500ms]
-ease-[cubic-bezier(.22,.61,.36,1)]
-${opening ? "scale-[1.35] translate-y-[100px]" : ""}
-`}
-/>
+  <div className="relative w-full flex justify-center">
+
+    <img
+      src="/firoh-arofi/bg-mountain.png"
+      className={`
+      w-[170%]
+      md:w-full
+      transition-all
+      duration-[1500ms]
+      ease-[cubic-bezier(.22,.61,.36,1)]
+      ${opening ? "scale-[1.25] translate-y-[80px]" : ""}
+      `}
+    />
+
+  </div>
 
 </div>
 
