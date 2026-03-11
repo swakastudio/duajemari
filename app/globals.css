@@ -661,3 +661,21 @@ transform:translate(-50%,0);
 animation: mountainReveal 2.6s cubic-bezier(.22,.61,.36,1) forwards;
 animation-delay:0.6s;
 }
+
+@keyframes dividerGlow{
+
+0%{
+opacity:0.3;
+transform:translateX(-100%);
+}
+
+100%{
+opacity:0.9;
+transform:translateX(100%);
+}
+
+}
+
+.animate-dividerGlow{
+animation: dividerGlow 4s linear infinite;
+}
