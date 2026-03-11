@@ -708,3 +708,10 @@ transition:all 1s ease;
 opacity:1;
 transform:translateY(0);
 }
+
+html,
+body{
+height:100%;
+overflow-x:hidden;
+background:#e9f3f8;
+}
