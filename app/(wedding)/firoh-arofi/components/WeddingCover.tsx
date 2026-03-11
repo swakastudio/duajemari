@@ -87,8 +87,9 @@ backgroundPosition:"0 0"
 <img
 src="/firoh-arofi/bg-mountain.png"
 className={`
-w-[170%]
+w-[180%]
 md:w-full
+min-w-[1200px]
 transition-all
 duration-[1500ms]
 ease-[cubic-bezier(.22,.61,.36,1)]
