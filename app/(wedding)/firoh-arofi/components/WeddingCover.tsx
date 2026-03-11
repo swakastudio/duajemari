@@ -39,7 +39,8 @@ return (
 <section
 className={`
 relative
-h-[100dvh]
+h-screen
+min-h-screen
 w-full
 overflow-hidden
 flex
