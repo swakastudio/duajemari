@@ -72,7 +72,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[65px] md:text-[120px] leading-[0.9] mb-3"
+className="text-[68px] md:text-[120px] leading-[0.9] mb-3"
 >
 
 <span>Firoh</span>
