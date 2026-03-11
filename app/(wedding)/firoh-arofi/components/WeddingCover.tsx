@@ -63,9 +63,10 @@ md:w-full
 max-w-none
 pointer-events-none
 transition-all
-duration-[2000ms]
-ease-out
-${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[120px]"}
+duration-[2200ms]
+ease-[cubic-bezier(.22,.61,.36,1)]
+delay-[600ms]
+${mounted ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-[160px] scale-[1.04]"}
 `}
 />
 
@@ -102,7 +103,7 @@ text-[76px]
 md:text-[120px]
 leading-[0.9]
 mb-3
--translate-x-2
+-translate-x-3
 md:translate-x-0
 text-white
 "
