@@ -697,3 +697,14 @@ transform:translateX(120%);
 .animate-dividerShimmer{
 animation:dividerShimmer 3.5s ease-in-out infinite;
 }
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.fade-up.visible{
+opacity:1;
+transform:translateY(0);
+}
