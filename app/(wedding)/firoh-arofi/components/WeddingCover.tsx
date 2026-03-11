@@ -67,6 +67,21 @@ backgroundPosition: "0 0"
   "
   />
 
+  {/* FRAME */}
+
+<img
+src="/firoh-arofi/frame-wood.png"
+className="
+absolute
+inset-0
+w-full
+h-full
+object-cover
+pointer-events-none
+z-30
+"
+/>
+
 </div>
 
 {/* GRADIENT OVERLAY */}
