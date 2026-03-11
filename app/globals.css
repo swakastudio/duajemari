@@ -574,11 +574,11 @@ animation: float 2s ease-in-out infinite;
 @keyframes cloudsMove {
 
 0%{
-transform: translateX(0);
+background-position-x:0;
 }
 
 100%{
-transform: translateX(-50%);
+background-position-x:-3000px;
 }
 
 }
@@ -619,4 +619,8 @@ animation:datePulse 4s ease-in-out infinite;
 
 .animate-shimmer{
 animation:shimmer 4s linear infinite;
+}
+
+html, body{
+overflow-x:hidden;
 }
