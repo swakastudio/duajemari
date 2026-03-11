@@ -8,7 +8,7 @@ export default function WeddingCover({ guest }: { guest: string }) {
 
 return(
 
-<section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 text-white radial-open overflow-hidden">
+<section className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center text-center text-white radial-open">
 
 
 
@@ -50,7 +50,7 @@ className="absolute bottom-[-60px] md:bottom-0 left-0 w-full"
 
 {/* SOFT OVERLAY */}
 
-<div className="absolute inset-0 bg-black/20"></div>
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
 
 </div>
 
@@ -73,7 +73,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce-up delay-2"
+className="text-[52px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce-up delay-2"
 >
 
 <span>Firoh</span>
