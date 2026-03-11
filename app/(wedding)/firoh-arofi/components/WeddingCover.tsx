@@ -47,7 +47,6 @@ backgroundPosition: "0 0"
 ></div>
 
 
-{/* MOUNTAIN */}
 
 {/* MOUNTAIN */}
 
@@ -111,7 +110,7 @@ text-white
 
 <span>Firoh</span>
 
-<span className="text-neutral-300 text-[22px] mx-2">
+<span className="text-black/70 text-[22px] mx-2">
 &
 </span>
 
