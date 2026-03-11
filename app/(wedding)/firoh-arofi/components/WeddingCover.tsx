@@ -8,7 +8,7 @@ export default function WeddingCover({ guest }: { guest: string }) {
 
 return(
 
-<section className="relative h-[100dvh] overflow-hidden flex items-center justify-center text-center">
+<section className="relative min-h-screen overflow-hidden">
 
 
 
