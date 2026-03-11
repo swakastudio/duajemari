@@ -67,12 +67,11 @@ BACKGROUND
 {/* CLOUD BACKGROUND */}
 
 <div
-className="absolute inset-0 animate-clouds"
+className="absolute inset-0"
 style={{
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
-backgroundRepeat:"repeat-x",
-backgroundSize:"auto 100%",
-backgroundPosition:"0 0"
+backgroundSize:"cover",
+backgroundPosition:"center"
 }}
 ></div>
 
@@ -80,20 +79,16 @@ backgroundPosition:"0 0"
 
 {/* MOUNTAIN */}
 
-<div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
-
-<div className="relative w-full flex justify-center">
+<div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-[140%] md:w-full pointer-events-none">
 
 <img
 src="/firoh-arofi/bg-mountain.png"
 className={`
-w-[180%]
-md:w-full
-min-w-[1200px]
+w-full
 transition-all
 duration-[1500ms]
 ease-[cubic-bezier(.22,.61,.36,1)]
-${opening ? "scale-[1.25] translate-y-[80px]" : ""}
+${opening ? "scale-[1.15] translate-y-[60px]" : ""}
 `}
 />
 
