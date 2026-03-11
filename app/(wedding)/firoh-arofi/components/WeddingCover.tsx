@@ -179,11 +179,14 @@ className="text-[24px] tracking-[0.04em] text-white mb-5"
 
 {/* DIVIDER */}
 
-<div className="relative w-32 h-[2px] mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
+<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
 
-<div className="absolute inset-0 animate-dividerGlow bg-gradient-to-r from-transparent via-white to-transparent"></div>
+  {/* base line */}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
+
+  {/* shimmer light */}
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70 blur-[1px]"></div>
 
 </div>
 
