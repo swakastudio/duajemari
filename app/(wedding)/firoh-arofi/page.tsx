@@ -9,17 +9,13 @@ const guest = "Tamu Undangan"
 
 return(
 
-<>
-
-{/* LOADER */}
+<main className="min-h-screen">
 
 <WeddingLoader/>
 
-{/* COVER */}
-
 <WeddingCover guest={guest}/>
 
-</>
+</main>
 
 )
 
