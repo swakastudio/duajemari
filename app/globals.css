@@ -681,3 +681,19 @@ transform:translateX(-50%);
 .animate-fogMove{
 animation:fogMove 90s linear infinite;
 }
+
+@keyframes dividerShimmer{
+
+0%{
+transform:translateX(-120%);
+}
+
+100%{
+transform:translateX(120%);
+}
+
+}
+
+.animate-dividerShimmer{
+animation:dividerShimmer 3.5s ease-in-out infinite;
+}
