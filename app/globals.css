@@ -626,3 +626,19 @@ animation:shimmer 4s linear infinite;
 html, body{
 overflow-x:hidden;
 }
+
+@keyframes mountainZoom {
+
+0%{
+transform: translateX(-50%) scale(1.08);
+}
+
+100%{
+transform: translateX(-50%) scale(1);
+}
+
+}
+
+.animate-mountainZoom{
+animation: mountainZoom 18s ease-out forwards;
+}
