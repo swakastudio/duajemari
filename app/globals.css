@@ -586,3 +586,37 @@ transform: translateX(-50%);
 .animate-clouds{
 animation: cloudsMove 120s linear infinite;
 }
+
+@keyframes datePulse {
+
+0%{
+opacity:0.85;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(1.05);
+}
+
+100%{
+opacity:0.85;
+transform:scale(1);
+}
+
+}
+
+.animate-date-pulse{
+animation:datePulse 4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+0%{transform:translateX(-100%)}
+100%{transform:translateX(100%)}
+
+}
+
+.animate-shimmer{
+animation:shimmer 4s linear infinite;
+}
