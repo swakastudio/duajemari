@@ -8,11 +8,63 @@ export default function WeddingCover({ guest }: { guest: string }) {
 
 return(
 
-<section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#0b0b0b] text-white radial-open">
+<section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 text-white radial-open overflow-hidden">
+
+
+
+{/* =========================
+   BACKGROUND LAYERS
+========================= */}
+
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+
+{/* CLOUD LAYER LOOP */}
+
+{/* CLOUD LAYER */}
+
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+
+  <div className="flex w-[200%] animate-clouds">
+
+    <img
+      src="/firoh-arofi/bg-clouds.png"
+      className="w-full h-full object-cover"
+    />
+
+    <img
+      src="/firoh-arofi/bgclouds.png"
+      className="w-full h-full object-cover"
+    />
+
+  </div>
+
+</div>
+
+{/* MOUNTAIN LAYER */}
+
+<img
+src="/firoh-arofi/bg-mountain.png"
+className="absolute bottom-0 left-0 w-full"
+/>
+
+
+{/* SOFT OVERLAY */}
+
+<div className="absolute inset-0 bg-black/20"></div>
+
+</div>
+
+
+{/* =========================
+   CONTENT
+========================= */}
+
+<div className="relative z-10 flex flex-col items-center">
+
 
 {/* TITLE */}
 
-<p className="tracking-[0.35em] text-[11px] text-neutral-500 mb-8 bounce-up delay-1">
+<p className="tracking-[0.35em] text-[11px] text-neutral-300 mb-8 bounce-up delay-1">
 THE WEDDING OF
 </p>
 
@@ -26,7 +78,7 @@ className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce
 
 <span>Firoh</span>
 
-<span className="text-neutral-500 text-[22px] mx-2">
+<span className="text-neutral-300 text-[22px] mx-2">
 &
 </span>
 
@@ -37,13 +89,14 @@ className="text-[78px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce
 
 {/* DATE */}
 
-<p className="tracking-[0.35em] text-[12px] text-neutral-500 mb-12 bounce-up delay-3">
+<p className="tracking-[0.35em] text-[12px] text-neutral-300 mb-12 bounce-up delay-3">
 04 • 04 • 2026
 </p>
 
+
 {/* GUEST TITLE */}
 
-<p className="text-[10px] tracking-[0.35em] text-neutral-500 mb-1 uppercase">
+<p className="text-[10px] tracking-[0.35em] text-neutral-300 mb-1 uppercase">
 Kepada Yth
 </p>
 
@@ -64,7 +117,7 @@ className="text-[20px] md:text-[22px] tracking-[0.03em] text-white mb-5 bounce-u
 
 <div className="relative w-24 h-[1px] mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-500 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
 
@@ -74,12 +127,14 @@ className="text-[20px] md:text-[22px] tracking-[0.03em] text-white mb-5 bounce-u
 {/* BUTTON */}
 
 <button
-className="px-8 py-3 border border-white/40 rounded-full text-[11px] tracking-[0.22em] hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255,0.25)] transition duration-300"
+className="px-8 py-3 border border-white/40 rounded-full text-[11px] tracking-[0.22em] hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255,0.25)] transition duration-300 bounce-up delay-5"
 >
 
 BUKA UNDANGAN
 
 </button>
+
+</div>
 
 </section>
 

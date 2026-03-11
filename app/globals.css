@@ -570,3 +570,19 @@ animation: shimmer 4s linear infinite;
 .animate-float{
 animation: float 2s ease-in-out infinite;
 }
+
+@keyframes cloudsMove {
+
+0%{
+transform: translateX(0);
+}
+
+100%{
+transform: translateX(-50%);
+}
+
+}
+
+.animate-clouds{
+animation: cloudsMove 120s linear infinite;
+}
