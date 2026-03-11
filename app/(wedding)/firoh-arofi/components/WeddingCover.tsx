@@ -33,16 +33,15 @@ BACKGROUND
 <div className="absolute inset-0 -z-10 overflow-hidden">
 
 
-{/* CLOUDS */}
-
-<div className="absolute inset-0 flex h-full w-[200%] animate-clouds">
+{/* CLOUD BACKGROUND */}
 
 <div
 className="absolute inset-0 animate-clouds"
 style={{
-backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
-backgroundSize: "cover",
-backgroundRepeat: "repeat-x"
+backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
+backgroundSize:"cover",
+backgroundRepeat:"repeat-x",
+backgroundPosition:"center"
 }}
 ></div>
 
@@ -56,7 +55,7 @@ absolute
 bottom-0
 left-1/2
 -translate-x-1/2
-w-[140%]
+w-[150%]
 md:w-full
 max-w-none
 pointer-events-none
@@ -68,10 +67,9 @@ ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[120px]"}
 />
 
 
-{/* DARK GRADIENT */}
+{/* GRADIENT OVERLAY */}
 
 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
-
 
 </div>
 
@@ -81,7 +79,7 @@ ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[120px]"}
 CONTENT
 ========================= */}
 
-<div className="relative z-10 flex flex-col items-center px-6 pt-14 md:pt-0">
+<div className="relative z-10 flex flex-col items-center px-6 pt-16 md:pt-0">
 
 
 {/* TITLE */}
@@ -92,12 +90,12 @@ THE WEDDING OF
 
 
 
-{/* COUPLE */}
+{/* COUPLE NAME */}
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
 className="
-text-[78px]
+text-[76px]
 md:text-[120px]
 leading-[0.9]
 mb-3
@@ -189,4 +187,5 @@ BUKA UNDANGAN
 </section>
 
 )
+
 }
