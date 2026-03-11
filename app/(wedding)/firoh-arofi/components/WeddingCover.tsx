@@ -37,17 +37,14 @@ BACKGROUND
 
 <div className="absolute inset-0 flex h-full w-[200%] animate-clouds">
 
-<img
-src="/firoh-arofi/bg-clouds.png"
-className="min-w-full h-full object-cover"
-/>
-
-<img
-src="/firoh-arofi/bg-clouds.png"
-className="min-w-full h-full object-cover"
-/>
-
-</div>
+<div
+className="absolute inset-0 animate-clouds"
+style={{
+backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+backgroundSize: "cover",
+backgroundRepeat: "repeat-x"
+}}
+></div>
 
 
 {/* MOUNTAIN */}
