@@ -121,8 +121,17 @@ text-white
 
 {/* DATE */}
 
+{/* DATE */}
+
 <p
-className="tracking-[0.35em] text-[14px] text-black/70 mb-10 animate-datePulse drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]"
+className="
+tracking-[0.35em]
+text-[14px]
+text-black/70
+mb-10
+animate-datePulse
+drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]
+"
 >
 04 • 04 • 2026
 </p>
