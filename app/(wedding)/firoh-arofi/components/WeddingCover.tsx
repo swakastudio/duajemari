@@ -50,20 +50,20 @@ backgroundPosition: "0 0"
 
 {/* MOUNTAIN */}
 
+{/* MOUNTAIN */}
+
 <img
 src="/firoh-arofi/bg-mountain.png"
 className="
 absolute
 bottom-0
 left-1/2
-transform
 -translate-x-1/2
-w-[180%]
+w-[170%]
 md:w-full
 max-w-none
 pointer-events-none
-animate-mountainReveal
-object-contain
+animate-mountainZoom
 "
 />
 
