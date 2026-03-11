@@ -86,7 +86,7 @@ backgroundPosition:"center"
 
 {/* MOUNTAIN */}
 
-<div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[130%] md:w-full pointer-events-none">
+<div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[135%] md:w-full pointer-events-none">
 
 <img
 src="/firoh-arofi/bg-mountain.png"
