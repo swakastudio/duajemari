@@ -52,23 +52,21 @@ backgroundPosition: "0 0"
 
 {/* MOUNTAIN */}
 
+{/* MOUNTAIN */}
+
 <img
 src="/firoh-arofi/bg-mountain.png"
-className={`
+className="
 absolute
 bottom-0
 left-1/2
 -translate-x-1/2
-w-[160%]
+w-[170%]
 md:w-full
 max-w-none
 pointer-events-none
-transition-all
-duration-[2400ms]
-ease-[cubic-bezier(.22,.61,.36,1)]
-delay-[500ms]
-${mounted ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-[200px] scale-[1.05]"}
-`}
+animate-mountainZoom
+"
 />
 
 {/* GRADIENT OVERLAY */}
