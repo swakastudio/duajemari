@@ -69,6 +69,21 @@ backgroundPosition: "0 0"
 
 </div>
 
+  {/* FRAME */}
+
+<img
+src="/firoh-arofi/frame-wood.png"
+className="
+absolute
+inset-0
+w-full
+h-full
+object-cover
+pointer-events-none
+z-30
+"
+/>
+
 {/* GRADIENT OVERLAY */}
 
 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
