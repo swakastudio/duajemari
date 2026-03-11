@@ -43,8 +43,8 @@ return(
 {/* MOUNTAIN LAYER */}
 
 <img
-src="/firoh-arofi/bg-mountain.png"
-className="absolute bottom-0 left-0 w-full"
+src="/firoh-arofi/mountain.png"
+className="absolute bottom-[-60px] md:bottom-0 left-0 w-full"
 />
 
 
@@ -59,7 +59,7 @@ className="absolute bottom-0 left-0 w-full"
    CONTENT
 ========================= */}
 
-<div className="relative z-10 flex flex-col items-center">
+<div className="relative z-10 flex flex-col items-center justify-center pt-[18vh] md:pt-0">
 
 
 {/* TITLE */}
