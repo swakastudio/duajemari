@@ -38,12 +38,12 @@ BACKGROUND
 <div className="absolute inset-0 flex h-full w-[200%] animate-clouds">
 
 <img
-src="public/firoh-arofi/bg-clouds.png"
+src="/firoh-arofi/bg-clouds.png"
 className="min-w-full h-full object-cover"
 />
 
 <img
-src="public/firoh-arofi/bg-clouds.png"
+src="/firoh-arofi/bg-clouds.png"
 className="min-w-full h-full object-cover"
 />
 
@@ -53,7 +53,7 @@ className="min-w-full h-full object-cover"
 {/* MOUNTAIN */}
 
 <img
-src="public/firoh-arofi/bg-mountain.png"
+src="/firoh-arofi/bg-mountain.png"
 className={`
 absolute
 bottom-0
