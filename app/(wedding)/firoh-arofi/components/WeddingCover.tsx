@@ -37,12 +37,12 @@ BACKGROUND
 {/* CLOUD BACKGROUND */}
 
 <div
-className="absolute inset-0 z-0 animate-clouds"
+className="absolute inset-0 animate-clouds"
 style={{
-backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
-backgroundSize:"cover",
-backgroundPosition:"center",
-backgroundRepeat:"repeat-x"
+backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+backgroundRepeat: "repeat-x",
+backgroundSize: "auto 100%",
+backgroundPosition: "0 0"
 }}
 ></div>
 
