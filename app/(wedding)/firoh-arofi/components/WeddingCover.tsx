@@ -4,16 +4,25 @@ import { useEffect, useState } from "react"
 
 export default function WeddingCover({ guest }: { guest: string }) {
 
-const [mounted,setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const [opening, setOpening] = useState(false)
 
-useEffect(()=>{
-setMounted(true)
-},[])
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-return(
+  const openInvitation = () => {
+    setOpening(true)
+
+    setTimeout(() => {
+      window.location.href = "/firoh-arofi/invitation"
+    }, 1500)
+  }
+
+  return (
 
 <section
-className="
+className={`
 relative
 h-[100dvh]
 w-full
@@ -22,17 +31,16 @@ flex
 items-center
 justify-center
 text-center
-bg-[#e9f3f8]
-"
+transition-all
+duration-[1400ms]
+ease-[cubic-bezier(.22,.61,.36,1)]
+${opening ? "scale-110 blur-md opacity-0" : ""}
+`}
 >
 
-
-{/* =========================
-BACKGROUND
-========================= */}
+{/* ========================= BACKGROUND ========================= */}
 
 <div className="absolute inset-0 z-0 overflow-hidden">
-
 
 {/* CLOUD BACKGROUND */}
 
@@ -47,45 +55,59 @@ backgroundPosition: "0 0"
 ></div>
 
 
-
-{/* MOUNTAIN */}
-
-{/* MOUNTAIN */}
-
 {/* MOUNTAIN */}
 
 <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
 
-  <img
-  src="/firoh-arofi/bg-mountain.png"
-  className="
-  w-[140%]
-  md:w-full
-  mx-auto
-  block
-  animate-mountainReveal
-  "
-  />
+<img
+src="/firoh-arofi/bg-mountain.png"
+className={`
+absolute
+bottom-0
+left-1/2
+-translate-x-1/2
+w-[170%]
+md:w-full
+transition-all
+duration-[1500ms]
+ease-[cubic-bezier(.22,.61,.36,1)]
+${opening ? "scale-[1.35] translate-y-[100px]" : ""}
+`}
+/>
 
-  {/* FRAME */}
+</div>
+
 
 {/* FOG / KABUT */}
 
-<div className="absolute bottom-0 left-0 w-[200%] h-[45%] animate-fogMove opacity-60 pointer-events-none z-15">
+<div
+className={`
+absolute
+bottom-0
+left-0
+w-[200%]
+h-[45%]
+animate-fogMove
+opacity-60
+pointer-events-none
+transition-opacity
+duration-[1500ms]
+${opening ? "opacity-80" : ""}
+`}
+>
 
-  <img
-    src="/firoh-arofi/bg-clouds.png"
-    className="w-1/2 h-full object-cover blur-[18px] opacity-40"
-  />
+<img
+src="/firoh-arofi/bg-clouds.png"
+className="w-1/2 h-full object-cover blur-[20px] opacity-40"
+/>
 
-  <img
-    src="/firoh-arofi/bg-clouds.png"
-    className="w-1/2 h-full object-cover blur-[18px] opacity-40"
-  />
+<img
+src="/firoh-arofi/bg-clouds.png"
+className="w-1/2 h-full object-cover blur-[20px] opacity-40"
+/>
 
 </div>
 
-</div>
 
 {/* GRADIENT OVERLAY */}
 
@@ -94,20 +116,29 @@ backgroundPosition: "0 0"
 </div>
 
 
+{/* ========================= CONTENT ========================= */}
 
-{/* =========================
-CONTENT
-========================= */}
-
-<div className="relative z-10 flex flex-col items-center px-6 pt-16 md:pt-0">
-
+<div
+className={`
+relative
+z-10
+flex
+flex-col
+items-center
+px-6
+pt-16
+md:pt-0
+transition-all
+duration-[1200ms]
+${opening ? "scale-95 opacity-0 translate-y-10" : ""}
+`}
+>
 
 {/* TITLE */}
 
 <p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
 </p>
-
 
 
 {/* COUPLE NAME */}
@@ -122,6 +153,7 @@ mb-3
 -translate-x-3
 md:translate-x-0
 text-white
+drop-shadow-[0_6px_20px_rgba(0,0,0,0.35)]
 "
 >
 
@@ -135,9 +167,6 @@ text-white
 
 </h1>
 
-
-
-{/* DATE */}
 
 {/* DATE */}
 
@@ -155,7 +184,6 @@ drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]
 </p>
 
 
-
 {/* GUEST TITLE */}
 
 <p className="text-[11px] tracking-[0.35em] text-black/70 mb-1 uppercase">
@@ -163,38 +191,31 @@ Kepada Yth
 </p>
 
 
-
 {/* GUEST NAME */}
 
 <h2
 style={{ fontFamily: "ZTotez" }}
-className="text-[24px] tracking-[0.04em] text-white mb-5"
+className="text-[24px] tracking-[0.04em] text-white mb-6"
 >
-
 {guest.charAt(0).toUpperCase() + guest.slice(1)}
-
 </h2>
-
 
 
 {/* DIVIDER */}
 
+<div className="relative w-28 h-[2px] mb-12 overflow-hidden">
 
-<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
 
-  {/* base line */}
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
-
-  {/* shimmer light */}
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70 blur-[1px]"></div>
 
 </div>
 
 
-
 {/* BUTTON */}
 
 <button
+onClick={openInvitation}
 className="
 px-10
 py-3
@@ -202,12 +223,14 @@ border
 border-white/40
 rounded-full
 text-[12px]
-tracking-[0.22em]
+tracking-[0.25em]
+text-white
 backdrop-blur-sm
 hover:bg-white
 hover:text-black
-transition
-duration-300
+hover:shadow-[0_0_20px_rgba(255,255,255,0.25)]
+transition-all
+duration-500
 "
 >
 
@@ -215,11 +238,24 @@ BUKA UNDANGAN
 
 </button>
 
-
 </div>
+
+
+{/* TRANSITION FOG */}
+
+<div
+className={`
+fixed
+inset-0
+bg-white
+pointer-events-none
+transition-opacity
+duration-[1500ms]
+${opening ? "opacity-70" : "opacity-0"}
+`}
+></div>
 
 </section>
 
-)
-
+  )
 }
