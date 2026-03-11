@@ -68,15 +68,15 @@ return ()=>observer.disconnect()
 
 return(
 
-<main className="relative min-h-screen overflow-x-hidden text-neutral-800">
+<main className="relative overflow-x-hidden text-neutral-800">
 
 
 
-{/* =========================================
-BACKGROUND SKY + MOUNTAIN
-========================================= */}
+{/* =====================================
+BACKGROUND
+===================================== */}
 
-<div className="fixed inset-0 -z-0 overflow-hidden">
+<div className="fixed inset-0 -z-10 overflow-hidden">
 
 {/* SKY */}
 
@@ -101,18 +101,13 @@ className="w-full opacity-95"
 
 </div>
 
-
-{/* LIGHT */}
-
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.4),transparent_60%)]"></div>
-
 </div>
 
 
 
-{/* =========================================
+{/* =====================================
 HERO
-========================================= */}
+===================================== */}
 
 <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 fade-up">
 
@@ -143,9 +138,9 @@ Arofi
 
 
 
-{/* =========================================
+{/* =====================================
 AYAT
-========================================= */}
+===================================== */}
 
 <section className="py-28 px-6 max-w-3xl mx-auto text-center fade-up">
 
@@ -166,149 +161,166 @@ QS. Ar-Rum 30 : 21
 
 
 
-{/* =========================================
+{/* =====================================
+BRIDE & GROOM
+===================================== */}
+
+<section className="py-32 px-6 max-w-5xl mx-auto fade-up">
+
+<div className="grid md:grid-cols-2 gap-20 items-center">
+
+
+{/* BRIDE */}
+
+<div className="text-center">
+
+<img
+src="/firoh-arofi/frame-bride.png"
+className="mx-auto w-[260px]"
+/>
+
+<h3 className="text-[26px] font-semibold mt-6 tracking-wide">
+Nur Lailatul Maghfiroh, S.Pd.
+</h3>
+
+<p className="text-neutral-600 mt-4 leading-relaxed font-serif">
+
+Putri Ketiga dari pasangan  
+Bapak Muchammad Haris  
+&  
+Ibu Isnaini (Almarhum)
+
+</p>
+
+<a
+href="https://instagram.com/_maghfiroh"
+className="block mt-4 text-neutral-500 hover:text-black transition"
+>
+
+@_maghfiroh
+
+</a>
+
+</div>
+
+
+
+{/* GROOM */}
+
+<div className="text-center">
+
+<img
+src="/firoh-arofi/frame-groom.png"
+className="mx-auto w-[260px]"
+/>
+
+<h3 className="text-[26px] font-semibold mt-6 tracking-wide">
+Ibnu Arofi, S.Pd., Gr., SE
+</h3>
+
+<p className="text-neutral-600 mt-4 leading-relaxed font-serif">
+
+Putra Kedua dari pasangan  
+Bapak Abdul Wahid Musyadad  
+&  
+Ibu Sri Lestari
+
+</p>
+
+<a
+href="https://instagram.com/ibnu.arofi"
+className="block mt-4 text-neutral-500 hover:text-black transition"
+>
+
+@ibnu.arofi
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* =====================================
 SAVE THE DATE
-========================================= */}
+===================================== */}
 
 <section className="py-32 px-6 text-center fade-up">
 
-<h2 className="text-[40px] font-semibold mb-16 tracking-wide">
+<h2 className="text-[40px] font-semibold mb-12 tracking-wide">
 Save The Date
 </h2>
 
 
+{/* TEXT DIATAS COUNTDOWN */}
 
-{/* COUNTDOWN CARD */}
-
-<div className="backdrop-blur-md border border-white/40 rounded-2xl px-8 py-10 max-w-xl mx-auto shadow-xl">
-
-
-
-{/* COUNTDOWN BOX */}
-
-<div className="grid grid-cols-4 gap-4 mb-8">
-
-{/* HARI */}
-
-<div className="border border-neutral-200 rounded-lg py-4 bg-white/70">
-
-<p className="text-3xl font-semibold">
-{time.days}
-</p>
-
-<p className="text-xs tracking-widest text-neutral-500 mt-1">
-HARI
-</p>
-
-</div>
-
-
-
-{/* JAM */}
-
-<div className="border border-neutral-200 rounded-lg py-4 bg-white/70">
-
-<p className="text-3xl font-semibold">
-{time.hours}
-</p>
-
-<p className="text-xs tracking-widest text-neutral-500 mt-1">
-JAM
-</p>
-
-</div>
-
-
-
-{/* MENIT */}
-
-<div className="border border-neutral-200 rounded-lg py-4 bg-white/70">
-
-<p className="text-3xl font-semibold">
-{time.minutes}
-</p>
-
-<p className="text-xs tracking-widest text-neutral-500 mt-1">
-MENIT
-</p>
-
-</div>
-
-
-
-{/* DETIK */}
-
-<div className="border border-neutral-200 rounded-lg py-4 bg-white/70">
-
-<p className="text-3xl font-semibold">
-{time.seconds}
-</p>
-
-<p className="text-xs tracking-widest text-neutral-500 mt-1">
-DETIK
-</p>
-
-</div>
-
-</div>
-
-
-
-<p className="text-neutral-600 leading-relaxed">
+<p className="text-neutral-600 mb-10 max-w-lg mx-auto leading-relaxed">
 
 Dan kami bersyukur, dipertemukan Allah di waktu terbaik.  
 Kini kami menanti hari istimewa kami.
 
 </p>
 
-</div>
 
 
+{/* COUNTDOWN */}
 
-{/* =========================================
-WEATHER CARD
-========================================= */}
+<div className="grid grid-cols-4 gap-4 max-w-md mx-auto mb-10">
 
-<div className="mt-10 max-w-xl mx-auto backdrop-blur-md border border-white/40 rounded-2xl px-8 py-8 shadow-lg">
+{[
+{label:"HARI",value:time.days},
+{label:"JAM",value:time.hours},
+{label:"MENIT",value:time.minutes},
+{label:"DETIK",value:time.seconds},
+].map((item,i)=>(
 
-<p className="text-neutral-600 leading-relaxed mb-6">
+<div
+key={i}
+className="bg-white/80 backdrop-blur-md border border-neutral-200 rounded-xl py-6 shadow-sm"
+>
 
-Untuk memudahkan perjalanan Anda menuju acara kami,
-berikut kondisi cuaca terkini di lokasi pernikahan.
-
+<p className="text-3xl font-semibold">
+{item.value}
 </p>
 
-<div className="flex justify-center items-center gap-4">
-
-<div className="text-4xl">
-☁️
-</div>
-
-<div>
-
-<p className="text-lg font-semibold">
-Waru, Sidoarjo
-</p>
-
-<p className="text-neutral-500 text-sm">
-Sebagian berawan • 26°C
+<p className="text-xs tracking-widest text-neutral-500 mt-2">
+{item.label}
 </p>
 
 </div>
 
-</div>
+))}
 
 </div>
 
 
+
+{/* WEATHER MINI */}
+
+<div className="max-w-md mx-auto border border-neutral-200 rounded-xl px-6 py-5 backdrop-blur-md bg-white/70 shadow-sm">
+
+<p className="text-neutral-600 text-sm">
+
+Perkiraan cuaca di lokasi acara
+
+</p>
+
+<p className="mt-2 text-lg font-medium">
+☁️ Waru, Sidoarjo • 26°C
+</p>
+
+</div>
 
 </section>
 
 
 
-{/* =========================================
-WEDDING EVENT
-========================================= */}
+{/* =====================================
+EVENT
+===================================== */}
 
 <section className="py-32 px-6 text-center max-w-xl mx-auto fade-up">
 
@@ -374,9 +386,9 @@ Lihat Lokasi
 
 
 
-{/* =========================================
+{/* =====================================
 FOOTER
-========================================= */}
+===================================== */}
 
 <section className="py-24 text-center fade-up">
 
