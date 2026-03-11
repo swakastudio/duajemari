@@ -20,6 +20,17 @@ export default function WeddingCover({ guest }: { guest: string }) {
     }, 1500)
   }
 
+  const router = useRouter()
+  const openInvitation = () => {
+
+setOpening(true)
+
+setTimeout(()=>{
+router.push("/firoh-arofi/invitation")
+},1500)
+
+}
+
   return (
 
 <section
