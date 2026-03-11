@@ -1,10 +1,18 @@
 "use client"
 
+import { useEffect, useState } from "react"
+
 /* =========================
    COMPONENT
 ========================= */
 
 export default function WeddingCover({ guest }: { guest: string }) {
+
+const [mounted,setMounted] = useState(false)
+
+useEffect(()=>{
+setMounted(true)
+},[])
 
 return(
 
@@ -29,7 +37,7 @@ text-white
 <div className="absolute inset-0 -z-10 overflow-hidden">
 
 
-{/* CLOUDS (LOOP) */}
+{/* CLOUDS */}
 
 <div className="absolute inset-0 flex w-[200%] animate-clouds">
 
@@ -50,7 +58,7 @@ className="w-full h-full object-cover"
 
 <img
 src="/firoh-arofi/bg-mountain.png"
-className="
+className={`
 absolute
 bottom-0
 left-1/2
@@ -59,7 +67,11 @@ w-[150%]
 md:w-full
 max-w-none
 pointer-events-none
-"
+transition-all
+duration-[2000ms]
+ease-out
+${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[120px]"}
+`}
 />
 
 
@@ -144,6 +156,7 @@ tracking-[0.35em]
 text-[14px]
 text-black/70
 mb-10
+animate-date-pulse
 "
 >
 04 • 04 • 2026
