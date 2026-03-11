@@ -52,20 +52,22 @@ backgroundPosition: "0 0"
 
 {/* MOUNTAIN */}
 
-<img
-src="/firoh-arofi/bg-mountain.png"
-className="
-absolute
-bottom-0
-left-1/2
--translate-x-1/2
-w-[170%]
-md:w-full
-max-w-none
-pointer-events-none
-animate-mountainZoom
-"
-/>
+{/* MOUNTAIN */}
+
+<div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
+
+  <img
+  src="/firoh-arofi/bg-mountain.png"
+  className="
+  w-[140%]
+  md:w-full
+  mx-auto
+  block
+  animate-mountainReveal
+  "
+  />
+
+</div>
 
 {/* GRADIENT OVERLAY */}
 
