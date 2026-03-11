@@ -1,73 +1,119 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function Page() {
 
-  useEffect(() => {
+const [visible,setVisible] = useState(false)
 
-    const elements = document.querySelectorAll(".fade-up")
+useEffect(()=>{
+setTimeout(()=>{
+setVisible(true)
+},200)
+},[])
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible")
-          }
-        })
-      },
-      { threshold: 0.2 }
-    )
+return(
 
-    elements.forEach((el) => observer.observe(el))
-
-    return () => observer.disconnect()
-
-  }, [])
+<main className="relative min-h-screen w-full overflow-x-hidden bg-[#e9f3f8]">
 
 
-  return (
+{/* ================= BACKGROUND ================= */}
 
-<main className="min-h-screen bg-white text-neutral-800 overflow-hidden">
+<div className="fixed inset-0 -z-10 overflow-hidden">
 
 
-{/* ===================================================== */
-/* HERO INVITATION */
-/* ===================================================== */}
+{/* CLOUDS */}
 
-<section className="min-h-screen flex flex-col items-center justify-center text-center px-6 fade-up">
+<div
+className="absolute inset-0 animate-clouds"
+style={{
+backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
+backgroundRepeat:"repeat-x",
+backgroundSize:"auto 100%",
+backgroundPosition:"0 0"
+}}
+></div>
 
-<h1
-style={{ fontFamily: "ClassiqueScript" }}
-className="text-[56px] md:text-[90px] leading-[0.9] text-neutral-900"
->
-Firoh & Arofi
-</h1>
 
-<p className="tracking-[0.35em] text-[12px] text-neutral-500 mt-6">
-THE WEDDING
-</p>
+{/* MOUNTAIN */}
 
-<div className="mt-12">
+<div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[170%] md:w-full">
 
 <img
-src="/firoh-arofi/frame-couple.png"
-className="w-[260px] md:w-[340px]"
+src="/firoh-arofi/bg-mountain.png"
+className="w-full"
 />
 
 </div>
+
+
+{/* GRADIENT */}
+
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-white"></div>
+
+</div>
+
+
+
+{/* ================= HERO SECTION ================= */}
+
+<section
+className={`
+min-h-screen
+flex
+flex-col
+items-center
+justify-center
+text-center
+px-6
+transition-all
+duration-[1400ms]
+${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+`}
+>
+
+
+<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
+THE WEDDING OF
+</p>
+
+
+<h1
+style={{ fontFamily:"ClassiqueScript" }}
+className="
+text-[64px]
+md:text-[100px]
+leading-[0.9]
+text-white
+drop-shadow-[0_6px_20px_rgba(0,0,0,0.35)]
+"
+>
+
+Firoh
+
+<span className="text-black/60 mx-2 text-[26px]">
+&
+</span>
+
+Arofi
+
+</h1>
+
+
+<p className="tracking-[0.35em] text-[14px] text-black/70 mt-6">
+04 • 04 • 2026
+</p>
+
 
 </section>
 
 
 
-{/* ===================================================== */
-/* AYAT AL QURAN */
-/* ===================================================== */}
+{/* ================= AYAT ================= */}
 
-<section className="py-28 px-6 text-center max-w-3xl mx-auto fade-up">
+<section className="py-32 px-6 text-center max-w-3xl mx-auto">
 
-<p className="text-[28px] leading-relaxed mb-8">
+<p className="text-[28px] leading-relaxed mb-10">
 
 وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ
 أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا
@@ -75,14 +121,16 @@ className="w-[260px] md:w-[340px]"
 
 </p>
 
-<p className="text-neutral-600 leading-relaxed">
 
-Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
+<p className="text-neutral-700 leading-relaxed">
+
+Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
 untukmu pasangan-pasangan dari jenismu sendiri agar kamu
 cenderung dan merasa tenteram kepadanya, dan Dia menjadikan
 di antaramu rasa kasih dan sayang.
 
 </p>
+
 
 <p className="mt-6 text-sm text-neutral-500">
 QS. Ar-Rum 30 : 21
@@ -92,15 +140,14 @@ QS. Ar-Rum 30 : 21
 
 
 
-{/* ===================================================== */
-/* INTRO INVITATION */
-/* ===================================================== */}
+{/* ================= INTRO ================= */}
 
-<section className="py-24 text-center px-6 max-w-2xl mx-auto fade-up">
+<section className="py-28 px-6 text-center max-w-xl mx-auto">
 
-<p className="text-neutral-700 leading-relaxed">
-Assalamu’alaikum Wr. Wb.
+<p className="text-neutral-800 text-lg">
+Assalamu'alaikum Wr. Wb.
 </p>
+
 
 <p className="mt-6 leading-relaxed text-neutral-600">
 
@@ -116,30 +163,30 @@ putra-putri kami.
 
 
 
-{/* ===================================================== */
-/* BRIDE & GROOM */
-/* ===================================================== */}
+{/* ================= BRIDE & GROOM ================= */}
 
-<section className="py-28 px-6 max-w-5xl mx-auto fade-up">
+<section className="py-32 px-6 max-w-5xl mx-auto">
 
 <div className="grid md:grid-cols-2 gap-20 items-center">
 
 
-{/* ================= BRIDE ================= */}
+{/* BRIDE */}
 
 <div className="text-center">
 
 <img
 src="/firoh-arofi/frame-bride.png"
-className="mx-auto w-[240px]"
+className="mx-auto w-[260px]"
 />
 
+
 <h3
-style={{ fontFamily: "ClassiqueScript" }}
-className="text-[40px] mt-6"
+style={{ fontFamily:"ClassiqueScript" }}
+className="text-[42px] mt-6"
 >
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
+
 
 <p className="text-neutral-600 mt-4 leading-relaxed">
 
@@ -150,33 +197,38 @@ Ibu Isnaini (Almarhum)
 
 </p>
 
+
 <a
 href="https://instagram.com/_maghfiroh"
 target="_blank"
-className="inline-block mt-4 text-neutral-500 hover:text-black transition"
+className="block mt-4 text-neutral-500 hover:text-black transition"
 >
+
 @_maghfiroh
+
 </a>
 
 </div>
 
 
 
-{/* ================= GROOM ================= */}
+{/* GROOM */}
 
 <div className="text-center">
 
 <img
 src="/firoh-arofi/frame-groom.png"
-className="mx-auto w-[240px]"
+className="mx-auto w-[260px]"
 />
 
+
 <h3
-style={{ fontFamily: "ClassiqueScript" }}
-className="text-[40px] mt-6"
+style={{ fontFamily:"ClassiqueScript" }}
+className="text-[42px] mt-6"
 >
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
+
 
 <p className="text-neutral-600 mt-4 leading-relaxed">
 
@@ -187,12 +239,15 @@ Ibu Sri Lestari
 
 </p>
 
+
 <a
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
-className="inline-block mt-4 text-neutral-500 hover:text-black transition"
+className="block mt-4 text-neutral-500 hover:text-black transition"
 >
+
 @ibnu.arofi
+
 </a>
 
 </div>
@@ -204,11 +259,9 @@ className="inline-block mt-4 text-neutral-500 hover:text-black transition"
 
 
 
-{/* ===================================================== */
-/* FOOTER SEMENTARA */
-/* ===================================================== */}
+{/* ================= FOOTER ================= */}
 
-<section className="py-24 text-center fade-up">
+<section className="py-24 text-center">
 
 <p className="text-neutral-500">
 Website undangan dibuat oleh
@@ -218,7 +271,9 @@ Website undangan dibuat oleh
 href="https://duajemari.vercel.app"
 className="block mt-2 font-semibold hover:underline"
 >
+
 duajemari.vercel.app
+
 </a>
 
 </section>
@@ -226,5 +281,6 @@ duajemari.vercel.app
 
 </main>
 
-  )
+)
+
 }
