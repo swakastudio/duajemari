@@ -69,18 +69,21 @@ backgroundPosition: "0 0"
 
   {/* FRAME */}
 
-<img
-src="/firoh-arofi/frame-wood.png"
-className="
-absolute
-inset-0
-w-full
-h-full
-object-cover
-pointer-events-none
-z-30
-"
-/>
+{/* FOG / KABUT */}
+
+<div className="absolute bottom-0 left-0 w-[200%] h-[45%] animate-fogMove opacity-60 pointer-events-none z-15">
+
+  <img
+    src="/firoh-arofi/bg-clouds.png"
+    className="w-1/2 h-full object-cover blur-[18px] opacity-40"
+  />
+
+  <img
+    src="/firoh-arofi/bg-clouds.png"
+    className="w-1/2 h-full object-cover blur-[18px] opacity-40"
+  />
+
+</div>
 
 </div>
 
