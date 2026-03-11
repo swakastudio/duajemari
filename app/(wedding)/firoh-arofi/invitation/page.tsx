@@ -76,7 +76,7 @@ return(
 BACKGROUND SKY + MOUNTAIN
 ========================================= */}
 
-<div className="fixed inset-0 -z-10 overflow-hidden">
+<div className="fixed inset-0 -z-0 overflow-hidden">
 
 {/* SKY */}
 
