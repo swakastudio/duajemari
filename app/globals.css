@@ -587,29 +587,31 @@ background-position-x:-3000px;
 animation: cloudsMove 120s linear infinite;
 }
 
-@keyframes datePulse {
+@keyframes dateBreath{
 
 0%{
-opacity:0.85;
+opacity:0.75;
 transform:scale(1);
+letter-spacing:0.35em;
 }
 
 50%{
 opacity:1;
-transform:scale(1.05);
+transform:scale(1.06);
+letter-spacing:0.38em;
 }
 
 100%{
-opacity:0.85;
+opacity:0.75;
 transform:scale(1);
+letter-spacing:0.35em;
 }
 
 }
 
-.animate-date-pulse{
-animation:datePulse 4s ease-in-out infinite;
+.animate-datePulse{
+animation:dateBreath 5s ease-in-out infinite;
 }
-
 @keyframes shimmer {
 
 0%{transform:translateX(-100%)}
