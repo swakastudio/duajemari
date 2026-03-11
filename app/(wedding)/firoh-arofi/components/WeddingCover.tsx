@@ -8,7 +8,7 @@ export default function WeddingCover({ guest }: { guest: string }) {
 
 return(
 
-<section className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center text-center text-white radial-open">
+<section className="relative h-[100dvh] overflow-hidden flex items-center justify-center text-center">
 
 
 
@@ -63,7 +63,7 @@ return(
 
 {/* TITLE */}
 
-<p className="tracking-[0.35em] text-[13px] text-neutral-300 mb-8 bounce-up delay-1">
+<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
 </p>
 
@@ -72,7 +72,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[68px] md:text-[120px] leading-[0.9] mb-3"
+className="text-[68px] md:text-[120px] leading-[0.9] mb-3 -translate-x-2 md:translate-x-0"
 >
 
 <span>Firoh</span>
@@ -88,14 +88,14 @@ className="text-[68px] md:text-[120px] leading-[0.9] mb-3"
 
 {/* DATE */}
 
-<p className="tracking-[0.35em] text-[14px] text-neutral-300 mb-12 bounce-up delay-3">
+<p className="tracking-[0.35em] text-[14px] text-black/70 mb-12 bounce-up delay-3">
 04 • 04 • 2026
 </p>
 
 
 {/* GUEST TITLE */}
 
-<p className="text-[10px] tracking-[0.35em] text-neutral-300 mb-1 uppercase">
+<p className="text-[10px] tracking-[0.35em] text-black/70 mb-1 uppercase">
 Kepada Yth
 </p>
 
