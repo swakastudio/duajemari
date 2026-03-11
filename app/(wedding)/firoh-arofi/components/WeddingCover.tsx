@@ -22,6 +22,7 @@ flex
 items-center
 justify-center
 text-center
+bg-[#e9f3f8]
 "
 >
 
@@ -30,21 +31,23 @@ text-center
 BACKGROUND
 ========================= */}
 
-<div className="absolute inset-0 -z-10 overflow-hidden">
+<div className="absolute inset-0 z-0 overflow-hidden">
 
 
 {/* CLOUD BACKGROUND */}
 
 <div
-className="absolute inset-0 animate-clouds"
+className="absolute inset-0 z-0 animate-clouds"
 style={{
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
 backgroundSize:"cover",
-backgroundRepeat:"repeat-x",
-backgroundPosition:"center"
+backgroundPosition:"center",
+backgroundRepeat:"repeat-x"
 }}
 ></div>
 
+
+{/* MOUNTAIN */}
 
 {/* MOUNTAIN */}
 
@@ -55,7 +58,7 @@ absolute
 bottom-0
 left-1/2
 -translate-x-1/2
-w-[150%]
+w-[160%]
 md:w-full
 max-w-none
 pointer-events-none
