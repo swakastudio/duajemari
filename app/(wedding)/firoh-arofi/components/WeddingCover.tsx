@@ -12,54 +12,53 @@ return(
 
 
 
-{/* =========================
-   BACKGROUND LAYERS
-========================= */}
+{/* BACKGROUND */}
 
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
+<div className="absolute inset-0 -z-10">
 
-{/* CLOUD LAYER LOOP */}
-
-{/* CLOUD LAYER */}
-
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
-
-  <div className="flex w-[200%] animate-clouds">
+  {/* CLOUDS */}
+  <div className="absolute inset-0 flex w-[200%] animate-clouds">
 
     <img
       src="/firoh-arofi/bg-clouds.png"
-      className="w-full h-full object-cover"
+      className="w-full object-cover"
     />
 
     <img
-      src="/firoh-arofi/bgclouds.png"
-      className="w-full h-full object-cover"
+      src="/firoh-arofi/bg-clouds.png"
+      className="w-full object-cover"
     />
 
   </div>
 
-</div>
 
-{/* MOUNTAIN LAYER */}
+  {/* MOUNTAIN */}
 
 <img
-src="/firoh-arofi/mountain.png"
-className="absolute bottom-[-60px] md:bottom-0 left-0 w-full"
+  src="/firoh-arofi/bg-mountain.png"
+  className="
+  absolute 
+  bottom-0 
+  left-1/2 
+  -translate-x-1/2 
+  w-[140%] 
+  md:w-full 
+  max-w-none
+  pointer-events-none
+  "
 />
 
 
-{/* SOFT OVERLAY */}
-
-<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
+  {/* GRADIENT */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
 
 </div>
-
 
 {/* =========================
    CONTENT
 ========================= */}
 
-<div className="relative z-10 flex flex-col items-center justify-center pt-[18vh] md:pt-0">
+<div className="relative z-10 flex flex-col items-center px-6 pt-16 md:pt-0">
 
 
 {/* TITLE */}
@@ -73,7 +72,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[52px] md:text-[120px] leading-[0.88] mb-6 -translate-x-4 bounce-up delay-2"
+className="text-[52px] md:text-[120px] leading-[0.9] mb-4"
 >
 
 <span>Firoh</span>
