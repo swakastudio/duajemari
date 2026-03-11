@@ -154,11 +154,11 @@ className="text-[24px] tracking-[0.04em] text-white mb-5"
 
 {/* DIVIDER */}
 
-<div className="relative w-24 h-[1px] mb-10 overflow-hidden">
+<div className="relative w-32 h-[2px] mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
+<div className="absolute inset-0 animate-dividerGlow bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
 </div>
 
