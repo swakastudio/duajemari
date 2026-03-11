@@ -63,7 +63,7 @@ return(
 
 {/* TITLE */}
 
-<p className="tracking-[0.35em] text-[11px] text-neutral-300 mb-8 bounce-up delay-1">
+<p className="tracking-[0.35em] text-[13px] text-neutral-300 mb-8 bounce-up delay-1">
 THE WEDDING OF
 </p>
 
@@ -72,7 +72,7 @@ THE WEDDING OF
 
 <h1
 style={{ fontFamily: "ClassiqueScript" }}
-className="text-[52px] md:text-[120px] leading-[0.9] mb-4"
+className="text-[80x] md:text-[120px] leading-[0.9] mb-3"
 >
 
 <span>Firoh</span>
@@ -88,7 +88,7 @@ className="text-[52px] md:text-[120px] leading-[0.9] mb-4"
 
 {/* DATE */}
 
-<p className="tracking-[0.35em] text-[12px] text-neutral-300 mb-12 bounce-up delay-3">
+<p className="tracking-[0.35em] text-[14px] text-neutral-300 mb-12 bounce-up delay-3">
 04 • 04 • 2026
 </p>
 
