@@ -116,10 +116,6 @@ AYAT QURAN
 
 <p className="text-[28px] leading-relaxed mb-10">
 
-وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ
-أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا
-وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً
-
 </p>
 
 <p className="text-neutral-700 leading-relaxed">
