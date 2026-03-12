@@ -9,8 +9,10 @@ const router = useRouter()
 
 const [opening,setOpening] = useState(false)
 
+
+
 /* ===============================
-FUNCTION OPEN INVITATION
+OPEN INVITATION
 =============================== */
 
 const openInvitation = ()=>{
@@ -42,7 +44,6 @@ justify-center
 text-center
 transition-all
 duration-[1400ms]
-ease-[cubic-bezier(.22,.61,.36,1)]
 ${opening ? "scale-110 blur-md opacity-0" : ""}
 `}
 
@@ -50,52 +51,49 @@ ${opening ? "scale-110 blur-md opacity-0" : ""}
 
 
 
-{/* ======================================================
+{/* ====================================
 BACKGROUND CONTAINER
-====================================================== */}
+==================================== */}
 
 <div className="absolute inset-0 -z-10 overflow-hidden">
 
 
 
-{/* ======================================================
-LAYER 1 SKY COLOR
-====================================================== */}
+{/* SKY COLOR */}
 
 <div
 
 className="absolute inset-0"
 
-style={{
-background:"#e9f3f8"
-}}
+style={{background:"#e9f3f8"}}
 
 ></div>
 
 
 
-{/* ======================================================
-LAYER 2 CLOUDS
-====================================================== */}
+{/* CLOUD BACKGROUND */}
 
 <div
 
 className="absolute inset-0 animate-cloudMove"
 
 style={{
+
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
+
 backgroundRepeat:"repeat-x",
+
 backgroundSize:"auto 100%",
+
 backgroundPosition:"0 0"
+
 }}
 
 ></div>
 
 
 
-{/* ======================================================
-LAYER 3 MOUNTAIN
-====================================================== */}
+{/* MOUNTAIN */}
 
 <div
 
@@ -109,28 +107,19 @@ src="/firoh-arofi/bg-mountain.png"
 
 className="w-full"
 
-alt="mountain background"
+alt="mountain"
 
-/>
+ />
 
 </div>
 
 
 
-{/* ======================================================
-LAYER 4 FLOWER FRAME VIDEO
-====================================================== */}
+{/* FLOWER VIDEO */}
 
 <div
 
-className="
-absolute
-bottom-0
-left-0
-w-full
-pointer-events-none
-z-10
-"
+className="absolute bottom-0 left-0 w-full pointer-events-none z-10"
 
 >
 
@@ -142,16 +131,16 @@ muted
 playsInline
 preload="auto"
 
-className="
-w-full
-object-cover
-"
+className="w-full object-cover"
 
 >
 
 <source
+
 src="/firoh-arofi/frame-flower.webm"
+
 type="video/webm"
+
 />
 
 </video>
@@ -160,9 +149,7 @@ type="video/webm"
 
 
 
-{/* ======================================================
-LAYER 5 GRADIENT CINEMATIC
-====================================================== */}
+{/* GRADIENT CINEMATIC */}
 
 <div
 
@@ -183,9 +170,9 @@ to-black/40
 
 
 
-{/* ======================================================
-CONTENT CONTAINER
-====================================================== */}
+{/* ====================================
+CONTENT
+==================================== */}
 
 <div
 
@@ -202,9 +189,7 @@ px-6
 
 
 
-{/* ======================================================
-TITLE
-====================================================== */}
+{/* TITLE */}
 
 <p
 
@@ -223,9 +208,7 @@ THE WEDDING OF
 
 
 
-{/* ======================================================
-COUPLE NAME
-====================================================== */}
+{/* COUPLE NAME */}
 
 <h1
 
@@ -246,15 +229,7 @@ drop-shadow-[0_6px_20px_rgba(0,0,0,0.35)]
 
 <span>Firoh</span>
 
-<span
-
-className="
-text-black/70
-text-[22px]
-mx-2
-"
-
->
+<span className="text-black/70 text-[22px] mx-2">
 
 &
 
@@ -266,9 +241,7 @@ mx-2
 
 
 
-{/* ======================================================
-DATE
-====================================================== */}
+{/* DATE */}
 
 <p
 
@@ -277,7 +250,6 @@ tracking-[0.35em]
 text-[14px]
 text-black/70
 mb-10
-animate-datePulse
 "
 
 >
@@ -288,9 +260,7 @@ animate-datePulse
 
 
 
-{/* ======================================================
-GUEST
-====================================================== */}
+{/* GUEST */}
 
 <p
 
@@ -329,9 +299,7 @@ mb-6
 
 
 
-{/* ======================================================
-DIVIDER
-====================================================== */}
+{/* DIVIDER */}
 
 <div
 
@@ -358,29 +326,11 @@ to-transparent
 
 ></div>
 
-<div
-
-className="
-absolute
-inset-0
-animate-dividerShimmer
-bg-gradient-to-r
-from-transparent
-via-white
-to-transparent
-opacity-70
-blur-[1px]
-"
-
-></div>
-
 </div>
 
 
 
-{/* ======================================================
-BUTTON
-====================================================== */}
+{/* BUTTON */}
 
 <button
 
@@ -398,7 +348,6 @@ text-white
 backdrop-blur-sm
 hover:bg-white
 hover:text-black
-hover:shadow-[0_0_20px_rgba(255,255,255,0.25)]
 transition-all
 duration-500
 "
