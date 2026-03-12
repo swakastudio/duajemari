@@ -142,7 +142,7 @@ style={{fontFamily:"ClassiqueScript"}}
 className="
 text-[76px]
 md:text-[120px]
-text-white
+text-black/70
 drop-shadow-lg
 -translate-x-4
 "
@@ -150,7 +150,7 @@ drop-shadow-lg
 
 Firoh
 
-<span className="mx-3 text-black/60 text-[40px]">
+<span className="mx-3 text-black/70 text-[40px]">
 &
 </span>
 
@@ -162,7 +162,7 @@ Arofi
 className="
 tracking-[0.35em]
 text-[14px]
-text-white/80
+text-black/70
 mt-6
 mb-10
 animate-datePulse
@@ -185,7 +185,7 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
               antara kamu rasa kasih dan sayang.
             </p>
 
-            <p className="mt-6 text-[12px] tracking-[0.18em] text-neutral-500">
+            <p className="mt-6 text-[14px] tracking-[0.18em] text-neutral-500">
               QS. Ar-Rum 30 : 21
             </p>
           </div>
@@ -208,10 +208,15 @@ BRIDE & GROOM
 Mempelai
 </h2>
 
+  <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
+    Tanpa Mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
+    serta kerabat sekalian untuk menghadiri acara pernikahan kami :
+    </p>
+
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
   {/* base gold line */}
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
 
   {/* shine animation */}
   <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white/90 to-transparent"></div>
@@ -233,26 +238,22 @@ alt="Bride frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
 
-<h3 className="font-royalti text-[34px] md:text-[38px] leading-tight text-[#2e3a45]">
+<h3 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent opacity-90"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-90"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
 
 </div>
 
 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
-Putri Ketiga dari pasangan
+Putri Ketiga dari Bapak Muchammad Haris
 <br/>
-Bapak Muchammad Haris
-<br/>
-&
-<br/>
-Ibu Isnaini (Almarhum)
+& Ibu Isnaini (Almarhum)
 </p>
 
 <a
@@ -299,26 +300,22 @@ alt="Groom frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
 
-<h3 className="font-royalti text-[34px] md:text-[38px] leading-tight text-[#2e3a45]">
+<h3 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent opacity-90"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-90"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
 
 </div>
 
 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
-Putra Kedua dari pasangan
+Putra Kedua dari Bapak Abdul Wahid Musyadad
 <br/>
-Bapak Abdul Wahid Musyadad
-<br/>
-&
-<br/>
-Ibu Sri Lestari
+& Ibu Sri Lestari
 </p>
 
 <a
