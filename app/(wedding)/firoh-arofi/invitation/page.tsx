@@ -190,14 +190,11 @@ Mempelai
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
 </div>
-
-</div>
-
 
 
 <div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
@@ -218,7 +215,7 @@ Nur Lailatul Maghfiroh, S.Pd.
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
@@ -263,7 +260,7 @@ Ibnu Arofi, S.Pd., Gr., SE
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
@@ -308,9 +305,9 @@ className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 tran
             <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Counting The Days
 </h2>
-            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+        <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
@@ -374,16 +371,13 @@ WEDDING EVENT
 <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Hari Bahagia
 </h2>
-<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
 </div>
-
-</div>
-
 
 
 {/* EVENT GRID */}
@@ -527,9 +521,9 @@ LIHAT LOKASI
             <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Momen Kami
 </h2>
-            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+            <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
@@ -553,9 +547,9 @@ Momen Kami
             <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Tanda Kasih
 </h2>
-            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+            <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
