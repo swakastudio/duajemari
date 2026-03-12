@@ -183,8 +183,13 @@ export default function InvitationPage() {
               <h2 className="font-ltsip text-[34px] md:text-[40px]">
 Mempelai
 </h2>
-              <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
-            </div>
+              <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
             <div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
               {/* BRIDE */}
@@ -195,10 +200,16 @@ Mempelai
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
 
-               <h3 className="font-royalti text-[32px] md:text-[36px]">
+  <h3 className="font-royalti text-[34px] md:text-[38px] leading-tight">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
-                <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+                <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
                 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
                   Putri Ketiga dari pasangan
@@ -228,10 +239,16 @@ Nur Lailatul Maghfiroh, S.Pd.
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
 
-                <h3 className="font-royalti text-[32px] md:text-[36px]">
+     <h3 className="font-royalti text-[34px] md:text-[38px] leading-tight">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
-                <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+               <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
                 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
                   Putra Kedua dari pasangan
@@ -265,10 +282,16 @@ Ibnu Arofi, S.Pd., Gr., SE
               SAVE THE DATE
             </p>
 
-            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+            <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Counting The Days
 </h2>
-            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
             <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-[1.9] tracking-[0.01em] text-neutral-600 md:text-[15px]">
               Dan kami bersyukur, dipertemukan Allah di waktu terbaik. Kini
@@ -325,12 +348,16 @@ WEDDING EVENT
 WEDDING EVENT
 </p>
 
-<h2 className="font-ltsip text-[34px] md:text-[40px]">
+<h2 className="font-ltsip text-[32px] md:text-[40px]">
 Hari Bahagia
 </h2>
-  <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
 
-<div className="w-16 h-[1px] bg-neutral-300 mx-auto mt-6"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
 </div>
 
@@ -474,10 +501,16 @@ LIHAT LOKASI
               GALLERY
             </p>
 
-            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+            <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Momen Kami
 </h2>
-            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
             <div className="flex justify-center">
               <Pattern />
@@ -494,17 +527,22 @@ Momen Kami
               WEDDING GIFT
             </p>
 
-            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+            <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Tanda Kasih
 </h2>
-            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
+            <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
             <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-[1.95] text-neutral-600">
               Doa restu Anda merupakan hadiah terindah bagi kami. Namun apabila
               ingin memberikan tanda kasih, kami dengan senang hati menyediakan
               pilihan hadiah berikut ini.
             </p>
-
             <WeddingEnvelope />
           </div>
         </section>
