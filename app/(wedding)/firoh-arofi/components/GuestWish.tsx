@@ -61,9 +61,17 @@ return(
 
 <div className="text-center">
 
-<h2 className="text-[32px] tracking-[0.08em] mb-4">
+<h2 className="font-ltsip text-[32px] md:text-[40px] tracking-[0.08em] text-[#3f4d58] mb-4">
 Ucapan & Doa
 </h2>
+
+  <div className="relative w-28 h-[2px] mx-auto mt-4 mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
 
 <p className="text-neutral-500 text-sm">
 Tinggalkan doa dan harapan terbaik untuk kami
