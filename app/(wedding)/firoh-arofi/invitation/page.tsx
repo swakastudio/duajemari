@@ -120,13 +120,13 @@ export default function InvitationPage() {
           {/* PHOTO + FRAME SPACE */}
           <div className="relative mb-10 flex h-[190px] w-[190px] items-center justify-center md:h-[230px] md:w-[230px]">
             <img
-              src="/firoh-arofi/photo-couple.jpg"
+              src="https://placehold.co/400x400"
               alt="Couple"
               className="absolute h-[145px] w-[145px] rounded-full object-cover md:h-[175px] md:w-[175px]"
             />
 
             <img
-              src="/firoh-arofi/frame-couple.png"
+              src="https://placehold.co/400x400"
               alt="Couple frame"
               className="relative z-10 w-full"
             />
@@ -188,7 +188,7 @@ export default function InvitationPage() {
               {/* BRIDE */}
               <div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
                 <img
-                  src="/firoh-arofi/frame-bride.png"
+                  src="https://placehold.co/400x400"
                   alt="Bride frame"
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
@@ -220,7 +220,7 @@ export default function InvitationPage() {
               {/* GROOM */}
               <div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
                 <img
-                  src="/firoh-arofi/frame-groom.png"
+                  src="https://placehold.co/400x400"
                   alt="Groom frame"
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
