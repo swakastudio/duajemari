@@ -195,6 +195,7 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
 BRIDE & GROOM
 ===================================== */}
 <section className="fade-up px-6 py-24">
+<div className="mx-auto max-w-3xl rounded-[32px] border border-white/40 bg-white/45 px-8 py-12 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
 
 <div className="mx-auto max-w-5xl">
 
@@ -206,7 +207,7 @@ BRIDE & GROOM
 Mempelai
 </h2>
 
-<p className="text-[13px] leading-[2] text-black/70 mt-4">
+<p className="text-[13px] leading-[2] text-black/70 mt-3">
 Tanpa Mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
 serta kerabat sekalian untuk menghadiri acara pernikahan kami
 </p>
@@ -237,7 +238,7 @@ alt="Bride"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-royalti text-[32px] text-[#3f4d58] mt-6">
+<h3 className="font-ltsip text-[32px] text-[#3f4d58] mt-6">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
@@ -275,7 +276,7 @@ className="w-5 h-5"
 
 {/* SYMBOL */}
 
-<div className="text-[40px] text-[#3f4d58] font-light">
+<div className="font-ltsip text-[32px] text-[#3f4d58] mt-6">
 &
 </div>
 
@@ -290,7 +291,7 @@ alt="Groom"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-royalti text-[32px] text-[#3f4d58] mt-6">
+<h3 className="font-ltsip text-[32px] text-[#3f4d58] mt-6">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
@@ -322,6 +323,8 @@ className="w-5 h-5"
 />
 
 </a>
+  
+</div>
 
 </div>
 
