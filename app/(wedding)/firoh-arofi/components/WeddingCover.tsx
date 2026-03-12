@@ -102,10 +102,11 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full"
+preload="auto"
+className="w-full h-auto"
 >
 
-<source src="/firoh-arofi/frame-flower.webm" type="video/webm" />
+<source src="/firoh-arofi/fram-flower.webm" type="video/webm"/>
 
 </video>
 
