@@ -32,14 +32,18 @@ return(
 
 {/* CLOUDS */}
 
+<div className="absolute inset-0 overflow-hidden">
+
 <div
-className="absolute inset-0 animate-cloudMove"
+className="absolute top-0 left-0 h-full w-[200%] animate-cloudMove"
 style={{
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
 backgroundRepeat:"repeat-x",
 backgroundSize:"auto 100%"
 }}
 ></div>
+
+</div>
 
 
 
