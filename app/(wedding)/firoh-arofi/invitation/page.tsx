@@ -180,9 +180,10 @@ export default function InvitationPage() {
               <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
                 BRIDE & GROOM
               </p>
-              <h2 className="text-[30px] tracking-[0.08em] text-neutral-800 md:text-[36px]">
-                Mempelai
-              </h2>
+              <h2 className="font-ltsip text-[34px] md:text-[40px]">
+Mempelai
+</h2>
+              <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
             </div>
 
             <div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
@@ -194,9 +195,10 @@ export default function InvitationPage() {
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
 
-                <h3 className="mt-6 text-[22px] tracking-[0.04em] text-neutral-800 md:text-[24px]">
-                  Nur Lailatul Maghfiroh, S.Pd.
-                </h3>
+               <h3 className="font-royalti text-[32px] md:text-[36px]">
+Nur Lailatul Maghfiroh, S.Pd.
+</h3>
+                <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
                 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
                   Putri Ketiga dari pasangan
@@ -226,9 +228,10 @@ export default function InvitationPage() {
                   className="mx-auto w-[230px] md:w-[250px]"
                 />
 
-                <h3 className="mt-6 text-[22px] tracking-[0.04em] text-neutral-800 md:text-[24px]">
-                  Ibnu Arofi, S.Pd., Gr., SE
-                </h3>
+                <h3 className="font-royalti text-[32px] md:text-[36px]">
+Ibnu Arofi, S.Pd., Gr., SE
+</h3>
+                <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
                 <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
                   Putra Kedua dari pasangan
@@ -262,9 +265,10 @@ export default function InvitationPage() {
               SAVE THE DATE
             </p>
 
-            <h2 className="mb-6 text-[30px] tracking-[0.08em] text-neutral-800 md:text-[36px]">
-              Counting the Days
-            </h2>
+            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+Counting The Days
+</h2>
+            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
             <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-[1.9] tracking-[0.01em] text-neutral-600 md:text-[15px]">
               Dan kami bersyukur, dipertemukan Allah di waktu terbaik. Kini
@@ -321,9 +325,10 @@ WEDDING EVENT
 WEDDING EVENT
 </p>
 
-<h2 className="text-[34px] md:text-[40px] tracking-[0.08em] text-neutral-800">
+<h2 className="font-ltsip text-[34px] md:text-[40px]">
 Hari Bahagia
 </h2>
+  <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
 <div className="w-16 h-[1px] bg-neutral-300 mx-auto mt-6"></div>
 
@@ -469,9 +474,10 @@ LIHAT LOKASI
               GALLERY
             </p>
 
-            <h2 className="mb-12 text-[30px] tracking-[0.08em] text-neutral-800 md:text-[36px]">
-              Momen Kami
-            </h2>
+            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+Momen Kami
+</h2>
+            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
             <div className="flex justify-center">
               <Pattern />
@@ -488,9 +494,10 @@ LIHAT LOKASI
               WEDDING GIFT
             </p>
 
-            <h2 className="mb-6 text-[30px] tracking-[0.08em] text-neutral-800 md:text-[36px]">
-              Tanda Kasih
-            </h2>
+            <h2 className="font-ltsip text-[34px] md:text-[40px]">
+Tanda Kasih
+</h2>
+            <div className="w-14 h-[1px] bg-neutral-300 mx-auto mt-4"></div>
 
             <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-[1.95] text-neutral-600">
               Doa restu Anda merupakan hadiah terindah bagi kami. Namun apabila
