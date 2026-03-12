@@ -10,6 +10,30 @@
   font-weight: normal;
   font-style: normal;
 }
+/* ===============================
+ROYALTI FONT (NAMA MEMPELAI)
+=============================== */
+
+@font-face {
+  font-family: "Royalti";
+  src: url("/fonts/royalti-free.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ===============================
+LTSIP FONT (SECTION TITLE)
+=============================== */
+
+@font-face {
+  font-family: "LtsipText";
+  src: url("/fonts/ltsip-text-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* =========================
    BASE STYLE
@@ -789,4 +813,20 @@ SECTION SUBTITLE
 .section-label {
   letter-spacing: 0.45em;
   color: #6a7680;
+}
+
+/* ===============================
+FONT UTILITY
+=============================== */
+
+.font-royalti{
+  font-family:"Royalti", serif;
+  letter-spacing:0.03em;
+  color:#2e3a45;
+}
+
+.font-ltsip{
+  font-family:"LtsipText", serif;
+  letter-spacing:0.12em;
+  color:#3f4d58;
 }
