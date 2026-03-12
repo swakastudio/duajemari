@@ -78,7 +78,7 @@ export default function InvitationPage() {
       {/* =====================================
           FIXED BACKGROUND
       ===================================== */}
-      <div className="fixed inset-0 -z-20 overflow-hidden">
+      <div className="fixed inset-0 -z-0 overflow-hidden">
         {/* SKY BASE */}
         <div className="absolute inset-0 bg-[#e9f3f8]" />
 
