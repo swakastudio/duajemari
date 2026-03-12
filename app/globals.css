@@ -734,3 +734,28 @@ transform:scale(1);
 .animate-mountainZoom{
 animation:mountainZoom 18s ease-out forwards;
 }
+
+/* ===============================
+ROYALTI FONT (Nama Mempelai)
+=============================== */
+
+@font-face {
+  font-family: "Royalti";
+  src: url("/fonts/royalti-free.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ===============================
+LTSIP FONT (Section Title)
+=============================== */
+
+@font-face {
+  font-family: "LtsipText";
+  src: url("/fonts/ltsip-text-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
