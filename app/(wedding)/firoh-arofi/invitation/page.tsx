@@ -236,7 +236,14 @@ serta kerabat sekalian untuk menghadiri acara pernikahan kami
 <img
 src="https://placehold.co/400x400"
 alt="Bride"
-className="mx-auto w-[230px]"
+className="
+mx-auto
+w-[170px]
+rounded-full
+border border-white
+shadow-lg
+animate-photoFloat
+"
 />
 
 <h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
@@ -289,7 +296,14 @@ className="w-5 h-5"
 <img
 src="https://placehold.co/400x400"
 alt="Groom"
-className="mx-auto w-[230px]"
+className="
+mx-auto
+w-[170px]
+rounded-full
+border border-white
+shadow-lg
+animate-photoFloat
+"
 />
 
 <h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
