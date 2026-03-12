@@ -381,6 +381,8 @@ Hari Bahagia
 
 </div>
 
+</div>
+
 
 {/* EVENT GRID */}
 
