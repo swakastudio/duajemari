@@ -417,7 +417,7 @@ className="rounded-[22px] border border-white/45 bg-white/70 px-4 py-6 shadow-[0
        {/* =====================================
 WEDDING EVENT
 ===================================== */}
-<section className="fade-up px-6 py-36 bg-[#7AA6AF]">
+<section className="fade-up px-6 py-36 bg-white/45">
 
 <div className="mx-auto max-w-5xl">
 
