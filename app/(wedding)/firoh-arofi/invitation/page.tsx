@@ -303,6 +303,7 @@ rounded-full
 border border-white
 shadow-lg
 animate-photoFloat
+delay-float
 "
 />
 
