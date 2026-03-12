@@ -92,7 +92,13 @@ THE WEDDING OF
 
 <h1
 style={{fontFamily:"ClassiqueScript"}}
-className="text-[76px] md:text-[120px] text-white drop-shadow-lg"
+className="
+text-[76px]
+md:text-[120px]
+text-white
+drop-shadow-lg
+-translate-x-2
+"
 >
 
 Firoh
