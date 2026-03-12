@@ -196,6 +196,8 @@ Mempelai
 
 </div>
 
+  </div>
+
 
 <div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
 
