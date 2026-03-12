@@ -191,61 +191,65 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
           </div>
         </section>
 
-     {/* =====================================
+   {/* =====================================
 BRIDE & GROOM
 ===================================== */}
-<section className="fade-up px-6 py-32">
+<section className="fade-up px-6 py-24">
 
 <div className="mx-auto max-w-5xl">
 
+{/* TITLE */}
+
 <div className="mb-14 text-center">
+
 <h2 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
 Mempelai
 </h2>
 
-  <p className="text-[12px] leading-[2.05] tracking-[0.01em] text-black/70 md:text-[16px]">
-    Tanpa Mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
-    serta kerabat sekalian untuk menghadiri acara pernikahan kami :
-    </p>
+<p className="text-[13px] leading-[2] text-black/70 mt-4">
+Tanpa Mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
+serta kerabat sekalian untuk menghadiri acara pernikahan kami
+</p>
 
-<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
+<div className="relative w-28 h-[2px] mx-auto mt-6 overflow-hidden">
 
-  {/* base gold line */}
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
 
-  {/* shine animation */}
-  <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white/90 to-transparent"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white/90 to-transparent"></div>
 
 </div>
 
-  </div>
+</div>
 
 
-<div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
+{/* GRID COUPLE */}
+
+<div className="grid md:grid-cols-3 gap-12 items-center text-center">
+
 
 {/* BRIDE */}
 
-<div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
+<div>
 
 <img
 src="https://placehold.co/400x400"
-alt="Bride frame"
-className="mx-auto w-[230px] md:w-[250px]"
+alt="Bride"
+className="mx-auto w-[230px]"
 />
-</div>
-<h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
+
+<h3 className="font-royalti text-[32px] text-[#3f4d58] mt-6">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
-<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
+<div className="relative w-20 h-[2px] mx-auto mt-4 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-90"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
 </div>
 
-<p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+<p className="mt-4 text-[14px] text-neutral-600 leading-relaxed">
 Putri Ketiga dari Bapak Muchammad Haris
 <br/>
 & Ibu Isnaini (Almarhum)
@@ -255,26 +259,11 @@ Putri Ketiga dari Bapak Muchammad Haris
 href="https://instagram.com/_maghfiroh"
 target="_blank"
 rel="noreferrer"
-className="
-mt-6
-inline-flex
-items-center
-justify-center
-w-10
-h-10
-rounded-full
-border border-neutral-300
-bg-white/70
-backdrop-blur
-shadow-sm
-transition
-hover:scale-110
-hover:shadow-md
-"
+className="mt-6 inline-flex items-center justify-center w-10 h-10 rounded-full border border-neutral-300 bg-white/70 backdrop-blur shadow-sm transition hover:scale-110 hover:shadow-md"
 >
 
 <img
-src="public/firoh-arofi/logo-instagram.svg"
+src="/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
@@ -283,30 +272,37 @@ className="w-5 h-5"
 
 </div>
 
-<p className="mt-4 text-[20px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+
+{/* SYMBOL */}
+
+<div className="text-[40px] text-[#3f4d58] font-light">
 &
-</p>
+</div>
+
 
 {/* GROOM */}
+
+<div>
+
 <img
 src="https://placehold.co/400x400"
-alt="Groom frame"
-className="mx-auto w-[230px] md:w-[250px]"
+alt="Groom"
+className="mx-auto w-[230px]"
 />
-</div>
-<h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
+
+<h3 className="font-royalti text-[32px] text-[#3f4d58] mt-6">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
-<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
+<div className="relative w-20 h-[2px] mx-auto mt-4 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-90"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
 </div>
 
-<p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+<p className="mt-4 text-[14px] text-neutral-600 leading-relaxed">
 Putra Kedua dari Bapak Abdul Wahid Musyadad
 <br/>
 & Ibu Sri Lestari
@@ -316,26 +312,11 @@ Putra Kedua dari Bapak Abdul Wahid Musyadad
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
 rel="noreferrer"
-className="
-mt-6
-inline-flex
-items-center
-justify-center
-w-10
-h-10
-rounded-full
-border border-neutral-300
-bg-white/70
-backdrop-blur
-shadow-sm
-transition
-hover:scale-110
-hover:shadow-md
-"
+className="mt-6 inline-flex items-center justify-center w-10 h-10 rounded-full border border-neutral-300 bg-white/70 backdrop-blur shadow-sm transition hover:scale-110 hover:shadow-md"
 >
 
 <img
-src="public/firoh-arofi/logo-instagram.svg"
+src="/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
@@ -343,6 +324,7 @@ className="w-5 h-5"
 </a>
 
 </div>
+
 
 </div>
 
