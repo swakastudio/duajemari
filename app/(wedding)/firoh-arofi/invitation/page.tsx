@@ -1,16 +1,31 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Pattern } from "@/components/Pattern"
-import GiftEnvelope from "@/components/GiftEnvelope"
+
+/* ===============================
+IMPORT COMPONENTS
+=============================== */
+
+import { Pattern } from "../components/Pattern"
+import WeddingEnvelope from "../components/WeddingEnvelope"
+import GuestWish from "../components/GuestWish"
+
+
 
 export default function InvitationPage(){
 
+
 /* ===============================
-COUNTDOWN
+COUNTDOWN DATE
 =============================== */
 
 const targetDate = new Date("2026-04-04T08:00:00")
+
+
+
+/* ===============================
+COUNTDOWN STATE
+=============================== */
 
 const [time,setTime] = useState({
 days:0,
@@ -18,6 +33,12 @@ hours:0,
 minutes:0,
 seconds:0
 })
+
+
+
+/* ===============================
+COUNTDOWN EFFECT
+=============================== */
 
 useEffect(()=>{
 
@@ -31,7 +52,12 @@ const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60))
 const minutes = Math.floor((distance%(1000*60*60))/(1000*60))
 const seconds = Math.floor((distance%(1000*60))/1000)
 
-setTime({days,hours,minutes,seconds})
+setTime({
+days,
+hours,
+minutes,
+seconds
+})
 
 },1000)
 
@@ -42,7 +68,7 @@ return ()=>clearInterval(timer)
 
 
 /* ===============================
-FADE UP ANIMATION
+SCROLL FADE ANIMATION
 =============================== */
 
 useEffect(()=>{
@@ -75,7 +101,7 @@ return(
 
 
 {/* =====================================
-BACKGROUND LAYER
+BACKGROUND
 ===================================== */}
 
 <div className="fixed inset-0 -z-10">
@@ -85,7 +111,7 @@ BACKGROUND LAYER
 <div className="absolute inset-0 bg-[#e9f3f8]"></div>
 
 
-{/* CLOUD IMAGE */}
+{/* CLOUD */}
 
 <div
 className="absolute inset-0 opacity-40"
@@ -120,7 +146,7 @@ HERO
 
 
 
-{/* COUPLE PHOTO FRAME */}
+{/* PHOTO FRAME */}
 
 <div className="relative mb-12 w-[180px] md:w-[220px] mx-auto">
 
@@ -179,8 +205,8 @@ AYAT
 
 Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
 untukmu pasangan-pasangan dari jenismu sendiri agar kamu
-cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
-di antara kamu rasa kasih dan sayang.
+cenderung dan merasa tenteram kepadanya,
+dan dijadikan-Nya di antara kamu rasa kasih dan sayang.
 
 </p>
 
@@ -252,8 +278,6 @@ Ibu Sri Lestari
 
 </div>
 
-
-
 </div>
 
 </section>
@@ -269,6 +293,7 @@ SAVE THE DATE
 <h2 className="text-[32px] tracking-[0.08em] mb-12">
 Save The Date
 </h2>
+
 
 
 <div className="grid grid-cols-4 gap-4 max-w-md mx-auto mb-12">
@@ -357,6 +382,8 @@ Gang IV RT 04 RW 01
 Waru - Sidoarjo
 </p>
 
+
+
 <a
 href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
@@ -370,6 +397,8 @@ Lihat Lokasi
 </div>
 
 </section>
+
+
 
 {/* =====================================
 GALLERY
@@ -411,9 +440,21 @@ kami menyediakan fitur hadiah berikut.
 
 <div className="max-w-md mx-auto">
 
-<GiftEnvelope />
+<WeddingEnvelope />
 
 </div>
+
+</section>
+
+
+
+{/* =====================================
+GUEST WISH
+===================================== */}
+
+<section className="py-32 px-6 fade-up">
+
+<GuestWish />
 
 </section>
 
