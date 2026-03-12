@@ -452,10 +452,6 @@ WEDDING EVENT
 
 <div className="text-center mb-20">
 
-<p className="text-[11px] tracking-[0.45em] text-neutral-500 mb-4">
-WEDDING EVENT
-</p>
-
 <h2 className="font-ltsip text-[32px] md:text-[40px]">
 Hari Bahagia
 </h2>
@@ -580,7 +576,7 @@ href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
-mt-10
+mt-20
 px-8 py-3
 rounded-full
 border
