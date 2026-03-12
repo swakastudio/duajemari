@@ -246,7 +246,13 @@ animate-photoFloat
 "
 />
 
-<h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
+<h3 style={{fontFamily:"ClassiqueScript"}}
+className="
+text-[76px]
+md:text-[120px]
+text-black/70
+drop-shadow-lg
+">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
@@ -307,7 +313,12 @@ delay-float
 "
 />
 
-<h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
+<h3 style={{fontFamily:"ClassiqueScript"}}
+className="
+text-[76px]
+md:text-[120px]
+text-black/70
+drop-shadow-lgt-3">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
