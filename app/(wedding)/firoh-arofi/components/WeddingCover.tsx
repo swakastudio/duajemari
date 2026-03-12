@@ -29,7 +29,7 @@ return(
 <div className="absolute inset-0 bg-[#e9f3f8]"></div>
 
 
-
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#e9f3f8]/40 to-transparent"></div>
 {/* CLOUDS */}
 
 <div className="absolute inset-0 overflow-hidden">
