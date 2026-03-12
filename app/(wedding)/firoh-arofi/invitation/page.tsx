@@ -529,7 +529,7 @@ rounded-[36px]
 bg-white/60
 backdrop-blur-xl
 border border-white/50
-px-10 py-12
+px-10 py-10
 text-center
 shadow-[0_15px_60px_rgba(0,0,0,0.08)]
 transition-all
@@ -539,44 +539,74 @@ hover:shadow-[0_25px_80px_rgba(0,0,0,0.15)]
 "
 >
 
-<p className="text-[11px] tracking-[0.38em] text-neutral-500 mb-4">
+{/* TITLE */}
+
+<p className="text-[11px] tracking-[0.42em] text-neutral-500">
 RESEPSI
 </p>
 
+{/* DIVIDER */}
+
+<div className="flex items-center justify-center gap-4 my-6">
+
+<div className="w-14 h-[1px] bg-neutral-300"></div>
+
+<span className="text-neutral-400 text-sm">✦</span>
+
+<div className="w-14 h-[1px] bg-neutral-300"></div>
+
+</div>
+
+
+{/* DAY */}
+
 <h3 className="
-text-[34px]
-tracking-[0.02em]
+text-[36px]
 text-neutral-800
 font-light
+tracking-[0.02em]
 ">
 Sabtu
 </h3>
 
-<p className="text-[15px] text-neutral-600 leading-[1.9]">
-04 April 2026 | 08.00 WIB - Selesai
+
+{/* DATE */}
+
+<p className="mt-3 text-[15px] text-neutral-600">
+04 April 2026
+</p>
+
+<p className="text-[15px] text-neutral-600">
+08.00 WIB – selesai
 </p>
 
 
 {/* ADDRESS */}
 
-<div className="mt-6 text-[14px] leading-[1.8] text-neutral-600">
+<div className="mt-8 text-[14px] leading-[1.8] text-neutral-600">
+
+<p className="mb-2 text-neutral-500 tracking-[0.25em] text-[11px]">
+LOKASI
+</p>
 
 Jl. Kepuhkiriman Dalam Masjid  
 <br/>
-Gang IV RT 04 RW 01 Waru – Sidoarjo
+Gang IV RT 04 RW 01  
+<br/>
+Waru – Sidoarjo
 
 </div>
 
 
-
-{/* MAP BUTTON */}
+{/* BUTTON */}
 
 <a
 href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
-mt-20
+inline-block
+mt-8
 px-8 py-3
 rounded-full
 border
