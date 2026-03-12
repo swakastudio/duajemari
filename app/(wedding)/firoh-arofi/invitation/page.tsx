@@ -176,7 +176,7 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
         {/* =====================================
             AYAT
         ===================================== */}
-        <section className="fade-up px-6 py-28">
+        <section className="fade-up px-6 py-18">
           <div className="mx-auto max-w-3xl rounded-[32px] border border-white/40 bg-white/45 px-8 py-12 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
             <p className="text-[12px] leading-[2.05] tracking-[0.01em] text-neutral-700 md:text-[16px]">
               Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
@@ -194,7 +194,7 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
    {/* =====================================
 BRIDE & GROOM
 ===================================== */}
-<section className="fade-up px-6 py-24">
+<section className="fade-up px-6 py-16">
 <div className="mx-auto max-w-3xl rounded-[32px] border border-white/40 bg-white/45 px-8 py-12 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
 
 <div className="mx-auto max-w-5xl">
@@ -238,7 +238,7 @@ alt="Bride"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-ltsip text-[25px] leading-[2] text-[#3f4d58] mt-6">
+<h3 className="font-ltsip text-[30px] leading-[1] text-[#3f4d58] mt-3">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
@@ -291,7 +291,7 @@ alt="Groom"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-ltsip text-25px] leading-[2] text-[#3f4d58] mt-6">
+<h3 className="font-ltsip text-[30px] leading-[2] text-[#3f4d58] mt-3">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
@@ -338,14 +338,10 @@ className="w-5 h-5"
         {/* =====================================
             SAVE THE DATE
         ===================================== */}
-        <section className="fade-up px-6 py-32 text-center">
+        <section className="fade-up px-6 py-16 text-center">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
-              SAVE THE DATE
-            </p>
-
             <h2 className="font-ltsip text-[32px] md:text-[40px]">
-Counting The Days
+Menghitung Hari
 </h2>
         <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
@@ -355,7 +351,7 @@ Counting The Days
 
 </div>
 
-            <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-[1.9] tracking-[0.01em] text-neutral-600 md:text-[15px]">
+            <p className="text-[13px] leading-[2] text-black/70 mt-3">
               Dan kami bersyukur, dipertemukan Allah di waktu terbaik. Kini
               kami menanti hari istimewa kami, hari di mana dua perjalanan akan
               bertemu dalam satu langkah yang sama.
