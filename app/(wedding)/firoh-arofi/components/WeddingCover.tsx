@@ -97,7 +97,7 @@ text-[76px]
 md:text-[120px]
 text-white
 drop-shadow-lg
--translate-x-3
+-translate-x-4
 "
 >
 
