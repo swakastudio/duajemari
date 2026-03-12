@@ -239,7 +239,7 @@ alt="Bride"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-ltsip text-[30px] leading-[1] text-[#3f4d58] mt-3">
+<h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
@@ -292,7 +292,7 @@ alt="Groom"
 className="mx-auto w-[230px]"
 />
 
-<h3 className="font-ltsip text-[30px] leading-[2] text-[#3f4d58] mt-3">
+<h3 className="font-ltsip text-[30px] text-[#3f4d58] mt-3">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
