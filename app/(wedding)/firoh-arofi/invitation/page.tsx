@@ -248,7 +248,7 @@ animate-photoFloat
 
 <h3 style={{fontFamily:"ClassiqueScript"}}
 className="
-text-[76px]
+text-[20px]
 md:text-[120px]
 text-black/70
 drop-shadow-lg
@@ -315,7 +315,7 @@ delay-float
 
 <h3 style={{fontFamily:"ClassiqueScript"}}
 className="
-text-[76px]
+text-[20px]
 md:text-[120px]
 text-black/70
 drop-shadow-lgt-3">
