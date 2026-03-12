@@ -199,11 +199,6 @@ BRIDE & GROOM
 <div className="mx-auto max-w-5xl">
 
 <div className="mb-14 text-center">
-
-<p className="mb-3 text-[11px] tracking-[0.38em] text-black/70">
-BRIDE & GROOM
-</p>
-
 <h2 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
 Mempelai
 </h2>
@@ -237,8 +232,8 @@ src="https://placehold.co/400x400"
 alt="Bride frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
-
-<h3 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
+<br />
+<h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
@@ -288,19 +283,18 @@ className="w-5 h-5"
 
 </div>
 
-
+<p className="mt-4 text-[20px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+&
+</p>
 
 {/* GROOM */}
-
-<div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-
 <img
 src="https://placehold.co/400x400"
 alt="Groom frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
-
-<h3 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
+<br />
+<h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
