@@ -476,11 +476,7 @@ Sabtu
 </h3>
 
 <p className="text-[15px] text-neutral-600 leading-[1.9]">
-04 April 2026
-</p>
-
-<p className="text-[15px] text-neutral-600">
-Pukul 08.00 WIB
+04 April 2026 | 08. WIB
 </p>
 
 <div className="mt-8 w-12 h-[1px] bg-neutral-200 mx-auto"></div>
@@ -515,11 +511,7 @@ Sabtu
 </h3>
 
 <p className="text-[15px] text-neutral-600 leading-[1.9]">
-04 April 2026
-</p>
-
-<p className="text-[15px] text-neutral-600">
-08.00 WIB – selesai
+04 April 2026 | 08.00 WIB - Selesai
 </p>
 
 
@@ -573,6 +565,8 @@ LIHAT LOKASI
 </div>
 
 </section>
+
+
         {/* =====================================
             GALLERY
         ===================================== */}
