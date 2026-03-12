@@ -42,7 +42,7 @@ return ()=>clearInterval(timer)
 
 
 /* ===============================
-FADE UP
+FADE UP ANIMATION
 =============================== */
 
 useEffect(()=>{
@@ -75,7 +75,7 @@ return(
 
 
 {/* =====================================
-BACKGROUND
+BACKGROUND LAYER
 ===================================== */}
 
 <div className="fixed inset-0 -z-10">
@@ -84,7 +84,8 @@ BACKGROUND
 
 <div className="absolute inset-0 bg-[#e9f3f8]"></div>
 
-{/* CLOUD */}
+
+{/* CLOUD IMAGE */}
 
 <div
 className="absolute inset-0 opacity-40"
@@ -118,9 +119,10 @@ HERO
 <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 fade-up">
 
 
-{/* PHOTO FRAME */}
 
-<div className="relative mb-10 w-[180px] md:w-[220px] mx-auto">
+{/* COUPLE PHOTO FRAME */}
+
+<div className="relative mb-12 w-[180px] md:w-[220px] mx-auto">
 
 <img
 src="/firoh-arofi/photo-couple.jpg"
@@ -135,9 +137,12 @@ className="relative w-full"
 </div>
 
 
+
 <p className="tracking-[0.35em] text-[12px] text-neutral-700 mb-6">
 THE WEDDING OF
 </p>
+
+
 
 <h1
 style={{fontFamily:"ClassiqueScript"}}
@@ -153,6 +158,8 @@ Firoh
 Arofi
 
 </h1>
+
+
 
 <p className="tracking-[0.35em] text-[13px] text-neutral-700 mt-6">
 04 • 04 • 2026
@@ -192,6 +199,7 @@ BRIDE & GROOM
 <section className="py-32 px-6 max-w-5xl mx-auto fade-up">
 
 <div className="grid md:grid-cols-2 gap-20 items-center">
+
 
 
 {/* BRIDE */}
@@ -244,6 +252,8 @@ Ibu Sri Lestari
 
 </div>
 
+
+
 </div>
 
 </section>
@@ -261,7 +271,7 @@ Save The Date
 </h2>
 
 
-<div className="grid grid-cols-4 gap-4 max-w-md mx-auto">
+<div className="grid grid-cols-4 gap-4 max-w-md mx-auto mb-12">
 
 {[
 {label:"HARI",value:time.days},
@@ -294,7 +304,7 @@ className="bg-white/80 backdrop-blur-md border border-neutral-200 rounded-xl py-
 
 
 {/* =====================================
-EVENT
+WEDDING EVENT
 ===================================== */}
 
 <section className="py-32 px-6 text-center max-w-xl mx-auto fade-up">
@@ -361,79 +371,6 @@ Lihat Lokasi
 
 </section>
 
-
-
-{/* =====================================
-LOVE STORY
-===================================== */}
-
-<section className="py-32 px-6 max-w-3xl mx-auto text-center fade-up">
-
-<h2 className="text-[32px] tracking-[0.08em] mb-16">
-Love Story
-</h2>
-
-<div className="space-y-16">
-
-<div>
-
-<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
-2025 • PERTEMUAN
-</p>
-
-<p className="text-[15px] leading-[1.9] text-neutral-700">
-
-Awal tahun 2025 menjadi awal pertemuan kami.
-Sebuah perkenalan sederhana yang kemudian
-membawa kami pada banyak percakapan,
-tawa, dan kebersamaan.
-
-</p>
-
-</div>
-
-
-<div>
-
-<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
-2025 • MENJALIN HUBUNGAN
-</p>
-
-<p className="text-[15px] leading-[1.9] text-neutral-700">
-
-Hari demi hari berlalu, hubungan ini tumbuh
-menjadi sesuatu yang lebih bermakna.
-Kami belajar saling memahami,
-mendukung dan menguatkan satu sama lain.
-
-</p>
-
-</div>
-
-
-<div>
-
-<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
-2026 • MENUJU PELAMINAN
-</p>
-
-<p className="text-[15px] leading-[1.9] text-neutral-700">
-
-Dengan restu keluarga dan doa orang-orang
-tercinta, kami memutuskan melangkah
-menuju jenjang pernikahan
-untuk memulai kehidupan baru bersama.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
 {/* =====================================
 GALLERY
 ===================================== */}
@@ -489,7 +426,7 @@ FOOTER
 <section className="py-24 text-center fade-up">
 
 <p className="text-neutral-500">
-Website undangan dibuat oleh
+Dibuat oleh
 </p>
 
 <a
