@@ -133,24 +133,44 @@ export default function InvitationPage() {
             />
           </div>
 
-          <p className="mb-5 text-[11px] tracking-[0.42em] text-black/60 md:text-[12px]">
-            THE WEDDING OF
-          </p>
+          <p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
+THE WEDDING OF
+</p>
 
-          <h1
-            style={{ fontFamily: "ClassiqueScript" }}
-            className="text-[58px] leading-[0.92] tracking-[0.01em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.28)] md:text-[96px]"
-          >
-            Firoh
-            <span className="mx-2 inline-block text-[24px] text-black/55 md:mx-3 md:text-[34px]">
-              &
-            </span>
-            Arofi
-          </h1>
+<h1
+style={{fontFamily:"ClassiqueScript"}}
+className="
+text-[76px]
+md:text-[120px]
+text-white
+drop-shadow-lg
+-translate-x-4
+"
+>
 
-          <p className="mt-6 text-[12px] tracking-[0.38em] text-black/65 md:text-[13px]">
-            04 • 04 • 2026
-          </p>
+Firoh
+
+<span className="mx-3 text-black/60 text-[40px]">
+&
+</span>
+
+Arofi
+
+</h1>
+
+<p
+className="
+tracking-[0.35em]
+text-[14px]
+text-white/80
+mt-6
+mb-10
+animate-datePulse
+drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
+"
+>
+04 • 04 • 2026
+</p>
         </section>
 
         {/* =====================================
@@ -158,7 +178,7 @@ export default function InvitationPage() {
         ===================================== */}
         <section className="fade-up px-6 py-28">
           <div className="mx-auto max-w-3xl rounded-[32px] border border-white/40 bg-white/45 px-8 py-12 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-            <p className="text-[15px] leading-[2.05] tracking-[0.01em] text-neutral-700 md:text-[16px]">
+            <p className="text-[12px] leading-[2.05] tracking-[0.01em] text-neutral-700 md:text-[16px]">
               Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
               untukmu pasangan-pasangan dari jenismu sendiri agar kamu
               cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di
