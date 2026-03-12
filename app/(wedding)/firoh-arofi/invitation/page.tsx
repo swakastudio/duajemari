@@ -480,29 +480,39 @@ Hari Bahagia
 AKAD NIKAH
 =============================== */}
 
-<div className="
+<div
+className="
 group
-rounded-[34px]
-border border-white/50
+relative
+rounded-[36px]
 bg-white/60
 backdrop-blur-xl
+border border-white/50
 px-10 py-12
 text-center
-shadow-[0_15px_60px_rgba(0,0,0,0.06)]
-transition
-hover:shadow-[0_20px_80px_rgba(0,0,0,0.08)]
-">
+shadow-[0_15px_60px_rgba(0,0,0,0.08)]
+transition-all
+duration-500
+hover:-translate-y-2
+hover:shadow-[0_25px_80px_rgba(0,0,0,0.15)]
+"
+>
 
 <p className="text-[11px] tracking-[0.38em] text-neutral-500 mb-4">
 AKAD NIKAH
 </p>
 
-<h3 className="text-[26px] tracking-[0.04em] text-neutral-800 mb-3">
+<h3 className="
+text-[34px]
+tracking-[0.02em]
+text-neutral-800
+font-light
+">
 Sabtu
 </h3>
 
 <p className="text-[15px] text-neutral-600 leading-[1.9]">
-04 April 2026 | 08. WIB
+04 April 2026 | 08.00 WIB
 </p>
 
 <div className="mt-8 w-12 h-[1px] bg-neutral-200 mx-auto"></div>
@@ -515,24 +525,34 @@ Sabtu
 RESEPSI
 =============================== */}
 
-<div className="
+<div
+className="
 group
-rounded-[34px]
-border border-white/50
+relative
+rounded-[36px]
 bg-white/60
 backdrop-blur-xl
+border border-white/50
 px-10 py-12
 text-center
-shadow-[0_15px_60px_rgba(0,0,0,0.06)]
-transition
-hover:shadow-[0_20px_80px_rgba(0,0,0,0.08)]
-">
+shadow-[0_15px_60px_rgba(0,0,0,0.08)]
+transition-all
+duration-500
+hover:-translate-y-2
+hover:shadow-[0_25px_80px_rgba(0,0,0,0.15)]
+"
+>
 
 <p className="text-[11px] tracking-[0.38em] text-neutral-500 mb-4">
 RESEPSI
 </p>
 
-<h3 className="text-[26px] tracking-[0.04em] text-neutral-800 mb-3">
+<h3 className="
+text-[34px]
+tracking-[0.02em]
+text-neutral-800
+font-light
+">
 Sabtu
 </h3>
 
@@ -547,9 +567,7 @@ Sabtu
 
 Jl. Kepuhkiriman Dalam Masjid  
 <br/>
-Gang IV RT 04 RW 01  
-<br/>
-Waru – Sidoarjo
+Gang IV RT 04 RW 01 Waru – Sidoarjo
 
 </div>
 
@@ -562,15 +580,15 @@ href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
-inline-block
-mt-8
-px-7 py-2.5
+mt-10
+px-8 py-3
 rounded-full
-border border-neutral-800
-text-[11px]
-tracking-[0.28em]
+border
+border-neutral-800
+text-[12px]
+tracking-[0.35em]
 text-neutral-800
-transition-all
+transition
 duration-500
 hover:bg-neutral-800
 hover:text-white
