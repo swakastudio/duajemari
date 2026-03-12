@@ -210,7 +210,7 @@ Mempelai
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[##DB6D00] to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
@@ -257,9 +257,30 @@ Ibu Isnaini (Almarhum)
 href="https://instagram.com/_maghfiroh"
 target="_blank"
 rel="noreferrer"
-className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
+className="
+mt-6
+inline-flex
+items-center
+justify-center
+w-10
+h-10
+rounded-full
+border border-neutral-300
+bg-white/70
+backdrop-blur
+shadow-sm
+transition
+hover:scale-110
+hover:shadow-md
+"
 >
-@_maghfiroh
+
+<img
+src="/icons/logo-instagram.svg"
+alt="Instagram"
+className="w-5 h-5"
+/>
+
 </a>
 
 </div>
@@ -302,9 +323,30 @@ Ibu Sri Lestari
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
 rel="noreferrer"
-className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
+className="
+mt-6
+inline-flex
+items-center
+justify-center
+w-10
+h-10
+rounded-full
+border border-neutral-300
+bg-white/70
+backdrop-blur
+shadow-sm
+transition
+hover:scale-110
+hover:shadow-md
+"
 >
-@ibnu.arofi
+
+<img
+src="/icons/logo-instagram.svg"
+alt="Instagram"
+className="w-5 h-5"
+/>
+
 </a>
 
 </div>
