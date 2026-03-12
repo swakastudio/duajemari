@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Pattern } from "../components/Pattern"
 import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
+import Weather from "../components/Weather"
 
 export default function InvitationPage() {
   /* ===============================
@@ -336,60 +337,83 @@ className="w-5 h-5"
 </section>
 
         {/* =====================================
-            SAVE THE DATE
-        ===================================== */}
-        <section className="fade-up px-6 py-16 text-center">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-ltsip text-[32px] md:text-[40px]">
+SAVE THE DATE
+===================================== */}
+<section className="fade-up px-6 py-16 text-center">
+
+<div className="mx-auto max-w-4xl">
+
+
+{/* TITLE */}
+
+<h2 className="font-ltsip text-[32px] md:text-[40px] tracking-[0.08em] text-[#3f4d58]">
 Menghitung Hari
 </h2>
-        <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+{/* DIVIDER */}
+
+<div className="relative w-28 h-[2px] mx-auto mt-6 mb-8 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
 
 </div>
 
-            <p className="text-[13px] leading-[2] text-black/70 mt-3">
-              Dan kami bersyukur, dipertemukan Allah di waktu terbaik. Kini
-              kami menanti hari istimewa kami, hari di mana dua perjalanan akan
-              bertemu dalam satu langkah yang sama.
-            </p>
 
-            <div className="mx-auto grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
-              {[
-                { label: "HARI", value: time.days },
-                { label: "JAM", value: time.hours },
-                { label: "MENIT", value: time.minutes },
-                { label: "DETIK", value: time.seconds },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-[24px] border border-white/45 bg-white/70 px-4 py-7 shadow-[0_10px_40px_rgba(0,0,0,0.05)] backdrop-blur-md"
-                >
-                  <p className="text-[28px] font-semibold text-neutral-800">
-                    {item.value}
-                  </p>
+{/* TEXT */}
 
-                  <p className="mt-2 text-[11px] tracking-[0.28em] text-neutral-500">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
+<p className="text-[13px] leading-[2] text-black/70 max-w-xl mx-auto">
 
-            <div className="mx-auto mt-10 max-w-md rounded-[22px] border border-white/45 bg-white/65 px-6 py-5 shadow-[0_10px_40px_rgba(0,0,0,0.04)] backdrop-blur-md">
-              <p className="text-[12px] tracking-[0.16em] text-neutral-500">
-                PERKIRAAN CUACA
-              </p>
-              <p className="mt-2 text-[16px] tracking-[0.03em] text-neutral-700">
-                ☁️ Waru, Sidoarjo • 26°C
-              </p>
-            </div>
-          </div>
-        </section>
+Dan kami bersyukur dipertemukan Allah di waktu terbaik.  
+Kini kami menanti hari istimewa kami, hari di mana dua perjalanan  
+akan bertemu dalam satu langkah yang sama.
 
+</p>
+
+
+{/* COUNTDOWN */}
+
+<div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+
+{[
+{ label: "HARI", value: time.days },
+{ label: "JAM", value: time.hours },
+{ label: "MENIT", value: time.minutes },
+{ label: "DETIK", value: time.seconds },
+].map((item,i)=>(
+<div
+key={i}
+className="rounded-[22px] border border-white/45 bg-white/70 px-4 py-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] backdrop-blur-md"
+>
+
+<p className="text-[26px] font-semibold text-neutral-800">
+{item.value}
+</p>
+
+<p className="mt-2 text-[11px] tracking-[0.28em] text-neutral-500">
+{item.label}
+</p>
+
+</div>
+))}
+
+</div>
+
+
+{/* WEATHER */}
+
+<div className="mx-auto mt-10 max-w-sm rounded-[22px] border border-white/45 bg-white/65 px-6 py-5 shadow-[0_10px_40px_rgba(0,0,0,0.04)] backdrop-blur-md">
+
+<Weather/>
+
+</div>
+
+
+</div>
+
+</section>
        {/* =====================================
 WEDDING EVENT
 ===================================== */}
