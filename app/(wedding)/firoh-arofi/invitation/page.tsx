@@ -357,7 +357,7 @@ Counting The Days
        {/* =====================================
 WEDDING EVENT
 ===================================== */}
-<section className="fade-up px-6 py-36 bg-[#f4f9fc]">
+<section className="fade-up px-6 py-36 bg-[#7AA6AF]">
 
 <div className="mx-auto max-w-5xl">
 
