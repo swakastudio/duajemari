@@ -759,3 +759,34 @@ LTSIP FONT (Section Title)
   font-style: normal;
   font-display: swap;
 }
+
+/* ===============================
+BRIDE & GROOM NAME
+=============================== */
+
+.font-royalti {
+  font-family: "Royalti", serif;
+  letter-spacing: 0.04em;
+  color: #2e3a45;
+}
+
+
+/* ===============================
+SECTION TITLE
+=============================== */
+
+.font-ltsip {
+  font-family: "LtsipText", serif;
+  letter-spacing: 0.12em;
+  color: #3f4d58;
+}
+
+
+/* ===============================
+SECTION SUBTITLE
+=============================== */
+
+.section-label {
+  letter-spacing: 0.45em;
+  color: #6a7680;
+}
