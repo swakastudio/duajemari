@@ -1,6 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { Pattern } from "@/components/Pattern"
+import GiftEnvelope from "@/components/GiftEnvelope"
 
 export default function InvitationPage(){
 
@@ -40,7 +42,7 @@ return ()=>clearInterval(timer)
 
 
 /* ===============================
-FADE UP ANIMATION
+FADE UP
 =============================== */
 
 useEffect(()=>{
@@ -68,7 +70,7 @@ return ()=>observer.disconnect()
 
 return(
 
-<main className="relative overflow-x-hidden text-neutral-800">
+<main className="relative overflow-x-hidden text-neutral-800 font-serif">
 
 
 
@@ -76,12 +78,16 @@ return(
 BACKGROUND
 ===================================== */}
 
-<div className="fixed inset-0 -z-10 overflow-hidden">
+<div className="fixed inset-0 -z-10">
 
 {/* SKY */}
 
+<div className="absolute inset-0 bg-[#e9f3f8]"></div>
+
+{/* CLOUD */}
+
 <div
-className="absolute inset-0"
+className="absolute inset-0 opacity-40"
 style={{
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
 backgroundSize:"cover",
@@ -96,7 +102,7 @@ backgroundPosition:"center"
 
 <img
 src="/firoh-arofi/bg-mountain.png"
-className="w-full opacity-95"
+className="w-full opacity-90"
 />
 
 </div>
@@ -111,18 +117,36 @@ HERO
 
 <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 fade-up">
 
-<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
+
+{/* PHOTO FRAME */}
+
+<div className="relative mb-10 w-[180px] md:w-[220px] mx-auto">
+
+<img
+src="/firoh-arofi/photo-couple.jpg"
+className="absolute inset-0 w-full h-full object-cover rounded-full"
+/>
+
+<img
+src="/firoh-arofi/frame-couple.png"
+className="relative w-full"
+/>
+
+</div>
+
+
+<p className="tracking-[0.35em] text-[12px] text-neutral-700 mb-6">
 THE WEDDING OF
 </p>
 
 <h1
 style={{fontFamily:"ClassiqueScript"}}
-className="text-[70px] md:text-[120px] leading-[0.9] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+className="text-[58px] md:text-[100px] text-white tracking-[0.02em] drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
 >
 
 Firoh
 
-<span className="mx-3 text-black/60 text-[26px]">
+<span className="mx-3 text-black/60 text-[28px]">
 &
 </span>
 
@@ -130,7 +154,7 @@ Arofi
 
 </h1>
 
-<p className="tracking-[0.35em] text-[14px] text-black/70 mt-6">
+<p className="tracking-[0.35em] text-[13px] text-neutral-700 mt-6">
 04 • 04 • 2026
 </p>
 
@@ -144,7 +168,7 @@ AYAT
 
 <section className="py-28 px-6 max-w-3xl mx-auto text-center fade-up">
 
-<p className="text-neutral-700 leading-relaxed text-lg">
+<p className="text-[15px] leading-[1.9] text-neutral-700">
 
 Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
 untukmu pasangan-pasangan dari jenismu sendiri agar kamu
@@ -176,14 +200,14 @@ BRIDE & GROOM
 
 <img
 src="/firoh-arofi/frame-bride.png"
-className="mx-auto w-[260px]"
+className="mx-auto w-[240px]"
 />
 
-<h3 className="text-[26px] font-semibold mt-6 tracking-wide">
-Nur Lailatul Maghfiroh, S.Pd.
+<h3 className="text-[24px] mt-6 tracking-wide">
+Nur Lailatul Maghfiroh
 </h3>
 
-<p className="text-neutral-600 mt-4 leading-relaxed font-serif">
+<p className="text-neutral-600 mt-4 leading-relaxed text-[14px]">
 
 Putri Ketiga dari pasangan  
 Bapak Muchammad Haris  
@@ -191,15 +215,6 @@ Bapak Muchammad Haris
 Ibu Isnaini (Almarhum)
 
 </p>
-
-<a
-href="https://instagram.com/_maghfiroh"
-className="block mt-4 text-neutral-500 hover:text-black transition"
->
-
-@_maghfiroh
-
-</a>
 
 </div>
 
@@ -211,14 +226,14 @@ className="block mt-4 text-neutral-500 hover:text-black transition"
 
 <img
 src="/firoh-arofi/frame-groom.png"
-className="mx-auto w-[260px]"
+className="mx-auto w-[240px]"
 />
 
-<h3 className="text-[26px] font-semibold mt-6 tracking-wide">
-Ibnu Arofi, S.Pd., Gr., SE
+<h3 className="text-[24px] mt-6 tracking-wide">
+Ibnu Arofi
 </h3>
 
-<p className="text-neutral-600 mt-4 leading-relaxed font-serif">
+<p className="text-neutral-600 mt-4 leading-relaxed text-[14px]">
 
 Putra Kedua dari pasangan  
 Bapak Abdul Wahid Musyadad  
@@ -226,15 +241,6 @@ Bapak Abdul Wahid Musyadad
 Ibu Sri Lestari
 
 </p>
-
-<a
-href="https://instagram.com/ibnu.arofi"
-className="block mt-4 text-neutral-500 hover:text-black transition"
->
-
-@ibnu.arofi
-
-</a>
 
 </div>
 
@@ -250,25 +256,12 @@ SAVE THE DATE
 
 <section className="py-32 px-6 text-center fade-up">
 
-<h2 className="text-[40px] font-semibold mb-12 tracking-wide">
+<h2 className="text-[32px] tracking-[0.08em] mb-12">
 Save The Date
 </h2>
 
 
-{/* TEXT DIATAS COUNTDOWN */}
-
-<p className="text-neutral-600 mb-10 max-w-lg mx-auto leading-relaxed">
-
-Dan kami bersyukur, dipertemukan Allah di waktu terbaik.  
-Kini kami menanti hari istimewa kami.
-
-</p>
-
-
-
-{/* COUNTDOWN */}
-
-<div className="grid grid-cols-4 gap-4 max-w-md mx-auto mb-10">
+<div className="grid grid-cols-4 gap-4 max-w-md mx-auto">
 
 {[
 {label:"HARI",value:time.days},
@@ -282,7 +275,7 @@ key={i}
 className="bg-white/80 backdrop-blur-md border border-neutral-200 rounded-xl py-6 shadow-sm"
 >
 
-<p className="text-3xl font-semibold">
+<p className="text-2xl font-semibold">
 {item.value}
 </p>
 
@@ -296,24 +289,6 @@ className="bg-white/80 backdrop-blur-md border border-neutral-200 rounded-xl py-
 
 </div>
 
-
-
-{/* WEATHER MINI */}
-
-<div className="max-w-md mx-auto border border-neutral-200 rounded-xl px-6 py-5 backdrop-blur-md bg-white/70 shadow-sm">
-
-<p className="text-neutral-600 text-sm">
-
-Perkiraan cuaca di lokasi acara
-
-</p>
-
-<p className="mt-2 text-lg font-medium">
-☁️ Waru, Sidoarjo • 26°C
-</p>
-
-</div>
-
 </section>
 
 
@@ -324,7 +299,7 @@ EVENT
 
 <section className="py-32 px-6 text-center max-w-xl mx-auto fade-up">
 
-<h2 className="text-[38px] font-semibold mb-16 tracking-wide">
+<h2 className="text-[32px] tracking-[0.08em] mb-16">
 Wedding Event
 </h2>
 
@@ -334,7 +309,7 @@ Wedding Event
 
 <div className="mb-16">
 
-<h3 className="text-xl font-semibold mb-3">
+<h3 className="text-lg font-semibold mb-3">
 Akad Nikah
 </h3>
 
@@ -342,13 +317,9 @@ Akad Nikah
 Sabtu, 04 April 2026
 </p>
 
-<p className="text-neutral-600 mb-6">
+<p className="text-neutral-600">
 Pukul 08.00 WIB
 </p>
-
-<button className="border px-6 py-2 rounded-full text-sm">
-Lihat Lokasi
-</button>
 
 </div>
 
@@ -358,7 +329,7 @@ Lihat Lokasi
 
 <div>
 
-<h3 className="text-xl font-semibold mb-3">
+<h3 className="text-lg font-semibold mb-3">
 Resepsi
 </h3>
 
@@ -376,9 +347,134 @@ Gang IV RT 04 RW 01
 Waru - Sidoarjo
 </p>
 
-<button className="border px-6 py-2 rounded-full text-sm mt-6">
+<a
+href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
+target="_blank"
+className="inline-block border px-6 py-2 rounded-full text-sm mt-6 hover:bg-black hover:text-white transition"
+>
+
 Lihat Lokasi
-</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+{/* =====================================
+LOVE STORY
+===================================== */}
+
+<section className="py-32 px-6 max-w-3xl mx-auto text-center fade-up">
+
+<h2 className="text-[32px] tracking-[0.08em] mb-16">
+Love Story
+</h2>
+
+<div className="space-y-16">
+
+<div>
+
+<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
+2025 • PERTEMUAN
+</p>
+
+<p className="text-[15px] leading-[1.9] text-neutral-700">
+
+Awal tahun 2025 menjadi awal pertemuan kami.
+Sebuah perkenalan sederhana yang kemudian
+membawa kami pada banyak percakapan,
+tawa, dan kebersamaan.
+
+</p>
+
+</div>
+
+
+<div>
+
+<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
+2025 • MENJALIN HUBUNGAN
+</p>
+
+<p className="text-[15px] leading-[1.9] text-neutral-700">
+
+Hari demi hari berlalu, hubungan ini tumbuh
+menjadi sesuatu yang lebih bermakna.
+Kami belajar saling memahami,
+mendukung dan menguatkan satu sama lain.
+
+</p>
+
+</div>
+
+
+<div>
+
+<p className="text-sm tracking-[0.3em] text-neutral-500 mb-3">
+2026 • MENUJU PELAMINAN
+</p>
+
+<p className="text-[15px] leading-[1.9] text-neutral-700">
+
+Dengan restu keluarga dan doa orang-orang
+tercinta, kami memutuskan melangkah
+menuju jenjang pernikahan
+untuk memulai kehidupan baru bersama.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* =====================================
+GALLERY
+===================================== */}
+
+<section className="py-32 px-6 text-center fade-up">
+
+<h2 className="text-[32px] tracking-[0.08em] mb-16">
+Gallery
+</h2>
+
+<div className="flex justify-center">
+
+<Pattern />
+
+</div>
+
+</section>
+
+
+
+{/* =====================================
+WEDDING GIFT
+===================================== */}
+
+<section className="py-32 px-6 text-center fade-up">
+
+<h2 className="text-[32px] tracking-[0.08em] mb-10">
+Wedding Gift
+</h2>
+
+<p className="text-neutral-600 mb-10 max-w-lg mx-auto">
+
+Doa restu dari Anda merupakan hadiah terindah bagi kami.
+Namun jika ingin memberikan tanda kasih,
+kami menyediakan fitur hadiah berikut.
+
+</p>
+
+<div className="max-w-md mx-auto">
+
+<GiftEnvelope />
 
 </div>
 
