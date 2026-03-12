@@ -101,7 +101,17 @@ Arofi
 
 </h1>
 
-<p className="tracking-[0.35em] text-[14px] text-black/70 mt-6 mb-10">
+<p
+className="
+tracking-[0.35em]
+text-[14px]
+text-white/80
+mt-6
+mb-10
+animate-datePulse
+drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
+"
+>
 04 • 04 • 2026
 </p>
 
@@ -123,9 +133,9 @@ drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]
 {guest}
 </h2>
 
-  <div className="relative w-32 h-[1px] mb-10">
+<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
 
 <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
 
