@@ -49,7 +49,7 @@ backgroundSize:"auto 100%"
 
 <img
 src="/firoh-arofi/bg-mountain.png"
-className="w-full"
+className="w-full animate-mountainZoom"
 />
 
 </div>
@@ -74,11 +74,13 @@ className="w-full object-cover"
 
 </div>
 
+<div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
+
 
 
 {/* CONTENT */}
 
-<div className="relative z-10 flex flex-col items-center px-6">
+<div className="relative z-10 flex flex-col items-center px-10 py-10 animate-float">
 
 <p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
@@ -91,7 +93,7 @@ className="text-[76px] md:text-[120px] text-white drop-shadow-lg"
 
 Firoh
 
-<span className="mx-3 text-black/60 text-[22px]">
+<span className="mx-3 text-black/60 text-[40px]">
 &
 </span>
 
@@ -109,18 +111,47 @@ Kepada Yth
 
 <h2
 style={{fontFamily:"ZTotez"}}
-className="text-[24px] text-white mb-8"
+className="
+text-[26px]
+tracking-[0.06em]
+text-white
+mt-2
+mb-10
+drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]
+"
 >
 {guest}
 </h2>
 
+  <div className="relative w-32 h-[1px] mb-10">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+
+</div>
+
 <button
 onClick={openInvitation}
-className="px-10 py-3 border border-white/40 rounded-full text-[12px] tracking-[0.25em] text-white backdrop-blur-sm hover:bg-white hover:text-black transition"
+className="
+px-12
+py-3
+border
+border-white/40
+rounded-full
+text-[12px]
+tracking-[0.35em]
+text-white
+bg-white/10
+backdrop-blur-md
+hover:bg-white
+hover:text-black
+transition-all
+duration-500
+shadow-[0_10px_40px_rgba(0,0,0,0.35)]
+"
 >
-
 BUKA UNDANGAN
-
 </button>
 
 </div>
