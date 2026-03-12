@@ -716,7 +716,7 @@ transform:translateX(-50%);
 }
 
 .animate-cloudMove{
-animation:cloudMove 120s linear infinite;
+animation:cloudMove 60s linear infinite;
 }
 
 @keyframes mountainZoom{
