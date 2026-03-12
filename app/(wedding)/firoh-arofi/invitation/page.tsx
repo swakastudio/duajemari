@@ -232,7 +232,7 @@ src="https://placehold.co/400x400"
 alt="Bride frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
-<br />
+</div>
 <h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
@@ -293,7 +293,7 @@ src="https://placehold.co/400x400"
 alt="Groom frame"
 className="mx-auto w-[230px] md:w-[250px]"
 />
-<br />
+</div>
 <h3 className="font-ltsip text-[34px] md:text-[15px] text-[#3f4d58]">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
