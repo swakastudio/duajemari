@@ -2,13 +2,16 @@
 
 import { useEffect, useState } from "react"
 
-export default function Weather(){
+export default function Weather() {
 
 const [weather,setWeather] = useState<any>(null)
+const [error,setError] = useState(false)
 
 useEffect(()=>{
 
 const fetchWeather = async()=>{
+
+try{
 
 const res = await fetch(
 "https://api.openweathermap.org/data/2.5/weather?lat=-7.352&lon=112.758&units=metric&appid=YOUR_API_KEY"
@@ -16,7 +19,16 @@ const res = await fetch(
 
 const data = await res.json()
 
+if(data.cod !== 200){
+setError(true)
+return
+}
+
 setWeather(data)
+
+}catch{
+setError(true)
+}
 
 }
 
@@ -25,11 +37,32 @@ fetchWeather()
 },[])
 
 
-if(!weather) return <p className="text-sm">Memuat cuaca...</p>
+
+if(error){
+
+return(
+<p className="text-sm text-neutral-500">
+Cuaca tidak tersedia
+</p>
+)
+
+}
 
 
-const icon = weather.weather[0].icon
 
+if(!weather){
+
+return(
+<p className="text-sm text-neutral-500">
+Memuat cuaca...
+</p>
+)
+
+}
+
+
+
+const icon = weather.weather?.[0]?.icon
 
 return(
 
@@ -41,15 +74,19 @@ PERKIRAAN CUACA
 
 <div className="flex items-center justify-center gap-2 mt-2">
 
+{icon && (
+
 <img
 src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
 alt="weather"
 className="w-8 h-8"
 />
 
+)}
+
 <p className="text-[16px] text-neutral-700">
 
-{weather.main.temp}°C
+{weather.main?.temp}°C
 
 </p>
 
@@ -57,7 +94,7 @@ className="w-8 h-8"
 
 <p className="text-[12px] text-neutral-500 mt-1">
 
-{weather.weather[0].description}
+{weather.weather?.[0]?.description}
 
 </p>
 
