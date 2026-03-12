@@ -758,27 +758,6 @@ transform:scale(1);
 .animate-mountainZoom{
 animation:mountainZoom 18s ease-out forwards;
 }
-/* ===============================
-BRIDE & GROOM NAME
-=============================== */
-
-.font-royalti {
-  font-family: "Royalti", serif;
-  letter-spacing: 0.04em;
-  color: #2e3a45;
-}
-
-
-/* ===============================
-SECTION TITLE
-=============================== */
-
-.font-ltsip {
-  font-family: "LtsipText", serif;
-  letter-spacing: 0.12em;
-  color: #3f4d58;
-}
-
 
 /* ===============================
 SECTION SUBTITLE
