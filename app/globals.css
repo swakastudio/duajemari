@@ -571,22 +571,6 @@ animation: shimmer 4s linear infinite;
 animation: float 2s ease-in-out infinite;
 }
 
-@keyframes cloudsMove {
-
-0%{
-background-position-x:0;
-}
-
-100%{
-background-position-x:-3000px;
-}
-
-}
-
-.animate-clouds{
-animation: cloudsMove 120s linear infinite;
-}
-
 @keyframes dateBreath{
 
 0%{
@@ -714,4 +698,26 @@ body{
 height:100%;
 overflow-x:hidden;
 background:#e9f3f8;
+}
+/* =========================
+   CLOUD PARALLAX MOVE
+========================= */
+
+@keyframes cloudMove {
+
+0%{
+background-position-x:0;
+}
+
+100%{
+background-position-x:-3000px;
+}
+
+}
+
+.animate-cloudMove{
+
+animation:cloudMove 160s linear infinite;
+will-change: background-position;
+
 }
