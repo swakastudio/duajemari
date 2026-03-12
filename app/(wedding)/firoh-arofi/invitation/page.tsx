@@ -171,19 +171,24 @@ export default function InvitationPage() {
           </div>
         </section>
 
-        {/* =====================================
-            BRIDE & GROOM
-        ===================================== */}
-        <section className="fade-up px-6 py-32">
-          <div className="mx-auto max-w-5xl">
-            <div className="mb-14 text-center">
-              <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
-                BRIDE & GROOM
-              </p>
-              <h2 className="font-ltsip text-[34px] md:text-[40px]">
+     {/* =====================================
+BRIDE & GROOM
+===================================== */}
+<section className="fade-up px-6 py-32">
+
+<div className="mx-auto max-w-5xl">
+
+<div className="mb-14 text-center">
+
+<p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
+BRIDE & GROOM
+</p>
+
+<h2 className="font-ltsip text-[34px] md:text-[40px] text-[#3f4d58]">
 Mempelai
 </h2>
-              <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
 
@@ -191,19 +196,27 @@ Mempelai
 
 </div>
 
-            <div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
-              {/* BRIDE */}
-              <div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-                <img
-                  src="https://placehold.co/400x400"
-                  alt="Bride frame"
-                  className="mx-auto w-[230px] md:w-[250px]"
-                />
+</div>
 
-  <h3 className="font-royalti text-[34px] md:text-[38px] leading-tight">
+
+
+<div className="grid items-start gap-16 md:grid-cols-2 md:gap-20">
+
+{/* BRIDE */}
+
+<div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
+
+<img
+src="https://placehold.co/400x400"
+alt="Bride frame"
+className="mx-auto w-[230px] md:w-[250px]"
+/>
+
+<h3 className="font-royalti text-[34px] md:text-[38px] leading-tight text-[#2e3a45]">
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
-                <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
 
@@ -211,38 +224,44 @@ Nur Lailatul Maghfiroh, S.Pd.
 
 </div>
 
-                <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
-                  Putri Ketiga dari pasangan
-                  <br />
-                  Bapak Muchammad Haris
-                  <br />
-                  &
-                  <br />
-                  Ibu Isnaini (Almarhum)
-                </p>
+<p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+Putri Ketiga dari pasangan
+<br/>
+Bapak Muchammad Haris
+<br/>
+&
+<br/>
+Ibu Isnaini (Almarhum)
+</p>
 
-                <a
-                  href="https://instagram.com/_maghfiroh"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
-                >
-                  @_maghfiroh
-                </a>
-              </div>
+<a
+href="https://instagram.com/_maghfiroh"
+target="_blank"
+rel="noreferrer"
+className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
+>
+@_maghfiroh
+</a>
 
-              {/* GROOM */}
-              <div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-                <img
-                  src="https://placehold.co/400x400"
-                  alt="Groom frame"
-                  className="mx-auto w-[230px] md:w-[250px]"
-                />
+</div>
 
-     <h3 className="font-royalti text-[34px] md:text-[38px] leading-tight">
+
+
+{/* GROOM */}
+
+<div className="rounded-[30px] border border-white/40 bg-white/50 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
+
+<img
+src="https://placehold.co/400x400"
+alt="Groom frame"
+className="mx-auto w-[230px] md:w-[250px]"
+/>
+
+<h3 className="font-royalti text-[34px] md:text-[38px] leading-tight text-[#2e3a45]">
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
-               <div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+
+<div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
 
@@ -250,28 +269,32 @@ Ibnu Arofi, S.Pd., Gr., SE
 
 </div>
 
-                <p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
-                  Putra Kedua dari pasangan
-                  <br />
-                  Bapak Abdul Wahid Musyadad
-                  <br />
-                  &
-                  <br />
-                  Ibu Sri Lestari
-                </p>
+<p className="mt-4 text-[14px] leading-[1.95] tracking-[0.01em] text-neutral-600">
+Putra Kedua dari pasangan
+<br/>
+Bapak Abdul Wahid Musyadad
+<br/>
+&
+<br/>
+Ibu Sri Lestari
+</p>
 
-                <a
-                  href="https://instagram.com/ibnu.arofi"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
-                >
-                  @ibnu.arofi
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+<a
+href="https://instagram.com/ibnu.arofi"
+target="_blank"
+rel="noreferrer"
+className="mt-5 inline-block text-[13px] tracking-[0.08em] text-neutral-500 transition hover:text-black"
+>
+@ibnu.arofi
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
         {/* =====================================
             SAVE THE DATE
