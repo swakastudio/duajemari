@@ -9,11 +9,9 @@ const router = useRouter()
 
 const [opening,setOpening] = useState(false)
 
-
-
-/* =========================
+/* ===============================
 OPEN INVITATION
-========================= */
+=============================== */
 
 const openInvitation = () => {
 
@@ -27,8 +25,6 @@ router.push("/firoh-arofi/invitation")
 
 }
 
-
-
 return(
 
 <section
@@ -41,7 +37,6 @@ flex
 items-center
 justify-center
 text-center
-bg-[#e9f3f8]
 transition-all
 duration-[1400ms]
 ease-[cubic-bezier(.22,.61,.36,1)]
@@ -51,51 +46,46 @@ ${opening ? "scale-110 blur-md opacity-0" : ""}
 
 
 
-{/* ========================================================
-BACKGROUND LAYERS
-======================================================== */}
+{/* =====================================
+BACKGROUND
+===================================== */}
 
-<div className="absolute inset-0 z-0 overflow-hidden">
+<div className="absolute inset-0 -z-10 overflow-hidden">
 
 
 
-{/* SKY */}
+{/* SKY COLOR */}
+
+<div className="absolute inset-0 bg-[#e9f3f8]"></div>
+
+
+
+{/* CLOUDS MOVING */}
 
 <div
-className="absolute inset-0"
+className="absolute inset-0 animate-cloudMove"
 style={{
 backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
-backgroundSize:"cover",
-backgroundPosition:"center"
+backgroundRepeat:"repeat-x",
+backgroundSize:"auto 100%",
+backgroundPosition:"0 0"
 }}
 ></div>
 
 
 
-{/* SUN GLOW */}
-
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_60%)]"></div>
-
-
-
-{/* VIGNETTE */}
-
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_50%,rgba(0,0,0,0.18))]"></div>
-
-
-
 {/* MOUNTAIN */}
 
-<div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[135%] md:w-full pointer-events-none">
+<div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[110%] md:w-full pointer-events-none">
 
 <img
 src="/firoh-arofi/bg-mountain.png"
 className={`
 w-full
 transition-all
-duration-[1600ms]
+duration-[1500ms]
 ease-[cubic-bezier(.22,.61,.36,1)]
-${opening ? "scale-[1.12] translate-y-[50px]" : ""}
+${opening ? "scale-[1.15] translate-y-[60px]" : ""}
 `}
 />
 
@@ -103,44 +93,46 @@ ${opening ? "scale-[1.12] translate-y-[50px]" : ""}
 
 
 
-{/* FOG SOFT */}
+{/* FLOWER FRAME VIDEO */}
 
-<div className="absolute bottom-0 left-0 w-full h-[120px] pointer-events-none opacity-60">
+<div className="absolute bottom-0 left-0 w-full pointer-events-none z-10">
 
-<div
-className="absolute inset-0 blur-[25px]"
-style={{
-background:"linear-gradient(to top, rgba(255,255,255,0.65), transparent)"
-}}
-></div>
+<video
+autoPlay
+loop
+muted
+playsInline
+className="w-full"
+>
 
-</div>
+<source src="/firoh-arofi/frame-flower.webm" type="video/webm" />
 
-
-
-{/* COLOR GRADIENT */}
-
-<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/[0.04] to-black/[0.22]"></div>
-
-
+</video>
 
 </div>
 
 
 
-{/* ========================================================
+{/* GRADIENT */}
+
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40"></div>
+
+</div>
+
+
+
+{/* =====================================
 CONTENT
-======================================================== */}
+===================================== */}
 
 <div
 className={`
 relative
-z-10
+z-20
 flex
 flex-col
 items-center
 px-6
-pt-12
 transition-all
 duration-[1200ms]
 ${opening ? "scale-95 opacity-0 translate-y-10" : ""}
@@ -151,35 +143,35 @@ ${opening ? "scale-95 opacity-0 translate-y-10" : ""}
 
 {/* TITLE */}
 
-<p className="tracking-[0.45em] text-[12px] text-black/70 mb-6">
-
+<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
-
 </p>
 
 
 
-{/* COUPLE NAME */}
+{/* COUPLE */}
 
 <h1
-style={{fontFamily:"ClassiqueScript"}}
+style={{ fontFamily:"ClassiqueScript" }}
 className="
-text-[72px]
-md:text-[118px]
+text-[76px]
+md:text-[120px]
 leading-[0.9]
 mb-3
+-translate-x-3
+md:translate-x-0
 text-white
-drop-shadow-[0_10px_40px_rgba(0,0,0,0.45)]
+drop-shadow-[0_6px_20px_rgba(0,0,0,0.35)]
 "
 >
 
-Firoh
+<span>Firoh</span>
 
-<span className="text-black/70 text-[22px] mx-3">
+<span className="text-black/70 text-[22px] mx-2">
 &
 </span>
 
-Arofi
+<span>Arofi</span>
 
 </h1>
 
@@ -189,41 +181,29 @@ Arofi
 
 <p
 className="
-tracking-[0.38em]
+tracking-[0.35em]
 text-[14px]
 text-black/70
 mb-10
 animate-datePulse
 "
 >
-
 04 • 04 • 2026
-
 </p>
 
 
 
-{/* GUEST TITLE */}
+{/* GUEST */}
 
-<p className="text-[11px] tracking-[0.35em] text-black/70 mb-2 uppercase">
-
+<p className="text-[11px] tracking-[0.35em] text-black/70 mb-1 uppercase">
 Kepada Yth
-
 </p>
 
 
-
-{/* GUEST NAME */}
 
 <h2
-style={{fontFamily:"ZTotez"}}
-className="
-text-[26px]
-tracking-[0.05em]
-text-white
-mb-7
-drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)]
-"
+style={{ fontFamily:"ZTotez" }}
+className="text-[24px] tracking-[0.04em] text-white mb-6"
 >
 
 {guest.charAt(0).toUpperCase() + guest.slice(1)}
@@ -234,11 +214,11 @@ drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)]
 
 {/* DIVIDER */}
 
-<div className="relative w-28 h-[2px] mb-10 overflow-hidden">
+<div className="relative w-28 h-[2px] mb-12 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-neutral-400 to-transparent"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-80 blur-[1px]"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70 blur-[1px]"></div>
 
 </div>
 
@@ -252,15 +232,15 @@ className="
 px-10
 py-3
 border
-border-white/50
+border-white/40
 rounded-full
 text-[12px]
-tracking-[0.28em]
+tracking-[0.25em]
 text-white
-backdrop-blur-md
+backdrop-blur-sm
 hover:bg-white
 hover:text-black
-hover:shadow-[0_0_24px_rgba(255,255,255,0.3)]
+hover:shadow-[0_0_20px_rgba(255,255,255,0.25)]
 transition-all
 duration-500
 "
@@ -274,9 +254,9 @@ BUKA UNDANGAN
 
 
 
-{/* ========================================================
-TRANSITION OVERLAY
-======================================================== */}
+{/* =====================================
+TRANSITION
+===================================== */}
 
 <div
 className={`
