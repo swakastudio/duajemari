@@ -200,7 +200,7 @@ BRIDE & GROOM
 
 <div className="mb-14 text-center">
 
-<p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
+<p className="mb-3 text-[11px] tracking-[0.38em] text-black/70">
 BRIDE & GROOM
 </p>
 
@@ -208,7 +208,7 @@ BRIDE & GROOM
 Mempelai
 </h2>
 
-  <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
+  <p className="text-[12px] leading-[2.05] tracking-[0.01em] text-black/70 md:text-[16px]">
     Tanpa Mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
     serta kerabat sekalian untuk menghadiri acara pernikahan kami :
     </p>
