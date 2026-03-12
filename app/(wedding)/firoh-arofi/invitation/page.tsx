@@ -210,9 +210,11 @@ Mempelai
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[##DB6D00] to-transparent"></div>
+  {/* base gold line */}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+  {/* shine animation */}
+  <div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white/90 to-transparent"></div>
 
 </div>
 
@@ -237,9 +239,9 @@ Nur Lailatul Maghfiroh, S.Pd.
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent opacity-90"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
 
 </div>
 
@@ -276,7 +278,7 @@ hover:shadow-md
 >
 
 <img
-src="/icons/logo-instagram.svg"
+src="public/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
@@ -303,9 +305,9 @@ Ibnu Arofi, S.Pd., Gr., SE
 
 <div className="relative w-28 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DB6D00] to-transparent opacity-90"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
 
 </div>
 
@@ -342,7 +344,7 @@ hover:shadow-md
 >
 
 <img
-src="/icons/logo-instagram.svg"
+src="public/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
