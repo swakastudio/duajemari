@@ -78,6 +78,7 @@ export default function InvitationPage() {
       {/* =====================================
           FIXED BACKGROUND
       ===================================== */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/20"></div>
       <div className="fixed inset-0 -z-0 overflow-hidden">
         {/* SKY BASE */}
         <div className="absolute inset-0 bg-[#e9f3f8]" />
@@ -304,75 +305,161 @@ export default function InvitationPage() {
           </div>
         </section>
 
-        {/* =====================================
-            WEDDING EVENT
-        ===================================== */}
-        <section className="fade-up px-6 py-32">
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-14 text-center">
-              <p className="mb-3 text-[11px] tracking-[0.38em] text-black/55">
-                WEDDING EVENT
-              </p>
-              <h2 className="text-[30px] tracking-[0.08em] text-neutral-800 md:text-[36px]">
-                Hari Bahagia
-              </h2>
-            </div>
+       {/* =====================================
+WEDDING EVENT
+===================================== */}
+<section className="fade-up px-6 py-36 bg-[#f4f9fc]">
 
-            <div className="grid gap-8 md:grid-cols-2">
-              {/* AKAD */}
-              <div className="rounded-[30px] border border-white/45 bg-white/55 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-                <p className="mb-3 text-[11px] tracking-[0.34em] text-neutral-500">
-                  AKAD NIKAH
-                </p>
+<div className="mx-auto max-w-5xl">
 
-                <h3 className="text-[24px] tracking-[0.04em] text-neutral-800">
-                  Sabtu
-                </h3>
 
-                <p className="mt-4 text-[14px] leading-[1.95] text-neutral-600">
-                  04 April 2026
-                  <br />
-                  Pukul 08.00 WIB
-                </p>
-              </div>
+{/* TITLE */}
 
-              {/* RESEPSI */}
-              <div className="rounded-[30px] border border-white/45 bg-white/55 px-8 py-10 text-center shadow-[0_10px_50px_rgba(0,0,0,0.05)] backdrop-blur-md">
-                <p className="mb-3 text-[11px] tracking-[0.34em] text-neutral-500">
-                  RESEPSI
-                </p>
+<div className="text-center mb-20">
 
-                <h3 className="text-[24px] tracking-[0.04em] text-neutral-800">
-                  Sabtu
-                </h3>
+<p className="text-[11px] tracking-[0.45em] text-neutral-500 mb-4">
+WEDDING EVENT
+</p>
 
-                <p className="mt-4 text-[14px] leading-[1.95] text-neutral-600">
-                  04 April 2026
-                  <br />
-                  08.00 WIB - selesai
-                </p>
+<h2 className="text-[34px] md:text-[40px] tracking-[0.08em] text-neutral-800">
+Hari Bahagia
+</h2>
 
-                <p className="mt-4 text-[14px] leading-[1.95] text-neutral-600">
-                  Jl. Kepuhkiriman Dalam Masjid
-                  <br />
-                  Gang IV RT 04 RW 01
-                  <br />
-                  Waru - Sidoarjo
-                </p>
+<div className="w-16 h-[1px] bg-neutral-300 mx-auto mt-6"></div>
 
-                <a
-                  href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-7 inline-block rounded-full border border-neutral-800 px-6 py-2 text-[12px] tracking-[0.22em] text-neutral-800 transition hover:bg-neutral-800 hover:text-white"
-                >
-                  LIHAT LOKASI
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+</div>
 
+
+
+{/* EVENT GRID */}
+
+<div className="grid md:grid-cols-2 gap-10">
+
+
+
+{/* ===============================
+AKAD NIKAH
+=============================== */}
+
+<div className="
+group
+rounded-[34px]
+border border-white/50
+bg-white/60
+backdrop-blur-xl
+px-10 py-12
+text-center
+shadow-[0_15px_60px_rgba(0,0,0,0.06)]
+transition
+hover:shadow-[0_20px_80px_rgba(0,0,0,0.08)]
+">
+
+<p className="text-[11px] tracking-[0.38em] text-neutral-500 mb-4">
+AKAD NIKAH
+</p>
+
+<h3 className="text-[26px] tracking-[0.04em] text-neutral-800 mb-3">
+Sabtu
+</h3>
+
+<p className="text-[15px] text-neutral-600 leading-[1.9]">
+04 April 2026
+</p>
+
+<p className="text-[15px] text-neutral-600">
+Pukul 08.00 WIB
+</p>
+
+<div className="mt-8 w-12 h-[1px] bg-neutral-200 mx-auto"></div>
+
+</div>
+
+
+
+{/* ===============================
+RESEPSI
+=============================== */}
+
+<div className="
+group
+rounded-[34px]
+border border-white/50
+bg-white/60
+backdrop-blur-xl
+px-10 py-12
+text-center
+shadow-[0_15px_60px_rgba(0,0,0,0.06)]
+transition
+hover:shadow-[0_20px_80px_rgba(0,0,0,0.08)]
+">
+
+<p className="text-[11px] tracking-[0.38em] text-neutral-500 mb-4">
+RESEPSI
+</p>
+
+<h3 className="text-[26px] tracking-[0.04em] text-neutral-800 mb-3">
+Sabtu
+</h3>
+
+<p className="text-[15px] text-neutral-600 leading-[1.9]">
+04 April 2026
+</p>
+
+<p className="text-[15px] text-neutral-600">
+08.00 WIB – selesai
+</p>
+
+
+{/* ADDRESS */}
+
+<div className="mt-6 text-[14px] leading-[1.8] text-neutral-600">
+
+Jl. Kepuhkiriman Dalam Masjid  
+<br/>
+Gang IV RT 04 RW 01  
+<br/>
+Waru – Sidoarjo
+
+</div>
+
+
+
+{/* MAP BUTTON */}
+
+<a
+href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
+target="_blank"
+rel="noreferrer"
+className="
+inline-block
+mt-8
+px-7 py-2.5
+rounded-full
+border border-neutral-800
+text-[11px]
+tracking-[0.28em]
+text-neutral-800
+transition-all
+duration-500
+hover:bg-neutral-800
+hover:text-white
+hover:shadow-lg
+"
+>
+
+LIHAT LOKASI
+
+</a>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
         {/* =====================================
             GALLERY
         ===================================== */}
