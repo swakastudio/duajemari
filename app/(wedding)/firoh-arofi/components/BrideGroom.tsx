@@ -7,17 +7,6 @@ return(
 <section className="fade-up relative px-6 py-20 overflow-hidden">
 
 <div className="relative z-10 max-w-xl mx-auto">
-  {/* FLOWER FRAME */}
-
-<div className="absolute inset-0 z-20 pointer-events-none">
-
-<img
-src="/firoh-arofi/frame-bridegroom.gif"
-alt="flower frame"
-className="w-full h-full object-cover opacity-90 scale-100"
-/>
-
-</div>
 
 {/* ================= GLASS CARD ================= */}
 
