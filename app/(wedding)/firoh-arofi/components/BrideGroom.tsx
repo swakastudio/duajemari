@@ -4,9 +4,19 @@ export default function BrideGroom(){
 
 return(
 
-<section className="fade-up px-6 py-20">
+<section className="fade-up relative px-6 py-20 overflow-hidden">
 
-<div className="max-w-xl mx-auto">
+<div className="absolute inset-0 pointer-events-none">
+
+<img
+src="/firoh-arofi/frame-bridegroom.gif"
+alt="flower frame"
+className="w-full h-full object-cover opacity-100 scale-105"
+/>
+
+</div>
+
+<div className="relative z-10 max-w-xl mx-auto">
 
 {/* ================= GLASS CARD ================= */}
 
