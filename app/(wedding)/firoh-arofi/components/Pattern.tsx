@@ -10,8 +10,7 @@ const images = [
 "https://picsum.photos/800/600?random=5"
 ]
 
-export function Pattern(){
-
+export default function Pattern(){
 const [current,setCurrent] = useState(0)
 
 return(
