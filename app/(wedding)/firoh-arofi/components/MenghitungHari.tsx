@@ -56,7 +56,7 @@ return()=>clearInterval(timer)
 
 return(
 
-<section className="fade-up px-6 py-16 text-center">
+<section className="fade-up w-full bg-[#E7F2F6]">
 
 <div className="mx-auto max-w-3xl">
 
