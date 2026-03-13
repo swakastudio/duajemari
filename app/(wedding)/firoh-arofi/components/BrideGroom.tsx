@@ -32,7 +32,7 @@ font-ltsip
 text-[34px]
 md:text-[40px]
 tracking-[0.08em]
-text-[#F7B300]
+text-neutral-600
 "
 >
 MEMPELAI
@@ -80,7 +80,7 @@ className="mx-auto w-[220px] animate-photoFloat"
 className="
 font-billy
 text-[35px]
-text-[#2f3b45]
+text-neutral-600
 mt-6
 leading-[1.2]
 "
@@ -160,7 +160,7 @@ className="mx-auto w-[220px] animate-photoFloat delay-float"
 className="
 font-billy
 text-[35px]
-text-[#2f3b45]
+text-neutral-600
 mt-6
 leading-[1.2]
 "
