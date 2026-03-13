@@ -48,7 +48,7 @@ shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 <h2
 className="
 font-ltsip
-text-[34px]
+text-[24px]
 md:text-[40px]
 tracking-[0.08em]
 text-neutral-600
