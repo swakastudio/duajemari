@@ -747,3 +747,23 @@ BILLY SCRIPT FONT (NAMA MEMPELAI)
 .font-billy {
   font-family: "BillyScript", cursive;
 }
+
+/* ===============================
+SHINY DIVIDER
+=============================== */
+
+@keyframes dividerShine {
+
+0%{
+transform:translateX(-140%);
+}
+
+100%{
+transform:translateX(140%);
+}
+
+}
+
+.animate-dividerShine{
+animation: dividerShine 3s ease-in-out infinite;
+}
