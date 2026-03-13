@@ -59,7 +59,7 @@ className="w-full animate-mountainZoom"
 </div>
 
 {/* FRAME-ORNAMENT */}
-  <div className="absolute bottom-0 left-0 w-full translate-y-[-120px] pointer-events-none">
+  <div className="absolute bottom-0 left-0 w-full translate-y-[-115px] pointer-events-none">
     <video
 autoPlay
 loop
