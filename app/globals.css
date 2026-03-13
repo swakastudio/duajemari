@@ -559,3 +559,116 @@ PHOTO ANIMATION
   font-style: normal;
   font-display: swap;
 }
+
+/* =========================
+   CLOUD MOVE (MAIN)
+========================= */
+
+@keyframes cloudMove {
+
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+
+}
+
+.animate-cloudMove{
+  animation: cloudMove 60s linear infinite;
+}
+
+/* =========================
+   CLOUD MOVE SLOW
+========================= */
+
+@keyframes cloudMoveSlow {
+
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+
+}
+
+.animate-cloudMoveSlow{
+  animation: cloudMoveSlow 120s linear infinite;
+}
+/* =========================
+   HERO FLOAT ANIMATION
+========================= */
+
+@keyframes heroFloat {
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-8px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+.animate-heroFloat{
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+/* =========================
+   HERO FLOAT DELAY
+========================= */
+
+.hero-delay-1{
+  animation-delay:0.3s;
+}
+
+.hero-delay-2{
+  animation-delay:0.6s;
+}
+
+.hero-delay-3{
+  animation-delay:0.9s;
+}
+
+.hero-delay-4{
+  animation-delay:1.2s;
+}
+
+/* =========================
+   DATE PULSE ANIMATION
+========================= */
+
+@keyframes datePulse {
+
+  0%{
+    opacity: 0.75;
+    transform: scale(1);
+    letter-spacing: 0.35em;
+  }
+
+  50%{
+    opacity: 1;
+    transform: scale(1.06);
+    letter-spacing: 0.38em;
+  }
+
+  100%{
+    opacity: 0.75;
+    transform: scale(1);
+    letter-spacing: 0.35em;
+  }
+
+}
+
+.animate-datePulse{
+  animation: datePulse 5s ease-in-out infinite;
+}
