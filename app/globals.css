@@ -818,3 +818,23 @@ animation-delay:1.5s;
 .floating-photo{
 animation:floatPhoto 6s ease-in-out infinite;
 }
+
+@keyframes flowerFloat {
+0% { transform: translateY(0px) rotate(0deg); }
+50% { transform: translateY(-12px) rotate(1deg); }
+100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-flowerFloat{
+animation: flowerFloat 8s ease-in-out infinite;
+}
+
+@keyframes flowerFloatSlow {
+0% { transform: translateY(0px) rotate(0deg); }
+50% { transform: translateY(-18px) rotate(-1deg); }
+100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-flowerFloatSlow{
+animation: flowerFloatSlow 12s ease-in-out infinite;
+}
