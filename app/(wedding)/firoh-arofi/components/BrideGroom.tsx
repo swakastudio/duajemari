@@ -37,9 +37,10 @@ mt-3
 max-w-md
 mx-auto
 ">
+Assalamualaikum Wr. Wb.
 Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
-acara pernikahan kami
+acara pernikahan kami :
 </p>
 
 
