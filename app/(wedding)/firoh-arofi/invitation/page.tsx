@@ -10,6 +10,7 @@ import Pattern from "../components/Pattern"
 import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
+import Hero from "../components/Hero"
 
 
 
@@ -90,7 +91,8 @@ PAGE CONTENT
 
 <div className="relative z-10 space-y-32 md:space-y-40">
 
-
+<Hero/>
+  
 <Ayat/>
 
 <BrideGroom/>
