@@ -672,3 +672,46 @@ PHOTO ANIMATION
 .animate-datePulse{
   animation: datePulse 5s ease-in-out infinite;
 }
+
+/* =========================
+   HERO FLOAT LOOP
+========================= */
+
+@keyframes heroFloat {
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+.animate-heroFloat{
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+
+/* DELAY */
+
+.hero-delay-1{
+  animation-delay: .3s;
+}
+
+.hero-delay-2{
+  animation-delay: .6s;
+}
+
+.hero-delay-3{
+  animation-delay: .9s;
+}
+
+.hero-delay-4{
+  animation-delay: 1.2s;
+}
