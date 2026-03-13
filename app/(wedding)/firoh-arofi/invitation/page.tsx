@@ -131,7 +131,5 @@ return ( <main className="relative overflow-x-hidden text-neutral-800">
   </div>
 
 </main>
-```
-
-)
+        )
 }
