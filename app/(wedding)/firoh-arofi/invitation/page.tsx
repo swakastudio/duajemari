@@ -33,21 +33,18 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 )
 
-elements.forEach(el => observer.observe(el))
+elements.forEach((el) => observer.observe(el))
 
 return () => observer.disconnect()
 ```
 
 }, [])
 
-return (
+return ( <main className="relative overflow-x-hidden text-neutral-800">
 
 ```
-<main className="relative overflow-x-hidden text-neutral-800">
-
   {/* BACKGROUND */}
-
-  <div className="fixed inset-0 -z-0 overflow-hidden">
+  <div className="fixed inset-0 -z-10 overflow-hidden">
 
     {/* SKY */}
     <div className="absolute inset-0 bg-[#e9f3f8]" />
@@ -59,7 +56,7 @@ return (
         backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
     />
 
@@ -68,19 +65,17 @@ return (
       src="/firoh-arofi/bg-mountain.png"
       alt="mountain"
       className="
-        absolute
-        bottom-0
-        left-1/2
-        -translate-x-1/2
-        w-[160%]
-        md:w-full
-        opacity-90
-        pointer-events-none
-      "
+      absolute
+      bottom-0
+      left-1/2
+      -translate-x-1/2
+      w-[160%]
+      md:w-full
+      opacity-90
+      pointer-events-none
+    "
     />
-
   </div>
-
 
   {/* =====================================
       PAGE CONTENT
@@ -104,7 +99,6 @@ return (
 
     <Closing />
 
-
     {/* =====================================
         FOOTER
     ===================================== */}
@@ -120,14 +114,14 @@ return (
         target="_blank"
         rel="noreferrer"
         className="
-          inline-block
-          mt-3
-          text-[15px]
-          font-medium
-          tracking-[0.05em]
-          text-neutral-800
-          hover:underline
-        "
+        inline-block
+        mt-3
+        text-[15px]
+        font-medium
+        tracking-[0.05em]
+        text-neutral-800
+        hover:underline
+      "
       >
         duajemari.vercel.app
       </a>
@@ -140,5 +134,4 @@ return (
 ```
 
 )
-
 }
