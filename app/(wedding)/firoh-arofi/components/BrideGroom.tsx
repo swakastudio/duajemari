@@ -50,51 +50,77 @@ acara pernikahan kami :
 
 
 
-{/* BRIDE */}
+{/* ================= BRIDE ================= */}
 
-<div className="mb-20">
+<div className="mb-24">
+
+
+{/* PHOTO */}
+
+<div className="relative mx-auto w-[240px]">
 
 <img
 src="/firoh-arofi/photo-woman.png"
+alt="Bride"
 className="
 mx-auto
-w-[220px]
-rounded-full
-shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+w-[240px]
+rounded-[28px]
+shadow-[0_25px_60px_rgba(0,0,0,0.25)]
 animate-photoFloat
 "
 />
 
-<h3 className="
-font-royalti
-text-[30px]
-text-[#3f4d58]
-mt-6
-tracking-[-0.01em]
-">
-Nur Lailatul Maghfiroh, S.Pd.
-</h3>
+</div>
 
+
+{/* GLASS CARD */}
+
+<div className="
+mt-10
+mx-auto
+max-w-[320px]
+px-8
+py-8
+rounded-[26px]
+bg-white/40
+backdrop-blur-xl
+border border-white/40
+shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+">
+
+<h3 className="
+font-billy
+text-[36px]
+text-[#2f3b45]
+leading-[1.2]
+">
+
+Nur Lailatul Maghfiroh, S.Pd.
+
+</h3>
+  
 <p className="
 text-[13px]
 leading-[1.9]
 text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
 ">
+
 Putri Ketiga dari
 <br/>
 Bapak Muchammad Haris
 <br/>
 & Ibu Isnaini (Almarhum)
+
 </p>
+
 
 <a
 href="https://instagram.com/_maghfiroh"
 target="_blank"
+rel="noreferrer"
 className="
-mt-5
+mt-6
 inline-flex
 items-center
 justify-center
@@ -110,10 +136,13 @@ hover:scale-110
 
 <img
 src="/firoh-arofi/logo-instagram.svg"
+alt="Instagram"
 className="w-5 h-5"
 />
 
 </a>
+
+</div>
 
 </div>
 
@@ -121,63 +150,89 @@ className="w-5 h-5"
 
 {/* SYMBOL */}
 
-<div className="
-text-[70px]
-font-light
-text-[#3f4d58]
-mb-16
+<h3 className="
+font-billy
+text-[36px]
+text-[#2f3b45]
+leading-[1.2]
 ">
 &
 </div>
 
 
 
-{/* GROOM */}
+{/* ================= GROOM ================= */}
 
 <div>
 
+
+{/* PHOTO */}
+
+<div className="relative mx-auto w-[240px]">
+
 <img
 src="/firoh-arofi/photo-man.png"
+alt="Groom"
 className="
 mx-auto
-w-[220px]
-rounded-full
-shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+w-[240px]
+rounded-[28px]
+shadow-[0_25px_60px_rgba(0,0,0,0.25)]
 animate-photoFloat
 delay-float
 "
 />
 
-<h3 className="
-font-royalti
-text-[30px]
-text-[#3f4d58]
-mt-6
-tracking-[-0.01em]
+</div>
+
+
+{/* GLASS CARD */}
+
+<div className="
+mt-10
+mx-auto
+max-w-[320px]
+px-8
+py-8
+rounded-[26px]
+bg-white/40
+backdrop-blur-xl
+border border-white/40
+shadow-[0_10px_40px_rgba(0,0,0,0.08)]
 ">
+
+<h3 className="
+font-billy
+text-[36px]
+text-[#2f3b45]
+leading-[1.2]
+">
+
 Ibnu Arofi, S.Pd., Gr., SE
+
 </h3>
 
 <p className="
 text-[13px]
 leading-[1.9]
 text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
 ">
+
 Putra Kedua dari
 <br/>
 Bapak Abdul Wahid Musyadad
 <br/>
 & Ibu Sri Lestari
+
 </p>
+
 
 <a
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
+rel="noreferrer"
 className="
-mt-5
+mt-6
 inline-flex
 items-center
 justify-center
@@ -193,10 +248,13 @@ hover:scale-110
 
 <img
 src="/firoh-arofi/logo-instagram.svg"
+alt="Instagram"
 className="w-5 h-5"
 />
 
 </a>
+
+</div>
 
 </div>
 
