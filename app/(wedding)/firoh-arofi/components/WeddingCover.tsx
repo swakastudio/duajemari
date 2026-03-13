@@ -58,7 +58,21 @@ className="w-full animate-mountainZoom"
 
 </div>
 
+{/* FRAME-ORNAMENT */}
+  <div className="absolute bottom-0 left-0 w-full pointer-events-none">
+    <video
+autoPlay
+loop
+muted
+playsInline
+className="w-full object-cover"
+>
 
+<source src="/firoh-arofi/frame-ornament-cover.webm" type="video/webm"/>
+
+</video>
+
+</div>
 
 {/* FLOWER VIDEO */}
 
