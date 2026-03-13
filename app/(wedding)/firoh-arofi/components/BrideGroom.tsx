@@ -4,26 +4,46 @@ export default function BrideGroom(){
 
 return(
 
-<section className="fade-up px-6 py-16">
+<section className="fade-up relative px-6 py-40 overflow-hidden">
 
-<div className="
-mx-auto
-max-w-3xl
-rounded-[32px]
-border border-white/40
-bg-white/45
-px-8 py-12
-text-center
-backdrop-blur-md
-shadow-[0_10px_50px_rgba(0,0,0,0.05)]
-">
+{/* FLOWER DECORATION */}
+
+<img
+src="/firoh-arofi/flower-left.png"
+className="
+absolute
+left-0
+top-32
+w-[220px]
+opacity-80
+animate-flowerFloat
+pointer-events-none
+"
+/>
+
+<img
+src="/firoh-arofi/flower-right.png"
+className="
+absolute
+right-0
+bottom-20
+w-[220px]
+opacity-80
+animate-flowerFloatSlow
+pointer-events-none
+"
+/>
+
+<div className="max-w-xl mx-auto text-center">
+
 
 {/* TITLE */}
 
 <h2 className="
 font-ltsip
-text-[32px]
-tracking-[0.06em]
+text-[34px]
+md:text-[40px]
+tracking-[0.08em]
 text-[#3f4d58]
 ">
 Mempelai
@@ -33,67 +53,61 @@ Mempelai
 text-[13px]
 leading-[2]
 text-neutral-600
-mt-3
+mt-4
 max-w-md
 mx-auto
 ">
-Assalamualaikum Wr. Wb.
 Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
-acara pernikahan kami :
+acara pernikahan kami
 </p>
 
 
 {/* DIVIDER */}
 
-<div className="flex items-center justify-center gap-4 my-8">
+<div className="flex items-center justify-center gap-6 my-14">
 
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="w-24 h-[1px] bg-neutral-300/70"></div>
 
-<span className="text-neutral-400 text-sm">✦</span>
+<div className="w-2 h-2 rounded-full bg-neutral-400"></div>
 
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="w-24 h-[1px] bg-neutral-300/70"></div>
 
 </div>
 
 
-{/* COUPLE GRID */}
-
-<div className="grid md:grid-cols-3 gap-10 items-center">
 
 {/* BRIDE */}
 
-<div>
+<div className="mb-20">
 
 <img
-src="https://placehold.co/400x400"
-alt="Bride"
+src="https://placehold.co/500x500"
 className="
 mx-auto
-w-[170px]
+w-[220px]
 rounded-full
-border border-white
-shadow-lg
+shadow-[0_20px_60px_rgba(0,0,0,0.15)]
 animate-photoFloat
 "
 />
 
 <h3 className="
 font-royalti
-text-[28px]
+text-[30px]
 text-[#3f4d58]
-mt-4
+mt-6
 tracking-[-0.01em]
 ">
-Nur Lailatul Maghfiroh, S.Pd.
+Nur Lailatul Maghfiroh
 </h3>
 
 <p className="
 text-[13px]
-leading-[1.8]
+leading-[1.9]
 text-neutral-600
-mt-3
-max-w-[220px]
+mt-4
+max-w-[260px]
 mx-auto
 ">
 Putri Ketiga dari
@@ -103,15 +117,11 @@ Bapak Muchammad Haris
 & Ibu Isnaini (Almarhum)
 </p>
 
-
-{/* INSTAGRAM */}
-
 <a
 href="https://instagram.com/_maghfiroh"
 target="_blank"
-rel="noreferrer"
 className="
-mt-4
+mt-5
 inline-flex
 items-center
 justify-center
@@ -127,7 +137,6 @@ hover:scale-110
 
 <img
 src="/firoh-arofi/logo-instagram.svg"
-alt="Instagram"
 className="w-5 h-5"
 />
 
@@ -136,15 +145,18 @@ className="w-5 h-5"
 </div>
 
 
+
 {/* SYMBOL */}
 
 <div className="
-text-[42px]
-text-[#3f4d58]
+text-[70px]
 font-light
+text-[#3f4d58]
+mb-16
 ">
 &
 </div>
+
 
 
 {/* GROOM */}
@@ -152,14 +164,12 @@ font-light
 <div>
 
 <img
-src="https://placehold.co/400x400"
-alt="Groom"
+src="https://placehold.co/500x500"
 className="
 mx-auto
-w-[170px]
+w-[220px]
 rounded-full
-border border-white
-shadow-lg
+shadow-[0_20px_60px_rgba(0,0,0,0.15)]
 animate-photoFloat
 delay-float
 "
@@ -167,20 +177,20 @@ delay-float
 
 <h3 className="
 font-royalti
-text-[28px]
+text-[30px]
 text-[#3f4d58]
-mt-4
+mt-6
 tracking-[-0.01em]
 ">
-Ibnu Arofi, S.Pd., Gr., SE
+Ibnu Arofi
 </h3>
 
 <p className="
 text-[13px]
-leading-[1.8]
+leading-[1.9]
 text-neutral-600
-mt-3
-max-w-[220px]
+mt-4
+max-w-[260px]
 mx-auto
 ">
 Putra Kedua dari
@@ -190,15 +200,11 @@ Bapak Abdul Wahid Musyadad
 & Ibu Sri Lestari
 </p>
 
-
-{/* INSTAGRAM */}
-
 <a
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
-rel="noreferrer"
 className="
-mt-4
+mt-5
 inline-flex
 items-center
 justify-center
@@ -214,13 +220,10 @@ hover:scale-110
 
 <img
 src="/firoh-arofi/logo-instagram.svg"
-alt="Instagram"
 className="w-5 h-5"
 />
 
 </a>
-
-</div>
 
 </div>
 
