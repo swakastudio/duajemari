@@ -11,161 +11,133 @@ import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
 
-export default function InvitationPage(){
+export default function InvitationPage() {
 
 /* ===============================
 SCROLL REVEAL
 =============================== */
 
-useEffect(()=>{
+useEffect(() => {
 
+```
 const elements = document.querySelectorAll(".fade-up")
 
 const observer = new IntersectionObserver(
-(entries)=>{
-entries.forEach((entry)=>{
-if(entry.isIntersecting){
-entry.target.classList.add("visible")
-}
-})
-},
-{ threshold:0.15 }
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible")
+      }
+    })
+  },
+  { threshold: 0.15 }
 )
 
-elements.forEach(el=>observer.observe(el))
+elements.forEach(el => observer.observe(el))
 
-return()=>observer.disconnect()
+return () => observer.disconnect()
+```
 
-},[])
+}, [])
 
-return(
+return (
 
+```
 <main className="relative overflow-x-hidden text-neutral-800">
 
-{/* =====================================
-BACKGROUND
-===================================== */}
+  {/* BACKGROUND */}
 
-<div className="fixed inset-0 -z-10 overflow-hidden">
+  <div className="fixed inset-0 -z-0 overflow-hidden">
 
-{/* SKY */}
+    {/* SKY */}
+    <div className="absolute inset-0 bg-[#e9f3f8]" />
 
-<div className="absolute inset-0 bg-[#e9f3f8]" />
+    {/* CLOUDS */}
+    <div
+      className="absolute inset-0 opacity-60"
+      style={{
+        backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    />
 
-{/* CLOUDS */}
+    {/* MOUNTAIN */}
+    <img
+      src="/firoh-arofi/bg-mountain.png"
+      alt="mountain"
+      className="
+        absolute
+        bottom-0
+        left-1/2
+        -translate-x-1/2
+        w-[160%]
+        md:w-full
+        opacity-90
+        pointer-events-none
+      "
+    />
 
-<div
-className="absolute inset-0 opacity-60"
-style={{
-backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
-backgroundSize:"cover",
-backgroundPosition:"center",
-backgroundRepeat:"no-repeat"
-}}
-/>
+  </div>
 
-{/* MOUNTAIN */} <img
-src="/firoh-arofi/bg-mountain.png"
-alt="mountain"
-className="
-absolute
-bottom-0
-left-1/2
--translate-x-1/2
-w-[160%]
-md:w-full
-opacity-90
-pointer-events-none
-"
-/>
 
-</div>
+  {/* =====================================
+      PAGE CONTENT
+  ===================================== */}
 
-{/* =====================================
-PAGE CONTENT
-===================================== */}
+  <div className="relative z-10 space-y-32 md:space-y-40">
 
-<div className="relative z-10 space-y-32 md:space-y-40">
+    <Ayat />
 
-{/* AYAT */} <Ayat/>
+    <BrideGroom />
 
-{/* =====================================
-BRIDE GROOM + FLOWER FRAME
-===================================== */}
+    <MenghitungHari />
 
-<section className="relative">
+    <HariBahagia />
 
-<BrideGroom/>
+    <Pattern />
 
-{/* FLOWER FRAME */}
+    <WeddingEnvelope />
 
-<div className="absolute inset-0 flex justify-center pointer-events-none z-20">
+    <GuestWish />
 
-<video
-autoPlay
-loop
-muted
-playsInline
-className="w-[1080px] max-w-none"
+    <Closing />
 
->
 
-<source
-src="/firoh-arofi/frame-bridegroom.webm"
-type="video/webm"
-/>
+    {/* =====================================
+        FOOTER
+    ===================================== */}
 
-</video>
+    <footer className="text-center py-20">
 
-</div>
+      <p className="text-[12px] tracking-[0.18em] text-neutral-500">
+        DIBUAT OLEH
+      </p>
 
-</section>
+      <a
+        href="https://duajemari.vercel.app"
+        target="_blank"
+        rel="noreferrer"
+        className="
+          inline-block
+          mt-3
+          text-[15px]
+          font-medium
+          tracking-[0.05em]
+          text-neutral-800
+          hover:underline
+        "
+      >
+        duajemari.vercel.app
+      </a>
 
-{/* COUNTDOWN */} <MenghitungHari/>
+    </footer>
 
-{/* EVENT */} <HariBahagia/>
-
-{/* GALLERY */} <Pattern/>
-
-{/* GIFT */} <WeddingEnvelope/>
-
-{/* WISH */} <GuestWish/>
-
-{/* CLOSING */} <Closing/>
-
-{/* =====================================
-FOOTER
-===================================== */}
-
-<footer className="text-center py-20">
-
-<p className="text-[12px] tracking-[0.18em] text-neutral-500">
-DIBUAT OLEH
-</p>
-
-<a
-href="https://duajemari.vercel.app"
-target="_blank"
-rel="noreferrer"
-className="
-inline-block
-mt-3
-text-[15px]
-font-medium
-tracking-[0.05em]
-text-neutral-800
-hover:underline
-"
-
->
-
-duajemari.vercel.app </a>
-
-</footer>
-
-</div>
+  </div>
 
 </main>
+```
 
 )
 
