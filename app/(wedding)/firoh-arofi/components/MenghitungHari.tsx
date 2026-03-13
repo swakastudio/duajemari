@@ -65,7 +65,7 @@ return(
 
 <h2 className="
 font-ltsip
-text-[32px]
+text-[24px]
 tracking-[0.06em]
 text-[#3f4d58]
 ">
