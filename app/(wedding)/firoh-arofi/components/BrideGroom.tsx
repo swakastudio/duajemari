@@ -148,15 +148,19 @@ className="w-5 h-5"
 
 
 
-{/* SYMBOL */}
+<div className="flex justify-center mb-24">
 
-<h3 className="
-font-billy
-text-[36px]
-text-[#2f3b45]
-leading-[1.2]
-">
-&
+<img
+src="/firoh-arofi/tanda-pisah.svg"
+alt="divider"
+className="
+w-[140px]
+opacity-90
+drop-shadow-[0_8px_20px_rgba(0,0,0,0.15)]
+animate-photoFloat
+"
+/>
+
 </div>
 
 
