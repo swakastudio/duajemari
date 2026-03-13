@@ -6,8 +6,6 @@ return(
 
 <section className="fade-up relative px-6 py-40 overflow-hidden">
 
-/>
-
 <div className="max-w-xl mx-auto text-center">
 
 
@@ -57,7 +55,7 @@ acara pernikahan kami :
 <div className="mb-20">
 
 <img
-src="https://placehold.co/500x500"
+src="/firoh-arofi/photo-woman.png"
 className="
 mx-auto
 w-[220px]
@@ -74,7 +72,7 @@ text-[#3f4d58]
 mt-6
 tracking-[-0.01em]
 ">
-Nur Lailatul Maghfiroh
+Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
 <p className="
@@ -139,7 +137,7 @@ mb-16
 <div>
 
 <img
-src="https://placehold.co/500x500"
+src="/firoh-arofi/photo-man.png"
 className="
 mx-auto
 w-[220px]
@@ -157,7 +155,7 @@ text-[#3f4d58]
 mt-6
 tracking-[-0.01em]
 ">
-Ibnu Arofi
+Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
 <p className="
