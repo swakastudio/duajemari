@@ -11,10 +11,7 @@ import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
 
-
-
 export default function InvitationPage(){
-
 
 /* ===============================
 SCROLL REVEAL
@@ -41,48 +38,48 @@ return()=>observer.disconnect()
 
 },[])
 
-
-
 return(
 
 <main className="relative overflow-x-hidden text-neutral-800">
 
-{/* BACKGROUND */}
+{/* =====================================
+BACKGROUND
+===================================== */}
 
-<div className="fixed inset-0 -z-0 overflow-hidden">
+<div className="fixed inset-0 -z-10 overflow-hidden">
 
-  {/* SKY */}
-  <div className="absolute inset-0 bg-[#e9f3f8]" />
+{/* SKY */}
 
-  {/* CLOUDS */}
-  <div
-    className="absolute inset-0 opacity-60"
-    style={{
-      backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat"
-    }}
-  />
+<div className="absolute inset-0 bg-[#e9f3f8]" />
 
-  {/* MOUNTAIN */}
-  <img
-    src="/firoh-arofi/bg-mountain.png"
-    alt="mountain"
-    className="
-      absolute
-      bottom-0
-      left-1/2
-      -translate-x-1/2
-      w-[160%]
-      md:w-full
-      opacity-90
-      pointer-events-none
-    "
-  />
+{/* CLOUDS */}
+
+<div
+className="absolute inset-0 opacity-60"
+style={{
+backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
+backgroundSize:"cover",
+backgroundPosition:"center",
+backgroundRepeat:"no-repeat"
+}}
+/>
+
+{/* MOUNTAIN */} <img
+src="/firoh-arofi/bg-mountain.png"
+alt="mountain"
+className="
+absolute
+bottom-0
+left-1/2
+-translate-x-1/2
+w-[160%]
+md:w-full
+opacity-90
+pointer-events-none
+"
+/>
 
 </div>
-
 
 {/* =====================================
 PAGE CONTENT
@@ -90,23 +87,51 @@ PAGE CONTENT
 
 <div className="relative z-10 space-y-32 md:space-y-40">
 
-  
-<Ayat/>
+{/* AYAT */} <Ayat/>
+
+{/* =====================================
+BRIDE GROOM + FLOWER FRAME
+===================================== */}
+
+<section className="relative">
 
 <BrideGroom/>
 
-<MenghitungHari/>
+{/* FLOWER FRAME */}
 
-<HariBahagia/>
+<div className="absolute inset-0 flex justify-center pointer-events-none z-20">
 
-<Pattern/>
+<video
+autoPlay
+loop
+muted
+playsInline
+className="w-[1080px] max-w-none"
 
-<WeddingEnvelope/>
+>
 
-<GuestWish/>
+<source
+src="/firoh-arofi/frame-bridegroom.webm"
+type="video/webm"
+/>
 
-<Closing/>
+</video>
 
+</div>
+
+</section>
+
+{/* COUNTDOWN */} <MenghitungHari/>
+
+{/* EVENT */} <HariBahagia/>
+
+{/* GALLERY */} <Pattern/>
+
+{/* GIFT */} <WeddingEnvelope/>
+
+{/* WISH */} <GuestWish/>
+
+{/* CLOSING */} <Closing/>
 
 {/* =====================================
 FOOTER
@@ -131,14 +156,12 @@ tracking-[0.05em]
 text-neutral-800
 hover:underline
 "
+
 >
 
-duajemari.vercel.app
-
-</a>
+duajemari.vercel.app </a>
 
 </footer>
-
 
 </div>
 
