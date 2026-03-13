@@ -32,7 +32,7 @@ font-ltsip
 text-[34px]
 md:text-[40px]
 tracking-[0.08em]
-text-[#3f4d58]
+text-[#F7B300]
 "
 >
 MEMPELAI
