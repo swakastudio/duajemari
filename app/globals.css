@@ -535,3 +535,27 @@ PHOTO ANIMATION
 .animate-photoReveal{
   animation: photoReveal 1.4s cubic-bezier(.22,.61,.36,1) forwards;
 }
+
+/* ===============================
+   CLASSIQUE SCRIPT FONT (HERO NAME)
+=============================== */
+
+@font-face {
+  font-family: "ClassiqueScript";
+  src: url("/firoh-arofi/classiquescript.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===============================
+   ZTOTEZ FONT (GUEST NAME)
+=============================== */
+
+@font-face {
+  font-family: "ZTotez";
+  src: url("/firoh-arofi/ztotez-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
