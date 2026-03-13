@@ -19,7 +19,6 @@ SCROLL REVEAL
 
 useEffect(() => {
 
-```
 const elements = document.querySelectorAll(".fade-up")
 
 const observer = new IntersectionObserver(
@@ -36,13 +35,11 @@ const observer = new IntersectionObserver(
 elements.forEach((el) => observer.observe(el))
 
 return () => observer.disconnect()
-```
 
 }, [])
 
 return ( <main className="relative overflow-x-hidden text-neutral-800">
 
-```
   {/* BACKGROUND */}
   <div className="fixed inset-0 -z-10 overflow-hidden">
 
