@@ -58,7 +58,7 @@ return(
 
 <section className="fade-up w-full bg-[#E7F2F6] px-6 py-24">
 
-<section className="fade-up w-full bg-[#E7F2F6] px-6 py-24">
+<div className="mx-auto max-w-3xl text-center">
 
 
 {/* TITLE */}
@@ -75,13 +75,11 @@ MENGHITUNG HARI
 
 {/* DIVIDER */}
 
-<div className="flex items-center justify-center gap-4 my-6">
+<div className="relative w-36 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
 
-<span className="text-neutral-400 text-sm">✦</span>
-
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
 
 </div>
 
