@@ -7,7 +7,7 @@ import BrideGroom from "../components/BrideGroom"
 import MenghitungHari from "../components/MenghitungHari"
 import HariBahagia from "../components/HariBahagia"
 import Pattern from "../components/Pattern"
-import GiftEnvelope from "../components/GiftEnvelope"
+import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
 
