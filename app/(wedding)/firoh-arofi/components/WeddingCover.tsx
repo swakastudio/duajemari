@@ -108,12 +108,18 @@ className="w-full object-cover"
 {/* CONTENT */}
 
 <div className={`
-relative z-10 flex flex-col items-center px-10 py-10 animate-float
+relative z-10 flex flex-col items-center px-10 py-10
 transition-all duration-[1400ms]
 ${opening ? "scale-125 opacity-0" : ""}
 `}>
-
-<p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
+  
+<p className="
+tracking-[0.35em]
+text-[13px]
+text-black/70
+mb-6
+animate-heroFloat
+">
 THE WEDDING OF
 </p>
 
@@ -125,6 +131,8 @@ md:text-[120px]
 text-white
 drop-shadow-lg
 -translate-x-4
+animate-heroFloat
+hero-delay-1
 "
 >
 
@@ -146,13 +154,23 @@ text-white/80
 mt-6
 mb-10
 animate-datePulse
+animate-heroFloat
+hero-delay-2
 drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
 "
 >
 04 • 04 • 2026
 </p>
 
-<p className="text-[11px] tracking-[0.35em] text-black/70 mb-1 uppercase">
+<p className="
+text-[11px]
+tracking-[0.35em]
+text-black/70
+mb-1
+uppercase
+animate-heroFloat
+hero-delay-3
+">
 Kepada Yth
 </p>
 
@@ -164,6 +182,8 @@ tracking-[0.06em]
 text-white
 mt-2
 mb-10
+animate-heroFloat
+hero-delay-4
 drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]
 "
 >
@@ -196,6 +216,8 @@ hover:text-black
 transition-all
 duration-500
 shadow-[0_10px_40px_rgba(0,0,0,0.35)]
+animate-heroFloat
+hero-delay-4
 "
 >
 BUKA UNDANGAN
