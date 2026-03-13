@@ -116,7 +116,7 @@ PAGE CONTENT
 
 <Pattern/>
 
-<GiftEnvelope/>
+<WeddingEnvelope/>
 
 <GuestWish/>
 
