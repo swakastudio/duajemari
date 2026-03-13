@@ -224,7 +224,7 @@ className="w-5 h-5"
 <img
 src="/firoh-arofi/frame-bridegroom.gif"
 alt="flower frame"
-className="w-full h-full object-cover"
+className="w-full h-full object-cover opacity-90 scale-80"
 />
 
 </div>
