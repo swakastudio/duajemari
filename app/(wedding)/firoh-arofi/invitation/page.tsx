@@ -49,7 +49,7 @@ return(
 
 {/* BACKGROUND */}
 
-<div className="fixed inset-0 -z-10 overflow-hidden">
+<div className="fixed inset-0 -z-0 overflow-hidden">
 
   {/* SKY */}
   <div className="absolute inset-0 bg-[#e9f3f8]" />
