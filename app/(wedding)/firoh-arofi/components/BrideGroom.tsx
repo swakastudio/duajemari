@@ -32,7 +32,7 @@ shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 <img
 src="/firoh-arofi/frame-bridegroom.gif"
 alt="flower frame"
-className="w-full h-full object-cover opacity-90 scale-50"
+className="w-full h-full object-cover opacity-90 scale-100"
 />
 
 </div>
