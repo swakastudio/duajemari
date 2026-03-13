@@ -56,9 +56,9 @@ return()=>clearInterval(timer)
 
 return(
 
-<section className="fade-up w-full bg-[#E7F2F6]">
+<section className="fade-up w-full bg-[#E7F2F6] px-6 py-24">
 
-<div className="mx-auto max-w-3xl">
+<section className="fade-up w-full bg-[#E7F2F6] px-6 py-24">
 
 
 {/* TITLE */}
@@ -69,7 +69,7 @@ text-[32px]
 tracking-[0.06em]
 text-[#3f4d58]
 ">
-Menghitung Hari
+MENGHITUNG HARI
 </h2>
 
 
