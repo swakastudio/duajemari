@@ -4,10 +4,9 @@ export default function BrideGroom(){
 
 return(
 
-<section className="fade-up px-6 py-18">
+<section className="fade-up px-6 py-20">
 
 <div className="max-w-xl mx-auto">
-
 
 {/* ================= GLASS CARD ================= */}
 
@@ -15,7 +14,7 @@ return(
 className="
 text-center
 px-10
-py-16
+py-14
 rounded-[36px]
 bg-white/35
 backdrop-blur-xl
@@ -39,20 +38,23 @@ text-[#3f4d58]
 MEMPELAI
 </h2>
 
-  <div className="relative w-32 h-[2px] mx-auto mt-8 mb-10 overflow-hidden">
+
+{/* SHINY DIVIDER */}
+
+<div className="relative w-36 h-[2px] mx-auto mt-6 mb-10 overflow-hidden">
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
 
-<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
+<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
 
 </div>
+
 
 <p
 className="
 text-[12px]
 leading-[2]
 text-neutral-600
-mt-4
 max-w-md
 mx-auto
 "
@@ -63,15 +65,16 @@ Bapak/Ibu/Saudara/i untuk menghadiri
 acara pernikahan kami :
 </p>
 
+
 {/* ================= BRIDE ================= */}
 
-<div className="mt-14">
-  <img
-    src="/firoh-arofi/photo-woman.png"
-    alt="Bride"
-    className="mx-auto w-[220px] animate-photoFloat"
-  />
-</div>
+<div className="mt-16">
+
+<img
+src="/firoh-arofi/photo-woman.png"
+alt="Bride"
+className="mx-auto w-[220px] animate-photoFloat"
+/>
 
 <h3
 className="
@@ -120,31 +123,27 @@ transition
 hover:scale-110
 "
 >
-
 <img
 src="/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
-
 </a>
 
 </div>
 
 
-
 {/* ================= ORNAMENT ================= */}
 
-<div className="flex justify-center mb-12">
+<div className="flex justify-center my-16">
 
 <img
 src="/firoh-arofi/tanda-pisah.svg"
 alt="Divider"
-className="w-[25px] opacity-80"
+className="w-[28px] opacity-80"
 />
 
 </div>
-
 
 
 {/* ================= GROOM ================= */}
@@ -154,12 +153,7 @@ className="w-[25px] opacity-80"
 <img
 src="/firoh-arofi/photo-man.png"
 alt="Groom"
-className="
-mx-auto
-w-[220px]
-animate-photoFloat
-delay-float
-"
+className="mx-auto w-[220px] animate-photoFloat delay-float"
 />
 
 <h3
@@ -209,13 +203,11 @@ transition
 hover:scale-110
 "
 >
-
 <img
 src="/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
 className="w-5 h-5"
 />
-
 </a>
 
 </div>
