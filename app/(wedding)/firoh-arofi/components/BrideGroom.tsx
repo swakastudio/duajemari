@@ -65,7 +65,7 @@ acara pernikahan kami :
 
 {/* ================= BRIDE ================= */}
 
-<div className="mb-12">
+<div className="mb-16">
 
 <img
 src="/firoh-arofi/photo-woman.png"
