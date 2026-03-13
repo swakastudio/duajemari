@@ -9,13 +9,13 @@ return(
   <img
 src="/firoh-arofi/flower-left-bridegroom.gif"
 alt="flower-left"
-className="absolute left-[0px] top-[720px] w-[260px] pointer-events-none z-30"
+className="absolute left-[0px] top-[920px] w-[260px] pointer-events-none z-30"
 />
 
 <img
 src="/firoh-arofi/flower-right-bridegroom.gif"
 alt="flower-right"
-className="absolute right-[0px] top-[720px] w-[260px] pointer-events-none z-30"
+className="absolute right-[0px] top-[920px] w-[260px] pointer-events-none z-30"
 />
 
 <img
