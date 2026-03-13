@@ -6,32 +6,6 @@ return(
 
 <section className="fade-up relative px-6 py-40 overflow-hidden">
 
-{/* FLOWER DECORATION */}
-
-<img
-src="/firoh-arofi/flower-left.png"
-className="
-absolute
-left-0
-top-32
-w-[220px]
-opacity-80
-animate-flowerFloat
-pointer-events-none
-"
-/>
-
-<img
-src="/firoh-arofi/flower-right.png"
-className="
-absolute
-right-0
-bottom-20
-w-[220px]
-opacity-80
-animate-flowerFloatSlow
-pointer-events-none
-"
 />
 
 <div className="max-w-xl mx-auto text-center">
@@ -57,9 +31,10 @@ mt-4
 max-w-md
 mx-auto
 ">
+Assalamualaikum Wr.Wb
 Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
-acara pernikahan kami
+acara pernikahan kami :
 </p>
 
 
