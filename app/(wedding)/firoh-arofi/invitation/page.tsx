@@ -47,46 +47,41 @@ return(
 
 <main className="relative overflow-x-hidden text-neutral-800">
 
-
-{/* =====================================
-BACKGROUND LAYER
-===================================== */}
+{/* BACKGROUND LAYER */}
 
 <div className="fixed inset-0 -z-10 overflow-hidden">
 
+  {/* SKY BASE */}
+  <div className="absolute inset-0 bg-[#e9f3f8]" />
 
-{/* SKY */}
+  {/* CLOUDS */}
+  <div
+    className="absolute inset-0 opacity-50"
+    style={{
+      backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat"
+    }}
+  />
 
-<div className="absolute inset-0 bg-[#e9f3f8]" />
+  {/* MOUNTAIN */}
+  <img
+    src="/firoh-arofi/bg-mountain.png"
+    className="
+    absolute
+    bottom-0
+    left-1/2
+    -translate-x-1/2
+    w-[140%]
+    md:w-full
+    opacity-90
+    pointer-events-none
+    "
+  />
 
-
-{/* CLOUD */}
-
-<div
-className="absolute inset-0 opacity-40"
-style={{
-backgroundImage:"url('/firoh-arofi/bg-clouds.png')",
-backgroundRepeat:"no-repeat",
-backgroundSize:"cover",
-backgroundPosition:"center"
-}}
-/>
-
-
-{/* LIGHT OVERLAY */}
-
-<div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/0" />
-
-
-{/* MOUNTAIN */}
-
-<div className="absolute bottom-0 left-1/2 w-[130%] -translate-x-1/2 md:w-full">
-
-<img
-src="/firoh-arofi/bg-mountain.png"
-alt="Mountain"
-className="w-full opacity-95"
-/>
+  {/* ATMOSPHERE LIGHT */}
+  <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/30" />
 
 </div>
 
@@ -103,7 +98,7 @@ className="w-full opacity-95"
 PAGE CONTENT
 ===================================== */}
 
-<div className="relative z-10">
+<div className="relative z-10 space-y-32 md:space-y-40">
 
 
 <Ayat/>
