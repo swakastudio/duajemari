@@ -1,5 +1,6 @@
-@import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* =========================
    CUSTOM FONTS
 ========================= */
@@ -226,32 +227,6 @@ body {
 }
 
 /* underline animation */
-
-.hero-link::after {
-
-  content: "";
-  position: absolute;
-
-  left: 0;
-  bottom: -4px;
-
-  width: 0%;
-  height: 2px;
-
-  background: var(--accent);
-
-  transition: width 0.35s ease;
-
-}
-
-.hero-link:hover::after {
-  width: 100%;
-}
-
-.hero-link:active::after {
-  width: 100%;
-}
-
 /* ===== LOGO PULSE ===== */
 
 @keyframes logoPulse {
@@ -574,15 +549,6 @@ radial-gradient(circle at center, #111, #000 70%);
   font-display: swap;
 }
 
-@keyframes shimmer {
-0%{transform:translateX(-100%)}
-100%{transform:translateX(100%)}
-}
-
-.animate-shimmer{
-animation: shimmer 4s linear infinite;
-}
-
 @keyframes float {
 
 0%{transform:translateY(0)}
@@ -743,22 +709,6 @@ transform:translateX(-50%);
 animation:cloudMove 20s linear infinite;
 }
 
-@keyframes mountainZoom{
-
-0%{
-transform:scale(1.05);
-}
-
-100%{
-transform:scale(1);
-}
-
-}
-
-.animate-mountainZoom{
-animation:mountainZoom 18s ease-out forwards;
-}
-
 /* ===============================
 SECTION SUBTITLE
 =============================== */
@@ -852,4 +802,20 @@ transform: translateY(0px) scale(1);
 
 .animate-photoReveal{
 animation: photoReveal 1.4s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+@keyframes dividerGlow{
+
+0%{
+opacity:0.4;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:0.4;
+}
+
 }
