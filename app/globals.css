@@ -731,3 +731,19 @@ transform: translateY(0px) scale(1);
 }
 
 }
+
+/* ===============================
+BILLY SCRIPT FONT (NAMA MEMPELAI)
+=============================== */
+
+@font-face {
+  font-family: "BillyScript";
+  src: url("/firoh-arofi/billy-scriptian.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-billy {
+  font-family: "BillyScript", cursive;
+}
