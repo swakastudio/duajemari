@@ -56,7 +56,7 @@ return(
 
   {/* CLOUDS */}
   <div
-    className="absolute inset-0 opacity-50"
+    className="absolute inset-0 opacity-60"
     style={{
       backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
       backgroundSize: "cover",
@@ -74,15 +74,12 @@ return(
       bottom-0
       left-1/2
       -translate-x-1/2
-      w-[140%]
+      w-[160%]
       md:w-full
       opacity-90
       pointer-events-none
     "
   />
-
-  {/* ATMOSPHERE */}
-  <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/30" />
 
 </div>
 
