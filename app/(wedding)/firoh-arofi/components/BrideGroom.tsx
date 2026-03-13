@@ -13,6 +13,7 @@ return(
 <div
 className="
 relative z-10
+max-w-xl mx-auto
 text-center
 px-10
 py-16
@@ -23,6 +24,18 @@ border border-white/40
 shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 "
 >
+
+{/* FLOWER FRAME */}
+
+<div className="absolute inset-0 z-20 pointer-events-none">
+
+<img
+src="/firoh-arofi/frame-bridegroom.gif"
+alt="flower frame"
+className="w-full h-full object-cover opacity-90 scale-50"
+/>
+
+</div>
 
 {/* ================= TITLE ================= */}
 
@@ -214,18 +227,6 @@ className="w-5 h-5"
 
 
 </div>
-
-</div>
-
-  {/* FLOWER FRAME */}
-
-<div className="absolute inset-0 z-20 pointer-events-none">
-
-<img
-src="/firoh-arofi/frame-bridegroom.gif"
-alt="flower frame"
-className="w-full h-full object-cover opacity-90 scale-80"
-/>
 
 </div>
 
