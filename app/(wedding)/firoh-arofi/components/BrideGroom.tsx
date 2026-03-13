@@ -4,7 +4,7 @@ export default function BrideGroom(){
 
 return(
 
-<section className="fade-up relative px-6 py-40 overflow-hidden">
+<section className="fade-up px-6 py-32">
 
 <div className="max-w-xl mx-auto text-center">
 
@@ -49,61 +49,54 @@ acara pernikahan kami :
 </div>
 
 
+{/* ================= GLASS CARD ================= */}
+
+<div className="
+mx-auto
+max-w-[420px]
+px-10
+py-16
+rounded-[32px]
+bg-white/35
+backdrop-blur-xl
+border border-white/40
+shadow-[0_20px_70px_rgba(0,0,0,0.12)]
+">
+
 
 {/* ================= BRIDE ================= */}
 
-<div className="mb-24">
-
-
-{/* PHOTO */}
-
-<div className="relative mx-auto w-[240px]">
+<div className="mb-20">
 
 <img
 src="/firoh-arofi/photo-woman.png"
 alt="Bride"
 className="
 mx-auto
-w-[240px]
-rounded-[28px]
-shadow-[0_25px_60px_rgba(0,0,0,0.25)]
+w-[220px]
 animate-photoFloat
 "
 />
 
-</div>
-
-
-{/* GLASS CARD */}
-
-<div className="
-mt-10
-mx-auto
-max-w-[320px]
-px-8
-py-8
-rounded-[26px]
-bg-white/40
-backdrop-blur-xl
-border border-white/40
-shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-">
-
 <h3 className="
 font-billy
-text-[36px]
+text-[42px]
 text-[#2f3b45]
+mt-6
 leading-[1.2]
 ">
 
 Nur Lailatul Maghfiroh, S.Pd.
 
 </h3>
-  
+
 <p className="
 text-[13px]
 leading-[1.9]
 text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
 ">
 
 Putri Ketiga dari
@@ -113,7 +106,6 @@ Bapak Muchammad Haris
 & Ibu Isnaini (Almarhum)
 
 </p>
-
 
 <a
 href="https://instagram.com/_maghfiroh"
@@ -144,71 +136,40 @@ className="w-5 h-5"
 
 </div>
 
-</div>
 
+{/* ORNAMENT DIVIDER */}
 
-
-<div className="flex justify-center mb-24">
+<div className="flex justify-center mb-20">
 
 <img
 src="/firoh-arofi/tanda-pisah.svg"
-alt="divider"
-className="
-w-[140px]
-opacity-90
-drop-shadow-[0_8px_20px_rgba(0,0,0,0.15)]
-animate-photoFloat
-"
+alt="Divider"
+className="w-[40px] opacity-80"
 />
 
 </div>
-
 
 
 {/* ================= GROOM ================= */}
 
 <div>
 
-
-{/* PHOTO */}
-
-<div className="relative mx-auto w-[240px]">
-
 <img
 src="/firoh-arofi/photo-man.png"
 alt="Groom"
 className="
 mx-auto
-w-[240px]
-rounded-[28px]
-shadow-[0_25px_60px_rgba(0,0,0,0.25)]
+w-[220px]
 animate-photoFloat
 delay-float
 "
 />
 
-</div>
-
-
-{/* GLASS CARD */}
-
-<div className="
-mt-10
-mx-auto
-max-w-[320px]
-px-8
-py-8
-rounded-[26px]
-bg-white/40
-backdrop-blur-xl
-border border-white/40
-shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-">
-
 <h3 className="
 font-billy
-text-[36px]
+text-[42px]
 text-[#2f3b45]
+mt-6
 leading-[1.2]
 ">
 
@@ -220,6 +181,9 @@ Ibnu Arofi, S.Pd., Gr., SE
 text-[13px]
 leading-[1.9]
 text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
 ">
 
 Putra Kedua dari
@@ -229,7 +193,6 @@ Bapak Abdul Wahid Musyadad
 & Ibu Sri Lestari
 
 </p>
-
 
 <a
 href="https://instagram.com/ibnu.arofi"
