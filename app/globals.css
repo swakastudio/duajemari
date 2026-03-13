@@ -838,3 +838,18 @@ animation: flowerFloat 8s ease-in-out infinite;
 .animate-flowerFloatSlow{
 animation: flowerFloatSlow 12s ease-in-out infinite;
 }
+
+@keyframes photoReveal {
+0% {
+opacity: 0;
+transform: translateY(40px) scale(.92);
+}
+100% {
+opacity: 1;
+transform: translateY(0px) scale(1);
+}
+}
+
+.animate-photoReveal{
+animation: photoReveal 1.4s cubic-bezier(.22,.61,.36,1) forwards;
+}
