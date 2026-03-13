@@ -65,17 +65,13 @@ acara pernikahan kami :
 
 {/* ================= BRIDE ================= */}
 
-<div className="mb-24">
-
-<img
-src="/firoh-arofi/photo-woman.png"
-alt="Bride"
-className="
-mx-auto
-w-[220px]
-animate-photoFloat
-"
-/>
+<div className="mt-14">
+  <img
+    src="/firoh-arofi/photo-woman.png"
+    alt="Bride"
+    className="mx-auto w-[220px] animate-photoFloat"
+  />
+</div>
 
 <h3
 className="
