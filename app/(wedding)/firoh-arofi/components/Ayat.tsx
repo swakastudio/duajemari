@@ -4,26 +4,17 @@ export default function Ayat(){
 
 return(
 
-<section className="fade-up px-6 py-28">
+<section className="fade-up w-full bg-[#E7F2F6]">
 
-{/* BACKGROUND BLOCK */}
-
-<div className="
-relative
-bg-[#E7F2F6]
-py-24
-px-8
-">
-
-<div className="max-w-2xl mx-auto text-center">
+<div className="max-w-2xl mx-auto px-6 py-24 text-center">
 
 
 {/* AYAT */}
 
 <p className="
-text-[15px]
+text-[12px]
 md:text-[16px]
-leading-[2.2]
+leading-[2.25]
 tracking-[0.02em]
 text-neutral-700
 font-light
@@ -40,7 +31,7 @@ antara kamu rasa kasih dan sayang.
 {/* SOURCE */}
 
 <p className="
-mt-10
+mt-12
 text-[11px]
 tracking-[0.35em]
 text-neutral-500
@@ -63,9 +54,6 @@ w-[160px]
 opacity-80
 "
 />
-
-
-</div>
 
 </div>
 
