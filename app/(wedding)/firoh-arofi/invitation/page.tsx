@@ -51,47 +51,34 @@ return(
 
 <div className="fixed inset-0 -z-10 overflow-hidden">
 
-  {/* SKY BASE */}
+  {/* SKY */}
   <div className="absolute inset-0 bg-[#e9f3f8]" />
 
-  {/* CLOUDS */}
+  {/* CLOUD */}
   <div
-    className="absolute inset-0 opacity-50"
+    className="absolute inset-0 opacity-40"
     style={{
       backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+      backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat"
+      backgroundPosition: "center"
     }}
   />
+
+  {/* LIGHT OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/0" />
 
   {/* MOUNTAIN */}
   <img
     src="/firoh-arofi/bg-mountain.png"
-    className="
-    absolute
-    bottom-0
-    left-1/2
-    -translate-x-1/2
-    w-[140%]
-    md:w-full
-    opacity-90
-    pointer-events-none
-    "
+    alt="Mountain"
+    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[130%] md:w-full opacity-95"
   />
 
-  {/* ATMOSPHERE LIGHT */}
-  <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/30" />
+  {/* DEPTH */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/20" />
 
 </div>
-
-
-{/* DEPTH */}
-
-<div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/20" />
-
-</div>
-
 
 
 {/* =====================================
