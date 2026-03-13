@@ -808,3 +808,13 @@ animation: photoFloat 6s ease-in-out infinite;
 .delay-float{
 animation-delay:1.5s;
 }
+
+@keyframes floatPhoto{
+0%{transform:translateY(0px)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0px)}
+}
+
+.floating-photo{
+animation:floatPhoto 6s ease-in-out infinite;
+}
