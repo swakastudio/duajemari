@@ -36,12 +36,20 @@ tracking-[0.08em]
 text-[#3f4d58]
 "
 >
-Mempelai
+MEMPELAI
 </h2>
+
+  <div className="relative w-32 h-[2px] mx-auto mt-8 mb-10 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
+
+<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-70"></div>
+
+</div>
 
 <p
 className="
-text-[13px]
+text-[12px]
 leading-[2]
 text-neutral-600
 mt-4
@@ -54,21 +62,6 @@ Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
 acara pernikahan kami :
 </p>
-
-
-{/* ================= DIVIDER ================= */}
-
-<div className="flex items-center justify-center gap-6 my-10">
-
-<div className="w-24 h-[1px] bg-neutral-300/70"></div>
-
-<div className="w-2 h-2 rounded-full bg-neutral-400"></div>
-
-<div className="w-24 h-[1px] bg-neutral-300/70"></div>
-
-</div>
-
-
 
 {/* ================= BRIDE ================= */}
 
@@ -87,7 +80,7 @@ animate-photoFloat
 <h3
 className="
 font-billy
-text-[42px]
+text-[35px]
 text-[#2f3b45]
 mt-6
 leading-[1.2]
@@ -98,7 +91,7 @@ Nur Lailatul Maghfiroh, S.Pd.
 
 <p
 className="
-text-[13px]
+text-[12px]
 leading-[1.9]
 text-neutral-600
 mt-4
@@ -146,7 +139,7 @@ className="w-5 h-5"
 
 {/* ================= ORNAMENT ================= */}
 
-<div className="flex justify-center mb-16">
+<div className="flex justify-center mb-12">
 
 <img
 src="/firoh-arofi/tanda-pisah.svg"
@@ -176,7 +169,7 @@ delay-float
 <h3
 className="
 font-billy
-text-[42px]
+text-[35px]
 text-[#2f3b45]
 mt-6
 leading-[1.2]
@@ -187,7 +180,7 @@ Ibnu Arofi, S.Pd., Gr., SE
 
 <p
 className="
-text-[13px]
+text-[12px]
 leading-[1.9]
 text-neutral-600
 mt-4
