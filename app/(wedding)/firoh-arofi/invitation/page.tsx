@@ -78,7 +78,7 @@ return ( <main className="relative overflow-x-hidden text-neutral-800">
       PAGE CONTENT
   ===================================== */}
 
-  <div className="relative z-10 space-y-32 md:space-y-40">
+  <div className="relative z-10 space-y-24 md:space-y-40">
 
     <Ayat />
 
