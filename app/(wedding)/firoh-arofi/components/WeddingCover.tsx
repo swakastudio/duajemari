@@ -20,7 +20,13 @@ router.push("/firoh-arofi/invitation")
 
 return(
 
-<section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+<section
+className={`
+relative h-screen w-full overflow-hidden flex items-center justify-center text-center
+transition-all duration-[1400ms]
+${opening ? "scale-[1.15] blur-sm opacity-0" : "scale-100"}
+`}
+>
 
 
 
@@ -53,13 +59,16 @@ backgroundSize:"auto 100%"
 
 <img
 src="/firoh-arofi/bg-mountain.png"
-className="w-full animate-mountainZoom"
+className={`
+w-full transition-transform duration-[1400ms]
+${opening ? "scale-[1.25]" : "scale-100"}
+`}
 />
 
 </div>
 
 {/* FRAME-ORNAMENT */}
-  <div className="absolute bottom-0 left-0 w-full translate-y-[-135px] pointer-events-none">
+  <div className="absolute bottom-0 left-0 w-full translate-y-[-100px] pointer-events-none">
     <video
 autoPlay
 loop
@@ -98,7 +107,11 @@ className="w-full object-cover"
 
 {/* CONTENT */}
 
-<div className="relative z-10 flex flex-col items-center px-10 py-10 animate-float">
+<div className={`
+relative z-10 flex flex-col items-center px-10 py-10 animate-float
+transition-all duration-[1400ms]
+${opening ? "scale-125 opacity-0" : ""}
+`}>
 
 <p className="tracking-[0.35em] text-[13px] text-black/70 mb-6">
 THE WEDDING OF
