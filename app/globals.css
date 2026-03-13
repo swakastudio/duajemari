@@ -764,5 +764,5 @@ transform:translateX(140%);
 }
 
 .animate-dividerShine{
-animation: dividerShine 3s ease-in-out infinite;
+animation: dividerShine 2s ease-in-out infinite;
 }
