@@ -4,28 +4,31 @@ export default function Ayat(){
 
 return(
 
-<section className="fade-up px-6 py-16">
+<section className="fade-up relative px-6 py-28 overflow-hidden">
+
+
+{/* SOFT BACKGROUND */}
 
 <div className="
-mx-auto
-max-w-3xl
-rounded-[32px]
-border border-white/40
-bg-white/45
-px-8 py-12
-text-center
-backdrop-blur-md
-shadow-[0_10px_50px_rgba(0,0,0,0.05)]
-">
+absolute inset-0
+bg-gradient-to-b
+from-[#E7F2F6]/80
+via-[#E7F2F6]/60
+to-transparent
+"/>
+
+
+<div className="relative z-10 max-w-3xl mx-auto text-center">
+
 
 {/* AYAT */}
 
 <p className="
-text-[14px]
-leading-[2]
-tracking-[0.01em]
+text-[16px]
+md:text-[18px]
+leading-[2.1]
 text-neutral-700
-md:text-[16px]
+font-light
 ">
 
 Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan
@@ -38,13 +41,18 @@ antara kamu rasa kasih dan sayang.
 
 {/* DIVIDER */}
 
-<div className="flex items-center justify-center gap-4 my-6">
+<div className="flex items-center justify-center gap-6 my-10">
 
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="w-20 h-[1px] bg-neutral-300/70"></div>
 
-<span className="text-neutral-400 text-sm">✦</span>
+<div className="
+w-2
+h-2
+rounded-full
+bg-neutral-400
+"/>
 
-<div className="w-16 h-[1px] bg-neutral-300"></div>
+<div className="w-20 h-[1px] bg-neutral-300/70"></div>
 
 </div>
 
@@ -52,14 +60,15 @@ antara kamu rasa kasih dan sayang.
 {/* SOURCE */}
 
 <p className="
-text-[12px]
-tracking-[0.25em]
+text-[16px]
+tracking-[0.28em]
 text-neutral-500
 ">
 
-QS. Ar-Rum 30 : 21
+QS. AR-RUM 30 : 21
 
 </p>
+
 
 </div>
 
