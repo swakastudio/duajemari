@@ -115,7 +115,7 @@ height:12cm;
 
 border:2px solid #333;
 
-padding:10px;
+padding:7px;
 
 box-sizing:border-box;
 
