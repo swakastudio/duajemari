@@ -5,8 +5,8 @@ export default function HariBahagia(){
 return(
 
 <section className="fade-up relative px-6 py-18 overflow-hidden">
-<div className="mx-auto max-w-4xl text-center">
 
+<div className="mx-auto max-w-4xl text-center">
 
 {/* TITLE */}
 
@@ -31,24 +31,53 @@ HARI BAHAGIA
 </div>
 
 
-{/* EVENT GRID */}
+{/* GRID */}
 
-<div className="grid md:grid-cols-2 gap-8 mt-10">
+<div className="grid md:grid-cols-2 gap-8 mt-10 justify-items-center">
 
+{/* ================= AKAD ================= */}
 
-{/* AKAD */}
+<div className="relative w-[432px] h-[471px]">
+
+{/* GLASS BLUR PANEL */}
 
 <div className="
-relative
-rounded-[32px]
+absolute
+top-[70px]
+bottom-[70px]
+left-[55px]
+right-[55px]
 bg-white/60
 backdrop-blur-xl
+rounded-[20px]
 border border-white/40
-px-8 py-8
-shadow-[0_15px_60px_rgba(0,0,0,0.06)]
-transition
-duration-500
-hover:-translate-y-1
+shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+"></div>
+
+
+{/* FRAME */}
+
+<img
+src="/firoh-arofi/frame-hari-bahagia.png"
+alt="frame"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+/>
+
+
+{/* CONTENT */}
+
+<div className="
+absolute
+top-[70px]
+bottom-[70px]
+left-[55px]
+right-[55px]
+flex
+flex-col
+items-center
+justify-center
+text-center
+px-6
 ">
 
 <p className="text-[11px] tracking-[0.4em] text-neutral-500">
@@ -84,21 +113,53 @@ Sabtu
 
 </div>
 
+</div>
 
 
-{/* RESEPSI */}
+
+{/* ================= RESEPSI ================= */}
+
+<div className="relative w-[432px] h-[471px]">
+
+{/* GLASS BLUR PANEL */}
 
 <div className="
-relative
-rounded-[32px]
+absolute
+top-[70px]
+bottom-[70px]
+left-[55px]
+right-[55px]
 bg-white/60
 backdrop-blur-xl
+rounded-[20px]
 border border-white/40
-px-8 py-8
-shadow-[0_15px_60px_rgba(0,0,0,0.06)]
-transition
-duration-500
-hover:-translate-y-1
+shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+"></div>
+
+
+{/* FRAME */}
+
+<img
+src="/firoh-arofi/frame-hari-bahagia.png"
+alt="frame"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+/>
+
+
+{/* CONTENT */}
+
+<div className="
+absolute
+top-[70px]
+bottom-[70px]
+left-[55px]
+right-[55px]
+flex
+flex-col
+items-center
+justify-center
+text-center
+px-6
 ">
 
 <p className="text-[11px] tracking-[0.4em] text-neutral-500">
@@ -179,6 +240,9 @@ LIHAT LOKASI
 </a>
 
 </div>
+
+</div>
+
 
 </div>
 
