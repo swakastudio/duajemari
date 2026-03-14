@@ -209,11 +209,12 @@ LOKASI
 </p>
 
 <p className="
-text-[14px]
-leading-[1.8]
-text-neutral-600
-max-w-[240px]
-mx-auto
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
 ">
 Jl. Kepuhkiriman Dalam Masjid  
 <br/>
@@ -237,7 +238,7 @@ inline-flex
 items-center
 justify-center
 px-7
-py-[20px]
+py-[8px]
 rounded-full
 bg-white/25
 backdrop-blur-md
