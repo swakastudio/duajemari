@@ -61,7 +61,7 @@ return(
     <img
 src="/firoh-arofi/flower-top-haribahagia.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[-35px] w-full pointer-events-none z-30"
+className="absolute left-1/2 -translate-x-1/2 bottom-[-70px] w-full pointer-events-none z-30"
 />
 
 
