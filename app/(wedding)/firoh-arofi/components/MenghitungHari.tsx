@@ -56,11 +56,12 @@ return()=>clearInterval(timer)
 
 return(
 
-<section className="fade-up relative px-6 py-18 overflow-hidden">
+<section className="fade-up w-full bg-[#E7F2F6]">
+    
     <img
 src="/firoh-arofi/flower-top-haribahagia.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[0px] w-full pointer-events-none z-30"
+className="absolute left-1/2 -translate-x-1/2 bottom-[35px] w-full pointer-events-none z-30"
 />
 
 
