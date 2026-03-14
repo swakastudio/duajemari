@@ -5,13 +5,6 @@ export default function HariBahagia(){
 return(
 
 <section className="fade-up relative px-6 py-18 overflow-hidden">
-
-  <img
-src="/firoh-arofi/flower-top-haribahagia.gif"
-alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 top-[0px] w-full pointer-events-none z-30"
-/>
-
 <div className="mx-auto max-w-4xl text-center">
 
 
