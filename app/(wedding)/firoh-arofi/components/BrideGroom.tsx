@@ -9,19 +9,19 @@ return(
   <img
 src="/firoh-arofi/flower-left-bridegroom.gif"
 alt="flower-left"
-className="absolute left-[0px] top-[870px] w-[180px] pointer-events-none z-30"
+className="absolute left-[0px] top-[900px] w-[180px] pointer-events-none z-30"
 />
 
 <img
 src="/firoh-arofi/flower-right-bridegroom.gif"
 alt="flower-right"
-className="absolute right-[0px] top-[870px] w-[180px] pointer-events-none z-30"
+className="absolute right-[0px] top-[900px] w-[180px] pointer-events-none z-30"
 />
 
 <img
 src="/firoh-arofi/flower-bottom-bridegroom.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[20px] w-full pointer-events-none z-30"
+className="absolute left-1/2 -translate-x-1/2 bottom-[10px] w-full pointer-events-none z-30"
 />
   
  <div className="max-w-xl mx-auto relative z-10">
