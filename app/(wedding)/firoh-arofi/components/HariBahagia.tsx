@@ -4,7 +4,7 @@ export default function HariBahagia(){
 
 return(
 
-<section className="fade-up px-6 py-16">
+<section className="fade-up relative px-6 py-18 overflow-hidden">
 
 <div className="mx-auto max-w-4xl text-center">
 
