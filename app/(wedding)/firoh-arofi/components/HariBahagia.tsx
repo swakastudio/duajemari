@@ -157,7 +157,7 @@ text-center
 px-6
 ">
 
-<p className="text-[16px] tracking-[0.4em] text-neutral-500">
+<p className="text-[14px] tracking-[0.08em] text-[#3f4d58]">
 RESEPSI
 </p>
 
@@ -173,10 +173,10 @@ Sabtu
 
 <p className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-2
+mt-3
 max-w-[260px]
 mx-auto
 "
@@ -186,10 +186,10 @@ mx-auto
 
 <p className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-2
+mt-3
 max-w-[260px]
 mx-auto
 "
@@ -202,10 +202,10 @@ mx-auto
 
 <div className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-2
+mt-3
 max-w-[260px]
 mx-auto
 "
@@ -213,10 +213,10 @@ mx-auto
 
 <p className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-2
+mt-3
 max-w-[260px]
 mx-auto
 "
