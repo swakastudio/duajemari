@@ -88,12 +88,28 @@ Sabtu
 </h3>
 
 
-<p className="mt-2 text-[15px] text-neutral-600">
+<p className="
+text-[12px]
+leading-[1.9]
+text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
+"
+>
 04 April 2026
 </p>
 
 
-<p className="text-[15px] text-neutral-600">
+<p className="
+text-[12px]
+leading-[1.9]
+text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
+"
+>
 08.00 WIB
 </p>
 
@@ -162,12 +178,28 @@ Sabtu
 </h3>
 
 
-<p className="mt-2 text-[15px] text-neutral-600">
+<p className="
+text-[12px]
+leading-[1.9]
+text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
+"
+>
 04 April 2026
 </p>
 
 
-<p className="text-[15px] text-neutral-600">
+<p className="
+text-[12px]
+leading-[1.9]
+text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
+"
+>
 08.00 WIB – selesai
 </p>
 
@@ -177,7 +209,15 @@ Sabtu
 
 <div className="mt-4 text-[14px] leading-[1.8] text-neutral-600">
 
-<p className="mb-2 text-[11px] tracking-[0.3em] text-neutral-500">
+<p className="
+text-[12px]
+leading-[1.9]
+text-neutral-600
+mt-4
+max-w-[260px]
+mx-auto
+"
+>
 LOKASI
 </p>
 
@@ -198,21 +238,34 @@ href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
-mt-5
-inline-block
-px-7
-py-[10px]
-rounded-full
-border
-border-neutral-700
+mt-6
+inline-flex
+items-center
+justify-center
+px-8
+py-[11px]
+
 text-[11px]
 tracking-[0.35em]
 text-neutral-700
-transition
+
+rounded-full
+
+bg-white/20
+backdrop-blur-md
+
+border
+border-white/40
+
+shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+
+transition-all
 duration-500
-hover:bg-neutral-800
-hover:text-white
-hover:shadow-lg
+
+hover:bg-white/40
+hover:shadow-[0_15px_40px_rgba(0,0,0,0.15)]
+hover:-translate-y-[2px]
+hover:scale-[1.03]
 "
 >
 
