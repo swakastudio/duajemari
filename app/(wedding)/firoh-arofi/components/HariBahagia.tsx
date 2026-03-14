@@ -202,7 +202,7 @@ mx-auto
 
 {/* ADDRESS */}
 
-<div <p className="
+<div className="
 text-[16px]
 tracking-[0.4em]
 leading-[1.9]
