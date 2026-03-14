@@ -148,7 +148,8 @@ flex-col
 items-center
 text-center
 px-6
-py-7
+pt-6
+pb-7
 ">
 
 
@@ -161,7 +162,7 @@ RESEPSI
 
 {/* DIVIDER */}
 
-<div className="flex items-center gap-4 my-4">
+<div className="flex items-center gap-4 my-3">
 
 <div className="w-10 h-[1px] bg-neutral-300"></div>
 
@@ -174,7 +175,7 @@ RESEPSI
 
 {/* DAY */}
 
-<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58]">
+<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58] mt-1">
 Sabtu
 </h3>
 
@@ -186,7 +187,7 @@ text-[16px]
 tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-auto
+mt-1
 ">
 04 April 2026
 </p>
@@ -199,7 +200,7 @@ text-[16px]
 tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-auto
+mt-1
 ">
 08.00 WIB – selesai
 </p>
@@ -207,13 +208,13 @@ mt-auto
 
 {/* ADDRESS */}
 
-<div className="mt-auto">
+<div className="mt-4">
 
 <p className="
 text-[12px]
 tracking-[0.35em]
 text-[#3f4d58]
-mb-auto
+mb-2
 ">
 LOKASI
 </p>
