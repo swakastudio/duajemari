@@ -154,7 +154,7 @@ py-7
 
 {/* HEADER */}
 
-<p className="text-[14px] tracking-[0.08em] text-[#3f4d58]">
+<p className="text-[14px] tracking-[0.08em] text-[#3f4d58] mt-2">
 RESEPSI
 </p>
 
