@@ -318,9 +318,6 @@ LIHAT LOKASI
 
 </a>
 
-</div>
-
-</div>
 
 </div>
 
