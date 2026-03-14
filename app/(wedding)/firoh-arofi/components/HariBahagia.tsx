@@ -6,6 +6,22 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden">
 
+  <div className="mx-auto max-w-4xl text-center">
+  {/* FLOWER GIF */}
+    <img
+      src="/firoh-arofi/flower-middle-akadnikah1.gif"
+      alt="flower-bottom"
+      className="
+      absolute
+      left-1/2
+      -translate-x-1/2
+top-[500px]
+      w-[129%]
+      pointer-events-none
+      z-30
+      "
+    />
+
 <div className="mx-auto max-w-4xl text-center">
   {/* FLOWER GIF */}
     <img
