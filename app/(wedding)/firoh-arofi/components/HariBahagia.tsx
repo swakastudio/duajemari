@@ -15,10 +15,10 @@ return(
       absolute
       left-1/2
       -translate-x-1/2
-      bottom-[-10px]
+-translate-y-1/2
       w-[129%]
       pointer-events-none
-      z-10
+      z-0
       "
     />
 
