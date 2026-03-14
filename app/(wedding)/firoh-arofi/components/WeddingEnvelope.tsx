@@ -266,6 +266,19 @@ return(
 
 <div className="mx-auto max-w-4xl text-center">
 
+{/* GLASS CONTAINER */}
+
+<div className="
+max-w-md
+mx-auto
+bg-white/40
+backdrop-blur-xl
+border border-white/40
+rounded-2xl
+shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+p-6
+space-y-6
+">
 
 {/* TITLE */}
 
@@ -297,21 +310,6 @@ Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
 Namun apabila memberi adalah ungkapan tanda kasih,
 Anda dapat memberi kado secara digital.
 </p>
-
-
-{/* GLASS CONTAINER */}
-
-<div className="
-max-w-md
-mx-auto
-bg-white/40
-backdrop-blur-xl
-border border-white/40
-rounded-2xl
-shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-p-6
-space-y-6
-">
 
 
 {/* TAB BUTTON */}
