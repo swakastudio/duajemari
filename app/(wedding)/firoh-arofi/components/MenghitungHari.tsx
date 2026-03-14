@@ -112,6 +112,7 @@ akan bertemu dalam satu langkah yang sama.
 {/* COUNTDOWN */}
 
 <div className="
+font-ltsip
 grid
 grid-cols-2
 sm:grid-cols-4
