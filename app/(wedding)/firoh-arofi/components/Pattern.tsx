@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react"
 
 const images = [
-"https://picsum.photos/800/600?random=1",
-"https://picsum.photos/800/600?random=2",
-"https://picsum.photos/800/600?random=3",
-"https://picsum.photos/800/600?random=4",
-"https://picsum.photos/800/600?random=5"
+"/firoh-arofi/firoh-arofi-(1).jpg",
+"/firoh-arofi/firoh-arofi-(2).jpg",
+"/firoh-arofi/firoh-arofi-(3).jpg",
+"/firoh-arofi/firoh-arofi-(4).jpg",
+"/firoh-arofi/firoh-arofi-(5).jpg"
 ]
 
 export default function Pattern(){
@@ -28,7 +28,7 @@ return ()=>clearInterval(interval)
 
 return(
 
-<section className="fade-up px-6 py-20">
+<section className="fade-up px-6 py-10">
 
 <div className="mx-auto max-w-4xl text-center">
 
@@ -87,7 +87,7 @@ key={index}
 src={img}
 onClick={()=>setCurrent(index)}
 className={`
-w-16 h-16 object-cover rounded-lg cursor-pointer transition
+w-12 h-12 object-cover rounded-lg cursor-pointer transition
 ${current===index
 ? "ring-2 ring-[#3f4d58] scale-110"
 : "opacity-60 hover:opacity-100"
