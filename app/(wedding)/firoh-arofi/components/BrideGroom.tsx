@@ -107,16 +107,14 @@ leading-[1.2]
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
-<p
-className="
+<p className="
 text-[12px]
-leading-[1.9]
-text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
-"
->
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
+">
 Putri Ketiga dari
 <br/>
 Bapak Muchammad Haris
@@ -187,16 +185,14 @@ leading-[1.2]
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
-<p
-className="
+<p className="
 text-[12px]
-leading-[1.9]
-text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
-"
->
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
+">
 Putra Kedua dari
 <br/>
 Bapak Abdul Wahid Musyadad
