@@ -3,9 +3,9 @@
 import { useState } from "react"
 
 type Wish = {
-  name:string
-  message:string
-  attendance:string
+name:string
+message:string
+attendance:string
 }
 
 export default function GuestWish(){
@@ -19,8 +19,6 @@ const [message,setMessage] = useState("")
 const [attendance,setAttendance] = useState("Hadir")
 
 const [wishes,setWishes] = useState<Wish[]>([])
-
-const [open,setOpen] = useState(false)
 
 
 
@@ -46,8 +44,6 @@ setName("")
 setMessage("")
 setAttendance("Hadir")
 
-setOpen(false)
-
 }
 
 
@@ -67,29 +63,32 @@ UI
 
 return(
 
-<div className="max-w-xl mx-auto space-y-10">
+<section className="fade-up relative px-6 py-24 bg-[#E7F2F6]">
+
+<div className="mx-auto max-w-4xl">
 
 
 {/* ===============================
 TITLE
 =============================== */}
 
-<div className="text-center">
+<div className="text-center mb-14">
 
-<h2 className="font-ltsip text-[32px] md:text-[40px] tracking-[0.08em] text-[#3f4d58] mb-4">
-Ucapan & Doa
+<h2 className="font-ltsip text-[26px] tracking-[0.06em] text-[#3f4d58]">
+UCAPAN & DOA
 </h2>
 
-<div className="relative w-28 h-[2px] mx-auto mt-4 mb-10 overflow-hidden">
+<div className="relative w-36 h-[2px] mx-auto mt-6 mb-8 overflow-hidden">
 
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/70 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
 
-<div className="absolute inset-0 animate-dividerShimmer bg-gradient-to-r from-transparent via-white to-transparent opacity-60"></div>
+<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
 
 </div>
 
-<p className="text-neutral-500 text-sm">
-Tinggalkan doa dan harapan terbaik untuk kami
+<p className="text-neutral-600 text-sm max-w-md mx-auto leading-relaxed">
+Tinggalkan doa serta harapan terbaik untuk perjalanan baru kami.
+Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 </p>
 
 </div>
@@ -97,31 +96,47 @@ Tinggalkan doa dan harapan terbaik untuk kami
 
 
 {/* ===============================
-RSVP COUNT
+RSVP COUNTER
 =============================== */}
 
-<div className="flex justify-center gap-4">
+<div className="flex justify-center gap-6 mb-14">
 
-<div className="bg-green-50 border border-green-200 px-6 py-3 rounded-xl text-center">
+<div className="
+bg-white/60
+backdrop-blur-xl
+border border-white/40
+rounded-2xl
+px-8 py-4
+text-center
+shadow-[0_10px_30px_rgba(0,0,0,0.05)]
+">
 
-<p className="text-green-700 text-lg font-semibold">
+<p className="text-2xl font-semibold text-green-600">
 {hadirCount}
 </p>
 
-<p className="text-xs text-green-600 tracking-wider">
+<p className="text-xs tracking-[0.25em] text-green-600">
 HADIR
 </p>
 
 </div>
 
 
-<div className="bg-red-50 border border-red-200 px-6 py-3 rounded-xl text-center">
+<div className="
+bg-white/60
+backdrop-blur-xl
+border border-white/40
+rounded-2xl
+px-8 py-4
+text-center
+shadow-[0_10px_30px_rgba(0,0,0,0.05)]
+">
 
-<p className="text-red-700 text-lg font-semibold">
+<p className="text-2xl font-semibold text-red-500">
 {tidakCount}
 </p>
 
-<p className="text-xs text-red-600 tracking-wider">
+<p className="text-xs tracking-[0.25em] text-red-500">
 TIDAK HADIR
 </p>
 
@@ -132,15 +147,83 @@ TIDAK HADIR
 
 
 {/* ===============================
-OPEN FORM BUTTON
+FORM
 =============================== */}
 
-<div className="text-center">
+<form
+onSubmit={submitWish}
+className="
+bg-white/60
+backdrop-blur-xl
+border border-white/40
+rounded-[28px]
+shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+p-8
+space-y-5
+max-w-xl
+mx-auto
+mb-16
+">
+
+<input
+value={name}
+onChange={(e)=>setName(e.target.value)}
+placeholder="Nama Anda"
+className="
+w-full
+border border-neutral-200
+rounded-lg
+px-4 py-3
+text-sm
+focus:outline-none
+focus:border-[#3f4d58]
+"
+/>
+
+
+<textarea
+value={message}
+onChange={(e)=>setMessage(e.target.value)}
+placeholder="Ucapan & Doa"
+className="
+w-full
+border border-neutral-200
+rounded-lg
+px-4 py-3
+text-sm
+h-28
+resize-none
+focus:outline-none
+focus:border-[#3f4d58]
+"
+/>
+
+
+<select
+value={attendance}
+onChange={(e)=>setAttendance(e.target.value)}
+className="
+w-full
+border border-neutral-200
+rounded-lg
+px-4 py-3
+text-sm
+focus:outline-none
+focus:border-[#3f4d58]
+"
+>
+
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+
+</select>
+
 
 <button
-onClick={()=>setOpen(true)}
+type="submit"
 className="
-px-8 py-3
+w-full
+py-3
 rounded-full
 border border-neutral-800
 text-sm
@@ -151,89 +234,11 @@ transition
 "
 >
 
-ISI UCAPAN
+KIRIM UCAPAN
 
 </button>
 
-</div>
-
-
-
-{/* ===============================
-POPUP FORM
-=============================== */}
-
-{open && (
-
-<div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-
-<div className="bg-white rounded-2xl p-6 w-[90%] max-w-md shadow-xl animate-fadeIn space-y-4">
-
-
-<h3 className="text-lg font-medium text-center">
-Ucapan & Kehadiran
-</h3>
-
-
-<input
-value={name}
-onChange={(e)=>setName(e.target.value)}
-placeholder="Nama Anda"
-className="w-full border border-neutral-300 rounded-md px-4 py-2 text-sm"
-/>
-
-
-<textarea
-value={message}
-onChange={(e)=>setMessage(e.target.value)}
-placeholder="Ucapan & Doa"
-className="w-full border border-neutral-300 rounded-md px-4 py-2 text-sm h-24"
-/>
-
-
-<select
-value={attendance}
-onChange={(e)=>setAttendance(e.target.value)}
-className="w-full border border-neutral-300 rounded-md px-4 py-2 text-sm"
->
-
-<option>Hadir</option>
-<option>Tidak Hadir</option>
-
-</select>
-
-
-<div className="flex justify-between pt-2">
-
-<button
-onClick={()=>setOpen(false)}
-className="text-sm text-neutral-500"
->
-Batal
-</button>
-
-<button
-onClick={submitWish}
-className="
-px-6 py-2
-rounded-full
-border border-neutral-800
-text-sm
-hover:bg-neutral-800
-hover:text-white
-transition
-"
->
-Kirim
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-)}
+</form>
 
 
 
@@ -241,20 +246,29 @@ Kirim
 WISH LIST
 =============================== */}
 
-<div className="space-y-4">
+<div className="space-y-4 max-w-xl mx-auto">
 
 {wishes.map((wish,index)=>(
 
 <div
 key={index}
-className="border border-neutral-200 rounded-lg p-4 bg-white/80 backdrop-blur"
+className="
+bg-white/70
+backdrop-blur-xl
+border border-white/40
+rounded-2xl
+p-5
+shadow-[0_10px_30px_rgba(0,0,0,0.05)]
+"
 >
 
-<p className="font-semibold text-sm">
+<div className="flex justify-between items-center mb-2">
+
+<p className="font-semibold text-sm text-[#3f4d58]">
 {wish.name}
 </p>
 
-<p className={`text-xs mb-2 ${
+<p className={`text-xs tracking-wider ${
 wish.attendance==="Hadir"
 ?"text-green-600"
 :"text-red-500"
@@ -262,7 +276,9 @@ wish.attendance==="Hadir"
 {wish.attendance}
 </p>
 
-<p className="text-sm text-neutral-700">
+</div>
+
+<p className="text-sm text-neutral-700 leading-relaxed">
 {wish.message}
 </p>
 
@@ -272,7 +288,10 @@ wish.attendance==="Hadir"
 
 </div>
 
+
 </div>
+
+</section>
 
 )
 
