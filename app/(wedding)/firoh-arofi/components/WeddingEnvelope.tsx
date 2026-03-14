@@ -262,7 +262,7 @@ win.document.close()
 
 return(
 
-<section className="fade-up relative pt-12 pb-24">
+<section className="fade-up relative px-6 pt-12 pb-24">
 
 <div className="mx-auto max-w-4xl text-center">
 
