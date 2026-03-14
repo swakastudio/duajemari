@@ -36,6 +36,20 @@ top-[500px]
       "
     />
 
+   <img
+      src="/firoh-arofi/flower-middle-resepsi.gif"
+      alt="flower-bottom"
+      className="
+      absolute
+      left-1/2
+      -translate-x-1/2
+bottom-[10px]
+      w-[129%]
+      pointer-events-none
+      z-30
+      "
+    />
+
 {/* TITLE */}
 
 <h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
