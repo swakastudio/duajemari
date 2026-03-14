@@ -238,9 +238,9 @@ justify-center
 px-7
 py-[8px]
 rounded-full
-bg-white/25
+bg-white/45
 backdrop-blur-md
-border border-white/40
+border border-white/75
 text-[11px]
 tracking-[0.35em]
 text-neutral-700
