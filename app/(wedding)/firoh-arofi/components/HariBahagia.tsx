@@ -4,9 +4,9 @@ export default function HariBahagia(){
 
 return(
 
-<section className="fade-up relative px-6 py-20 overflow-hidden">
+<section className="fade-up relative px-6 py-20 overflow-hidden flex justify-center">
 
-<div className="mx-auto max-w-[820px] text-center relative">
+<div className="relative w-full max-w-[900px] text-center">
 
   <img
       src="/firoh-arofi/flower-middle-akadnikah1.gif"
@@ -17,6 +17,7 @@ return(
       -translate-x-1/2
 top-[500px]
       w-[120%]
+max-w-[720px]
       pointer-events-none
       z-30
       "
@@ -31,6 +32,7 @@ top-[500px]
       -translate-x-1/2
 bottom-[-45px]
       w-[120%]
+max-w-[720px
       pointer-events-none
       z-30
       "
