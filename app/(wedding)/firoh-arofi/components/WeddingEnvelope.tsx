@@ -115,7 +115,7 @@ height:12cm;
 
 border:2px solid #333;
 
-padding:20px;
+padding:10px;
 
 box-sizing:border-box;
 
@@ -262,7 +262,7 @@ win.document.close()
 
 return(
 
-<section className="fade-up relative px-6 py-24">
+<section className="fade-up relative pt-12 pb-24">
 
 <div className="mx-auto max-w-4xl text-center">
 
