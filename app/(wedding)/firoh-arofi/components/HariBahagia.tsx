@@ -51,14 +51,14 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none"
 
 <div className="
 absolute
-top-[55px]
-bottom-[55px]
-left-[55px]
-right-[55px]
-bg-white/70
+top-[80px]
+bottom-[80px]
+left-[80px]
+right-[80px]
+bg-white/55
 backdrop-blur-xl
 rounded-[26px]
-border border-white/40
+border border-white/35
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 flex
 flex-col
