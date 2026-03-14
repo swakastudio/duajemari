@@ -26,13 +26,6 @@ HARI BAHAGIA
 
 </div>
 
-{/* FRAME */}
-
-<img
-src="/firoh-arofi/frame-hari-bahagia.png"
-alt="frame"
-className="absolute inset-0 w-full h-full object-contain pointer-events-none"
-/>
 
 {/* GRID */}
 
@@ -43,6 +36,13 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none"
 
 <div className="relative w-[360px] h-[392px]">
 
+{/* FRAME */}
+
+<img
+src="/firoh-arofi/frame-hari-bahagia.png"
+alt="frame"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none z-10"
+/>
 
 
 {/* GLASS CARD */}
