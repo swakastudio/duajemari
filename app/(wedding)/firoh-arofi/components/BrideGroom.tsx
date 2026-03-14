@@ -78,6 +78,7 @@ text-neutral-700
 font-light
 ">
 Assalamualaikum Wr.Wb
+<br/>
 Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
 acara pernikahan kami :
