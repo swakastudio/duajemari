@@ -189,26 +189,12 @@ leading-[1.9]
 text-[#3f4d58]
 mt-1
 ">
-04 April 2026
+04 April 2026 | 08.00 WIB – selesai
 </p>
-
-
-{/* TIME */}
-
-<p className="
-text-[16px]
-tracking-[0.04em]
-leading-[1.9]
-text-[#3f4d58]
-mt-1
-">
-08.00 WIB – selesai
-</p>
-
 
 {/* ADDRESS */}
 
-<div className="mt-4">
+<div className="mt-2">
 
 <p className="
 text-[12px]
