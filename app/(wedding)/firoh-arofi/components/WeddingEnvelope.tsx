@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function GiftEnvelope(){
+export default function WeddingEnvelope(){
 
 /* ===============================
    TAB STATE
@@ -25,8 +25,28 @@ const [telp,setTelp] = useState("")
 ================================ */
 
 const rekening = {
+
 pria:"319401017385538",
+
 wanita:"7254196902"
+
+}
+
+
+/* ===============================
+   DATA PENERIMA
+================================ */
+
+const penerima = {
+
+nama:"Nur Lailatul Maghfiroh",
+
+alamat:`Jl. Kepuhkiriman Dalam Masjid
+Gang IV RT 04 RW 01
+Waru - Sidoarjo`,
+
+telp:"08973124009"
+
 }
 
 
@@ -49,24 +69,19 @@ alert("Nomor rekening berhasil disalin")
 
 const printLabel = ()=>{
 
-const penerimaNama = "Nur Lailatul Maghfiroh"
-
-const penerimaAlamat = `Jl. Kepuhkiriman Dalam Masjid
-Gang IV RT 04 RW 01 - Waru, Sidoarjo`
-
-const penerimaTelp = "08973124009"
-
 const now = new Date()
 
 const fileName =
-`print_label_duajemari_${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}_${now.getHours()}-${now.getMinutes()}`
+`label_pengiriman_${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}_${now.getHours()}-${now.getMinutes()}`
 
 const win = window.open("","_blank")
 
 if(!win) return
 
 win.document.write(`
+
 <html>
+
 <head>
 
 <title>${fileName}</title>
@@ -79,8 +94,8 @@ margin:0;
 }
 
 *{
--webkit-print-color-adjust: exact;
-print-color-adjust: exact;
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact;
 }
 
 body{
@@ -96,7 +111,7 @@ background:white;
 .label{
 
 width:18.5cm;
-height:15cm;
+height:12cm;
 
 border:2px solid #333;
 
@@ -115,19 +130,20 @@ justify-content:space-between;
 background:#ff4d6d;
 color:white;
 text-align:center;
-font-size:28px;
+font-size:26px;
 font-weight:bold;
 padding:10px;
-border-radius:10px;
+border-radius:8px;
 margin-bottom:15px;
 
 }
 
 .row{
+
 display:flex;
-font-size:20px;
+font-size:18px;
 margin-bottom:10px;
-align-items:flex-start;
+
 }
 
 .label-name{
@@ -136,13 +152,13 @@ font-weight:bold;
 }
 
 .separator{
-width:15px;
+width:10px;
 }
 
 .value{
 flex:1;
 white-space:pre-line;
-line-height:1.3;
+line-height:1.4;
 }
 
 .divider{
@@ -152,22 +168,15 @@ margin:15px 0;
 }
 
 .footer{
+
 background:#ff4d6d;
 color:white;
 text-align:center;
-font-size:20px;
+font-size:18px;
 font-weight:bold;
-padding:12px;
-margin-top:18px;
+padding:10px;
 border-radius:6px;
-}
 
-.printinfo{
-position:absolute;
-bottom:8px;
-left:12px;
-font-size:10px;
-color:#555;
 }
 
 </style>
@@ -207,31 +216,27 @@ KETERANGAN PENGIRIMAN PAKET
 <div class="row">
 <div class="label-name">Nama Penerima</div>
 <div class="separator">:</div>
-<div class="value">${penerimaNama}</div>
+<div class="value">${penerima.nama}</div>
 </div>
 
 <div class="row">
 <div class="label-name">Alamat</div>
 <div class="separator">:</div>
-<div class="value">${penerimaAlamat}</div>
+<div class="value">${penerima.alamat}</div>
 </div>
 
 <div class="row">
 <div class="label-name">No. Telp</div>
 <div class="separator">:</div>
-<div class="value">${penerimaTelp}</div>
+<div class="value">${penerima.telp}</div>
 </div>
 
 <div class="divider"></div>
 
 <div class="footer">
-TEMPELKAN KETERANGAN BERIKUT DIATAS PAKET
+TEMPELKAN LABEL INI DIATAS PAKET
 </div>
 
-</div>
-
-<div class="printinfo">
-${fileName}
 </div>
 
 <script>
@@ -241,7 +246,9 @@ window.print()
 </script>
 
 </body>
+
 </html>
+
 `)
 
 win.document.close()
@@ -259,20 +266,6 @@ return(
 
 <div className="mx-auto max-w-4xl text-center">
 
-      <div
-className="
-relative z-20
-max-w-xl mx-auto
-text-center
-px-10
-py-16
-rounded-[36px]
-bg-white/35
-backdrop-blur-xl
-border border-white/40
-shadow-[0_20px_70px_rgba(0,0,0,0.12)]
-"
->
 
 {/* TITLE */}
 
@@ -292,31 +285,38 @@ AMPL0P DIGITAL
 </div>
 
 
-<p className="
-text-[12px]
-md:text-[16px]
-leading-[2.25]
-tracking-[0.02em]
-text-neutral-700
-font-light
-">
+<p className="text-sm text-neutral-600 max-w-md mx-auto leading-relaxed mb-10">
 Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
 Namun apabila memberi adalah ungkapan tanda kasih,
 Anda dapat memberi kado secara digital.
 </p>
 
 
+{/* GLASS CONTAINER */}
+
+<div className="
+max-w-md
+mx-auto
+bg-white/40
+backdrop-blur-xl
+border border-white/40
+rounded-2xl
+shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+p-6
+space-y-6
+">
+
 
 {/* TAB BUTTON */}
 
-<div className="flex justify-center gap-4 mb-10">
+<div className="flex justify-center gap-4">
 
 <button
 onClick={()=>setTab("transfer")}
-className={`px-5 py-2 text-sm rounded-full border transition
+className={`px-5 py-2 text-sm rounded-full border backdrop-blur-md transition
 ${tab==="transfer"
-?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
-:"border-[#ff4d6d] text-[#ff4d6d]"
+?"bg-white/60 border-white/60 text-[#3f4d58]"
+:"border-white/40 text-[#3f4d58]"
 }`}
 >
 Transfer
@@ -325,10 +325,10 @@ Transfer
 
 <button
 onClick={()=>setTab("kirim")}
-className={`px-5 py-2 text-sm rounded-full border transition
+className={`px-5 py-2 text-sm rounded-full border backdrop-blur-md transition
 ${tab==="kirim"
-?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
-:"border-[#ff4d6d] text-[#ff4d6d]"
+?"bg-white/60 border-white/60 text-[#3f4d58]"
+:"border-white/40 text-[#3f4d58]"
 }`}
 >
 Kirim Hadiah
@@ -342,23 +342,16 @@ Kirim Hadiah
    TRANSFER
 ================================ */}
 
-<div
-className={`
-transition-all duration-500 overflow-hidden
-${tab==="transfer"
-?"max-h-[500px] opacity-100"
-:"max-h-0 opacity-0"}
-`}
->
+<div className={`transition-all duration-500 overflow-hidden
+${tab==="transfer"?"max-h-[400px] opacity-100":"max-h-0 opacity-0"}
+`}>
 
-<p className="text-xs text-neutral-500 mb-6">
+<p className="text-xs text-neutral-500 mb-4">
 Klik kartu untuk menyalin nomor rekening
 </p>
 
-<div className="flex justify-center gap-8 flex-wrap">
+<div className="flex justify-center gap-6 flex-wrap">
 
-
-{/* CARD PRIA */}
 
 <div
 onClick={()=>copyRek(rekening.pria)}
@@ -367,14 +360,11 @@ className="cursor-pointer transition hover:scale-105"
 
 <img
 src="/firoh-arofi/card-pria.png"
-className="w-[190px] md:w-[220px]"
+className="w-[180px] md:w-[210px]"
 />
 
 </div>
 
-
-
-{/* CARD WANITA */}
 
 <div
 onClick={()=>copyRek(rekening.wanita)}
@@ -383,7 +373,7 @@ className="cursor-pointer transition hover:scale-105"
 
 <img
 src="/firoh-arofi/card-wanita.png"
-className="w-[190px] md:w-[220px]"
+className="w-[180px] md:w-[210px]"
 />
 
 </div>
@@ -398,16 +388,11 @@ className="w-[190px] md:w-[220px]"
    KIRIM HADIAH
 ================================ */}
 
-<div
-className={`
-transition-all duration-500 overflow-hidden
-${tab==="kirim"
-?"max-h-[600px] opacity-100"
-:"max-h-0 opacity-0"}
-`}
->
+<div className={`transition-all duration-500 overflow-hidden
+${tab==="kirim"?"max-h-[500px] opacity-100":"max-h-0 opacity-0"}
+`}>
 
-<div className="max-w-sm mx-auto space-y-4 mt-4">
+<div className="space-y-3">
 
 <input
 placeholder="Nama Pengirim"
@@ -431,22 +416,32 @@ className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
 />
 
 
-<div className="flex justify-center gap-4 pt-2">
-
 <button
 onClick={printLabel}
-className="px-4 py-2 text-sm rounded-full border border-[#ff4d6d] text-[#ff4d6d] hover:bg-[#ff4d6d] hover:text-white transition"
+className="
+w-full
+py-2
+rounded-full
+bg-white/50
+backdrop-blur-md
+border border-white/60
+text-sm
+text-[#3f4d58]
+hover:bg-white/70
+transition
+"
 >
-Cetak Label
+
+Cetak Label Pengiriman
+
 </button>
 
 </div>
 
 </div>
 
+
 </div>
-
-
 
 </div>
 
