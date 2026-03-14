@@ -67,7 +67,7 @@ px-6
 ">
 
 
-<p className="text-[10px] tracking-[0.4em] text-neutral-500">
+<p className="text-[24px] tracking-[0.4em] text-neutral-500">
 AKAD NIKAH
 </p>
 
@@ -89,7 +89,7 @@ Sabtu
 
 
 <p className="
-text-[12px]
+text-[24px]
 leading-[1.9]
 text-neutral-600
 mt-4
@@ -102,7 +102,7 @@ mx-auto
 
 
 <p className="
-text-[12px]
+text-[24px]
 leading-[1.9]
 text-neutral-600
 mt-4
@@ -139,96 +139,62 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none z-1
 
 <div className="
 absolute
-top-[18px]
-bottom-[18px]
-left-[18px]
-right-[18px]
-bg-white/15
+top-[55px]
+bottom-[55px]
+left-[55px]
+right-[55px]
+
+bg-white/70
 backdrop-blur-xl
 rounded-[26px]
-border border-white/3
+border border-white/40
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
+
 flex
 flex-col
-items-center
 text-center
 px-6
 py-6
 ">
 
-
 <p className="text-[10px] tracking-[0.4em] text-neutral-500">
 RESEPSI
 </p>
 
-
-<div className="flex items-center gap-4 my-4">
-
+<div className="flex items-center justify-center gap-4 my-4">
 <div className="w-10 h-[1px] bg-neutral-300"></div>
-
 <span className="text-neutral-400 text-xs">✦</span>
-
 <div className="w-10 h-[1px] bg-neutral-300"></div>
-
 </div>
 
-
-<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58]">
+<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
 Sabtu
 </h3>
 
-
-<p className="
-text-[12px]
-leading-[1.9]
-text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
-"
->
+<p className="mt-2 text-[15px] text-neutral-600">
 04 April 2026
 </p>
 
-
-<p className="
-text-[12px]
-leading-[1.9]
-text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
-"
->
+<p className="text-[15px] text-neutral-600">
 08.00 WIB – selesai
 </p>
-
 
 
 {/* ADDRESS */}
 
 <div className="mt-4 text-[14px] leading-[1.8] text-neutral-600">
 
-<p className="
-text-[12px]
-leading-[1.9]
-text-neutral-600
-mt-4
-max-w-[260px]
-mx-auto
-"
->
+<p className="mb-2 text-[11px] tracking-[0.3em] text-neutral-500">
 LOKASI
 </p>
 
-Jl. Kepuhkiriman Dalam Masjid
+Jl. Kepuhkiriman Dalam Masjid  
 <br/>
-Gang IV RT 04 RW 01
+Gang IV RT 04 RW 01  
 <br/>
 Waru – Sidoarjo
 
 </div>
-
 
 
 {/* BUTTON */}
@@ -238,17 +204,12 @@ href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
-mt-6
+mt-auto
 inline-flex
 items-center
 justify-center
-px-8
-py-[11px]
-
-text-[11px]
-tracking-[0.35em]
-text-neutral-700
-
+px-7
+py-[10px]
 rounded-full
 
 bg-white/20
@@ -257,22 +218,22 @@ backdrop-blur-md
 border
 border-white/40
 
-shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+text-[11px]
+tracking-[0.35em]
+text-neutral-700
 
-transition-all
+transition
 duration-500
 
 hover:bg-white/40
-hover:shadow-[0_15px_40px_rgba(0,0,0,0.15)]
 hover:-translate-y-[2px]
-hover:scale-[1.03]
+hover:shadow-lg
 "
 >
 
 LIHAT LOKASI
 
 </a>
-
 
 </div>
 
