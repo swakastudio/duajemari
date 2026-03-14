@@ -207,7 +207,7 @@ mt-auto
 
 {/* ADDRESS */}
 
-<div className="mt-5">
+<div className="mt-auto">
 
 <p className="
 text-[12px]
