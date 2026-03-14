@@ -1,21 +1,17 @@
 "use client"
 
-export default function HariBahagia() {
+export default function HariBahagia(){
 
-return (
+return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden">
 
 <div className="mx-auto max-w-4xl text-center">
 
+
 {/* TITLE */}
 
-<h2 className="
-font-ltsip
-text-[24px]
-tracking-[0.06em]
-text-[#3f4d58]
-">
+<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
 HARI BAHAGIA
 </h2>
 
@@ -31,9 +27,10 @@ HARI BAHAGIA
 </div>
 
 
+
 {/* GRID */}
 
-<div className="grid md:grid-cols-2 gap-12 justify-items-center">
+<div className="grid md:grid-cols-2 gap-14 justify-items-center">
 
 
 {/* ================= AKAD ================= */}
@@ -41,47 +38,28 @@ HARI BAHAGIA
 <div className="relative w-[360px] h-[392px]">
 
 
-{/* GLASS CARD */}
-
-<div className="
-absolute
-top-[70px]
-bottom-[70px]
-left-[60px]
-right-[60px]
-bg-white/65
-backdrop-blur-xl
-rounded-[24px]
-border border-white/40
-shadow-[0_20px_70px_rgba(0,0,0,0.08)]
-"></div>
-
-
 {/* FRAME */}
 
 <img
 src="/firoh-arofi/frame-hari-bahagia.png"
 alt="frame"
-className="
-absolute
-inset-0
-w-full
-h-full
-object-contain
-pointer-events-none
-select-none
-"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none"
 />
 
 
-{/* CONTENT */}
+{/* GLASS CARD */}
 
 <div className="
 absolute
-top-[70px]
-bottom-[70px]
-left-[60px]
-right-[60px]
+top-[55px]
+bottom-[55px]
+left-[55px]
+right-[55px]
+bg-white/70
+backdrop-blur-xl
+rounded-[26px]
+border border-white/40
+shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 flex
 flex-col
 items-center
@@ -90,12 +68,13 @@ text-center
 px-6
 ">
 
-<p className="text-[11px] tracking-[0.35em] text-neutral-500">
+
+<p className="text-[10px] tracking-[0.4em] text-neutral-500">
 AKAD NIKAH
 </p>
 
 
-<div className="flex items-center justify-center gap-4 my-4">
+<div className="flex items-center gap-4 my-4">
 
 <div className="w-10 h-[1px] bg-neutral-300"></div>
 
@@ -106,12 +85,7 @@ AKAD NIKAH
 </div>
 
 
-<h3 className="
-text-[36px]
-font-light
-tracking-[0.02em]
-text-neutral-800
-">
+<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
 Sabtu
 </h3>
 
@@ -125,6 +99,7 @@ Sabtu
 08.00 WIB
 </p>
 
+
 </div>
 
 </div>
@@ -137,61 +112,43 @@ Sabtu
 <div className="relative w-[360px] h-[392px]">
 
 
-{/* GLASS CARD */}
-
-<div className="
-absolute
-top-[70px]
-bottom-[70px]
-left-[60px]
-right-[60px]
-bg-white/65
-backdrop-blur-xl
-rounded-[24px]
-border border-white/40
-shadow-[0_20px_70px_rgba(0,0,0,0.08)]
-"></div>
-
-
 {/* FRAME */}
 
 <img
 src="/firoh-arofi/frame-hari-bahagia.png"
 alt="frame"
-className="
-absolute
-inset-0
-w-full
-h-full
-object-contain
-pointer-events-none
-select-none
-"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none"
 />
 
 
-{/* CONTENT */}
+{/* GLASS CARD */}
 
 <div className="
 absolute
-top-[70px]
-bottom-[70px]
-left-[60px]
-right-[60px]
+top-[55px]
+bottom-[55px]
+left-[55px]
+right-[55px]
+bg-white/70
+backdrop-blur-xl
+rounded-[26px]
+border border-white/40
+shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 flex
 flex-col
 items-center
-justify-center
 text-center
 px-6
+py-6
 ">
 
-<p className="text-[11px] tracking-[0.35em] text-neutral-500">
+
+<p className="text-[10px] tracking-[0.4em] text-neutral-500">
 RESEPSI
 </p>
 
 
-<div className="flex items-center justify-center gap-4 my-4">
+<div className="flex items-center gap-4 my-4">
 
 <div className="w-10 h-[1px] bg-neutral-300"></div>
 
@@ -202,12 +159,7 @@ RESEPSI
 </div>
 
 
-<h3 className="
-text-[36px]
-font-light
-tracking-[0.02em]
-text-neutral-800
-">
+<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
 Sabtu
 </h3>
 
@@ -225,15 +177,15 @@ Sabtu
 
 {/* ADDRESS */}
 
-<div className="mt-5 text-[13px] leading-[1.9] text-neutral-600">
+<div className="mt-4 text-[14px] leading-[1.8] text-neutral-600">
 
-<p className="mb-2 text-[11px] tracking-[0.28em] text-neutral-500">
+<p className="mb-2 text-[11px] tracking-[0.3em] text-neutral-500">
 LOKASI
 </p>
 
-Jl. Kepuhkiriman Dalam Masjid  
+Jl. Kepuhkiriman Dalam Masjid
 <br/>
-Gang IV RT 04 RW 01  
+Gang IV RT 04 RW 01
 <br/>
 Waru – Sidoarjo
 
@@ -248,16 +200,16 @@ href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
 className="
+mt-5
 inline-block
-mt-6
-px-8
-py-3
+px-7
+py-[10px]
 rounded-full
 border
-border-neutral-800
-text-[12px]
+border-neutral-700
+text-[11px]
 tracking-[0.35em]
-text-neutral-800
+text-neutral-700
 transition
 duration-500
 hover:bg-neutral-800
@@ -274,6 +226,8 @@ LIHAT LOKASI
 </div>
 
 </div>
+
+
 
 </div>
 
