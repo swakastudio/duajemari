@@ -15,7 +15,7 @@ return(
       absolute
       left-1/2
       -translate-x-1/2
--translate-y-1/2
+top-[340px]
       w-[129%]
       pointer-events-none
       z-0
