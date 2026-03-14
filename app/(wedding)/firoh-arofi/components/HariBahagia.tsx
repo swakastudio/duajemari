@@ -186,7 +186,7 @@ text-[16px]
 tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-2
+mt-auto
 ">
 04 April 2026
 </p>
@@ -199,7 +199,7 @@ text-[16px]
 tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-1
+mt-auto
 ">
 08.00 WIB – selesai
 </p>
@@ -213,7 +213,7 @@ mt-1
 text-[12px]
 tracking-[0.35em]
 text-[#3f4d58]
-mb-4
+mb-auto
 ">
 LOKASI
 </p>
