@@ -285,7 +285,14 @@ AMPL0P DIGITAL
 </div>
 
 
-<p className="text-sm text-neutral-600 max-w-md mx-auto leading-relaxed mb-10">
+<p className="
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
+">
 Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
 Namun apabila memberi adalah ungkapan tanda kasih,
 Anda dapat memberi kado secara digital.
