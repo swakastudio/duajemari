@@ -6,7 +6,7 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden">
 
-<div className="mx-auto max-w-4xl text-center">
+<div className="mx-auto max-w-[820px] text-center relative">
 
   <img
       src="/firoh-arofi/flower-middle-akadnikah1.gif"
@@ -16,7 +16,7 @@ return(
       left-1/2
       -translate-x-1/2
 top-[500px]
-      w-[129%]
+      w-[120%]
       pointer-events-none
       z-30
       "
@@ -30,7 +30,7 @@ top-[500px]
       left-1/2
       -translate-x-1/2
 bottom-[-45px]
-      w-[129%]
+      w-[120%]
       pointer-events-none
       z-30
       "
@@ -56,12 +56,12 @@ HARI BAHAGIA
 
 {/* GRID */}
 
-<div className="grid md:grid-cols-2 gap-14 justify-items-center">
+<div className="grid md:grid-cols-2 gap-14 place-items-center">
 
 
 {/* ================= AKAD ================= */}
 
-<div className="relative w-[360px] h-[392px]">
+<div className="relative w-[360px] h-[392px] mx-auto">
 
 {/* FRAME */}
 
@@ -148,7 +148,7 @@ font-light
 
 {/* ================= RESEPSI ================= */}
 
-<div className="relative w-[360px] h-[392px]">
+<div className="relative w-[360px] h-[392px] mx-auto">
 
 {/* FRAME */}
 
