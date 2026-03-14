@@ -318,7 +318,7 @@ LIHAT LOKASI
 
 </a>
 
-
+</div>
 </div>
 
 
