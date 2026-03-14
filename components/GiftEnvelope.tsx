@@ -2,86 +2,52 @@
 
 import { useState } from "react"
 
-export default function GiftEnvelope() {
+export default function GiftEnvelope(){
 
-  /* ===============================
-     TAB STATE
-  =============================== */
+/* ===============================
+   TAB STATE
+================================ */
 
-  const [tab, setTab] = useState<"transfer" | "kirim">("transfer")
-
-
-  /* ===============================
-     FORM STATE
-  =============================== */
-
-  const [nama, setNama] = useState("")
-  const [alamat, setAlamat] = useState("")
-  const [telp, setTelp] = useState("")
+const [tab,setTab] = useState<"transfer"|"kirim"|null>(null)
 
 
-  /* ===============================
-     DATA REKENING
-  =============================== */
+/* ===============================
+   FORM STATE
+================================ */
 
-  const rekening = {
-    pria: "5379001234567890",
-    wanita: "5249001433367560"
-  }
-
-
-  /* ===============================
-     DATA PENERIMA (SPREADSHEET)
-  =============================== */
-
-  const penerima = {
-
-    nama: "Bagas Putra",
-
-    alamat:
-      "Jl. Kutisari No.36, Kutisari, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur",
-
-    telp: "081234567890"
-
-  }
+const [nama,setNama] = useState("")
+const [alamat,setAlamat] = useState("")
+const [telp,setTelp] = useState("")
 
 
-  /* ===============================
-     COPY REKENING
-  =============================== */
+/* ===============================
+   DATA REKENING
+================================ */
 
-  const copyRek = (rek: string) => {
-
-    navigator.clipboard.writeText(rek)
-
-    alert("Nomor rekening berhasil disalin")
-
-  }
+const rekening = {
+pria:"319401017385538",
+wanita:"7254196902"
+}
 
 
+/* ===============================
+   COPY REKENING
+================================ */
 
-  /* ===============================
-     DOWNLOAD LABEL
-  =============================== */
+const copyRek = (rek:string)=>{
 
-  const downloadLabel = () => {
+navigator.clipboard.writeText(rek)
 
-    const link = document.createElement("a")
+alert("Nomor rekening berhasil disalin")
 
-    link.href = "/shipping.png"
-
-    link.download = "label-pengiriman.png"
-
-    link.click()
-
-  }
+}
 
 
+/* ===============================
+   PRINT LABEL
+================================ */
 
-  /* ===============================
-     PRINT LABEL
-  =============================== */
-const printLabel = () => {
+const printLabel = ()=>{
 
 const penerimaNama = "Bagas Putra"
 
@@ -97,7 +63,7 @@ const now = new Date()
 const fileName =
 `print_label_duajemari_${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}_${now.getHours()}-${now.getMinutes()}`
 
-const win = window.open("", "_blank")
+const win = window.open("","_blank")
 
 if(!win) return
 
@@ -146,112 +112,64 @@ justify-content:space-between;
 
 }
 
-/* HEADER */
-
 .header{
 
 background:#ff4d6d;
-
 color:white;
-
 text-align:center;
-
 font-size:28px;
-
 font-weight:bold;
-
 padding:10px;
-
 border-radius:10px;
-
 margin-bottom:15px;
 
 }
 
-/* ROW */
-
 .row{
-
 display:flex;
-
 font-size:20px;
-
 margin-bottom:10px;
-
 align-items:flex-start;
-
 }
 
 .label-name{
-
 width:180px;
-
 font-weight:bold;
-
 }
 
 .separator{
-
 width:15px;
-
 }
 
 .value{
-
 flex:1;
-
 white-space:pre-line;
-
 line-height:1.3;
-
 }
-
-/* divider */
 
 .divider{
-
 height:2px;
-
 background:#ff4d6d;
-
 margin:15px 0;
-
 }
 
-/* footer */
-
 .footer{
-
 background:#ff4d6d;
-
 color:white;
-
 text-align:center;
-
 font-size:20px;
-
 font-weight:bold;
-
 padding:12px;
-
 margin-top:18px;
-
 border-radius:6px;
-
 }
 
 .printinfo{
-
 position:absolute;
-
 bottom:8px;
-
 left:12px;
-
 font-size:10px;
-
 color:#555;
-
 }
 
 </style>
@@ -319,7 +237,7 @@ ${fileName}
 </div>
 
 <script>
-window.onload = function(){
+window.onload=function(){
 window.print()
 }
 </script>
@@ -333,158 +251,188 @@ win.document.close()
 }
 
 
+/* ===============================
+   UI
+================================ */
 
-  /* ===============================
-     UI COMPONENT
-  =============================== */
+return(
 
-  return (
+<section className="fade-up relative px-6 py-24">
 
-    <div className="border border-[#ff4d6d] rounded-2xl p-4 space-y-4">
-
-
-      {/* ===============================
-         TAB BUTTON
-      =============================== */}
-
-      <div className="flex justify-center gap-3">
-
-        <button
-          onClick={() => setTab("transfer")}
-          className={`px-4 py-1.5 text-sm rounded-md border transition
-          ${tab === "transfer"
-              ? "bg-[#ff4d6d] text-white border-[#ff4d6d]"
-              : "border-[#ff4d6d] text-[#ff4d6d]"
-            }`}
-        >
-          Transfer
-        </button>
+<div className="mx-auto max-w-4xl text-center">
 
 
-        <button
-          onClick={() => setTab("kirim")}
-          className={`px-4 py-1.5 text-sm rounded-md border transition
-          ${tab === "kirim"
-              ? "bg-[#ff4d6d] text-white border-[#ff4d6d]"
-              : "border-[#ff4d6d] text-[#ff4d6d]"
-            }`}
-        >
-          Kirim Hadiah
-        </button>
+{/* TITLE */}
 
-      </div>
+<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+AMPL0P DIGITAL
+</h2>
+
+
+{/* DIVIDER */}
+
+<div className="relative w-36 h-[2px] mx-auto mt-6 mb-12 overflow-hidden">
+
+<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
+
+<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
+
+</div>
+
+
+<p className="text-sm text-neutral-600 mb-8 max-w-md mx-auto leading-relaxed">
+Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+Namun apabila memberi adalah ungkapan tanda kasih,
+Anda dapat memberi kado secara digital.
+</p>
 
 
 
-      {/* ===============================
-         TRANSFER TAB
-      =============================== */}
+{/* TAB BUTTON */}
 
-      {tab === "transfer" && (
+<div className="flex justify-center gap-4 mb-10">
 
-        <div className="space-y-3">
-
-          <p className="text-[11px] text-center text-neutral-500">
-            Klik kartu untuk menyalin nomor rekening mempelai
-          </p>
-
-          <div className="grid grid-cols-2 gap-3 justify-items-center">
-
-            <div
-              onClick={() => copyRek(rekening.pria)}
-              className="cursor-pointer hover:scale-105 transition"
-            >
-
-              <img
-                src="/card-pria.png"
-                className="w-[120px]"
-              />
-
-            </div>
+<button
+onClick={()=>setTab("transfer")}
+className={`px-5 py-2 text-sm rounded-full border transition
+${tab==="transfer"
+?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
+:"border-[#ff4d6d] text-[#ff4d6d]"
+}`}
+>
+Transfer
+</button>
 
 
-            <div
-              onClick={() => copyRek(rekening.wanita)}
-              className="cursor-pointer hover:scale-105 transition"
-            >
+<button
+onClick={()=>setTab("kirim")}
+className={`px-5 py-2 text-sm rounded-full border transition
+${tab==="kirim"
+?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
+:"border-[#ff4d6d] text-[#ff4d6d]"
+}`}
+>
+Kirim Hadiah
+</button>
 
-              <img
-                src="/card-wanita.png"
-                className="w-[120px]"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      )}
+</div>
 
 
 
-      {/* ===============================
-         KIRIM HADIAH TAB
-      =============================== */}
+{/* ===============================
+   TRANSFER
+================================ */}
 
-      {tab === "kirim" && (
+<div
+className={`
+transition-all duration-500 overflow-hidden
+${tab==="transfer"
+?"max-h-[500px] opacity-100"
+:"max-h-0 opacity-0"}
+`}
+>
 
-        <div className="space-y-3">
+<p className="text-xs text-neutral-500 mb-6">
+Klik kartu untuk menyalin nomor rekening
+</p>
 
-          <p className="text-[11px] text-center text-neutral-500">
-            Tamu dapat mencetak keterangan pengiriman paket
-          </p>
-
-
-          <input
-            placeholder="Nama Pengirim"
-            value={nama}
-            onChange={(e) => setNama(e.target.value)}
-            className="w-full border border-neutral-300 rounded-md px-3 py-1.5 text-xs"
-          />
-
-
-          <input
-            placeholder="Alamat"
-            value={alamat}
-            onChange={(e) => setAlamat(e.target.value)}
-            className="w-full border border-neutral-300 rounded-md px-3 py-1.5 text-xs"
-          />
+<div className="flex justify-center gap-8 flex-wrap">
 
 
-          <input
-            placeholder="No. Telp"
-            value={telp}
-            onChange={(e) => setTelp(e.target.value)}
-            className="w-full border border-neutral-300 rounded-md px-3 py-1.5 text-xs"
-          />
+{/* CARD PRIA */}
+
+<div
+onClick={()=>copyRek(rekening.pria)}
+className="cursor-pointer transition hover:scale-105"
+>
+
+<img
+src="/firoh-arofi/card-pria.png"
+className="w-[190px] md:w-[220px]"
+/>
+
+</div>
 
 
-          <div className="flex justify-center gap-3">
 
-            <button
-              onClick={downloadLabel}
-              className="px-3 py-1 text-xs border border-[#ff4d6d] text-[#ff4d6d] rounded-md hover:bg-[#ff4d6d] hover:text-white transition"
-            >
-              Unduh
-            </button>
+{/* CARD WANITA */}
+
+<div
+onClick={()=>copyRek(rekening.wanita)}
+className="cursor-pointer transition hover:scale-105"
+>
+
+<img
+src="/firoh-arofi/card-wanita.png"
+className="w-[190px] md:w-[220px]"
+/>
+
+</div>
+
+</div>
+
+</div>
 
 
-            <button
-              onClick={printLabel}
-              className="px-3 py-1 text-xs border border-[#ff4d6d] text-[#ff4d6d] rounded-md hover:bg-[#ff4d6d] hover:text-white transition"
-            >
-              Cetak
-            </button>
 
-          </div>
+{/* ===============================
+   KIRIM HADIAH
+================================ */}
 
-        </div>
+<div
+className={`
+transition-all duration-500 overflow-hidden
+${tab==="kirim"
+?"max-h-[600px] opacity-100"
+:"max-h-0 opacity-0"}
+`}
+>
 
-      )}
+<div className="max-w-sm mx-auto space-y-4 mt-4">
 
-    </div>
+<input
+placeholder="Nama Pengirim"
+value={nama}
+onChange={(e)=>setNama(e.target.value)}
+className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+/>
 
-  )
+<input
+placeholder="Alamat"
+value={alamat}
+onChange={(e)=>setAlamat(e.target.value)}
+className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+/>
+
+<input
+placeholder="No. Telp"
+value={telp}
+onChange={(e)=>setTelp(e.target.value)}
+className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+/>
+
+
+<div className="flex justify-center gap-4 pt-2">
+
+<button
+onClick={printLabel}
+className="px-4 py-2 text-sm rounded-full border border-[#ff4d6d] text-[#ff4d6d] hover:bg-[#ff4d6d] hover:text-white transition"
+>
+Cetak Label
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+)
 
 }
