@@ -37,7 +37,7 @@ top-[500px]
     />
 
    <img
-      src="/firoh-arofi/flower-middle-resepsi.gif"
+      src="/firoh-arofi/flower-bottom-resepsi.gif"
       alt="flower-bottom"
       className="
       absolute
