@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react"
 
 const images = [
-"/firoh-arofi/firoh-arofi-(1).jpg",
-"/firoh-arofi/firoh-arofi-(2).jpg",
-"/firoh-arofi/firoh-arofi-(3).jpg",
-"/firoh-arofi/firoh-arofi-(4).jpg",
-"/firoh-arofi/firoh-arofi-(5).jpg"
+"/firoh-arofi/firo-arofi-(1).jpeg",
+"/firoh-arofi/firo-arofi-(2).jpeg",
+"/firoh-arofi/firo-arofi-(3).jpeg",
+"/firoh-arofi/firo-arofi-(4).jpeg",
+"/firoh-arofi/firo-arofi-(5).jpeg"
 ]
 
 export default function Pattern(){
