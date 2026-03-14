@@ -213,7 +213,7 @@ mt-1
 text-[12px]
 tracking-[0.35em]
 text-[#3f4d58]
-mb-2
+mb-4
 ">
 LOKASI
 </p>
