@@ -90,22 +90,24 @@ Sabtu
 
 
 <p className="
-text-[16px]
-tracking-[0.04em]
-leading-[1.9]
-text-[#3f4d58]
-mt-2
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
 ">
 04 April 2026
 </p>
 
 
 <p className="
-text-[16px]
-tracking-[0.04em]
-leading-[1.9]
-text-[#3f4d58]
-mt-1
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
 ">
 08.00 WIB
 </p>
@@ -183,11 +185,12 @@ Sabtu
 {/* DATE */}
 
 <p className="
-text-[16px]
-tracking-[0.04em]
-leading-[1.9]
-text-[#3f4d58]
-mt-1
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
 ">
 04 April 2026 | 08.00 WIB – selesai
 </p>
@@ -234,7 +237,7 @@ inline-flex
 items-center
 justify-center
 px-7
-py-[10px]
+py-[20px]
 rounded-full
 bg-white/25
 backdrop-blur-md
