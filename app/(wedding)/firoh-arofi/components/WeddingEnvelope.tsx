@@ -259,7 +259,9 @@ return(
 
 <section className="fade-up relative px-6 py-24">
 
-   <div
+<div className="mx-auto max-w-4xl text-center">
+
+      <div
 className="
 relative z-20
 max-w-xl mx-auto
@@ -273,9 +275,6 @@ border border-white/40
 shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 "
 >
-
-<div className="mx-auto max-w-4xl text-center">
-
 
 {/* TITLE */}
 
