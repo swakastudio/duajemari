@@ -49,14 +49,12 @@ alert("Nomor rekening berhasil disalin")
 
 const printLabel = ()=>{
 
-const penerimaNama = "Bagas Putra"
+const penerimaNama = "Nur Lailatul Maghfiroh"
 
-const penerimaAlamat = `Jl. Kutisari No.36 Kutisari
-Kec. Tenggilis Mejoyo
-Surabaya
-Jawa Timur`
+const penerimaAlamat = `Jl. Kepuhkiriman Dalam Masjid
+Gang IV RT 04 RW 01 - Waru, Sidoarjo`
 
-const penerimaTelp = "081234567890"
+const penerimaTelp = "08973124009"
 
 const now = new Date()
 
@@ -98,7 +96,7 @@ background:white;
 .label{
 
 width:18.5cm;
-height:12cm;
+height:15cm;
 
 border:2px solid #333;
 
@@ -294,7 +292,14 @@ AMPL0P DIGITAL
 </div>
 
 
-<p className="text-sm text-neutral-600 mb-8 max-w-md mx-auto leading-relaxed">
+<p className="
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
+">
 Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
 Namun apabila memberi adalah ungkapan tanda kasih,
 Anda dapat memberi kado secara digital.
