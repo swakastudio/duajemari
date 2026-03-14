@@ -69,15 +69,14 @@ MEMPELAI
 </div>
 
 
-<p
-className="
+<p className="
 text-[12px]
-leading-[2]
-text-neutral-600
-max-w-md
-mx-auto
-"
->
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
+text-neutral-700
+font-light
+">
 Assalamualaikum Wr.Wb
 Tanpa mengurangi rasa hormat, kami mengundang
 Bapak/Ibu/Saudara/i untuk menghadiri
