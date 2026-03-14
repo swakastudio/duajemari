@@ -123,7 +123,7 @@ font-light
       left-1/2
       -translate-x-1/2
       bottom-[-60px]
-      w-[135%]
+      w-[165%]
       pointer-events-none
       z-10
       "
