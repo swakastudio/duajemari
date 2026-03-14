@@ -83,7 +83,7 @@ AKAD NIKAH
 </div>
 
 
-<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
+<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58]">
 Sabtu
 </h3>
 
@@ -115,7 +115,7 @@ Sabtu
 <img
 src="/firoh-arofi/frame-hari-bahagia.png"
 alt="frame"
-className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+className="absolute inset-0 w-full h-full object-contain pointer-events-none z-10"
 />
 
 
@@ -123,14 +123,14 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none"
 
 <div className="
 absolute
-top-[55px]
-bottom-[55px]
-left-[55px]
-right-[55px]
-bg-white/70
+top-[18px]
+bottom-[18px]
+left-[18px]
+right-[18px]
+bg-white/15
 backdrop-blur-xl
 rounded-[26px]
-border border-white/40
+border border-white/3
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 flex
 flex-col
@@ -157,7 +157,7 @@ RESEPSI
 </div>
 
 
-<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
+<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58]">
 Sabtu
 </h3>
 
