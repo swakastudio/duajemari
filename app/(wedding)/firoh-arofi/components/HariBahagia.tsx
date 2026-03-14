@@ -90,10 +90,10 @@ Sabtu
 
 <p className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-4
+mt-3
 max-w-[260px]
 mx-auto
 "
@@ -104,10 +104,10 @@ mx-auto
 
 <p className="
 text-[16px]
-tracking-[0.4em]
+tracking-[0.04em]
 leading-[1.9]
 text-[#3f4d58]
-mt-4
+mt-3
 max-w-[260px]
 mx-auto
 "
