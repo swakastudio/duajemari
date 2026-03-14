@@ -67,7 +67,7 @@ px-6
 ">
 
 
-<p className="text-[16px] tracking-[0.4em] text-neutral-500">
+<p className="text-[14px] tracking-[0.18em] text-[#3f4d58]">
 AKAD NIKAH
 </p>
 
@@ -127,7 +127,6 @@ mx-auto
 
 <div className="relative w-[360px] h-[392px]">
 
-
 {/* FRAME */}
 
 <img
@@ -143,20 +142,19 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none z-1
 absolute
 top-[18px]
 bottom-[18px]
-left-18px]
+left-[18px]
 right-[18px]
-
 bg-white/15
 backdrop-blur-xl
 rounded-[26px]
 border border-white/3
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
-
 flex
 flex-col
+items-center
+justify-center
 text-center
 px-6
-py-6
 ">
 
 <p className="text-[16px] tracking-[0.4em] text-neutral-500">
