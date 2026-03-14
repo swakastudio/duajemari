@@ -21,7 +21,7 @@ className="absolute right-[0px] top-[950px] w-[180px] pointer-events-none z-30"
 <img
 src="/firoh-arofi/flower-bottom-bridegroom.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[40px] w-full pointer-events-none z-30"
+className="absolute left-1/2 -translate-x-1/2 bottom-[80px] w-full pointer-events-none z-30"
 />
   
  <div className="max-w-xl mx-auto relative z-10">
