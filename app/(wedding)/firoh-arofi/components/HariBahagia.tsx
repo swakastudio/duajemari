@@ -67,22 +67,6 @@ px-6
 py-7
 ">
 
-   {/* FLOWER GIF */}
-    <img
-      src="/firoh-arofi/flower-top-haribahagia.gif"
-      alt="flower-bottom"
-      className="
-      absolute
-      left-1/2
-      -translate-x-1/2
-      bottom-[-60px]
-      w-[120%]
-      pointer-events-none
-      z-10
-      "
-    />
-
-
 <p className="text-[14px] tracking-[0.08em] text-[#3f4d58]">
 AKAD NIKAH
 </p>
@@ -129,6 +113,21 @@ font-light
 
 
 </div>
+
+      {/* FLOWER GIF */}
+    <img
+      src="/firoh-arofi/flower-middle-akadnikah0.gif"
+      alt="flower-bottom"
+      className="
+      absolute
+      left-1/2
+      -translate-x-1/2
+      bottom-[-60px]
+      w-[120%]
+      pointer-events-none
+      z-10
+      "
+    />
 
 </div>
 
