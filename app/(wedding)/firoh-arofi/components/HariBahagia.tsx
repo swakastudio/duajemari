@@ -43,7 +43,7 @@ top-[500px]
       absolute
       left-1/2
       -translate-x-1/2
-bottom-[35px]
+bottom-[120px]
       w-[129%]
       pointer-events-none
       z-30
