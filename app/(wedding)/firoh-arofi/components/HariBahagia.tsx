@@ -67,7 +67,7 @@ px-6
 ">
 
 
-<p className="text-[24px] tracking-[0.4em] text-neutral-500">
+<p className="text-[16px] tracking-[0.4em] text-neutral-500">
 AKAD NIKAH
 </p>
 
@@ -89,9 +89,10 @@ Sabtu
 
 
 <p className="
-text-[24px]
+text-[16px]
+tracking-[0.4em]
 leading-[1.9]
-text-neutral-600
+text-[#3f4d58]
 mt-4
 max-w-[260px]
 mx-auto
@@ -102,9 +103,10 @@ mx-auto
 
 
 <p className="
-text-[24px]
+text-[16px]
+tracking-[0.4em]
 leading-[1.9]
-text-neutral-600
+text-[#3f4d58]
 mt-4
 max-w-[260px]
 mx-auto
@@ -139,15 +141,15 @@ className="absolute inset-0 w-full h-full object-contain pointer-events-none z-1
 
 <div className="
 absolute
-top-[55px]
-bottom-[55px]
-left-[55px]
-right-[55px]
+top-[18px]
+bottom-[18px]
+left-18px]
+right-[18px]
 
-bg-white/70
+bg-white/15
 backdrop-blur-xl
 rounded-[26px]
-border border-white/40
+border border-white/3
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 
 flex
@@ -157,7 +159,7 @@ px-6
 py-6
 ">
 
-<p className="text-[10px] tracking-[0.4em] text-neutral-500">
+<p className="text-[16px] tracking-[0.4em] text-neutral-500">
 RESEPSI
 </p>
 
@@ -167,24 +169,60 @@ RESEPSI
 <div className="w-10 h-[1px] bg-neutral-300"></div>
 </div>
 
-<h3 className="text-[38px] font-light text-neutral-800 tracking-[0.02em]">
+<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58]">
 Sabtu
 </h3>
 
-<p className="mt-2 text-[15px] text-neutral-600">
+<p className="
+text-[16px]
+tracking-[0.4em]
+leading-[1.9]
+text-[#3f4d58]
+mt-2
+max-w-[260px]
+mx-auto
+"
+>
 04 April 2026
 </p>
 
-<p className="text-[15px] text-neutral-600">
+<p className="
+text-[16px]
+tracking-[0.4em]
+leading-[1.9]
+text-[#3f4d58]
+mt-2
+max-w-[260px]
+mx-auto
+"
+>
 08.00 WIB – selesai
 </p>
 
 
 {/* ADDRESS */}
 
-<div className="mt-4 text-[14px] leading-[1.8] text-neutral-600">
+<div <p className="
+text-[16px]
+tracking-[0.4em]
+leading-[1.9]
+text-[#3f4d58]
+mt-2
+max-w-[260px]
+mx-auto
+"
+>
 
-<p className="mb-2 text-[11px] tracking-[0.3em] text-neutral-500">
+<p className="
+text-[16px]
+tracking-[0.4em]
+leading-[1.9]
+text-[#3f4d58]
+mt-2
+max-w-[260px]
+mx-auto
+"
+>
 LOKASI
 </p>
 
