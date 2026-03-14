@@ -6,12 +6,6 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden">
 
-      <img
-src="/firoh-arofi/flower-middle-akadnikah0.gif"
-alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-full pointer-events-none z-30"
-/>
-
 <div className="mx-auto max-w-4xl text-center">
 
 
