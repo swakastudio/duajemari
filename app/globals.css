@@ -849,8 +849,8 @@ z-index:999;
 
 .music-container{
 position:fixed;
-bottom:22px;
-left:22px;
+bottom:10px;
+left:10px;
 z-index:999;
 
 animation:musicFloat 4s ease-in-out infinite;
@@ -951,7 +951,7 @@ content:"";
 position:absolute;
 width:0%;
 height:100%;
-background:##F7B300;
+background:#FFD773;
 left:0;
 }
 
