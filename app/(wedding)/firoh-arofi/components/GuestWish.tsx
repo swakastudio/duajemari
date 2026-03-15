@@ -74,7 +74,8 @@ TITLE
 
 <div className="text-center mb-14">
 
-<h2 className="font-ltsip text-[26px] tracking-[0.06em] text-[#3f4d58]">
+<h2 className="fade-up
+fade-delay-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3f4d58]">
 UCAPAN & DOA
 </h2>
 
@@ -86,7 +87,8 @@ UCAPAN & DOA
 
 </div>
 
-<p className="text-neutral-600 text-sm max-w-md mx-auto leading-relaxed">
+<p className="fade-up
+fade-delay-2 text-neutral-600 text-sm max-w-md mx-auto leading-relaxed">
 Tinggalkan doa serta harapan terbaik untuk perjalanan baru kami.
 Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 </p>
@@ -99,9 +101,11 @@ Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 RSVP COUNTER
 =============================== */}
 
-<div className="flex justify-center gap-6 mb-14">
+<div className="fade-up
+fade-delay-3 flex justify-center gap-6 mb-14">
 
-<div className="
+<div className="fade-up
+fade-delay-4
 bg-white/60
 backdrop-blur-xl
 border border-white/40
@@ -111,18 +115,21 @@ text-center
 shadow-[0_10px_30px_rgba(0,0,0,0.05)]
 ">
 
-<p className="text-2xl font-semibold text-green-600">
+<p className="fade-up
+fade-delay-5 text-2xl font-semibold text-green-600">
 {hadirCount}
 </p>
 
-<p className="text-xs tracking-[0.25em] text-green-600">
+<p className="fade-up
+fade-delay-6 text-xs tracking-[0.25em] text-green-600">
 HADIR
 </p>
 
 </div>
 
 
-<div className="
+<div className="fade-up
+fade-delay-7
 bg-white/60
 backdrop-blur-xl
 border border-white/40
@@ -132,11 +139,13 @@ text-center
 shadow-[0_10px_30px_rgba(0,0,0,0.05)]
 ">
 
-<p className="text-2xl font-semibold text-red-500">
+<p className="fade-up
+fade-delay-8 text-2xl font-semibold text-red-500">
 {tidakCount}
 </p>
 
-<p className="text-xs tracking-[0.25em] text-red-500">
+<p className="fade-up
+fade-delay-9 text-xs tracking-[0.25em] text-red-500">
 TIDAK HADIR
 </p>
 
@@ -152,7 +161,8 @@ FORM
 
 <form
 onSubmit={submitWish}
-className="
+className="fade-up
+fade-delay-10
 bg-white/60
 backdrop-blur-xl
 border border-white/40
@@ -169,7 +179,8 @@ mb-16
 value={name}
 onChange={(e)=>setName(e.target.value)}
 placeholder="Nama Anda"
-className="
+className="fade-up
+fade-delay-11
 w-full
 border border-neutral-200
 rounded-lg
@@ -185,7 +196,8 @@ focus:border-[#3f4d58]
 value={message}
 onChange={(e)=>setMessage(e.target.value)}
 placeholder="Ucapan & Doa"
-className="
+className="fade-up
+fade-delay-12
 w-full
 border border-neutral-200
 rounded-lg
@@ -202,7 +214,8 @@ focus:border-[#3f4d58]
 <select
 value={attendance}
 onChange={(e)=>setAttendance(e.target.value)}
-className="
+className="fade-up
+fade-delay-13
 w-full
 border border-neutral-200
 rounded-lg
@@ -221,7 +234,8 @@ focus:border-[#3f4d58]
 
 <button
 type="submit"
-className="
+className="fade-up
+fade-delay-14
 w-full
 py-3
 rounded-full
