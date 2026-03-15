@@ -30,7 +30,7 @@ HARI BAHAGIA
 </h2>
 
 {/* DIVIDER */}
-<div className="relative w-36 h-[2px] mx-auto mt-6 mb-14 overflow-hidden">
+<div className="relative w-36 h-[2px] mx-auto mt-6 mb-6 overflow-hidden">
 
 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
 
