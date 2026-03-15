@@ -17,7 +17,7 @@ fade-delay-8
 absolute
 left-1/2
 -translate-x-1/2
-top-[300px]
+top-[0px]
 w-[120%]
 max-w-[720px]
 pointer-events-none
