@@ -8,23 +8,6 @@ return(
 
 <div className="relative w-full max-w-[900px] mx-auto text-center">
 
-{/* ORNAMENT */}
-<img
-src="/firoh-arofi/flower-middle-akadnikah1.gif"
-alt="flower-bottom"
-className="fade-up
-fade-delay-8
-absolute
-left-1/2
--translate-x-1/2
-top-[0px]
-w-[60%]
-max-w-[720px]
-pointer-events-none
-z-40
-"
-/>
-
 {/* TITLE */}
 <h2 className="fade-up
 fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
