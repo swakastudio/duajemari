@@ -837,3 +837,10 @@ height:90px;
 #kirim:checked ~ .glass-glider{
 transform:translateX(100%);
 }
+
+.music-button{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+}
