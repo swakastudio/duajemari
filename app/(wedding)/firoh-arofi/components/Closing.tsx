@@ -20,11 +20,12 @@ shadow-[0_10px_50px_rgba(0,0,0,0.05)]
 {/* TEXT */}
 
 <p className="
-text-[14px]
-leading-[2]
+text-[12px]
+md:text-[16px]
+leading-[2.25]
+tracking-[0.02em]
 text-neutral-700
-max-w-md
-mx-auto
+font-light
 ">
 
 Merupakan suatu kehormatan dan kebahagiaan bagi kami
