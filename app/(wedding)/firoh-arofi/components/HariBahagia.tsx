@@ -12,20 +12,22 @@ return(
 <img
 src="/firoh-arofi/flower-middle-akadnikah1.gif"
 alt="flower-bottom"
-className="
+className="fade-up
+fade-delay-8
 absolute
 left-1/2
 -translate-x-1/2
-top-[425px]
+top-[300px]
 w-[120%]
 max-w-[720px]
 pointer-events-none
-z-30
+z-40
 "
 />
 
 {/* TITLE */}
-<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+<h2 className="fade-up
+fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
 HARI BAHAGIA
 </h2>
 
@@ -72,7 +74,8 @@ pt-6
 pb-7
 ">
 
-<p className="text-[14px] tracking-[0.08em] text-[#3f4d58] mt-2">
+<p className="fade-up
+fade-delay-2 text-[14px] tracking-[0.08em] text-[#3f4d58] mt-2">
 AKAD NIKAH & RESEPSI
 </p>
 
@@ -82,11 +85,13 @@ AKAD NIKAH & RESEPSI
 <div className="w-10 h-[1px] bg-neutral-300"></div>
 </div>
 
-<h3 className="font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58] mt-1">
+<h3 className="fade-up
+fade-delay-3 font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58] mt-1">
 Sabtu
 </h3>
 
-<p className="
+<p className="fade-up
+fade-delay-4
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -99,7 +104,8 @@ font-light
 
 <div className="mt-2">
 
-<p className="
+<p className="fade-up
+fade-delay-5
 text-[12px]
 tracking-[0.35em]
 text-[#3f4d58]
@@ -108,7 +114,8 @@ mb-2
 LOKASI
 </p>
 
-<p className="
+<p className="fade-up
+fade-delay-6
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -127,7 +134,8 @@ Gang IV RT 04 RW 01 , Waru – Sidoarjo
 href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
 target="_blank"
 rel="noreferrer"
-className="
+className="fade-up
+fade-delay-7
 mt-auto
 inline-flex
 items-center
