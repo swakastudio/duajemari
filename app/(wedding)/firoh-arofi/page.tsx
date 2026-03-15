@@ -2,6 +2,7 @@
 
 import WeddingCover from "./components/WeddingCover"
 import WeddingLoader from "./components/WeddingLoader"
+import MusicPlayer from "../components/MusicPlayer"
 
 export default function Page(){
 
@@ -11,6 +12,7 @@ return(
 
 <main className="min-h-screen">
 
+<MusicPlayer/>
 <WeddingLoader/>
 
 <WeddingCover guest={guest}/>
