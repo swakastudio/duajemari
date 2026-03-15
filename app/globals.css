@@ -840,8 +840,8 @@ transform:translateX(100%);
 
 .music-button{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:10px;
+right:10px;
 z-index:999;
 }
 
@@ -971,11 +971,13 @@ right:0;
 .play-btn:checked ~ .pause-icon::before{
 animation:reveal 300ms ease-in-out 350ms 1;
 animation-fill-mode:forwards;
+   background:#FFD773
 }
 
 .play-btn:checked ~ .pause-icon::after{
 animation:reveal 300ms ease-in-out 600ms 1;
 animation-fill-mode:forwards;
+   background:#FFD773
 }
 
 @keyframes reveal{
