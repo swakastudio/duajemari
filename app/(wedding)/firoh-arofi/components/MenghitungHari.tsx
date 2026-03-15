@@ -61,7 +61,8 @@ return(
     <img
 src="/firoh-arofi/flower-middle-akadnikah0.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[-95px] w-[130%] pointer-events-none z-30"
+className="fade-up
+fade-delay-7 absolute left-1/2 -translate-x-1/2 bottom-[-95px] w-[130%] pointer-events-none z-30"
 />
 
 
@@ -70,7 +71,8 @@ className="absolute left-1/2 -translate-x-1/2 bottom-[-95px] w-[130%] pointer-ev
 
 {/* TITLE */}
 
-<h2 className="
+<h2 className="fade-up
+fade-delay-1
 font-ltsip
 text-[24px]
 tracking-[0.06em]
@@ -93,7 +95,8 @@ MENGHITUNG HARI
 
 {/* TEXT */}
 
-<p className="
+<p className="fade-up
+fade-delay-2
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -111,7 +114,8 @@ akan bertemu dalam satu langkah yang sama.
 
 {/* COUNTDOWN */}
 
-<div className="
+<div className="fade-up
+fade-delay-3
 font-ltsip
 grid
 grid-cols-2
@@ -128,7 +132,8 @@ mt-10
 ].map((item,i)=>(
 <div
 key={i}
-className="
+className="fade-up
+fade-delay-4
 rounded-[20px]
 bg-white/70
 border border-white/40
@@ -138,7 +143,8 @@ shadow-[0_10px_30px_rgba(0,0,0,0.04)]
 "
 >
 
-<p className="
+<p className="fade-up
+fade-delay-5
 text-[26px]
 font-semibold
 text-neutral-800
@@ -146,7 +152,8 @@ text-neutral-800
 {item.value}
 </p>
 
-<p className="
+<p className="fade-up
+fade-delay-6
 text-[11px]
 tracking-[0.3em]
 text-neutral-500
