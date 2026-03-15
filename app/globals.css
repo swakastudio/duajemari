@@ -999,3 +999,18 @@ transform:translateY(-6px);
 transform:translateY(0px);
 }
 }
+
+/* ===============================
+FADE UP SECTION
+=============================== */
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.9s cubic-bezier(.22,.61,.36,1);
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
