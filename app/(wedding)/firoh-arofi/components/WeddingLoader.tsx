@@ -37,7 +37,7 @@ export default function WeddingLoader(){
   {/* RUNNING ANIMATION */}
 
   <img
-  src="/firoh-arofi/man-run-loader.webp"
+  src="/firoh-arofi/logoduajemari.gif"
   alt="Wedding Loader"
   className="w-[220px]"
   />
