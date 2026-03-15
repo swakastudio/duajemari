@@ -15,24 +15,9 @@ return(
       absolute
       left-1/2
       -translate-x-1/2
-top-[400px]
+top-[425px]
       w-[120%]
 max-w-[720px]
-      pointer-events-none
-      z-30
-      "
-    />
-
-   <img
-      src="/firoh-arofi/flower-bottom-resepsi.gif"
-      alt="flower-bottom"
-      className="
-      absolute
-      left-1/2
-      -translate-x-1/2
-bottom-[10px]
-      w-[120%]
-max-w-[1080px]
       pointer-events-none
       z-30
       "
