@@ -10,6 +10,7 @@ import Pattern from "../components/Pattern"
 import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
+import MusicPlayer from "../components/MusicPlayer"
 
 export default function InvitationPage() {
 
@@ -80,6 +81,8 @@ return ( <main className="relative overflow-x-hidden text-neutral-800">
 
   <div className="relative z-10 space-y-16 md:space-y-40">
 
+    <MusicPlayer />
+    
     <Ayat />
 
     <BrideGroom />
