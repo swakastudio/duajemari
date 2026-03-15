@@ -51,8 +51,7 @@ className="
 mx-auto
 mt-6
 w-[160px]
-opacity-80
-fill-[#F7B300]"
+opacity-80"
 />
 
 </div>
