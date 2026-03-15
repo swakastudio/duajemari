@@ -9,19 +9,22 @@ return(
   <img
 src="/firoh-arofi/flower-left-bridegroom.gif"
 alt="flower-left"
-className="absolute left-[0px] top-[950px] w-[180px] pointer-events-none z-30"
+className="fade-up
+fade-delay-8 absolute left-[0px] top-[950px] w-[180px] pointer-events-none z-30"
 />
 
 <img
 src="/firoh-arofi/flower-right-bridegroom.gif"
 alt="flower-right"
-className="absolute right-[0px] top-[950px] w-[180px] pointer-events-none z-30"
+className="fade-up
+fade-delay-9 absolute right-[0px] top-[950px] w-[180px] pointer-events-none z-30"
 />
 
 <img
 src="/firoh-arofi/flower-bottom-bridegroom.gif"
 alt="flower-bottom"
-className="absolute left-1/2 -translate-x-1/2 bottom-[60px] w-full pointer-events-none z-30"
+className="fade-up
+fade-delay-16 absolute left-1/2 -translate-x-1/2 bottom-[60px] w-full pointer-events-none z-30"
 />
   
  <div className="max-w-xl mx-auto relative z-10">
@@ -46,7 +49,8 @@ shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 {/* ================= TITLE ================= */}
 
 <h2
-className="
+className="fade-up
+fade-delay-1
 font-ltsip
 text-[24px]
 md:text-[40px]
@@ -69,7 +73,8 @@ MEMPELAI
 </div>
 
 
-<p className="
+<p className="fade-up
+fade-delay-2
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -92,11 +97,13 @@ acara pernikahan kami :
 <img
 src="/firoh-arofi/photo-woman.png"
 alt="Bride"
-className="mx-auto w-[220px] animate-photoFloat"
+className="fade-up
+fade-delay-4 mx-auto w-[220px] animate-photoFloat"
 />
 
 <h3
-className="
+className="fade-up
+fade-delay-5
 font-billy
 text-[35px]
 text-neutral-600
@@ -107,7 +114,8 @@ leading-[1.2]
 Nur Lailatul Maghfiroh, S.Pd.
 </h3>
 
-<p className="
+<p className="fade-up
+fade-delay-6
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -126,7 +134,8 @@ Bapak Muchammad Haris
 href="https://instagram.com/_maghfiroh"
 target="_blank"
 rel="noreferrer"
-className="
+className="fade-up
+fade-delay-7
 mt-6
 inline-flex
 items-center
@@ -157,7 +166,8 @@ className="w-5 h-5"
 <img
 src="/firoh-arofi/tanda-pisah.svg"
 alt="Divider"
-className="w-[28px] opacity-80"
+className="fade-up
+fade-delay-10 w-[28px] opacity-80"
 />
 
 </div>
@@ -170,11 +180,13 @@ className="w-[28px] opacity-80"
 <img
 src="/firoh-arofi/photo-man.png"
 alt="Groom"
-className="mx-auto w-[220px] animate-photoFloat delay-float"
+className="fade-up
+fade-delay-11 mx-auto w-[220px] animate-photoFloat delay-float"
 />
 
 <h3
-className="
+className="fade-up
+fade-delay-12
 font-billy
 text-[35px]
 text-neutral-600
@@ -185,7 +197,8 @@ leading-[1.2]
 Ibnu Arofi, S.Pd., Gr., SE
 </h3>
 
-<p className="
+<p className="fade-up
+fade-delay-13
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -204,7 +217,8 @@ Bapak Abdul Wahid Musyadad
 href="https://instagram.com/ibnu.arofi"
 target="_blank"
 rel="noreferrer"
-className="
+className="fade-up
+fade-delay-14
 mt-6
 inline-flex
 items-center
@@ -221,7 +235,8 @@ hover:scale-110
 <img
 src="/firoh-arofi/logo-instagram.svg"
 alt="Instagram"
-className="w-5 h-5"
+className="fade-up
+fade-delay-15 w-5 h-5"
 />
 </a>
 
