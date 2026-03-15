@@ -18,7 +18,7 @@ absolute
 left-1/2
 -translate-x-1/2
 top-[0px]
-w-[120%]
+w-[60%]
 max-w-[720px]
 pointer-events-none
 z-40
