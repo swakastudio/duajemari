@@ -45,10 +45,9 @@ QS. AR-RUM 30 : 21
 {/* ORNAMENT */}
 
 <img
-className="fade-up fade-delay-3"
 src="/firoh-arofi/frame-bar.svg"
 alt="divider"
-className="
+className="fade-up fade-delay-3
 mx-auto
 mt-6
 w-[160px]
