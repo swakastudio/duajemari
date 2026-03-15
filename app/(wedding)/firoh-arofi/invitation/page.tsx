@@ -1,7 +1,5 @@
 "use client"
 
-import { useEffect } from "react"
-
 import Ayat from "../components/Ayat"
 import BrideGroom from "../components/BrideGroom"
 import MenghitungHari from "../components/MenghitungHari"
@@ -11,125 +9,110 @@ import WeddingEnvelope from "../components/WeddingEnvelope"
 import GuestWish from "../components/GuestWish"
 import Closing from "../components/Closing"
 import MusicPlayer from "../components/MusicPlayer"
+import useFadeUp from "../components/useFadeUp"
 
-export default function InvitationPage() {
+export default function InvitationPage(){
 
-/* ===============================
-SCROLL REVEAL
-=============================== */
+useFadeUp()
 
-useEffect(() => {
+return(
 
-const elements = document.querySelectorAll(".fade-up")
+<main className="relative overflow-x-hidden text-neutral-800">
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible")
-      }
-    })
-  },
-  { threshold: 0.15 }
-)
+{/* BACKGROUND */}
 
-elements.forEach((el) => observer.observe(el))
+<div className="fixed inset-0 -z-0 overflow-hidden">
 
-return () => observer.disconnect()
+{/* SKY */}
 
-}, [])
+<div className="absolute inset-0 bg-[#e9f3f8]" />
 
-return ( <main className="relative overflow-x-hidden text-neutral-800">
+{/* CLOUDS */}
 
-  {/* BACKGROUND */}
-  <div className="fixed inset-0 -z-0 overflow-hidden">
+<div
+className="absolute inset-0 opacity-60"
+style={{
+backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
+backgroundSize: "cover",
+backgroundPosition: "center",
+backgroundRepeat: "no-repeat",
+}}
+/>
 
-    {/* SKY */}
-    <div className="absolute inset-0 bg-[#e9f3f8]" />
+{/* MOUNTAIN */}
 
-    {/* CLOUDS */}
-    <div
-      className="absolute inset-0 opacity-60"
-      style={{
-        backgroundImage: "url('/firoh-arofi/bg-clouds.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    />
+<img
+src="/firoh-arofi/bg-mountain.png"
+alt="mountain"
+className="
+absolute
+bottom-0
+left-1/2
+-translate-x-1/2
+w-[160%]
+md:w-full
+opacity-90
+pointer-events-none
+"
+/>
 
-    {/* MOUNTAIN */}
-    <img
-      src="/firoh-arofi/bg-mountain.png"
-      alt="mountain"
-      className="
-      absolute
-      bottom-0
-      left-1/2
-      -translate-x-1/2
-      w-[160%]
-      md:w-full
-      opacity-90
-      pointer-events-none
-    "
-    />
-  </div>
+</div>
 
-  {/* =====================================
-      PAGE CONTENT
-  ===================================== */}
+{/* ===============================
+PAGE CONTENT
+=============================== */}
 
-  <div className="relative z-10 space-y-16 md:space-y-40">
+<div className="relative z-10 space-y-16 md:space-y-40">
 
-    <MusicPlayer />
-    
-    <Ayat />
+<MusicPlayer/>
 
-    <BrideGroom />
+<Ayat/>
 
-    <MenghitungHari />
+<BrideGroom/>
 
-    <HariBahagia />
+<MenghitungHari/>
 
-    <Pattern />
+<HariBahagia/>
 
-    <WeddingEnvelope />
+<Pattern/>
 
-    <GuestWish />
+<WeddingEnvelope/>
 
-    <Closing />
+<GuestWish/>
 
-    {/* =====================================
-        FOOTER
-    ===================================== */}
+<Closing/>
 
-    <footer className="text-center py-20">
+{/* FOOTER */}
 
-      <p className="text-[12px] tracking-[0.18em] text-neutral-500">
-        DIBUAT OLEH
-      </p>
+<footer className="text-center py-20">
 
-      <a
-        href="https://duajemari.vercel.app"
-        target="_blank"
-        rel="noreferrer"
-        className="
-        inline-block
-        mt-3
-        text-[15px]
-        font-medium
-        tracking-[0.05em]
-        text-neutral-800
-        hover:underline
-      "
-      >
-        duajemari.vercel.app
-      </a>
+<p className="text-[12px] tracking-[0.18em] text-neutral-500">
+DIBUAT OLEH
+</p>
 
-    </footer>
+<a
+href="https://duajemari.vercel.app"
+target="_blank"
+rel="noreferrer"
+className="
+inline-block
+mt-3
+text-[15px]
+font-medium
+tracking-[0.05em]
+text-neutral-800
+hover:underline
+"
+>
+duajemari.vercel.app
+</a>
 
-  </div>
+</footer>
+
+</div>
 
 </main>
-        )
+
+)
+
 }
