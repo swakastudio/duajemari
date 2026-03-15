@@ -62,9 +62,23 @@ return(
 src="/firoh-arofi/flower-middle-akadnikah0.gif"
 alt="flower-bottom"
 className="fade-up
-fade-delay-7 absolute left-1/2 -translate-x-1/2 bottom-[-95px] w-[130%] pointer-events-none z-30"
+fade-delay-7 absolute left-1/2 -translate-x-1/2 bottom-[-90px] w-[130%] pointer-events-none z-30"
 />
-
+{/* ORNAMENT */}
+<img
+src="/firoh-arofi/flower-middle-akadnikah1.gif"
+alt="flower-bottom"
+className="fade-up
+fade-delay-8
+absolute
+left-1/2
+-translate-x-1/2
+bottom-[-90px]
+w-[120%]
+pointer-events-none
+z-40
+"
+/>
 
 <div className="mx-auto max-w-3xl text-center">
 
