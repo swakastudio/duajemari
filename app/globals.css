@@ -824,6 +824,14 @@ transition:transform .35s ease;
 transform:translateX(0);
 }
 
+.music-container{
+position:fixed;
+bottom:25px;
+right:25px;
+z-index:999;
+width:90px;
+height:90px;
+}
 /* posisi kanan */
 
 #kirim:checked ~ .glass-glider{
