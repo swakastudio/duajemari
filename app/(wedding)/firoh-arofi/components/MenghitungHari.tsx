@@ -59,7 +59,7 @@ return(
 <section className="fade-up relative w-full bg-[#E7F2F6] px-6 py-24 -mt-32">
     
     <img
-src="/firoh-arofi/flower-top-haribahagia.gif"
+src="/firoh-arofi/flower-middle-akadnikah0.gif"
 alt="flower-bottom"
 className="absolute left-1/2 -translate-x-1/2 bottom-[-125px] w-[130%] pointer-events-none z-30"
 />
