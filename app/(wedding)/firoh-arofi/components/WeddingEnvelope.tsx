@@ -314,30 +314,34 @@ Anda dapat memberi kado secara digital.
 
 {/* TAB BUTTON */}
 
-<div className="flex justify-center gap-4">
+<div className="glass-radio-group">
 
-<button
-onClick={()=>setTab("transfer")}
-className={`px-5 py-2 text-sm rounded-full border backdrop-blur-md transition
-${tab==="transfer"
-?"bg-white/60 border-white/60 text-[#3f4d58]"
-:"border-white/40 text-[#3f4d58]"
-}`}
->
+<input
+type="radio"
+name="amplop"
+id="transfer"
+checked={tab==="transfer"}
+onChange={()=>setTab("transfer")}
+/>
+
+<label htmlFor="transfer">
 Transfer
-</button>
+</label>
 
 
-<button
-onClick={()=>setTab("kirim")}
-className={`px-5 py-2 text-sm rounded-full border backdrop-blur-md transition
-${tab==="kirim"
-?"bg-white/60 border-white/60 text-[#3f4d58]"
-:"border-white/40 text-[#3f4d58]"
-}`}
->
+<input
+type="radio"
+name="amplop"
+id="kirim"
+checked={tab==="kirim"}
+onChange={()=>setTab("kirim")}
+/>
+
+<label htmlFor="kirim">
 Kirim Hadiah
-</button>
+</label>
+
+<div className="glass-glider"></div>
 
 </div>
 
