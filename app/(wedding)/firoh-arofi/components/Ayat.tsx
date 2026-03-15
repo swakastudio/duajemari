@@ -11,7 +11,7 @@ return(
 
 {/* AYAT */}
 
-<p className="
+<p className="fade-up fade-delay-1
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -30,7 +30,7 @@ antara kamu rasa kasih dan sayang.
 
 {/* SOURCE */}
 
-<p className="
+<p className="fade-up fade-delay-2
 mt-12
 text-[11px]
 tracking-[0.35em]
@@ -45,6 +45,7 @@ QS. AR-RUM 30 : 21
 {/* ORNAMENT */}
 
 <img
+className="fade-up fade-delay-3"
 src="/firoh-arofi/frame-bar.svg"
 alt="divider"
 className="
