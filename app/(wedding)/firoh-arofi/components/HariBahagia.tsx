@@ -6,7 +6,7 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden flex justify-center items-center">
 
-<div className="relative w-full max-w-[900px] text-center justify-center">
+<div className="relative w-full max-w-[900px] text-center">
 
   <img
       src="/firoh-arofi/flower-middle-akadnikah1.gif"
@@ -43,7 +43,7 @@ HARI BAHAGIA
 
 {/* GRID */}
 
-<div className="grid md:grid-cols-2 gap-14 place-items-center">
+<div className="grid md:grid-cols-2 gap-14 justify-items-center">
 
 
 {/* ================= RESEPSI ================= */}
