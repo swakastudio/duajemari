@@ -859,8 +859,8 @@ animation:musicFloat 4s ease-in-out infinite;
 /* container tombol */
 
 .container{
-width:56px;
-height:56px;
+width:12px;
+height:12px;
 border-radius:50%;
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
