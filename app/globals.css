@@ -849,8 +849,10 @@ z-index:999;
 
 .music-container{
 position:fixed;
-bottom:2px;
-left:2px;
+
+left:6px;
+bottom:calc(6px + env(safe-area-inset-bottom));
+
 z-index:999;
 
 animation:musicFloat 4s ease-in-out infinite;
@@ -859,10 +861,11 @@ animation:musicFloat 4s ease-in-out infinite;
 /* container tombol */
 
 .container{
-width:12px;
-height:12px;
+width:20px;
+height:20px;
+position:relative;
 border-radius:50%;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
+box-shadow:0 4px 10px rgba(0,0,0,0.12);
 }
 
 /* checkbox toggle */
@@ -883,8 +886,8 @@ outline:none;
 .play-btn::before{
 content:"";
 position:absolute;
-width:93%;
-height:93%;
+width:90%;
+height:90%;
 background:#000;
 border-radius:50%;
 left:50%;
@@ -917,8 +920,8 @@ background:conic-gradient(#ff6347,#ff6347);
 
 .play-icon{
 position:absolute;
-width:18px;
-height:18px;
+width:6px;
+height:6px;
 left:60%;
 top:50%;
 background:#F7B300;
@@ -937,8 +940,8 @@ clip-path:polygon(0 100%,0% 100%,100% 100%);
 
 .pause-icon{
 position:absolute;
-width:18px;
-height:18px;
+width:6px;
+height:6px;
 left:50%;
 top:50%;
 transform:translate(-50%,-50%);
