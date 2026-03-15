@@ -19,7 +19,8 @@ shadow-[0_10px_50px_rgba(0,0,0,0.05)]
 
 {/* TEXT */}
 
-<p className="
+<p className="fade-up
+fade-delay-1
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -50,7 +51,8 @@ untuk memberikan doa restu kepada kami.
 
 {/* THANK YOU */}
 
-<p className="
+<p className="fade-up
+fade-delay-2
 text-[13px]
 tracking-[0.2em]
 text-neutral-500
@@ -62,7 +64,8 @@ Terima Kasih
 
 {/* NAMA MEMPELAI */}
 
-<h3 className="
+<h3 className="fade-up
+fade-delay-3
 font-royalti
 text-[36px]
 text-[#3f4d58]
@@ -80,7 +83,8 @@ Arofi
 
 {/* DATE */}
 
-<p className="
+<p className="fade-up
+fade-delay-4
 mt-3
 text-[12px]
 tracking-[0.25em]
