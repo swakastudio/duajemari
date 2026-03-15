@@ -35,7 +35,8 @@ return(
 
 {/* TITLE */}
 
-<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+<h2 className="fade-up
+fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
 GALERI
 </h2>
 
@@ -65,7 +66,8 @@ GALERI
 key={index}
 src={img}
 className={`
-absolute inset-0 w-full h-full object-cover transition-opacity duration-1000
+fade-up
+fade-delay-2 absolute inset-0 w-full h-full object-cover transition-opacity duration-1000
 ${current === index ? "opacity-100" : "opacity-0"}
 `}
 />
@@ -87,7 +89,8 @@ key={index}
 src={img}
 onClick={()=>setCurrent(index)}
 className={`
-w-12 h-12 object-cover rounded-lg cursor-pointer transition
+fade-up
+fade-delay-3 w-12 h-12 object-cover rounded-lg cursor-pointer transition
 ${current===index
 ? "ring-2 ring-[#3f4d58] scale-110"
 : "opacity-60 hover:opacity-100"
