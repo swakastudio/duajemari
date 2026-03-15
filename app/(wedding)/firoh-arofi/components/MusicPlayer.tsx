@@ -10,21 +10,25 @@ const [playing,setPlaying] = useState(true)
 
 useEffect(()=>{
 
-if(audioRef.current){
-audioRef.current.volume = 0.7
-audioRef.current.play().catch(()=>{})
-}
+const audio = audioRef.current
+
+if(!audio) return
+
+audio.volume = 0.6
+audio.play().catch(()=>{})
 
 },[])
 
 const toggleMusic = ()=>{
 
-if(!audioRef.current) return
+const audio = audioRef.current
+
+if(!audio) return
 
 if(playing){
-audioRef.current.pause()
+audio.pause()
 }else{
-audioRef.current.play()
+audio.play()
 }
 
 setPlaying(!playing)
@@ -33,28 +37,24 @@ setPlaying(!playing)
 
 return(
 
-<div className="music-container">
+<div className="music-button">
 
 <audio
 ref={audioRef}
 src="/firoh-arofi/kasih-putih-piano.mp3"
 loop
+preload="auto"
 />
 
-<label>
+<button onClick={toggleMusic} className="container">
 
-<input
-className="play-btn"
-type="checkbox"
-checked={!playing}
-onChange={toggleMusic}
-/>
-
-<div className="play-icon"></div>
-
+{playing ? (
 <div className="pause-icon"></div>
+) : (
+<div className="play-icon"></div>
+)}
 
-</label>
+</button>
 
 </div>
 
