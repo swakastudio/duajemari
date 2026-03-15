@@ -32,7 +32,7 @@ max-w-[720px]
       -translate-x-1/2
 bottom-[-45px]
       w-[120%]
-max-w-[720px
+max-w-[1080px]
       pointer-events-none
       z-30
       "
