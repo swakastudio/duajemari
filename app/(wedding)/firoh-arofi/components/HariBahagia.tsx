@@ -6,7 +6,7 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden flex justify-center">
 
-<div className="relative w-full max-w-[900px] text-center">
+<div className="relative w-full max-w-[900px] text-center justify-center">
 
   <img
       src="/firoh-arofi/flower-middle-akadnikah1.gif"
