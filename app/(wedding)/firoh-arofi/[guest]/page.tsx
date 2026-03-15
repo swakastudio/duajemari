@@ -17,7 +17,7 @@ return(
 
 {/* LOADER */}
 
-<MusicPlayer/>
+
 <WeddingLoader/>
   
 
