@@ -3,7 +3,6 @@
 import { useParams } from "next/navigation"
 import WeddingLoader from "../components/WeddingLoader"
 import WeddingCover from "../components/WeddingCover"
-import MusicPlayer from "../components/MusicPlayer"
 
 export default function Page(){
 
