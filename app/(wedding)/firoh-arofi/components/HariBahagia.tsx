@@ -15,7 +15,7 @@ return(
       absolute
       left-1/2
       -translate-x-1/2
-top-[450px]
+top-[400px]
       w-[120%]
 max-w-[720px]
       pointer-events-none
@@ -30,7 +30,7 @@ max-w-[720px]
       absolute
       left-1/2
       -translate-x-1/2
-bottom-[-10px]
+bottom-[10px]
       w-[120%]
 max-w-[1080px]
       pointer-events-none
