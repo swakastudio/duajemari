@@ -282,7 +282,8 @@ space-y-6
 
 {/* TITLE */}
 
-<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+<h2 className="fade-up
+fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
 AMPL0P DIGITAL
 </h2>
 
@@ -298,7 +299,8 @@ AMPL0P DIGITAL
 </div>
 
 
-<p className="
+<p className="fade-up
+fade-delay-2
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -314,7 +316,8 @@ Anda dapat memberi kado secara digital.
 
 {/* TAB BUTTON */}
 
-<div className="glass-radio-group">
+<div className="fade-up
+fade-delay-3 glass-radio-group">
 
 <input
 type="radio"
