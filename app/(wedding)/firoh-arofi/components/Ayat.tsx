@@ -8,7 +8,6 @@ return(
 
 <div className="max-w-2xl mx-auto px-6 py-24 text-center">
 
-
 {/* AYAT */}
 
 <p className="
@@ -42,18 +41,25 @@ QS. AR-RUM 30 : 21
 </p>
 
 
-{/* ORNAMENT */}
+{/* ORNAMENT SVG */}
 
-<img
-src="/firoh-arofi/frame-bar.svg"
-alt="divider"
+<svg
+viewBox="0 0 200 40"
 className="
 mx-auto
 mt-6
 w-[160px]
+text-[#F7B300]
 opacity-80
-fill-[#F7B300]"
-/>
+"
+fill="currentColor"
+>
+
+{/* contoh path - ganti dengan isi svg asli */}
+
+<path d="M10 20 H190" />
+
+</svg>
 
 </div>
 
