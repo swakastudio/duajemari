@@ -36,7 +36,7 @@ return(
 {/* TITLE */}
 
 <h2 className="fade-up
-fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3A3A3A]">
 GALERI
 </h2>
 
