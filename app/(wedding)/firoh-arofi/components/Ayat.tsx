@@ -16,7 +16,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 
@@ -34,7 +34,7 @@ antara kamu rasa kasih dan sayang.
 mt-12
 text-[11px]
 tracking-[0.35em]
-text-neutral-500
+text-[#3A3A3A]
 ">
 
 QS. AR-RUM 30 : 21
