@@ -4,7 +4,7 @@ export default function BrideGroom(){
 
 return(
 
-<section className="fade-up relative px-6 py-18 overflow-hidden">
+<section className="fade-up relative px-6 py-20 overflow-hidden">
 
   <img
 src="/firoh-arofi/flower-left-bridegroom.gif"
@@ -107,7 +107,7 @@ fade-delay-5
 font-billy
 text-[35px]
 text-neutral-600
-mt-6
+mt-5
 leading-[1.2]
 "
 >
@@ -136,7 +136,7 @@ target="_blank"
 rel="noreferrer"
 className="fade-up
 fade-delay-7
-mt-6
+mt-5
 inline-flex
 items-center
 justify-center
@@ -190,7 +190,7 @@ fade-delay-12
 font-billy
 text-[35px]
 text-neutral-600
-mt-6
+mt-5
 leading-[1.2]
 "
 >
@@ -219,7 +219,7 @@ target="_blank"
 rel="noreferrer"
 className="fade-up
 fade-delay-14
-mt-6
+mt-5
 inline-flex
 items-center
 justify-center
