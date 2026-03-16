@@ -57,7 +57,7 @@ pointer-events-none
 />
 
 </div>
-
+<div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
 {/* ===============================
 PAGE CONTENT
 =============================== */}
