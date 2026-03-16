@@ -116,7 +116,7 @@ ${opening ? "scale-125 opacity-0" : ""}
 <p className="
 tracking-[0.35em]
 text-[13px]
-text-black/70
+text-[#3A3A3A]
 mb-6
 animate-heroFloat
 ">
@@ -165,7 +165,7 @@ drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]
 <p className="
 text-[11px]
 tracking-[0.35em]
-text-black/70
+text-[#3A3A3A]
 mb-1
 uppercase
 animate-heroFloat
