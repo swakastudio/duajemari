@@ -92,7 +92,7 @@ fade-delay-1 text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10">
 DIBUAT OLEH
 </p>
 
-<<a
+<a
 href="https://duajemari.vercel.app"
 target="_blank"
 rel="noreferrer"
