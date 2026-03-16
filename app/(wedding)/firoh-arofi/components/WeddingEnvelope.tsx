@@ -273,7 +273,7 @@ max-w-md
 mx-auto
 bg-white/40
 backdrop-blur-xl
-border border-white/40
+border border-white/55
 rounded-2xl
 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
 p-6
