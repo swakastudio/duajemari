@@ -63,7 +63,7 @@ UI
 
 return(
 
-<section className="fade-up relative px-6 py-24 bg-[#E7F2F6]">
+<section className="fade-up relative px-6 py-20 bg-[#E7F2F6]">
 
 <div className="mx-auto max-w-4xl">
 
