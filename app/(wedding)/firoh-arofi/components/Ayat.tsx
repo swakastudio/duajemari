@@ -6,7 +6,7 @@ return(
 
 <section className="fade-up w-full bg-[#E7F2F6]">
 
-<div className="max-w-2xl mx-auto px-6 py-24 text-center">
+<div className="max-w-2xl mx-auto px-6 py-20 text-center">
 
 
 {/* AYAT */}
