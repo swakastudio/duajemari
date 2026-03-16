@@ -104,7 +104,7 @@ fade-delay-4 mx-auto w-[220px] animate-photoFloat"
 <h3
 className="fade-up
 fade-delay-5
-font-billy
+font-royalti
 text-[35px]
 text-neutral-600
 mt-5
@@ -187,7 +187,7 @@ fade-delay-11 mx-auto w-[220px] animate-photoFloat delay-float"
 <h3
 className="fade-up
 fade-delay-12
-font-billy
+font-royalti
 text-[35px]
 text-neutral-600
 mt-5
