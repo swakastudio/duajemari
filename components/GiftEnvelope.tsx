@@ -264,7 +264,7 @@ return(
 
 {/* TITLE */}
 
-<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-black/70">
 AMPL0P DIGITAL
 </h2>
 
@@ -280,7 +280,7 @@ AMPL0P DIGITAL
 </div>
 
 
-<p className="text-sm text-neutral-600 mb-8 max-w-md mx-auto leading-relaxed">
+<p className="text-sm text-black/70 mb-8 max-w-md mx-auto leading-relaxed">
 Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
 Namun apabila memberi adalah ungkapan tanda kasih,
 Anda dapat memberi kado secara digital.
