@@ -1,11 +1,14 @@
 "use client"
 
+import { supabase } from "../lib/supabase"
 import { useState } from "react"
 
 type Wish = {
-name:string
-message:string
-attendance:string
+  id?: string
+  name: string
+  message: string
+  attendance: string
+  created_at?: string
 }
 
 export default function GuestWish(){
