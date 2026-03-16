@@ -82,16 +82,9 @@ pointer-events-none
 
 {/* FOOTER */}
 
-<footer className="relative text-center py-8 mt-16">
+<footer className="relative text-center py-16 mt-16">
 
-<p className="
-fade-up
-fade-delay-1
-text-[12px]
-tracking-[0.18em]
-text-[#FEFEFE]
-  z-10
-">
+<p className="fade-up fade-delay-1 text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10 relative">
 DIBUAT OLEH
 </p>
 
@@ -102,10 +95,12 @@ rel="noreferrer"
 className="
 fade-up
 fade-delay-2
+relative
+z-10
+mt-4
 inline-flex
 items-center
 justify-center
-mt-4
 px-7
 py-[8px]
 rounded-full
@@ -119,7 +114,6 @@ transition
 duration-500
 hover:-translate-y-[2px]
 hover:shadow-lg
-  z-10
 "
 >
 duajemari
@@ -134,11 +128,9 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full object-cover z-0"
+className="w-full object-cover"
 >
-
 <source src="/firoh-arofi/frame-flower.webm" type="video/webm"/>
-
 </video>
 
 </div>
