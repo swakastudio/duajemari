@@ -39,9 +39,9 @@ text-center
 px-10
 py-16
 rounded-[36px]
-bg-white/35
+bg-white/40
 backdrop-blur-xl
-border border-white/40
+border border-white/55
 shadow-[0_20px_70px_rgba(0,0,0,0.12)]
 "
 >
