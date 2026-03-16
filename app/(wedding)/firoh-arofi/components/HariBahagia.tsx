@@ -10,7 +10,7 @@ return(
 src="/firoh-arofi/flower-bottom-haribahagia.gif"
 alt="flower-bottom"
 className="fade-up
-fade-delay-16 absolute left-1/2 -translate-x-1/2 bottom-[60px] w-full pointer-events-none z-30"
+fade-delay-7 absolute left-1/2 -translate-x-1/2 bottom-[60px] w-full pointer-events-none z-30"
 />
   
   
