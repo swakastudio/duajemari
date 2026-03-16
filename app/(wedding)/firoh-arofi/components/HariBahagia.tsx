@@ -58,7 +58,7 @@ pb-7
 ">
 
 <p className="fade-up
-fade-delay-2 text-[14px] tracking-[0.08em] text-[#3f4d58] mt-2">
+fade-delay-2 text-[14px] tracking-[0.08em] text-[#3A3A3A] mt-2">
 AKAD NIKAH & RESEPSI
 </p>
 
@@ -69,7 +69,7 @@ AKAD NIKAH & RESEPSI
 </div>
 
 <h3 className="fade-up
-fade-delay-3 font-ltsip text-[38px] tracking-[0.06em] text-[#3f4d58] mt-1">
+fade-delay-3 font-ltsip text-[38px] tracking-[0.06em] text-[#3A3A3A] mt-1">
 Sabtu
 </h3>
 
@@ -79,7 +79,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 04 April 2026 | 08.00 WIB – SELESAI
@@ -91,7 +91,7 @@ font-light
 fade-delay-5
 text-[12px]
 tracking-[0.35em]
-text-[#3f4d58]
+text-[#3A3A3A]
 mb-2
 ">
 LOKASI
@@ -103,7 +103,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 Jl. Kepuhkiriman Dalam Masjid  
