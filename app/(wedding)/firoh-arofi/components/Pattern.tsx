@@ -28,7 +28,7 @@ return ()=>clearInterval(interval)
 
 return(
 
-<section className="relative px-6 py-20 -mt-32 bg-[#E7F2F6]">
+<section className="relative px-6 py-20 -mt-32 bg-[#E7F2F6] mt-16">
 
 <div className="mx-auto max-w-4xl text-center">
 
