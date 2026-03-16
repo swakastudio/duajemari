@@ -24,11 +24,9 @@ return(
 <div className="fixed inset-0 -z-0 overflow-hidden">
 
 {/* SKY */}
-
 <div className="absolute inset-0 bg-[#e9f3f8]" />
 
 {/* CLOUDS */}
-
 <div
 className="absolute inset-0 opacity-60"
 style={{
@@ -40,7 +38,6 @@ backgroundRepeat: "no-repeat",
 />
 
 {/* MOUNTAIN */}
-
 <img
 src="/firoh-arofi/bg-mountain.png"
 alt="mountain"
@@ -56,12 +53,12 @@ pointer-events-none
 "
 />
 
+{/* DARK GRADIENT */}
+<div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
 
 </div>
-<div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
-{/* ===============================
-PAGE CONTENT
-=============================== */}
+
+{/* PAGE CONTENT */}
 
 <div className="relative z-10 space-y-16 md:space-y-40">
 
@@ -85,10 +82,15 @@ PAGE CONTENT
 
 {/* FOOTER */}
 
-<footer className="text-center py-16 mt-16">
+<footer className="relative text-center py-16 mt-16">
 
-<p className="fade-up
-fade-delay-1 text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10">
+<p className="
+fade-up
+fade-delay-1
+text-[12px]
+tracking-[0.18em]
+text-[#FEFEFE]
+">
 DIBUAT OLEH
 </p>
 
@@ -96,12 +98,13 @@ DIBUAT OLEH
 href="https://duajemari.vercel.app"
 target="_blank"
 rel="noreferrer"
-className="fade-up
+className="
+fade-up
 fade-delay-2
-mt-auto
 inline-flex
 items-center
 justify-center
+mt-4
 px-7
 py-[8px]
 rounded-full
@@ -120,7 +123,7 @@ hover:shadow-lg
 duajemari
 </a>
 
-    {/* FLOWER VIDEO */}
+{/* FLOWER VIDEO */}
 
 <div className="absolute bottom-0 left-0 w-full pointer-events-none">
 
@@ -129,7 +132,7 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full object-cover z-0"
+className="w-full object-cover"
 >
 
 <source src="/firoh-arofi/frame-flower.webm" type="video/webm"/>
@@ -137,7 +140,7 @@ className="w-full object-cover z-0"
 </video>
 
 </div>
-  
+
 </footer>
 
 </div>
