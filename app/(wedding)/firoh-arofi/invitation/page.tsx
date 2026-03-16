@@ -84,9 +84,9 @@ PAGE CONTENT
 
 {/* FOOTER */}
 
-<footer className="text-center py-16">
+<footer className="text-center py-16 mt-16">
 
-<p className="text-[12px] tracking-[0.18em] text-neutral-500">
+<p className="text-[12px] tracking-[0.18em] text-[#FEFEFE]">
 DIBUAT OLEH
 </p>
 
@@ -100,7 +100,7 @@ mt-3
 text-[15px]
 font-medium
 tracking-[0.05em]
-text-[#FF4D6D]
+text-[#FEFEFE]
 hover:underline
 "
 >
