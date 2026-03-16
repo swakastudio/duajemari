@@ -17,10 +17,33 @@ backdrop-blur-md
 shadow-[0_10px_50px_rgba(0,0,0,0.05)]
 ">
 
+{/* FOTO MEMPELAI */}
+
+<div className="fade-up fade-delay-1 mb-10 flex justify-center">
+
+<img
+src="/firoh-arofi/firo-arofi-(6).jpeg"
+alt="Firoh & Arofi"
+className="
+w-[160px]
+h-[160px]
+md:w-[190px]
+md:h-[190px]
+object-cover
+rounded-[28px]
+border border-white/60
+shadow-[0_15px_40px_rgba(0,0,0,0.12)]
+"
+/>
+
+</div>
+
+
 {/* TEXT */}
 
-<p className="fade-up
-fade-delay-1
+<p className="
+fade-up
+fade-delay-2
 text-[12px]
 md:text-[16px]
 leading-[2.25]
@@ -51,8 +74,9 @@ untuk memberikan doa restu kepada kami.
 
 {/* THANK YOU */}
 
-<p className="fade-up
-fade-delay-2
+<p className="
+fade-up
+fade-delay-3
 text-[13px]
 tracking-[0.2em]
 text-[#3A3A3A]
@@ -64,8 +88,9 @@ Terima Kasih
 
 {/* NAMA MEMPELAI */}
 
-<h3 className="fade-up
-fade-delay-3
+<h3 className="
+fade-up
+fade-delay-4
 font-royalti
 text-[36px]
 text-[#3f4d58]
@@ -83,8 +108,9 @@ Arofi
 
 {/* DATE */}
 
-<p className="fade-up
-fade-delay-4
+<p className="
+fade-up
+fade-delay-5
 mt-3
 text-[12px]
 tracking-[0.25em]
