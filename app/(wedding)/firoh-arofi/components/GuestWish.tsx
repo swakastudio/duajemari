@@ -75,7 +75,7 @@ TITLE
 <div className="text-center mb-14">
 
 <h2 className="fade-up
-fade-delay-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3f4d58]">
+fade-delay-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
 UCAPAN & DOA
 </h2>
 
@@ -88,7 +88,7 @@ UCAPAN & DOA
 </div>
 
 <p className="fade-up
-fade-delay-2 text-neutral-600 text-sm max-w-md mx-auto leading-relaxed">
+fade-delay-2 text-[#3A3A3A] text-sm max-w-md mx-auto leading-relaxed">
 Tinggalkan doa serta harapan terbaik untuk perjalanan baru kami.
 Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 </p>
