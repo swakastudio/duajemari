@@ -55,7 +55,7 @@ font-ltsip
 text-[24px]
 md:text-[40px]
 tracking-[0.08em]
-text-neutral-600
+text-[#3A3A3A]
 "
 >
 MEMPELAI
@@ -79,7 +79,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 Assalamualaikum Wr.Wb
@@ -106,7 +106,7 @@ className="fade-up
 fade-delay-5
 font-royalti
 text-[35px]
-text-neutral-600
+text-[#3A3A3A]
 mt-5
 leading-[1.2]
 "
@@ -120,7 +120,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 Putri Ketiga dari
@@ -189,7 +189,7 @@ className="fade-up
 fade-delay-12
 font-royalti
 text-[35px]
-text-neutral-600
+text-[#3A3A3A]
 mt-5
 leading-[1.2]
 "
@@ -203,7 +203,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 Putra Kedua dari
