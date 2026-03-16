@@ -25,8 +25,8 @@ const [telp,setTelp] = useState("")
 ================================ */
 
 const rekening = {
-pria:"319401017385538",
-wanita:"7254196902"
+pria:"12345679890",
+wanita:"0987654321"
 }
 
 
@@ -347,7 +347,7 @@ className="cursor-pointer transition hover:scale-105"
 >
 
 <img
-src="/firoh-arofi/card-pria.png"
+src="public/card-pria.png"
 className="w-[190px] md:w-[220px]"
 />
 
@@ -363,7 +363,7 @@ className="cursor-pointer transition hover:scale-105"
 >
 
 <img
-src="/firoh-arofi/card-wanita.png"
+src="public/card-wanita.png"
 className="w-[190px] md:w-[220px]"
 />
 
