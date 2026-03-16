@@ -25,7 +25,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 
@@ -55,7 +55,7 @@ untuk memberikan doa restu kepada kami.
 fade-delay-2
 text-[13px]
 tracking-[0.2em]
-text-neutral-500
+text-[#3A3A3A]
 mb-3
 ">
 Terima Kasih
@@ -88,7 +88,7 @@ fade-delay-4
 mt-3
 text-[12px]
 tracking-[0.25em]
-text-neutral-500
+text-[#3A3A3A]
 ">
 04 • 04 • 2026
 </p>
