@@ -155,26 +155,26 @@ Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 
 <div className="fade-up fade-delay-3 flex justify-center gap-6 mb-14">
 
-<div className="bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+<div className="fade-up fade-delay-4 bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
 
-<p className="text-2xl font-semibold text-green-600">
+<p className="fade-up fade-delay-5 text-2xl font-semibold text-green-600">
 {hadirCount}
 </p>
 
-<p className="text-xs tracking-[0.25em] text-green-600">
+<p className="fade-up fade-delay-6 text-xs tracking-[0.25em] text-green-600">
 HADIR
 </p>
 
 </div>
 
 
-<div className="bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+<div className="fade-up fade-delay-7 bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
 
-<p className="text-2xl font-semibold text-red-500">
+<p className="fade-up fade-delay-8 text-2xl font-semibold text-red-500">
 {tidakCount}
 </p>
 
-<p className="text-xs tracking-[0.25em] text-red-500">
+<p className="fade-up fade-delay-9 text-xs tracking-[0.25em] text-red-500">
 TIDAK HADIR
 </p>
 
@@ -195,7 +195,7 @@ className="fade-up fade-delay-10 bg-white/60 backdrop-blur-xl border border-whit
 value={name}
 onChange={(e)=>setName(e.target.value)}
 placeholder="Nama Anda"
-className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
+className="fade-up fade-delay-11 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
 />
 
 
@@ -203,14 +203,14 @@ className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:o
 value={message}
 onChange={(e)=>setMessage(e.target.value)}
 placeholder="Ucapan & Doa"
-className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm h-28 resize-none focus:outline-none focus:border-[#3f4d58]"
+className="fade-up fade-delay-12 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm h-28 resize-none focus:outline-none focus:border-[#3f4d58]"
 />
 
 
 <select
 value={attendance}
 onChange={(e)=>setAttendance(e.target.value)}
-className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
+className="fade-up fade-delay-13 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
 >
 
 <option>Hadir</option>
@@ -221,7 +221,7 @@ className="w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:o
 
 <button
 type="submit"
-className="w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] hover:bg-neutral-800 hover:text-white transition"
+className="fade-up fade-delay-14 w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] hover:bg-neutral-800 hover:text-white transition"
 >
 
 KIRIM UCAPAN
