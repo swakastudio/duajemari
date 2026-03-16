@@ -10,8 +10,8 @@ return(
 mx-auto
 max-w-3xl
 rounded-[32px]
-border border-white/40
-bg-white/45
+border border-white/55
+bg-white/40
 px-10 py-14
 backdrop-blur-md
 shadow-[0_10px_50px_rgba(0,0,0,0.05)]
