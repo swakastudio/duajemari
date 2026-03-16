@@ -122,6 +122,7 @@ leading-[2.25]
 tracking-[0.02em]
 text-[#3A3A3A]
 font-light
+mt-10
 ">
 Putri Ketiga dari
 <br/>
@@ -205,6 +206,7 @@ leading-[2.25]
 tracking-[0.02em]
 text-[#3A3A3A]
 font-light
+mt-10
 ">
 Putra Kedua dari
 <br/>
