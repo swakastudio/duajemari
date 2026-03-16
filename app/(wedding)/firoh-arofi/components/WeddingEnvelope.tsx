@@ -283,7 +283,7 @@ space-y-6
 {/* TITLE */}
 
 <h2 className="fade-up
-fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3f4d58]">
+fade-delay-1 font-ltsip text-[24px] tracking-[0.06em] text-[#3A3A3A]">
 AMPL0P DIGITAL
 </h2>
 
@@ -305,7 +305,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
@@ -358,7 +358,7 @@ Kirim Hadiah
 ${tab==="transfer"?"max-h-[400px] opacity-100":"max-h-0 opacity-0"}
 `}>
 
-<p className="text-xs text-neutral-500 mb-4">
+<p className="text-xs text-[#3A3A3A] mb-5">
 Klik kartu untuk menyalin nomor rekening
 </p>
 
