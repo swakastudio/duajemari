@@ -56,6 +56,24 @@ pointer-events-none
 "
 />
 
+  {/* FLOWER VIDEO */}
+
+<div className="absolute bottom-0 left-0 w-full pointer-events-none">
+
+<video
+autoPlay
+loop
+muted
+playsInline
+className="w-full object-cover"
+>
+
+<source src="/firoh-arofi/frame-flower.webm" type="video/webm"/>
+
+</video>
+
+</div>
+
 </div>
 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50"></div>
 {/* ===============================
