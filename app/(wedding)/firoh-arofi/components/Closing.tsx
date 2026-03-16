@@ -4,7 +4,7 @@ export default function Closing(){
 
 return(
 
-<section className="fade-up px-6 py-20 text-center">
+<section className="fade-up px-6 py-20 text-center mt-16">
 
 <div className="
 mx-auto
