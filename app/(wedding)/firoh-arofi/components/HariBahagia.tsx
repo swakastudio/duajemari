@@ -6,6 +6,14 @@ return(
 
 <section className="fade-up relative px-6 py-20 overflow-hidden flex justify-center mt-16">
 
+<img
+src="/firoh-arofi/flower-bottom-haribahagia.gif"
+alt="flower-bottom"
+className="fade-up
+fade-delay-16 absolute left-1/2 -translate-x-1/2 bottom-[60px] w-full pointer-events-none z-30"
+/>
+  
+  
 <div className="relative w-full max-w-[900px] mx-auto text-center">
 
 {/* TITLE */}
