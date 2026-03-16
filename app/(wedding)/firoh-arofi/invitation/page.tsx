@@ -87,26 +87,37 @@ PAGE CONTENT
 
 <footer className="text-center py-16 mt-16">
 
-<p className="text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10">
+<p className="fade-up
+fade-delay-1 text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10">
 DIBUAT OLEH
 </p>
 
-<a
+<<a
 href="https://duajemari.vercel.app"
 target="_blank"
 rel="noreferrer"
-className="
-inline-block
-mt-3
-text-[15px]
-font-medium
-tracking-[0.05em]
-text-[#FEFEFE]
-hover:underline
-    z-10
+className="fade-up
+fade-delay-2
+mt-auto
+inline-flex
+items-center
+justify-center
+px-7
+py-[8px]
+rounded-full
+bg-white/45
+backdrop-blur-md
+border border-white/75
+text-[11px]
+tracking-[0.35em]
+text-neutral-700
+transition
+duration-500
+hover:-translate-y-[2px]
+hover:shadow-lg
 "
 >
-duajemari.vercel.app
+duajemari
 </a>
 
     {/* FLOWER VIDEO */}
