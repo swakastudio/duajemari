@@ -90,7 +90,7 @@ fade-delay-1
 font-ltsip
 text-[24px]
 tracking-[0.06em]
-text-[#3f4d58]
+text-[#3A3A3A]
 ">
 MENGHITUNG HARI
 </h2>
@@ -115,7 +115,7 @@ text-[12px]
 md:text-[16px]
 leading-[2.25]
 tracking-[0.02em]
-text-neutral-700
+text-[#3A3A3A]
 font-light
 ">
 
@@ -161,7 +161,7 @@ shadow-[0_10px_30px_rgba(0,0,0,0.04)]
 fade-delay-5
 text-[26px]
 font-semibold
-text-neutral-800
+text-[#3A3A3A]
 ">
 {item.value}
 </p>
@@ -170,7 +170,7 @@ text-neutral-800
 fade-delay-6
 text-[11px]
 tracking-[0.3em]
-text-neutral-500
+text-[#3A3A3A]
 mt-1
 ">
 {item.label}
