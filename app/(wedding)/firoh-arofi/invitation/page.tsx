@@ -127,7 +127,7 @@ duajemari
 
 {/* FLOWER VIDEO */}
 
-<div className="absolute bottom-0 left-0 w-full pointer-events-none">
+<div className="absolute bottom-0 left-0 w-full pointer-events-none z-0">
 
 <video
 autoPlay
