@@ -87,7 +87,7 @@ PAGE CONTENT
 
 <footer className="text-center py-16 mt-16">
 
-<p className="text-[12px] tracking-[0.18em] text-[#FEFEFE]">
+<p className="text-[12px] tracking-[0.18em] text-[#FEFEFE] z-10">
 DIBUAT OLEH
 </p>
 
@@ -103,6 +103,7 @@ font-medium
 tracking-[0.05em]
 text-[#FEFEFE]
 hover:underline
+    z-10
 "
 >
 duajemari.vercel.app
@@ -117,7 +118,7 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full object-cover"
+className="w-full object-cover z-0"
 >
 
 <source src="/firoh-arofi/frame-flower.webm" type="video/webm"/>
