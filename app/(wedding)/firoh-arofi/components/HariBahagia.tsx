@@ -43,10 +43,10 @@ top-[18px]
 bottom-[18px]
 left-[18px]
 right-[18px]
-bg-white/15
+bg-white/40
 backdrop-blur-xl
 rounded-[26px]
-border border-white/30
+border border-white/55
 shadow-[0_20px_70px_rgba(0,0,0,0.08)]
 flex
 flex-col
