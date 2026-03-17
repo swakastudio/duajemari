@@ -124,8 +124,8 @@ Amplop Digital
 onClick={()=>setTab("transfer")}
 className={`px-4 py-2 rounded-full border text-sm ${
 tab==="transfer"
-?"bg-pink-500 text-white"
-:"border-pink-500 text-pink-500"
+?"bg-[#ff4d6d] text-white"
+:"border-[#ff4d6d] text-[#ff4d6d]"
 }`}
 >
 Transfer
@@ -135,8 +135,8 @@ Transfer
 onClick={()=>setTab("kirim")}
 className={`px-4 py-2 rounded-full border text-sm ${
 tab==="kirim"
-?"bg-pink-500 text-white"
-:"border-pink-500 text-pink-500"
+?"bg-[#ff4d6d] text-white"
+:"border-[#ff4d6d] text-[#ff4d6d]"
 }`}
 >
 Kirim Hadiah
