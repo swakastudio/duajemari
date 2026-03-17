@@ -347,7 +347,7 @@ className="cursor-pointer transition hover:scale-105"
 >
 
 <img
-src="public/card-pria.png"
+src="/card-pria.png"
 className="w-[190px] md:w-[220px]"
 />
 
@@ -363,7 +363,7 @@ className="cursor-pointer transition hover:scale-105"
 >
 
 <img
-src="public/card-wanita.png"
+src="/card-wanita.png"
 className="w-[190px] md:w-[220px]"
 />
 
