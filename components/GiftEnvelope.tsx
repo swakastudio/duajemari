@@ -8,7 +8,7 @@ export default function GiftEnvelope(){
    TAB STATE
 ================================ */
 
-const [tab,setTab] = useState<"transfer"|"kirim"|null>("transfer")
+const [tab,setTab] = useState<"transfer"|"kirim">("transfer")
 
 
 /* ===============================
@@ -25,7 +25,7 @@ const [telp,setTelp] = useState("")
 ================================ */
 
 const rekening = {
-pria:"12345679890",
+pria:"1234567890",
 wanita:"0987654321"
 }
 
@@ -37,7 +37,6 @@ wanita:"0987654321"
 const copyRek = (rek:string)=>{
 
 navigator.clipboard.writeText(rek)
-
 alert("Nomor rekening berhasil disalin")
 
 }
@@ -49,192 +48,40 @@ alert("Nomor rekening berhasil disalin")
 
 const printLabel = ()=>{
 
-const penerimaNama = "Bagas Putra"
-
-const penerimaAlamat = `Jl. Kutisari No.36 Kutisari
-Kec. Tenggilis Mejoyo
-Surabaya
-Jawa Timur`
-
-const penerimaTelp = "081234567890"
-
-const now = new Date()
-
-const fileName =
-`print_label_duajemari_${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}_${now.getHours()}-${now.getMinutes()}`
+if(!nama || !alamat || !telp){
+alert("Lengkapi data terlebih dahulu")
+return
+}
 
 const win = window.open("","_blank")
-
 if(!win) return
 
 win.document.write(`
 <html>
 <head>
-
-<title>${fileName}</title>
-
+<title>Label Pengiriman</title>
 <style>
-
-@page{
-size:A5 landscape;
-margin:0;
-}
-
-*{
--webkit-print-color-adjust: exact;
-print-color-adjust: exact;
-}
-
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-background:white;
-}
-
-.label{
-
-width:18.5cm;
-height:12cm;
-
-border:2px solid #333;
-
+font-family:Arial;
 padding:20px;
-
-box-sizing:border-box;
-
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-
 }
-
-.header{
-
-background:#ff4d6d;
-color:white;
+h2{
 text-align:center;
-font-size:28px;
-font-weight:bold;
-padding:10px;
-border-radius:10px;
-margin-bottom:15px;
-
 }
-
-.row{
-display:flex;
-font-size:20px;
-margin-bottom:10px;
-align-items:flex-start;
-}
-
-.label-name{
-width:180px;
-font-weight:bold;
-}
-
-.separator{
-width:15px;
-}
-
-.value{
-flex:1;
-white-space:pre-line;
-line-height:1.3;
-}
-
-.divider{
-height:2px;
-background:#ff4d6d;
-margin:15px 0;
-}
-
-.footer{
-background:#ff4d6d;
-color:white;
-text-align:center;
-font-size:20px;
-font-weight:bold;
-padding:12px;
-margin-top:18px;
-border-radius:6px;
-}
-
-.printinfo{
-position:absolute;
-bottom:8px;
-left:12px;
-font-size:10px;
-color:#555;
-}
-
 </style>
-
 </head>
-
 <body>
 
-<div class="label">
+<h2>LABEL PENGIRIMAN</h2>
 
-<div>
+<p><b>Nama:</b> ${nama}</p>
+<p><b>Alamat:</b> ${alamat}</p>
+<p><b>Telp:</b> ${telp}</p>
 
-<div class="header">
-KETERANGAN PENGIRIMAN PAKET
-</div>
+<hr/>
 
-<div class="row">
-<div class="label-name">Nama Pengirim</div>
-<div class="separator">:</div>
-<div class="value">${nama}</div>
-</div>
-
-<div class="row">
-<div class="label-name">Alamat</div>
-<div class="separator">:</div>
-<div class="value">${alamat}</div>
-</div>
-
-<div class="row">
-<div class="label-name">No. Telp</div>
-<div class="separator">:</div>
-<div class="value">${telp}</div>
-</div>
-
-<div class="divider"></div>
-
-<div class="row">
-<div class="label-name">Nama Penerima</div>
-<div class="separator">:</div>
-<div class="value">${penerimaNama}</div>
-</div>
-
-<div class="row">
-<div class="label-name">Alamat</div>
-<div class="separator">:</div>
-<div class="value">${penerimaAlamat}</div>
-</div>
-
-<div class="row">
-<div class="label-name">No. Telp</div>
-<div class="separator">:</div>
-<div class="value">${penerimaTelp}</div>
-</div>
-
-<div class="divider"></div>
-
-<div class="footer">
-TEMPELKAN KETERANGAN BERIKUT DIATAS PAKET
-</div>
-
-</div>
-
-<div class="printinfo">
-${fileName}
-</div>
+<p><b>Penerima:</b> Bagas Putra</p>
+<p><b>Alamat:</b> Surabaya</p>
 
 <script>
 window.onload=function(){
@@ -257,35 +104,16 @@ win.document.close()
 
 return(
 
-<section className="fade-up relative px-6 py-24">
+<section className="px-6 py-20 text-center">
 
-<div className="mx-auto max-w-4xl text-center">
+<div className="max-w-3xl mx-auto">
 
 
 {/* TITLE */}
 
-<h2 className="font-ltsip text-[24px] tracking-[0.06em] text-black/70">
-AMPL0P DIGITAL
+<h2 className="text-xl font-semibold mb-6">
+Amplop Digital
 </h2>
-
-
-{/* DIVIDER */}
-
-<div className="relative w-36 h-[2px] mx-auto mt-6 mb-12 overflow-hidden">
-
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
-
-<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
-
-</div>
-
-
-<p className="text-sm text-black/70 mb-8 max-w-md mx-auto leading-relaxed">
-Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
-Namun apabila memberi adalah ungkapan tanda kasih,
-Anda dapat memberi kado secara digital.
-</p>
-
 
 
 {/* TAB BUTTON */}
@@ -294,22 +122,21 @@ Anda dapat memberi kado secara digital.
 
 <button
 onClick={()=>setTab("transfer")}
-className={`px-5 py-2 text-sm rounded-full border transition
-${tab==="transfer"
-?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
-:"border-[#ff4d6d] text-[#ff4d6d]"
+className={`px-4 py-2 rounded-full border text-sm ${
+tab==="transfer"
+?"bg-pink-500 text-white"
+:"border-pink-500 text-pink-500"
 }`}
 >
 Transfer
 </button>
 
-
 <button
 onClick={()=>setTab("kirim")}
-className={`px-5 py-2 text-sm rounded-full border transition
-${tab==="kirim"
-?"bg-[#ff4d6d] text-white border-[#ff4d6d]"
-:"border-[#ff4d6d] text-[#ff4d6d]"
+className={`px-4 py-2 rounded-full border text-sm ${
+tab==="kirim"
+?"bg-pink-500 text-white"
+:"border-pink-500 text-pink-500"
 }`}
 >
 Kirim Hadiah
@@ -318,116 +145,84 @@ Kirim Hadiah
 </div>
 
 
-
 {/* ===============================
    TRANSFER
 ================================ */}
 
-<div
-className={`
-transition-all duration-500 overflow-hidden
-${tab==="transfer"
-?"max-h-[500px] opacity-100"
-:"max-h-0 opacity-0"}
-`}
->
+{tab==="transfer" && (
 
-<p className="text-xs text-neutral-500 mb-6">
+<div>
+
+<p className="text-sm mb-6">
 Klik kartu untuk menyalin nomor rekening
 </p>
 
-<div className="flex justify-center gap-8 flex-wrap">
+<div className="flex justify-center gap-6 flex-wrap">
 
 
-{/* CARD PRIA */}
-
-<div
-onClick={()=>copyRek(rekening.pria)}
-className="cursor-pointer transition hover:scale-105"
->
-
+<div onClick={()=>copyRek(rekening.pria)} className="cursor-pointer">
 <img
 src="/card-pria.png"
-onError={(e)=>e.currentTarget.style.display="none"}
+alt="rekening pria"
+className="w-[200px]"
 />
-
 </div>
 
 
-
-{/* CARD WANITA */}
-
-<div
-onClick={()=>copyRek(rekening.wanita)}
-className="cursor-pointer transition hover:scale-105"
->
-
+<div onClick={()=>copyRek(rekening.wanita)} className="cursor-pointer">
 <img
 src="/card-wanita.png"
-onError={(e)=>e.currentTarget.style.display="none"}
+alt="rekening wanita"
+className="w-[200px]"
 />
-
 </div>
 
 </div>
 
 </div>
 
+)}
 
 
 {/* ===============================
    KIRIM HADIAH
 ================================ */}
 
-<div
-className={`
-transition-all duration-500 overflow-hidden
-${tab==="kirim"
-?"max-h-[600px] opacity-100"
-:"max-h-0 opacity-0"}
-`}
->
+{tab==="kirim" && (
 
-<div className="max-w-sm mx-auto space-y-4 mt-4">
+<div className="max-w-sm mx-auto space-y-4">
 
 <input
-placeholder="Nama Pengirim"
+placeholder="Nama"
 value={nama}
 onChange={(e)=>setNama(e.target.value)}
-className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+className="w-full border px-3 py-2 rounded"
 />
 
 <input
 placeholder="Alamat"
 value={alamat}
 onChange={(e)=>setAlamat(e.target.value)}
-className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+className="w-full border px-3 py-2 rounded"
 />
 
 <input
-placeholder="No. Telp"
+placeholder="No Telp"
 value={telp}
 onChange={(e)=>setTelp(e.target.value)}
-className="w-full border border-neutral-300 rounded-lg px-4 py-2 text-sm"
+className="w-full border px-3 py-2 rounded"
 />
-
-
-<div className="flex justify-center gap-4 pt-2">
 
 <button
 onClick={printLabel}
-className="px-4 py-2 text-sm rounded-full border border-[#ff4d6d] text-[#ff4d6d] hover:bg-[#ff4d6d] hover:text-white transition"
+className="px-4 py-2 bg-pink-500 text-white rounded"
 >
 Cetak Label
 </button>
 
 </div>
 
-</div>
-
-</div>
-
-
+)}
 
 </div>
 
