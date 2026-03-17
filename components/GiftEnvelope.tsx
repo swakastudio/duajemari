@@ -8,7 +8,7 @@ export default function GiftEnvelope(){
    TAB STATE
 ================================ */
 
-const [tab,setTab] = useState<"transfer"|"kirim"|null>(null)
+const [tab,setTab] = useState<"transfer"|"kirim"|null>("transfer")
 
 
 /* ===============================
@@ -348,7 +348,7 @@ className="cursor-pointer transition hover:scale-105"
 
 <img
 src="/card-pria.png"
-className="w-[190px] md:w-[220px]"
+onError={(e)=>e.currentTarget.style.display="none"}
 />
 
 </div>
@@ -364,7 +364,7 @@ className="cursor-pointer transition hover:scale-105"
 
 <img
 src="/card-wanita.png"
-className="w-[190px] md:w-[220px]"
+onError={(e)=>e.currentTarget.style.display="none"}
 />
 
 </div>
