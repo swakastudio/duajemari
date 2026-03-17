@@ -122,7 +122,7 @@ Gang IV RT 04 RW 01 , Waru – Sidoarjo
 </div>
 
 <a
-href="https://maps.app.goo.gl/KyBmg8SrXz88uX1n9"
+href="https://maps.app.goo.gl/v236jLR2McravHsd8"
 target="_blank"
 rel="noreferrer"
 className="fade-up
