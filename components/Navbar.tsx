@@ -54,10 +54,10 @@ export default function Navbar() {
           className={animate ? "bounce-up delay-1" : ""}
         >
           <Image
-            src="/logonavbar.png"
+            src="/logonavbar.svg"
             alt="duajemari logo"
             width={120}
-            height={40}
+            height={59}
             priority
           />
         </button>
