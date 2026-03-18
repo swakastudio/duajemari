@@ -41,8 +41,8 @@ const { data, error } = await supabase
 .order("created_at",{ascending:false})
 
 if(error){
-console.error("FETCH ERROR:", error)
-setErrorMsg("Gagal mengambil data")
+console.error("INSERT ERROR FULL:", error)
+setErrorMsg(error.message)
 return
 }
 
