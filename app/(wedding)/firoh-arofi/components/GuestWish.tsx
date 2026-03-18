@@ -152,33 +152,42 @@ export default function GuestWish({ slug }: { slug: string }) {
 
         {/* TITLE */}
         <div className="text-center mb-14">
-          <h2 className="font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
+          <h2 className="fade-up
+fade-delay-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
             UCAPAN & DOA
           </h2>
 
-          <p className="text-[#3A3A3A] text-sm max-w-md mx-auto mt-6">
+          <p className="fade-up
+fade-delay-2 text-[#3A3A3A] text-sm max-w-md mx-auto mt-6">
             Tinggalkan doa terbaik untuk kami ✨
           </p>
         </div>
 
 
         {/* RSVP COUNTER */}
-        <div className="flex justify-center gap-6 mb-14">
+        <div className="fade-up
+fade-delay-3 flex justify-center gap-6 mb-14">
 
-          <div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
-            <p className="text-2xl font-semibold text-green-600">
+          <div className="fade-up
+fade-delay-4 bg-white/60 rounded-2xl px-8 py-4 text-center">
+            <p className="fade-up
+fade-delay-5 text-2xl font-semibold text-green-600">
               {hadirCount}
             </p>
-            <p className="text-xs tracking-[0.25em] text-green-600">
+            <p className="fade-up
+fade-delay-6 text-xs tracking-[0.25em] text-green-600">
               HADIR
             </p>
           </div>
 
-          <div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
-            <p className="text-2xl font-semibold text-red-500">
+          <div className="fade-up
+fade-delay-7 bg-white/60 rounded-2xl px-8 py-4 text-center">
+            <p className="fade-up
+fade-delay-8 text-2xl font-semibold text-red-500">
               {tidakCount}
             </p>
-            <p className="text-xs tracking-[0.25em] text-red-500">
+            <p className="fade-up
+fade-delay-9 text-xs tracking-[0.25em] text-red-500">
               TIDAK HADIR
             </p>
           </div>
@@ -189,27 +198,31 @@ export default function GuestWish({ slug }: { slug: string }) {
         {/* FORM */}
         <form
           onSubmit={submitWish}
-          className="bg-white/60 rounded-[28px] p-8 space-y-5 max-w-xl mx-auto mb-16"
+          className="fade-up
+fade-delay-10 bg-white/60 rounded-[28px] p-8 space-y-5 max-w-xl mx-auto mb-16"
         >
 
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Nama Anda"
-            className="w-full border rounded-lg px-4 py-3 text-sm"
+            className="fade-up
+fade-delay-11 w-full border rounded-lg px-4 py-3 text-sm"
           />
 
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Ucapan & Doa"
-            className="w-full border rounded-lg px-4 py-3 text-sm h-28"
+            className="fade-up
+fade-delay-12 w-full border rounded-lg px-4 py-3 text-sm h-28"
           />
 
           <select
             value={attendance}
             onChange={(e) => setAttendance(e.target.value)}
-            className="w-full border rounded-lg px-4 py-3 text-sm"
+            className="fade-up
+fade-delay-13 w-full border rounded-lg px-4 py-3 text-sm"
           >
             <option>Hadir</option>
             <option>Tidak Hadir</option>
@@ -222,7 +235,8 @@ export default function GuestWish({ slug }: { slug: string }) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em]"
+            className="fade-up
+fade-delay-14 w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em]"
           >
             {loading ? "Mengirim..." : "KIRIM UCAPAN"}
           </button>
@@ -231,7 +245,8 @@ export default function GuestWish({ slug }: { slug: string }) {
 
 
         {/* LIST */}
-        <div className="max-w-xl mx-auto max-h-[400px] overflow-y-auto space-y-4">
+        <div className="fade-up
+fade-delay-15 max-w-xl mx-auto max-h-[400px] overflow-y-auto space-y-4">
 
           {wishes.length === 0 && (
             <p className="text-center text-sm text-neutral-500">
