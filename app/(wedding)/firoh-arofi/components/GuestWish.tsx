@@ -4,7 +4,7 @@ import { supabase } from "../../../../lib/supabase"
 import { useState, useEffect } from "react"
 
 type Wish = {
-  id?: number
+  id?: string
   name: string
   message: string
   attendance: string
