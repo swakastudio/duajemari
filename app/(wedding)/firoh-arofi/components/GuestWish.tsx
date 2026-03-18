@@ -8,10 +8,11 @@ type Wish = {
   name: string
   message: string
   attendance: string
+  wedding_slug: string
   created_at?: string
 }
 
-export default function GuestWish(){
+export default function GuestWish({ slug }: { slug: string }) {
 
 /* ===============================
 STATE
@@ -22,6 +23,8 @@ const [message,setMessage] = useState("")
 const [attendance,setAttendance] = useState("Hadir")
 
 const [wishes,setWishes] = useState<Wish[]>([])
+const [loading,setLoading] = useState(false)
+const [errorMsg,setErrorMsg] = useState("")
 
 
 
@@ -34,10 +37,12 @@ const fetchWishes = async () => {
 const { data, error } = await supabase
 .from("wishes")
 .select("*")
+.eq("wedding_slug", slug)
 .order("created_at",{ascending:false})
 
 if(error){
-console.error(error)
+console.error("FETCH ERROR:", error)
+setErrorMsg("Gagal mengambil data")
 return
 }
 
@@ -50,12 +55,34 @@ setWishes(data as Wish[])
 
 
 /* ===============================
-LOAD WHEN PAGE OPEN
+REALTIME LISTENER
 =============================== */
 
 useEffect(()=>{
+
 fetchWishes()
-},[])
+
+const channel = supabase
+.channel("wishes-realtime")
+.on(
+"postgres_changes",
+{
+event: "INSERT",
+schema: "public",
+table: "wishes",
+filter: `wedding_slug=eq.${slug}`
+},
+(payload)=>{
+setWishes(prev => [payload.new as Wish, ...prev])
+}
+)
+.subscribe()
+
+return ()=>{
+supabase.removeChannel(channel)
+}
+
+},[slug])
 
 
 
@@ -67,27 +94,41 @@ const submitWish = async (e:React.FormEvent)=>{
 
 e.preventDefault()
 
-if(!name || !message) return
+setErrorMsg("")
+
+// VALIDATION
+if(name.trim().length < 2){
+setErrorMsg("Nama minimal 2 karakter")
+return
+}
+
+if(message.trim().length < 5){
+setErrorMsg("Ucapan minimal 5 karakter")
+return
+}
+
+setLoading(true)
 
 const { error } = await supabase
 .from("wishes")
 .insert([
 {
-name:name,
-message:message,
-attendance:attendance
+name:name.trim(),
+message:message.trim(),
+attendance,
+wedding_slug: slug
 }
 ])
 
+setLoading(false)
+
 if(error){
-console.error(error)
+console.error("INSERT ERROR:", error)
+setErrorMsg("Gagal mengirim ucapan")
 return
 }
 
-/* refresh list */
-
-fetchWishes()
-
+// reset form
 setName("")
 setMessage("")
 setAttendance("Hadir")
@@ -97,18 +138,12 @@ setAttendance("Hadir")
 
 
 /* ===============================
-GET AVATAR INITIAL
+HELPERS
 =============================== */
 
 const getInitial = (name:string)=>{
 return name.charAt(0).toUpperCase()
 }
-
-
-
-/* ===============================
-COUNT RSVP
-=============================== */
 
 const hadirCount = wishes.filter(w=>w.attendance==="Hadir").length
 const tidakCount = wishes.filter(w=>w.attendance==="Tidak Hadir").length
@@ -127,24 +162,14 @@ return(
 
 
 {/* TITLE */}
-
 <div className="text-center mb-14">
 
-<h2 className="fade-up fade-delay-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
+<h2 className="font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
 UCAPAN & DOA
 </h2>
 
-<div className="relative w-36 h-[2px] mx-auto mt-6 mb-8 overflow-hidden">
-
-<div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3f4d58] to-transparent opacity-70"></div>
-
-<div className="absolute inset-0 animate-dividerShine bg-gradient-to-r from-transparent via-white to-transparent opacity-90"></div>
-
-</div>
-
-<p className="fade-up fade-delay-2 text-[#3A3A3A] text-sm max-w-md mx-auto leading-relaxed">
-Tinggalkan doa serta harapan terbaik untuk perjalanan baru kami.
-Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
+<p className="text-[#3A3A3A] text-sm max-w-md mx-auto leading-relaxed mt-6">
+Tinggalkan doa terbaik untuk kami ✨
 </p>
 
 </div>
@@ -152,32 +177,24 @@ Kehadiran dan doa Anda adalah kebahagiaan bagi kami.
 
 
 {/* RSVP COUNTER */}
+<div className="flex justify-center gap-6 mb-14">
 
-<div className="fade-up fade-delay-3 flex justify-center gap-6 mb-14">
-
-<div className="fade-up fade-delay-4 bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
-
-<p className="fade-up fade-delay-5 text-2xl font-semibold text-green-600">
+<div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
+<p className="text-2xl font-semibold text-green-600">
 {hadirCount}
 </p>
-
-<p className="fade-up fade-delay-6 text-xs tracking-[0.25em] text-green-600">
+<p className="text-xs tracking-[0.25em] text-green-600">
 HADIR
 </p>
-
 </div>
 
-
-<div className="fade-up fade-delay-7 bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl px-8 py-4 text-center shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
-
-<p className="fade-up fade-delay-8 text-2xl font-semibold text-red-500">
+<div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
+<p className="text-2xl font-semibold text-red-500">
 {tidakCount}
 </p>
-
-<p className="fade-up fade-delay-9 text-xs tracking-[0.25em] text-red-500">
+<p className="text-xs tracking-[0.25em] text-red-500">
 TIDAK HADIR
 </p>
-
 </div>
 
 </div>
@@ -185,46 +202,48 @@ TIDAK HADIR
 
 
 {/* FORM */}
-
 <form
 onSubmit={submitWish}
-className="fade-up fade-delay-10 bg-white/60 backdrop-blur-xl border border-white/40 rounded-[28px] shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 space-y-5 max-w-xl mx-auto mb-16"
+className="bg-white/60 rounded-[28px] p-8 space-y-5 max-w-xl mx-auto mb-16"
 >
 
 <input
 value={name}
 onChange={(e)=>setName(e.target.value)}
 placeholder="Nama Anda"
-className="fade-up fade-delay-11 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
+className="w-full border rounded-lg px-4 py-3 text-sm"
 />
-
 
 <textarea
 value={message}
 onChange={(e)=>setMessage(e.target.value)}
 placeholder="Ucapan & Doa"
-className="fade-up fade-delay-12 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm h-28 resize-none focus:outline-none focus:border-[#3f4d58]"
+className="w-full border rounded-lg px-4 py-3 text-sm h-28"
 />
-
 
 <select
 value={attendance}
 onChange={(e)=>setAttendance(e.target.value)}
-className="fade-up fade-delay-13 w-full border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#3f4d58]"
+className="w-full border rounded-lg px-4 py-3 text-sm"
 >
-
 <option>Hadir</option>
 <option>Tidak Hadir</option>
-
 </select>
+
+
+{/* ERROR MESSAGE */}
+{errorMsg && (
+<p className="text-red-500 text-sm">{errorMsg}</p>
+)}
 
 
 <button
 type="submit"
-className="fade-up fade-delay-14 w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] hover:bg-neutral-800 hover:text-white transition"
+disabled={loading}
+className="w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] transition"
 >
 
-KIRIM UCAPAN
+{loading ? "Mengirim..." : "KIRIM UCAPAN"}
 
 </button>
 
@@ -233,24 +252,26 @@ KIRIM UCAPAN
 
 
 {/* WISH LIST */}
+<div className="max-w-xl mx-auto max-h-[400px] overflow-y-auto space-y-4">
 
-<div className="space-y-4 max-w-xl mx-auto">
+{wishes.length === 0 && (
+<p className="text-center text-sm text-neutral-500">
+Belum ada ucapan, jadilah yang pertama ✨
+</p>
+)}
 
 {wishes.map((wish)=>(
 
 <div
 key={wish.id}
-className="bg-white/70 backdrop-blur-xl border border-white/40 rounded-2xl p-5 shadow-[0_10px_30px_rgba(0,0,0,0.05)]"
+className="bg-white/70 rounded-2xl p-5"
 >
 
 <div className="flex items-center gap-3 mb-2">
 
-{/* AVATAR */}
-
 <div className="w-9 h-9 rounded-full bg-[#3f4d58] text-white flex items-center justify-center text-sm font-semibold">
 {getInitial(wish.name)}
 </div>
-
 
 <div className="flex-1 flex justify-between items-center">
 
@@ -258,7 +279,7 @@ className="bg-white/70 backdrop-blur-xl border border-white/40 rounded-2xl p-5 s
 {wish.name}
 </p>
 
-<p className={`text-xs tracking-wider ${
+<p className={`text-xs ${
 wish.attendance==="Hadir"
 ?"text-green-600"
 :"text-red-500"
@@ -270,7 +291,7 @@ wish.attendance==="Hadir"
 
 </div>
 
-<p className="text-sm text-neutral-700 leading-relaxed">
+<p className="text-sm text-neutral-700">
 {wish.message}
 </p>
 
@@ -282,7 +303,6 @@ wish.attendance==="Hadir"
 
 
 </div>
-
 </section>
 
 )
