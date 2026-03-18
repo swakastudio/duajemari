@@ -76,7 +76,7 @@ pointer-events-none
 
 <WeddingEnvelope/>
 
-<GuestWish/>
+<GuestWish slug="firoh-arofi" />
 
 <Closing/>
 
