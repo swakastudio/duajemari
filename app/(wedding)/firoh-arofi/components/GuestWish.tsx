@@ -90,25 +90,6 @@ supabase.removeChannel(channel)
 SUBMIT WISH
 =============================== */
 
-const submitWish = async (e:React.FormEvent)=>{
-
-e.preventDefault()
-
-setErrorMsg("")
-
-// VALIDATION
-if(name.trim().length < 2){
-setErrorMsg("Nama minimal 2 karakter")
-return
-}
-
-if(message.trim().length < 5){
-setErrorMsg("Ucapan minimal 5 karakter")
-return
-}
-
-setLoading(true)
-
 const { error } = await supabase
 .from("wishes")
 .insert([
@@ -120,11 +101,10 @@ wedding_slug: slug
 }
 ])
 
-setLoading(false)
+console.log("ERROR:", error)
 
 if(error){
-console.error("INSERT ERROR:", error)
-setErrorMsg("Gagal mengirim ucapan")
+setErrorMsg(error.message)
 return
 }
 
