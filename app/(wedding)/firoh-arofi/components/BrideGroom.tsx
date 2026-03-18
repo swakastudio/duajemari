@@ -128,7 +128,7 @@ Putri Ketiga dari
 <br/>
 Bapak Muchammad Haris
 <br/>
-& Ibu Isnaini (Almarhum)
+& Ibu Isnaini (Almarhumah)
 </p>
 
 <a
