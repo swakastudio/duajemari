@@ -164,11 +164,11 @@ return(
 {/* TITLE */}
 <div className="text-center mb-14">
 
-<h2 className="font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
+<h2 className="fade-up px-1 font-ltsip text-[26px] tracking-[0.06em] text-[#3A3A3A]">
 UCAPAN & DOA
 </h2>
 
-<p className="text-[#3A3A3A] text-sm max-w-md mx-auto leading-relaxed mt-6">
+<p className="fade-up px-2 text-[#3A3A3A] text-sm max-w-md mx-auto leading-relaxed mt-6">
 Tinggalkan doa terbaik untuk kami ✨
 </p>
 
@@ -177,22 +177,22 @@ Tinggalkan doa terbaik untuk kami ✨
 
 
 {/* RSVP COUNTER */}
-<div className="flex justify-center gap-6 mb-14">
+<div className="fade-up px-3 flex justify-center gap-6 mb-14">
 
-<div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
-<p className="text-2xl font-semibold text-green-600">
+<div className="fade-up px-4 bg-white/60 rounded-2xl px-8 py-4 text-center">
+<p className="fade-up px-5 text-2xl font-semibold text-green-600">
 {hadirCount}
 </p>
-<p className="text-xs tracking-[0.25em] text-green-600">
+<p className="fade-up px-6 text-xs tracking-[0.25em] text-green-600">
 HADIR
 </p>
 </div>
 
-<div className="bg-white/60 rounded-2xl px-8 py-4 text-center">
-<p className="text-2xl font-semibold text-red-500">
+<div className="fade-up px-7 bg-white/60 rounded-2xl px-8 py-4 text-center">
+<p className="fade-up px-8 text-2xl font-semibold text-red-500">
 {tidakCount}
 </p>
-<p className="text-xs tracking-[0.25em] text-red-500">
+<p className="fade-up px-9 text-xs tracking-[0.25em] text-red-500">
 TIDAK HADIR
 </p>
 </div>
@@ -204,7 +204,7 @@ TIDAK HADIR
 {/* FORM */}
 <form
 onSubmit={submitWish}
-className="bg-white/60 rounded-[28px] p-8 space-y-5 max-w-xl mx-auto mb-16"
+className="fade-up px-10 bg-white/60 rounded-[28px] p-8 space-y-5 max-w-xl mx-auto mb-16"
 >
 
 <input
@@ -240,7 +240,7 @@ className="w-full border rounded-lg px-4 py-3 text-sm"
 <button
 type="submit"
 disabled={loading}
-className="w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] transition"
+className="fade-up px-11 w-full py-3 rounded-full border border-neutral-800 text-sm tracking-[0.2em] transition"
 >
 
 {loading ? "Mengirim..." : "KIRIM UCAPAN"}
