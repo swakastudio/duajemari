@@ -114,7 +114,7 @@ tracking-[0.02em]
 text-[#3A3A3A]
 font-light
 ">
-Jl. Kepuhkiriman Dalam Masjid  
+Jl. Kepuh Kiriman Dalam Masjid  
 <br/>
 Gang IV RT 04 RW 01 , Waru – Sidoarjo
 </p>
