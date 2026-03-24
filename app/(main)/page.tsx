@@ -9,6 +9,7 @@ import Countdown from "@/components/Countdown"
 import WeatherCard from "@/components/WeatherCard"
 import GiftEnvelope from "@/components/GiftEnvelope"
 import GuestCounter from "@/components/GuestCounter"
+import MusicPlayer from "@/components/MusicPlayer"
 
 export default function Home(){
 
@@ -198,12 +199,12 @@ title="Nada Kisah"
 description="Musik latar romantis saat membuka undangan"
 >
 
-<p className="text-sm text-neutral-500">
-
+<p className="text-sm text-neutral-500 leading-relaxed">
 Undangan dapat memutar lagu romantis yang mengiringi kisah cinta pasangan.
 Setiap momen terasa lebih hangat dengan alunan nada pilihan yang bisa disesuaikan.
-
 </p>
+
+<MusicPlayer/>
 
 </FeatureCard>
 
