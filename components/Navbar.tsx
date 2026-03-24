@@ -12,43 +12,35 @@ export default function Navbar() {
 
   const [loading, setLoading] = useState(false)
   const [animate, setAnimate] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  /* restart animasi setiap route berubah */
-
+  /* animasi route */
   useEffect(() => {
-
     setAnimate(false)
-
-    const t = setTimeout(() => {
-      setAnimate(true)
-    }, 50)
-
+    const t = setTimeout(() => setAnimate(true), 50)
     return () => clearTimeout(t)
-
   }, [pathname])
 
   function navigate(path: string) {
-
     if (path === pathname) return
 
     setLoading(true)
+    setMenuOpen(false)
 
     router.push(path)
 
     setTimeout(() => {
       setLoading(false)
     }, 600)
-
   }
 
   return (
     <>
       {loading && <PageLoader />}
 
-      <nav className="w-full flex items-center justify-between px-10 py-6 border-b border-neutral-200 bg-white text-black">
+      <nav className="w-full flex items-center justify-between px-5 md:px-10 py-5 border-b border-neutral-200 bg-white text-black relative">
 
         {/* LOGO */}
-
         <button
           onClick={() => navigate("/")}
           className={animate ? "bounce-up delay-1" : ""}
@@ -56,15 +48,14 @@ export default function Navbar() {
           <Image
             src="/logonavbar.svg"
             alt="duajemari logo"
-            width={120}
-            height={59}
+            width={110}
+            height={50}
             priority
           />
         </button>
 
-        {/* MENU */}
-
-        <div className="flex items-center gap-8 text-sm tracking-widest">
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex items-center gap-8 text-sm tracking-widest">
 
           <button
             onClick={() => navigate("/")}
@@ -88,6 +79,25 @@ export default function Navbar() {
           </button>
 
         </div>
+
+        {/* HAMBURGER (MOBILE) */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white border-t border-neutral-200 flex flex-col items-center py-6 gap-6 text-sm tracking-widest z-50">
+
+            <button onClick={() => navigate("/")}>BERANDA</button>
+            <button onClick={() => navigate("/porto")}>PORTOFOLIO</button>
+            <button onClick={() => navigate("/product")}>PRODUK</button>
+
+          </div>
+        )}
 
       </nav>
     </>
