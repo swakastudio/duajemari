@@ -200,7 +200,6 @@ description="Musik latar romantis saat membuka undangan"
 >
 
 <p className="text-sm text-neutral-500 leading-relaxed">
-Undangan dapat memutar lagu romantis yang mengiringi kisah cinta pasangan.
 Setiap momen terasa lebih hangat dengan alunan nada pilihan yang bisa disesuaikan.
 </p>
 
