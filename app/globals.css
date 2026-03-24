@@ -1036,4 +1036,58 @@ transform:translateY(0);
 .fade-delay-19{transition-delay:3.8s}
 .fade-delay-20{transition-delay:4s}
 
+.music-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.music-bg {
+  background: #FF4D6D;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  box-shadow: 0 20px 40px rgba(255,77,109,0.3);
+  cursor: pointer;
+}
+
+.music-icon {
+  width: 180px;
+  height: 180px;
+  transform: rotate(-120deg);
+  transition: transform 500ms;
+  position: relative;
+}
+
+.music-part {
+  background: white;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+}
+
+.music-left {
+  clip-path: polygon(43% 55%, 60% 49%, 60% 49%, 43% 56%);
+  transition: clip-path 500ms;
+}
+
+.music-right {
+  clip-path: polygon(43% 43%, 60% 50%, 60% 50%, 43% 44%);
+  transition: clip-path 500ms;
+}
+
+/* ACTIVE STATE */
+.music-btn.active .music-icon {
+  transform: rotate(-90deg);
+}
+
+.music-btn.active .music-left {
+  clip-path: inset(0 65% 0 30%);
+}
+
+.music-btn.active .music-right {
+  clip-path: inset(0 30% 0 65%);
+}
 
