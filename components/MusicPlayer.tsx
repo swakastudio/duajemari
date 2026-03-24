@@ -21,38 +21,23 @@ export default function MusicPlayer() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-4 mt-4">
+    <div className="flex flex-col items-center gap-4 mt-6">
 
-      {/* AUDIO */}
       <audio ref={audioRef} src="/main-backsound.mp3" loop />
 
-      {/* BUTTON */}
-      <button
+      <div
+        className={`music-btn ${playing ? "active" : ""}`}
         onClick={toggleMusic}
-        className={`relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-500
-        ${playing ? "bg-[#FF4D6D] scale-105 shadow-xl" : "bg-[#FF4D6D]/80"}
-        `}
       >
+        <div className="music-bg"></div>
 
-        {/* ICON */}
-        <div className="relative w-6 h-6">
-
-          {/* LEFT BAR */}
-          <span className={`absolute left-0 top-0 w-[6px] h-full bg-white rounded transition-all duration-300
-            ${playing ? "translate-x-0" : "translate-x-2 rotate-45 w-[4px] h-[18px] top-[2px]"}
-          `} />
-
-          {/* RIGHT BAR */}
-          <span className={`absolute right-0 top-0 w-[6px] h-full bg-white rounded transition-all duration-300
-            ${playing ? "translate-x-0" : "-translate-x-2 -rotate-45 w-[4px] h-[18px] top-[2px]"}
-          `} />
-
+        <div className="music-icon">
+          <div className="music-part music-left"></div>
+          <div className="music-part music-right"></div>
         </div>
+      </div>
 
-      </button>
-
-      {/* LABEL */}
-      <p className="text-xs text-neutral-400 tracking-wide">
+      <p className="text-xs text-neutral-400">
         {playing ? "Pause Music" : "Play Music"}
       </p>
 
