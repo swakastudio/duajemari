@@ -63,7 +63,7 @@ export default function MusicPlayer() {
       </button>
 
       <p className="text-xs text-neutral-400">
-        {playing ? "Pause Music" : "Play Music"}
+        {playing ? "Jeda Musik" : "Mainkan Musik"}
       </p>
 
     </div>
