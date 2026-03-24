@@ -57,8 +57,8 @@ export default function Navbar() {
             <Image
               src="/logonavbar.svg"
               alt="duajemari logo"
-              width={95}
-              height={40}
+              width={60}
+              height={25}
               priority
             />
           </button>
