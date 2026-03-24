@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* LOGO */}
           <button
             onClick={() => {
-              setLoading(true)
+              setLoading(false)
               setMenuOpen(false)
               router.push("/")
             }}
