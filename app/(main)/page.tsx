@@ -22,7 +22,7 @@ return(
 
 <section className="min-h-screen flex items-center px-6">
 
-<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center pt-24">
 
 {/* TEXT */}
 
