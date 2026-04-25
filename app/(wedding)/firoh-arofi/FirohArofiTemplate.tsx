@@ -1,4 +1,8 @@
-export default function FirohArofiTemplate({ data }: any) {
+type Props = {
+  data: any;
+};
+
+export default function FirohArofiTemplate({ data }: Props) {
   return (
     <main>
       <h1>
