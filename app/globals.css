@@ -870,7 +870,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.12);
 
 /* checkbox toggle */
 
-.play-btn{
+.music-btn{
 position:absolute;
 appearance:none;
 width:100%;
@@ -883,7 +883,7 @@ outline:none;
 
 /* lingkaran hitam tengah */
 
-.play-btn::before{
+.music-btn::before{
 content:"";
 position:absolute;
 width:90%;
@@ -897,7 +897,7 @@ transform:translate(-50%,-50%);
 
 /* animasi border */
 
-.play-btn:checked{
+.music-btn:checked{
 animation:borderAnimate 700ms ease-in-out 1;
 animation-fill-mode:forwards;
 }
@@ -918,7 +918,7 @@ background:conic-gradient(#ff6347,#ff6347);
 
 /* icon play */
 
-.play-icon{
+.music-icon{
 position:absolute;
 width:6px;
 height:6px;
@@ -932,7 +932,7 @@ transition:all .4s ease-in-out;
 
 /* hide play when checked */
 
-.play-btn:checked + .play-icon{
+.music-btn:checked + .play-icon{
 clip-path:polygon(0 100%,0% 100%,100% 100%);
 }
 
@@ -971,13 +971,13 @@ right:0;
 
 /* reveal pause */
 
-.play-btn:checked ~ .pause-icon::before{
+.music-btn:checked ~ .pause-icon::before{
 animation:reveal 300ms ease-in-out 350ms 1;
 animation-fill-mode:forwards;
    background:#FFD773
 }
 
-.play-btn:checked ~ .pause-icon::after{
+.music-btn:checked ~ .pause-icon::after{
 animation:reveal 300ms ease-in-out 600ms 1;
 animation-fill-mode:forwards;
    background:#FFD773
