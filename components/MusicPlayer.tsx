@@ -42,10 +42,10 @@ export default function MusicPlayer() {
           animation: playing ? "spinSlow 8s linear infinite" : "none"
         }}
       >
-        <img
-          src="/public/music-disc.webp"
-          alt="music disc"
-          className="w-full h-full object-cover"
+          <img
+  src="/music-disc.webp"
+  alt="music disc"
+  className="w-full h-full object-cover"
         />
       </button>
 
