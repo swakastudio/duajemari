@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 export default function MusicPlayer(){
 
   const audioRef = useRef<HTMLAudioElement>(null)
-  const [playing,setPlaying] = useState(true)
+  const [playing,setPlaying] = useState(false)
 
   useEffect(()=>{
 
@@ -13,10 +13,6 @@ export default function MusicPlayer(){
     if(!audio) return
 
     audio.volume = 0.5
-
-    audio.play().catch(()=>{
-      setPlaying(false) // kalau autoplay diblok browser
-    })
 
   },[])
 
@@ -32,6 +28,7 @@ export default function MusicPlayer(){
     }
 
     setPlaying(!playing)
+
   }
 
   return(
@@ -41,28 +38,27 @@ export default function MusicPlayer(){
       {/* AUDIO */}
       <audio
         ref={audioRef}
-        src="/main-backsound.mp3"
         loop
         preload="auto"
-      />
+      >
+        <source src="/firoh-arofi/kasih-putih-piano.m4a" type="audio/mp4" />
+        <source src="/firoh-arofi/kasih-putih-piano.mp3" type="audio/mpeg" />
+      </audio>
 
-      {/* DISC BUTTON */}
+      {/* DISC */}
       <button
         onClick={toggleMusic}
-        className={`w-24 h-24 rounded-full overflow-hidden shadow-xl transition duration-500
+        className={`w-24 h-24 rounded-full overflow-hidden shadow-xl transition duration-500 hover:scale-105
         ${playing ? "animate-spin-slow" : ""}
         `}
       >
-
         <img
           src="/music-disc.webp"
           alt="music disc"
           className="w-full h-full object-cover"
         />
-
       </button>
 
-      {/* TEXT */}
       <p className="text-sm text-neutral-500">
         {playing ? "Pause Music" : "Play Music"}
       </p>
