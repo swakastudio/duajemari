@@ -43,7 +43,7 @@ export default function MusicPlayer() {
         }}
       >
         <img
-          src="public/music-disc.webp"
+          src="/public/music-disc.webp"
           alt="music disc"
           className="w-full h-full object-cover"
         />
