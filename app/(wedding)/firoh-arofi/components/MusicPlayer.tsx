@@ -5,30 +5,57 @@ import { useEffect, useRef, useState } from "react"
 export default function MusicPlayer(){
 
   const audioRef = useRef<HTMLAudioElement>(null)
-  const [playing,setPlaying] = useState(false)
+  const [playing, setPlaying] = useState(false)
 
-  useEffect(()=>{
-
-    const audio = audioRef.current
-    if(!audio) return
-
-    audio.volume = 0.5
-
-  },[])
-
-  const toggleMusic = ()=>{
+  useEffect(() => {
 
     const audio = audioRef.current
-    if(!audio) return
+    if (!audio) return
 
-    if(playing){
+    // volume awal
+    audio.volume = 0
+
+    const shouldPlay = localStorage.getItem("playMusic")
+
+    if (shouldPlay === "true") {
+
+      audio.play()
+        .then(() => {
+          setPlaying(true)
+
+          // 🎹 fade in biar smooth
+          let vol = 0
+          const fade = setInterval(() => {
+            if (vol < 0.5) {
+              vol += 0.05
+              audio.volume = vol
+            } else {
+              clearInterval(fade)
+            }
+          }, 100)
+
+        })
+        .catch(() => {
+          // fallback kalau masih ditolak browser
+          console.log("Autoplay ditolak browser")
+        })
+
+    }
+
+  }, [])
+
+  const toggleMusic = () => {
+
+    const audio = audioRef.current
+    if (!audio) return
+
+    if (playing) {
       audio.pause()
-    }else{
+    } else {
       audio.play()
     }
 
     setPlaying(!playing)
-
   }
 
   return(
@@ -48,11 +75,11 @@ export default function MusicPlayer(){
       {/* DISC BUTTON */}
       <button
         onClick={toggleMusic}
-        className="w-20 h-20 rounded-full overflow-hidden shadow-xl
-transition duration-500 active:scale-95"
-style={{
-  animation: playing ? "spinSlow 8s linear infinite" : "none"
-}}
+        className="w-7 h-7 rounded-full overflow-hidden shadow-xl
+        transition duration-500 active:scale-70"
+        style={{
+          animation: playing ? "spinSlow 8s linear infinite" : "none"
+        }}
       >
         <img
           src="/firoh-arofi/music-disc.webp"
