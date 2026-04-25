@@ -56,21 +56,12 @@ console.log(item)
         </h2>
 
         <p className="text-xs text-neutral-500 mt-1">
-          {item.date}
-        </p>
+  {item.date}
+</p>
 
-        {/* DESIGN (CLICKABLE KE PRODUCT) */}
-        {item.linkProduk && (
-          <p
-            onClick={(e) => {
-              e.stopPropagation()
-              window.open(item.linkProduk, "_blank")
-            }}
-            className="text-xs text-pink-500 mt-2 underline cursor-pointer"
-          >
-            {item.design}
-          </p>
-        )}
+<p className="text-xs text-neutral-500 mt-2">
+  Design | <span className="text-neutral-700 font-medium">{item.design}</span>
+</p>
 
         {/* BUTTON */}
         <button
