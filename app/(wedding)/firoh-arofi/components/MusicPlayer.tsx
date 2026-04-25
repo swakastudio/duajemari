@@ -8,12 +8,16 @@ export default function MusicPlayer(){
   const [playing,setPlaying] = useState(false)
 
   useEffect(()=>{
+
     const audio = audioRef.current
     if(!audio) return
+
     audio.volume = 0.5
+
   },[])
 
   const toggleMusic = ()=>{
+
     const audio = audioRef.current
     if(!audio) return
 
@@ -24,11 +28,12 @@ export default function MusicPlayer(){
     }
 
     setPlaying(!playing)
+
   }
 
   return(
 
-    <div className="fixed left-4 bottom-4 z-[999] flex flex-col items-center gap-3">
+    <div className="fixed left-4 bottom-4 z-50 flex flex-col items-center gap-2">
 
       {/* AUDIO */}
       <audio
@@ -40,7 +45,7 @@ export default function MusicPlayer(){
         <source src="/firoh-arofi/kasih-putih-piano.mp3" type="audio/mpeg" />
       </audio>
 
-      {/* DISC */}
+      {/* DISC BUTTON */}
       <button
         onClick={toggleMusic}
         className={`w-20 h-20 rounded-full overflow-hidden shadow-xl
@@ -49,14 +54,14 @@ export default function MusicPlayer(){
         `}
       >
         <img
-          src="/firoh-arofi/music-disc.webp"   {/* ✅ FIX DI SINI */}
+          src="/firoh-arofi/music-disc.webp"
           alt="music disc"
           className="w-full h-full object-cover"
         />
       </button>
 
       {/* TEXT */}
-      <p className="text-xs text-neutral-500">
+      <p className="text-[10px] text-neutral-400">
         {playing ? "Pause Music" : "Play Music"}
       </p>
 
