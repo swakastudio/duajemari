@@ -1,5 +1,5 @@
-import FirohArofi from "../firoh-arofi/page";
+import FirohArofiTemplate from "../firoh-arofi/FirohArofiTemplate";
 
 export const TEMPLATE_REGISTRY = {
-  "firoh-arofi": FirohArofi,
+  "firoh-arofi": FirohArofiTemplate,
 };
