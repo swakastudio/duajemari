@@ -823,183 +823,6 @@ transition:transform .35s ease;
 #transfer:checked ~ .glass-glider{
 transform:translateX(0);
 }
-
-.music-container{
-position:fixed;
-bottom:25px;
-right:25px;
-z-index:999;
-width:90px;
-height:90px;
-}
-/* posisi kanan */
-
-#kirim:checked ~ .glass-glider{
-transform:translateX(100%);
-}
-
-.music-button{
-position:fixed;
-bottom:2px;
-right:2px;
-z-index:999;
-}
-
-/* MUSIC PLAYER */
-
-.music-container{
-position:fixed;
-
-left:6px;
-bottom:calc(6px + env(safe-area-inset-bottom));
-
-z-index:999;
-
-animation:musicFloat 4s ease-in-out infinite;
-}
-
-/* container tombol */
-
-.container{
-width:20px;
-height:20px;
-position:relative;
-border-radius:50%;
-box-shadow:0 4px 10px rgba(0,0,0,0.12);
-}
-
-/* checkbox toggle */
-
-.music-btn{
-position:absolute;
-appearance:none;
-width:100%;
-height:100%;
-border-radius:50%;
-background:conic-gradient(#F7B300,#FFD773);
-cursor:pointer;
-outline:none;
-}
-
-/* lingkaran hitam tengah */
-
-.music-btn::before{
-content:"";
-position:absolute;
-width:90%;
-height:90%;
-background:#000;
-border-radius:50%;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-}
-
-/* animasi border */
-
-.music-btn:checked{
-animation:borderAnimate 700ms ease-in-out 1;
-animation-fill-mode:forwards;
-}
-
-@keyframes borderAnimate{
-0%{
-transform:rotate(0);
-background:conic-gradient(#ff6347,transparent 20%);
-}
-80%{
-background:conic-gradient(#ff6347,transparent 90%);
-}
-100%{
-transform:rotate(360deg);
-background:conic-gradient(#ff6347,#ff6347);
-}
-}
-
-/* icon play */
-
-.music-icon{
-position:absolute;
-width:6px;
-height:6px;
-left:60%;
-top:50%;
-background:#F7B300;
-transform:translate(-60%,-50%) rotate(90deg);
-clip-path:polygon(50% 15%,0% 100%,100% 100%);
-transition:all .4s ease-in-out;
-}
-
-/* hide play when checked */
-
-.music-btn:checked + .play-icon{
-clip-path:polygon(0 100%,0% 100%,100% 100%);
-}
-
-/* pause icon */
-
-.pause-icon{
-position:absolute;
-width:6px;
-height:6px;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-}
-
-/* pause bar kiri */
-
-.pause-icon::before{
-content:"";
-position:absolute;
-width:0%;
-height:100%;
-background:#FFD773;
-left:0;
-}
-
-/* pause bar kanan */
-
-.pause-icon::after{
-content:"";
-position:absolute;
-width:0%;
-height:100%;
-background:#FFD773;
-right:0;
-}
-
-/* reveal pause */
-
-.music-btn:checked ~ .pause-icon::before{
-animation:reveal 300ms ease-in-out 350ms 1;
-animation-fill-mode:forwards;
-   background:#FFD773
-}
-
-.music-btn:checked ~ .pause-icon::after{
-animation:reveal 300ms ease-in-out 600ms 1;
-animation-fill-mode:forwards;
-   background:#FFD773
-}
-
-@keyframes reveal{
-0%{width:0}
-100%{width:35%}
-}
-
-@keyframes musicFloat{
-0%{
-transform:translateY(0px);
-}
-50%{
-transform:translateY(-6px);
-}
-100%{
-transform:translateY(0px);
-}
-}
-
 /* ===============================
 FADE UP SECTION
 =============================== */
@@ -1036,65 +859,89 @@ transform:translateY(0);
 .fade-delay-19{transition-delay:3.8s}
 .fade-delay-20{transition-delay:4s}
 
-.music-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+/* =========================
+   MUSIC PLAYER CLEAN FIX
+========================= */
+
+/* container posisi */
+.music-container{
+  position:fixed;
+  left:10px;
+  bottom:calc(10px + env(safe-area-inset-bottom));
+  z-index:999;
+  animation:musicFloat 4s ease-in-out infinite;
 }
 
-.music-bg {
-  background: #FF4D6D;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  box-shadow: 0 20px 40px rgba(255,77,109,0.3);
-  cursor: pointer;
+/* tombol utama */
+.music-btn{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#FF4D6D;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 12px 25px rgba(255,77,109,0.35);
+  transition:transform .3s ease;
 }
 
-.music-icon {
-  width: 180px;
-  height: 180px;
-  transform: rotate(-120deg);
-  transition: transform 500ms;
-  position: relative;
+/* hover dikit biar hidup */
+.music-btn:hover{
+  transform:scale(1.05);
 }
 
-.music-part {
-  background: white;
-  width: 180px;
-  height: 180px;
-  position: absolute;
+/* icon play (segitiga) */
+.music-icon{
+  width:0;
+  height:0;
+  border-left:16px solid white;
+  border-top:10px solid transparent;
+  border-bottom:10px solid transparent;
+  margin-left:4px;
+  transition:all .3s ease;
 }
 
-.music-left {
-  clip-path: polygon(43% 55%, 60% 49%, 60% 49%, 43% 56%);
-  transition: clip-path 500ms;
+/* saat PLAYING jadi PAUSE */
+.music-btn.playing .music-icon{
+  width:16px;
+  height:16px;
+  border:none;
+  position:relative;
 }
 
-.music-right {
-  clip-path: polygon(43% 43%, 60% 50%, 60% 50%, 43% 44%);
-  transition: clip-path 500ms;
+.music-btn.playing .music-icon::before,
+.music-btn.playing .music-icon::after{
+  content:"";
+  position:absolute;
+  width:4px;
+  height:16px;
+  background:white;
+  top:0;
 }
 
-/* ACTIVE STATE */
-.music-btn.active .music-icon {
-  transform: rotate(-90deg);
+.music-btn.playing .music-icon::before{
+  left:0;
 }
 
-.music-btn.active .music-left {
-  clip-path: inset(0 65% 0 30%);
+.music-btn.playing .music-icon::after{
+  right:0;
 }
 
-.music-btn.active .music-right {
-  clip-path: inset(0 30% 0 65%);
-}
-@keyframes spinSlow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* animasi muter saat lagu jalan */
+.music-btn.playing{
+  animation:spinSlow 6s linear infinite;
 }
 
-.animate-spin-slow {
-  animation: spinSlow 8s linear infinite;
+/* floating halus */
+@keyframes musicFloat{
+  0%{ transform:translateY(0px); }
+  50%{ transform:translateY(-6px); }
+  100%{ transform:translateY(0px); }
+}
+
+/* rotate slow */
+@keyframes spinSlow{
+  from{ transform:rotate(0deg); }
+  to{ transform:rotate(360deg); }
 }
