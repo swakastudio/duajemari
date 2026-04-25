@@ -1090,4 +1090,11 @@ transform:translateY(0);
 .music-btn.active .music-right {
   clip-path: inset(0 30% 0 65%);
 }
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
