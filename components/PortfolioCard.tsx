@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react"
 
 export default function PortfolioCard({ item }: any) {
-
+  
+console.log(item)
+  
   const images = [item.image1, item.image2, item.image3].filter(Boolean)
   const [index, setIndex] = useState(0)
 
