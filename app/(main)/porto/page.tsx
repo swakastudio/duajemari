@@ -8,7 +8,7 @@ export default async function PortoPage() {
   return (
     <main className="min-h-screen bg-white">
 
-      <section className="px-6 py-14 max-w-6xl mx-auto">
+      <section className="px-6 py-28 max-w-6xl mx-auto">
 
         {/* GRID */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
