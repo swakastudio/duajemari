@@ -10,7 +10,11 @@ const [opening,setOpening] = useState(false)
 
 const openInvitation = ()=>{
 
+ // 🎧 kasih sinyal: "user sudah klik, boleh autoplay"
+  localStorage.setItem("playMusic", "true")
+
 setOpening(true)
+
 
 setTimeout(()=>{
 router.push("/firoh-arofi/invitation")
