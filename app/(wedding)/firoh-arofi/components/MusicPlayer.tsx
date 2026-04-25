@@ -48,10 +48,11 @@ export default function MusicPlayer(){
       {/* DISC BUTTON */}
       <button
         onClick={toggleMusic}
-        className={`w-20 h-20 rounded-full overflow-hidden shadow-xl
-        transition duration-500 active:scale-95
-        ${playing ? "animate-spin-slow" : ""}
-        `}
+        className="w-20 h-20 rounded-full overflow-hidden shadow-xl
+transition duration-500 active:scale-95"
+style={{
+  animation: playing ? "spinSlow 8s linear infinite" : "none"
+}}
       >
         <img
           src="/firoh-arofi/music-disc.webp"
