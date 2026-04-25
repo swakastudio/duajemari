@@ -1,8 +1,8 @@
-type Props = {
-  data: any;
-};
+import type { WeddingTemplateProps } from "../_templates/types";
 
-export default function FirohArofiTemplate({ data }: Props) {
+export default function FirohArofiTemplate({
+  data,
+}: WeddingTemplateProps) {
   return (
     <main>
       <h1>
