@@ -4,67 +4,70 @@ import { useEffect, useRef, useState } from "react"
 
 export default function MusicPlayer(){
 
-const audioRef = useRef<HTMLAudioElement>(null)
+  const audioRef = useRef<HTMLAudioElement>(null)
+  const [playing,setPlaying] = useState(true)
 
-const [playing,setPlaying] = useState(true)
+  useEffect(()=>{
 
-useEffect(()=>{
+    const audio = audioRef.current
+    if(!audio) return
 
-const audio = audioRef.current
-if(!audio) return
+    audio.volume = 0.5
 
-audio.volume = 0.6
+    audio.play().catch(()=>{
+      setPlaying(false) // kalau autoplay diblok browser
+    })
 
-audio.play().catch(()=>{})
+  },[])
 
-},[])
+  const toggleMusic = ()=>{
 
-const toggleMusic = ()=>{
+    const audio = audioRef.current
+    if(!audio) return
 
-const audio = audioRef.current
-if(!audio) return
+    if(playing){
+      audio.pause()
+    }else{
+      audio.play()
+    }
 
-if(playing){
-audio.pause()
-}else{
-audio.play()
-}
+    setPlaying(!playing)
+  }
 
-setPlaying(!playing)
+  return(
 
-}
+    <div className="flex flex-col items-center gap-4">
 
-return(
+      {/* AUDIO */}
+      <audio
+        ref={audioRef}
+        src="/main-backsound.mp3"
+        loop
+        preload="auto"
+      />
 
-<div className="music-container">
+      {/* DISC BUTTON */}
+      <button
+        onClick={toggleMusic}
+        className={`w-24 h-24 rounded-full overflow-hidden shadow-xl transition duration-500
+        ${playing ? "animate-spin-slow" : ""}
+        `}
+      >
 
-<audio
-ref={audioRef}
-src="/firoh-arofi/menikahimu.mp3"
-loop
-preload="auto"
-/>
+        <img
+          src="/music-disc.webp"
+          alt="music disc"
+          className="w-full h-full object-cover"
+        />
 
-<div className="container">
+      </button>
 
-<label>
+      {/* TEXT */}
+      <p className="text-sm text-neutral-500">
+        {playing ? "Pause Music" : "Play Music"}
+      </p>
 
-<input
-type="checkbox"
-className="play-btn"
-checked={playing}
-onChange={toggleMusic}
-/>
+    </div>
 
-<div className="play-icon"></div>
-<div className="pause-icon"></div>
-
-</label>
-
-</div>
-
-</div>
-
-)
-
+  )
 }
