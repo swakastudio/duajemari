@@ -7,10 +7,10 @@ export async function getPortfolioData() {
 const SHEET_ID = "1oixS66qVeyYamJl2eqFRJwXCg8T8UFOJkguDam95E5o"
   const API_KEY = "AIzaSyAWBP6FjqWDrUx6zLs3pBB4T6IE1D97zJ8"
 
-  const res = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`,
-    { cache: "no-store" }
-  )
+    const res = await fetch(
+  `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`,
+  { cache: "no-store" }
+)
 
   const data: GoogleSheetResponse = await res.json()
 
