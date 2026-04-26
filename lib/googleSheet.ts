@@ -9,8 +9,7 @@ const SHEET_ID = "1oixS66qVeyYamJl2eqFRJwXCg8T8UFOJkguDam95E5o"
 
     const res = await fetch(
   `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`,
-  { cache: "no-store" }
-)
+  { cache: "no-store" })
 
   const data: GoogleSheetResponse = await res.json()
 
