@@ -1,3 +1,7 @@
+type GoogleSheetResponse = {
+  values: string[][]
+}
+
 export async function getPortfolioData() {
 
   const SHEET_ID = "1oixS66qVeyYamJl2eqFRJwXCg8T8UFOJkguDam95E5o"
@@ -8,11 +12,11 @@ export async function getPortfolioData() {
     { cache: "no-store" }
   )
 
-  const data = await res.json()
+  const data: GoogleSheetResponse = await res.json()
 
   const rows = data.values?.slice(1) || []
 
-  return rows.map((row: string[]) => ({
+  return rows.map((row) => ({
     slug: row[0],
     namaPria: row[1],
     namaWanita: row[2],
