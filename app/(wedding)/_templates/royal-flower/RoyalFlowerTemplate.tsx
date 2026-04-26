@@ -1,22 +1,16 @@
 "use client"
 
-import WeddingCover from "./components/WeddingCover"
-import BrideGroom from "./components/BrideGroom"
-import MusicPlayer from "./components/MusicPlayer"
-
-export default function RoyalFlower({ data }: any) {
-
+export default function RoyalFlowerTemplate({ data }: any) {
   return (
     <main>
 
-      {/* COVER */}
-      <WeddingCover guest={data.guest || "Tamu Undangan"} />
+      <h1>
+        Template Royal Flower
+      </h1>
 
-      {/* MUSIC */}
-      <MusicPlayer />
-
-      {/* MEMPELAI */}
-      <BrideGroom />
+      <p>
+        {data.mempelaiPria} & {data.mempelaiWanita}
+      </p>
 
     </main>
   )
