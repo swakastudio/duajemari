@@ -4,7 +4,7 @@ type GoogleSheetResponse = {
 
 export async function getPortfolioData() {
 
-  const SHEET_ID = "1oixS66qVeyYamJl2eqFRJwXCg8T8UFOJkguDam95E5o"
+const SHEET_ID = "1oixS66qVeyYamJl2eqFRJwXCg8T8UFOJkguDam95E5o"
   const API_KEY = "AIzaSyAWBP6FjqWDrUx6zLs3pBB4T6IE1D97zJ8"
 
   const res = await fetch(
