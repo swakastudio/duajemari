@@ -12,13 +12,13 @@ export async function getPortfolioData() {
       throw new Error("Gagal fetch Google Sheets")
     }
 
-    const data = await res.json()
+    const data: any = await res.json()
 
     console.log("RAW DATA:", data)
 
-    const rows = data.values?.slice(1) || []
+    const rows: any[] = data.values?.slice(1) || []
 
-    return rows.map((row: string[]) => ({
+    return rows.map((row) => ({
       slug: row[0] || "",
       namaPria: row[1] || "",
       namaWanita: row[2] || "",
