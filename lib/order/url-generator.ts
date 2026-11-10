@@ -29,7 +29,7 @@ export function buildInvitationUrl(slug: string): string {
 
   if (!clean) return ""
 
-  return `${BASE_URL}/${clean}/Tamu-Undangan`
+  return `${BASE_URL}/${clean}`
 }
 
 export function buildUrlSuggestions(
