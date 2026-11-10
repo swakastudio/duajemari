@@ -575,7 +575,7 @@ export default function OrderPage() {
                       {format !== "Custom" && (
                         <p className="mt-3 break-all pl-8 text-xs leading-5 text-neutral-500">
                           {suggestion
-                            ? `duajemari.com/${suggestion.slug}/Tamu-Undangan`
+                            ? `duajemari.com/${suggestion.slug}`
                             : "Masukkan nama panggilan kedua mempelai"}
                         </p>
                       )}
