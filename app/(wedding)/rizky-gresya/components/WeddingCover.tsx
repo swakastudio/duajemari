@@ -21,12 +21,15 @@ export default function WeddingCover({ guest }: { guest: string }) {
   useEffect(() => {
     const timers = [
       setTimeout(() => setLogoEntered(true), 100),
-      setTimeout(() => setLogoVisible(false), 4200),
-      setTimeout(() => setShowEyebrow(true), 4900),
-      setTimeout(() => setShowNames(true), 5600),
-      setTimeout(() => setShowDate(true), 6400),
-      setTimeout(() => setShowGuest(true), 7200),
-      setTimeout(() => setShowButton(true), 7900),
+// LOGO INTRO
+setTimeout(() => setLogoVisible(false), 7000),
+
+// CONTENT SEQUENCE
+setTimeout(() => setShowEyebrow(true), 7700),
+setTimeout(() => setShowNames(true), 8400),
+setTimeout(() => setShowDate(true), 9200),
+setTimeout(() => setShowGuest(true), 10000),
+setTimeout(() => setShowButton(true), 10800),
     ]
 
     return () => timers.forEach(clearTimeout)
