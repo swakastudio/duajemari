@@ -1070,3 +1070,65 @@ transform:translateY(0);
 }
 
 
+/* =================================
+   RIZKY & GRESYA - BUTTON LIGHT SWEEP
+================================= */
+
+.rg-open-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+/* Moving light */
+.rg-open-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -80%;
+  width: 45%;
+  height: 200%;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 25%,
+    rgba(255, 255, 255, 0.75) 50%,
+    rgba(255, 239, 205, 0.35) 65%,
+    transparent 100%
+  );
+  transform: skewX(-22deg);
+  animation: rgLightSweep 3.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes rgLightSweep {
+  0%, 45% {
+    left: -80%;
+  }
+
+  100% {
+    left: 140%;
+  }
+}
+
+/* Elegant hover */
+.rg-open-button:hover {
+  background-color: rgba(102, 19, 33, 0.75);
+  box-shadow: 0 8px 35px rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.rg-open-button:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rg-open-button::before {
+    animation: none;
+  }
+}
+
+
+
