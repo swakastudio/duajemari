@@ -232,10 +232,6 @@ setTimeout(() => setShowButton(true), 10800),
           <p className="tracking-[0.25em] text-[14px] md:text-[17px] text-white">
             12 DESEMBER 2026
           </p>
-
-          <p className="tracking-[0.3em] text-[10px] text-white/90 mt-3">
-            PEMBERKATAN
-          </p>
         </div>
 
         {/* GUEST */}
