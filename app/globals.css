@@ -1038,3 +1038,34 @@ transform:translateY(0);
   }
 }
 
+
+/* =================================
+   RIZKY & GRESYA - ELEGANT NAME PULSE
+================================= */
+
+.rg-name-pulse {
+  animation: rgElegantPulse 4s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes rgElegantPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter:
+      drop-shadow(0 4px 12px rgba(255, 255, 255, 0.12));
+  }
+
+  50% {
+    transform: scale(1.025);
+    filter:
+      drop-shadow(0 4px 22px rgba(255, 255, 255, 0.38));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rg-name-pulse {
+    animation: none;
+  }
+}
+
+
