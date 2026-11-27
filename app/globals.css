@@ -945,3 +945,31 @@ transform:translateY(0);
   from{ transform:rotate(0deg); }
   to{ transform:rotate(360deg); }
 }
+
+
+@keyframes cloudMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes cloudMoveSlow {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+.animate-cloudMove {
+  animation: cloudMove 100s linear infinite;
+}
+
+.animate-cloudMoveSlow {
+  animation: cloudMoveSlow 150s linear infinite;
+}
+
