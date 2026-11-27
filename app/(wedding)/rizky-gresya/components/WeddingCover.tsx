@@ -262,31 +262,36 @@ setTimeout(() => setShowButton(true), 10800),
           </h2>
         </div>
 
-        {/* OPEN BUTTON */}
-        <button
-          onClick={openInvitation}
-          disabled={opening || !showButton}
-          className={`
-            mt-10 px-12 py-3
-            border border-white/80
-            rounded-full
-            text-[11px] md:text-[12px]
-            tracking-[0.3em]
-            text-white
-            bg-[#661321]/30
-            backdrop-blur-md
-            hover:bg-[#661321]/80
-            transition-all duration-1000
-            shadow-[0_10px_40px_rgba(0,0,0,0.25)]
-            ${
-              showButton
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
-            }
-          `}
-        >
-          BUKA UNDANGAN
-        </button>
+
+{/* OPEN BUTTON */}
+<button
+  onClick={openInvitation}
+  disabled={opening || !showButton}
+  className={`
+    rg-open-button
+    mt-10 px-12 py-3
+    border border-white/80
+    rounded-full
+    text-[11px] md:text-[12px]
+    tracking-[0.3em]
+    text-white
+    bg-[#661321]/30
+    backdrop-blur-md
+    hover:bg-[#661321]/80
+    transition-all duration-1000
+    shadow-[0_10px_40px_rgba(0,0,0,0.25)]
+    ${
+      showButton
+        ? "opacity-100 translate-y-0"
+        : "opacity-0 translate-y-8"
+    }
+  `}
+>
+  <span className="relative z-10">
+    BUKA UNDANGAN
+  </span>
+</button>
+
 
       </div>
     </section>
