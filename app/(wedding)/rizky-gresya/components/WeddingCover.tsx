@@ -62,17 +62,37 @@ export default function WeddingCover({ guest }: { guest: string }) {
         />
       </div>
 
-      {/* MOVING CLOUDS */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute top-0 left-0 h-full w-[200%] animate-cloudMove opacity-60"
-          style={{
-            backgroundImage: "url('/rizky-gresya/bg-clouds.png')",
-            backgroundRepeat: "repeat-x",
-            backgroundSize: "auto 100%",
-          }}
-        />
-      </div>
+      
+{/* MOVING CLOUDS - LAYER 1 */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+
+  <div
+    className="absolute top-0 left-0 h-full w-[200%] animate-cloudMove opacity-50"
+    style={{
+      backgroundImage: "url('/rizky-gresya/cloud01.png')",
+      backgroundRepeat: "repeat-x",
+      backgroundSize: "auto 75%",
+      backgroundPosition: "center",
+    }}
+  />
+
+</div>
+
+{/* MOVING CLOUDS - LAYER 2 */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+
+  <div
+    className="absolute top-0 left-0 h-full w-[200%] animate-cloudMoveSlow opacity-70"
+    style={{
+      backgroundImage: "url('/rizky-gresya/cloud02.png')",
+      backgroundRepeat: "repeat-x",
+      backgroundSize: "auto 90%",
+      backgroundPosition: "center",
+    }}
+  />
+
+</div>
+
 
       {/* SOFT OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#443450]/10 via-[#443450]/5 to-[#49334F]/45" />
