@@ -177,27 +177,29 @@ setTimeout(() => setShowButton(true), 10800),
         </p>
 
         {/* COUPLE NAMES */}
-        <h1
-          style={{ fontFamily: "ClassiqueScript" }}
-          className={`
-            text-[68px] md:text-[115px]
-            leading-[1.15]
-            text-white
-            drop-shadow-[0_5px_20px_rgba(50,25,50,0.4)]
-            transition-all duration-[1200ms]
-            ${
-              showNames
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-12"
-            }
-          `}
-        >
-          Rizky
-          <span className="mx-3 text-[38px] md:text-[55px] text-[#F3D9D8]">
-            &
-          </span>
-          Gresya
-        </h1>
+        
+<h1
+  style={{ fontFamily: "ClassiqueScript" }}
+  className={`
+    text-[68px] md:text-[115px]
+    leading-[1.15]
+    text-white
+    drop-shadow-[0_5px_20px_rgba(50,25,50,0.4)]
+    transition-all duration-[1500ms] ease-out
+    ${
+      showNames
+        ? "opacity-100 translate-y-0 scale-100 rg-name-pulse"
+        : "opacity-0 translate-y-12 scale-[0.92]"
+    }
+  `}
+>
+  Rizky
+  <span className="mx-3 text-[38px] md:text-[55px] text-[#F3D9D8]">
+    &
+  </span>
+  Gresya
+</h1>
+
 
         {/* DECORATIVE DIVIDER */}
         <div
