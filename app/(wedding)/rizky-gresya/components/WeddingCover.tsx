@@ -48,8 +48,8 @@ setTimeout(() => setShowButton(true), 10800),
 
   return (
     <section
-      className={`
-        relative w-full h-[100svh] min-h-[650px]
+  className={`
+    fixed inset-0 w-full h-[100dvh] min-h-0
         overflow-hidden flex items-center justify-center
         transition-all duration-[1400ms]
         ${opening ? "scale-[1.12] blur-sm opacity-0" : ""}
