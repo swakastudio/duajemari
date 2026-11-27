@@ -66,35 +66,47 @@ setTimeout(() => setShowButton(true), 10800),
       </div>
 
       
-{/* MOVING CLOUDS - LAYER 1 */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-  <div
-    className="absolute top-0 left-0 h-full w-[200%] animate-cloudMove opacity-50"
-    style={{
-      backgroundImage: "url('/rizky-gresya/cloud01.png')",
-      backgroundRepeat: "repeat-x",
-      backgroundSize: "auto 75%",
-      backgroundPosition: "center",
-    }}
-  />
+{/* CLOUD 01 - MOVING RIGHT TO LEFT */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
+
+  <div className="cloud-track cloud-track-one">
+    <img
+      src="/rizky-gresya/cloud01.png"
+      alt=""
+      className="cloud-sprite cloud-sprite-one"
+    />
+
+    {/* Duplicate for seamless looping */}
+    <img
+      src="/rizky-gresya/cloud01.png"
+      alt=""
+      className="cloud-sprite cloud-sprite-one"
+    />
+  </div>
+
+</div>
+
+{/* CLOUD 02 - MOVING RIGHT TO LEFT */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none z-[2]">
+
+  <div className="cloud-track cloud-track-two">
+    <img
+      src="/rizky-gresya/cloud02.png"
+      alt=""
+      className="cloud-sprite cloud-sprite-two"
+    />
+
+    {/* Duplicate for seamless looping */}
+    <img
+      src="/rizky-gresya/cloud02.png"
+      alt=""
+      className="cloud-sprite cloud-sprite-two"
+    />
+  </div>
 
 </div>
 
-{/* MOVING CLOUDS - LAYER 2 */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
-
-  <div
-    className="absolute top-0 left-0 h-full w-[200%] animate-cloudMoveSlow opacity-70"
-    style={{
-      backgroundImage: "url('/rizky-gresya/cloud02.png')",
-      backgroundRepeat: "repeat-x",
-      backgroundSize: "auto 90%",
-      backgroundPosition: "center",
-    }}
-  />
-
-</div>
 
 
       {/* SOFT OVERLAY */}
