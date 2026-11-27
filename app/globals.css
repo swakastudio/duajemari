@@ -973,3 +973,68 @@ transform:translateY(0);
   animation: cloudMoveSlow 150s linear infinite;
 }
 
+
+/* =================================
+   RIZKY & GRESYA - CLOUD ANIMATION
+================================= */
+
+.cloud-track {
+  position: absolute;
+  left: 0;
+  width: max-content;
+  display: flex;
+  gap: 100vw;
+  will-change: transform;
+}
+
+.cloud-sprite {
+  flex: none;
+  width: 65vw;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* CLOUD 01 */
+.cloud-track-one {
+  top: 18%;
+  animation: rgCloudMoveOne 45s linear infinite;
+}
+
+.cloud-sprite-one {
+  opacity: 0.65;
+}
+
+/* CLOUD 02 */
+.cloud-track-two {
+  top: 53%;
+  animation: rgCloudMoveTwo 65s linear infinite;
+}
+
+.cloud-sprite-two {
+  width: 75vw;
+  max-width: 780px;
+  opacity: 0.8;
+}
+
+/* RIGHT TO LEFT LOOP */
+@keyframes rgCloudMoveOne {
+  from {
+    transform: translate3d(100vw, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw - 50%), 0, 0);
+  }
+}
+
+@keyframes rgCloudMoveTwo {
+  from {
+    transform: translate3d(100vw, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw - 50%), 0, 0);
+  }
+}
+
