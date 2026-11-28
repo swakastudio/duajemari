@@ -110,7 +110,7 @@ setTimeout(() => setShowButton(true), 10800),
 {/* BOTTOM FLOWER DECORATION */}
 <div className="absolute bottom-0 left-0 w-full z-[5] pointer-events-none">
   <img
-    src="/rizky-gresya/1080%20Cover%20Flower%20(1).gif"
+    src="/rizky-gresya/1080%20Cover%20Flower%20(2).gif"
     alt=""
     className="w-full h-auto max-h-[32vh] object-contain object-bottom"
   />
