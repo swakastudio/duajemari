@@ -15,6 +15,7 @@ export default function WeddingCover({ guest }: { guest: string }) {
   const [showDate, setShowDate] = useState(false)
   const [showGuest, setShowGuest] = useState(false)
   const [showButton, setShowButton] = useState(false)
+  const [showFlower, setShowFlower] = useState(false)
 
   const [opening, setOpening] = useState(false)
 
@@ -30,6 +31,8 @@ setTimeout(() => setShowNames(true), 8400),
 setTimeout(() => setShowDate(true), 9200),
 setTimeout(() => setShowGuest(true), 10000),
 setTimeout(() => setShowButton(true), 10800),
+      // FLOWER ENTRANCE
+setTimeout(() => setShowFlower(true), 8300),
     ]
 
     return () => timers.forEach(clearTimeout)
@@ -108,11 +111,22 @@ setTimeout(() => setShowButton(true), 10800),
 </div>
 
 {/* FULL SCREEN FLOWER DECORATION */}
-<div className="absolute inset-0 w-full h-full z-[5] pointer-events-none">
+<div
+  className={`
+    absolute inset-0 w-full h-full
+    z-[5] pointer-events-none
+    transition-all duration-[2000ms] ease-out
+    ${
+      showFlower
+        ? "translate-y-0 opacity-100"
+        : "translate-y-full opacity-0"
+    }
+  `}
+>
   <img
     src="/rizky-gresya/1080%20Cover%20Flower%20(2).gif"
     alt=""
-    className="absolute inset-0 w-full h-full object-cover object-center"
+    className="w-full h-full object-cover object-center"
   />
 </div>
 
