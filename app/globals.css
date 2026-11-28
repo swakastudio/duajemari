@@ -1131,5 +1131,28 @@ transform:translateY(0);
   }
 }
 
+/* ELEGANT BUTTON GLOW */
+@keyframes rgButtonGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.08));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 12px rgba(238, 210, 230, 0.4));
+  }
+}
+
+/* HOVER EFFECT */
+.rg-open-button:hover {
+  filter: drop-shadow(0 0 16px rgba(238, 210, 230, 0.6));
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .rg-open-button {
+    animation: none;
+  }
+}
+
 
 
