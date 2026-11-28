@@ -1079,6 +1079,7 @@ transform:translateY(0);
   overflow: hidden;
   isolation: isolate;
   transform: translateZ(0);
+  animation: rgButtonGlow 3.5s ease-in-out infinite;
 }
 
 /* Moving light */
