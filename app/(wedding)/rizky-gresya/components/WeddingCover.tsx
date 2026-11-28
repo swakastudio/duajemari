@@ -107,7 +107,14 @@ setTimeout(() => setShowButton(true), 10800),
 
 </div>
 
-
+{/* BOTTOM FLOWER DECORATION */}
+<div className="absolute bottom-0 left-0 w-full z-[5] pointer-events-none">
+  <img
+    src="/rizky-gresya/1080%20Cover%20Flower%20(1).gif"
+    alt=""
+    className="w-full h-auto max-h-[32vh] object-contain object-bottom"
+  />
+</div>
 
       {/* SOFT OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#443450]/10 via-[#443450]/5 to-[#49334F]/45" />
